@@ -40,7 +40,7 @@ function tabberObj(argsObj) {
   this.classNav = "tabbernav";
   this.classTabHide = "tabbertabhide";
   this.classNavActive = "tabberactive";
-  this.titleElements = ['h2','h3','h4','h5','h6'];
+  this.titleElements = ['h2','h4','h5','h6'];
   this.titleElementsStripHTML = true;
   this.removeTitle = true;
   this.addLinkId = false;
