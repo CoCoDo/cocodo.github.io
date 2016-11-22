@@ -41,10 +41,7 @@
 			<tab>Bison</tab>
 			<tab>BiYacc</tab>
 			<tab>DCG</tab>
-			<div class="tabbertab">
-				<h2>Eli</h2>
-				<h3><a href="http://eli-project.sourceforge.net/"><img src="logo/eli.png" alt="Eli" /></a></h3>
-			</div>
+			<tab>Eli</tab>
 			<div class="tabbertab">
 				<h2>EMFText</h2>
 				<h3><a href="http://www.emftext.org/index.php/EMFText"><img src="logo/emftext.png" alt="EMFText"/></a></h3>

@@ -9,6 +9,7 @@ d = ('Zeroary', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 
 langorder = ["en", "nl", "fr", "de", "ru"]
 lang = {"en": "English", "de": "German", "nl": "Dutch", "fr": "French", "ru": "Russian"}
 techs = {
+	"AG": "https://en.wikipedia.org/wiki/Attribute_grammar",
 	"ALL(*)": "http://www.antlr.org/papers/allstar-techreport.pdf",
 	"BX": "http://www.prg.nii.ac.jp/project/bigul/",
 	"DCG": "https://pdfs.semanticscholar.org/fbc0/4a1951003ba164303b2898fb7f3c6b4e9083.pdf",

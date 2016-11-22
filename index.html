@@ -142,7 +142,30 @@ expr(ifThenElse(E1,E2,E3)) -->
 			</div>
 			<div class="tabbertab">
 				<h2>Eli</h2>
-				<h3><a href="http://eli-project.sourceforge.net/"><img src="logo/eli.png" alt="Eli" /></a></h3>
+				<h3><a href="http://eli-project.sourceforge.net/"><img src="logo/eli.gif" alt="Eli" width="150px"/></a></a></h3>
+				<ul><li>Eli version 4.8.1 (<a href="https://sourceforge.net/projects/eli-project/">download</a>)</li><li>Main website: <a href="http://eli-project.sourceforge.net/">eli-project.sourceforge.net</a></li><li>Parsing algorithm: <a href="https://en.wikipedia.org/wiki/Attribute_grammar">AG</a></li><li>Example from <a href="http://eli-project.sourceforge.net/Java/node29.html">eli-project.sourceforge.net</a>: <blockquote><pre>ClassDeclaration:
+  Modifiers 'class' Identifier Super Interfaces ClassBody .
+
+Super:
+  'extends' InhName / .
+
+Interfaces:
+  ['implements' InterfaceTypeList] .
+
+InterfaceTypeList:
+  InterfaceType /
+  InterfaceTypeList ',' InterfaceType .
+
+ClassBody:
+  '{' ClassBodyDeclarations '}' .
+
+ClassBodyDeclarations:
+  / ClassBodyDeclarationList .
+
+ClassBodyDeclarationList:
+  ClassBodyDeclaration /
+  ClassBodyDeclarationList ClassBodyDeclaration .
+</pre></blockquote></li><li>More examples: <a href="http://eli-project.sourceforge.net/EliExamples.html">eli-project.sourceforge.net</a></li></ul>
 			</div>
 			<div class="tabbertab">
 				<h2>EMFText</h2>
