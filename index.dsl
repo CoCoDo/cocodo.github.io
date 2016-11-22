@@ -10,7 +10,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta name="viewport" content="initial-scale=1.0"/>
 		<title>CoCoDo: Compiler Coding Dojo</title>
-		<link href="common.css" rel="stylesheet" type="text/css" />
+		<link href="main.css" rel="stylesheet" type="text/css" />
 		<link href="tabber.css" rel="stylesheet" type="text/css" media="screen" />
 		<script type="text/javascript" src="tabber.js" />
 		<script type="text/javascript">
@@ -39,10 +39,7 @@
 		<div class="tabber">
 			<tab>ANTLR</tab>
 			<tab>Bison</tab>
-			<div class="tabbertab">
-				<h2>BiGUL</h2>
-				<h3><a href="http://www.prg.nii.ac.jp/project/bigul/"><img src="logo/bigul.png" alt="BiGUL" /></a></h3>
-			</div>
+			<tab>BiYacc</tab>
 			<div class="tabbertab">
 				<h2>DCG</h2>
 				<h3><a href="http://www.pathwayslms.com/swipltuts/dcg/">DCG (Definite Clause Grammars)</a> in Prolog</h3>

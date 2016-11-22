@@ -10,7 +10,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta name="viewport" content="initial-scale=1.0"/>
 		<title>CoCoDo: Compiler Coding Dojo</title>
-		<link href="common.css" rel="stylesheet" type="text/css" />
+		<link href="main.css" rel="stylesheet" type="text/css" />
 		<link href="tabber.css" rel="stylesheet" type="text/css" media="screen" />
 		<script type="text/javascript" src="tabber.js" />
 		<script type="text/javascript">
@@ -45,9 +45,9 @@ expr: expr ('*'|'/') expr
     | INT
     | '(' expr ')'
     ;
-NEWLINE : [\r\n]+ ;
+NEWLINE : [\\r\\n]+ ;
 INT     : [0-9]+ ;
-</pre></blockquote></li><li>More examples: <a href="https://pragprog.com/titles/tpantlr2/source_code">pragprog.com</a></li></ul>
+</pre></blockquote></li><li>More examples: <a href="https://pragprog.com/titles/tpantlr2/source_code">pragprog.com</a></li><li>Maintained by Terence Parr</li></ul>
 			</div>
 			<div class="tabbertab">
 				<h2>Bison</h2>
@@ -70,11 +70,57 @@ expr: '(' expr ')'
     | expr '*' expr
     | expr '/' expr
     | ID;
-</pre></blockquote></li><li>More examples: <a href="https://www.gnu.org/software/bison/manual/bison.html">gnu.org</a></li></ul>
+</pre></blockquote></li><li>More examples: <a href="https://www.gnu.org/software/bison/manual/bison.html">gnu.org</a></li><li>Maintained by Akim Demaille and Paul Eggert</li></ul>
 			</div>
 			<div class="tabbertab">
-				<h2>BiGUL</h2>
-				<h3><a href="http://www.prg.nii.ac.jp/project/bigul/"><img src="logo/bigul.png" alt="BiGUL" /></a></h3>
+				<h2>BiYacc</h2>
+				<h3><a href="http://biyacc.yozora.moe/"><img src="logo/biyacc.png" alt="BiYacc" width="150px"/></a></a></h3>
+				<ul><li>BiYacc (<a href="http://biyacc.yozora.moe/src/biyacc_src.zip">download</a>)</li><li>Main website: <a href="http://biyacc.yozora.moe/">biyacc.yozora.moe</a></li><li>Works with Haskell</li><li>Parsing algorithm: <a href="http://www.prg.nii.ac.jp/project/bigul/">BX</a></li><li>Example from <a href="http://biyacc.yozora.moe/">biyacc.yozora.moe</a>: <blockquote><pre>Abstract
+
+data Arith = Add Arith Arith
+           | Sub Arith Arith
+           | Mul Arith Arith
+           | Div Arith Arith
+           | Num Natural
+           | Var String
+  deriving (Show, Eq, Read)
+
+Concrete
+
+Expr   -> Expr '+' Term
+        | Expr '-' Term
+        | Term
+        ;
+
+Term   -> Term '*' Factor
+        | Term '/' Factor
+        | Factor
+        ;
+
+Factor -> '-' Factor
+        | Int
+        | Name
+        | '(' Expr ')'
+        ;
+
+Actions
+
+Arith +> Expr
+Add x y +> (x +> Expr) '+' (y +> Term);
+Sub x y +> (x +> Expr) '-' (y +> Term);
+exp     +> (exp +> Term);
+
+Arith +> Term
+Mul x y +>  (x +> Term) '*' (y +> Factor);
+Div x y +>  (x +> Term) '/' (y +> Factor);
+exp     +>  (exp +> Factor);
+
+Arith +> Factor
+Sub (Num 0) y +> '-' (y +> Factor);
+Num i         +> (i +> Int);
+Var n         +> (n +> Name);
+exp           +> '(' (exp +> Expr) ')';
+</pre></blockquote></li><li>More examples: <a href="http://biyacc.yozora.moe/">biyacc.yozora.moe</a></li><li>Maintained by Zirun Zhu, Yongzhe Zhang, Hsiang-Shang Ko, Pedro Martins, João Saraiva and Zhenjiang Hu</li></ul>
 			</div>
 			<div class="tabbertab">
 				<h2>DCG</h2>

@@ -9,9 +9,10 @@ d = ('Zeroary', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 
 lang = {"en": "English", "de": "German", "nl": "Dutch", "fr": "French", "ru": "Russian"}
 techs = {
 	"ALL(*)": "http://www.antlr.org/papers/allstar-techreport.pdf",
+	"BX": "http://www.prg.nii.ac.jp/project/bigul/",
+	"GLR": "https://en.wikipedia.org/wiki/GLR_parser",
 	"LALR": "https://en.wikipedia.org/wiki/LALR_parser",
 	"LALR(1)": "https://en.wikipedia.org/wiki/LALR_parser",
-	"GLR": "https://en.wikipedia.org/wiki/GLR_parser",
 }
 
 def bare(s):
@@ -80,8 +81,8 @@ while i < len(lines):
 				if 'examplesrc' in m.keys():
 					item += ' from <a href="%s">%s</a>' % (m['examplesrc'], bare(m['examplesrc']))
 				item += ': <blockquote><pre>'
-				for line in m['example']:
-					item += line + '\n'
+				for line in open(m['example'], 'r', encoding='utf-8').readlines():
+					item += line
 				item += '</pre></blockquote>'
 				items.append(item)
 			if 'more' in m.keys():
@@ -91,6 +92,9 @@ while i < len(lines):
 					item = 'E'
 				item += 'xamples: ' + resolve(m['more'],'')
 				# item += 'xamples: <a href="%s">%s</a>' % (m['more'], bare(m['examples']))
+				items.append(item)
+			if 'maintained' in m.keys():
+				item = 'Maintained by ' + m['maintained']
 				items.append(item)
 			content = '<ul><li>' + '</li><li>'.join(items) + '</li></ul>'
 			g.write('''			<div class="tabbertab">
