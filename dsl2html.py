@@ -139,6 +139,12 @@ while i < len(lines):
 				else:
 					item = 'Maintained by ' + m['maintained']
 				items.append(item)
+			if 'ontop' in m.keys():
+				item = 'Built on top of ' + tool + ': <ul>'
+				for t in m['ontop'].keys():
+					item += '<li>' + resolve(t, m['ontop'][t]) + '</li>'
+				item += '</ul>'
+				items.append(item)
 			content = '<ul><li>' + '</li><li>'.join(items) + '</li></ul>'
 			g.write('''			<div class="tabbertab">
 				<h2>%s</h2>

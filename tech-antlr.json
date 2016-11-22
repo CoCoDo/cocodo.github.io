@@ -9,5 +9,6 @@
 	"more": "https://pragprog.com/titles/tpantlr2/source_code",
 	"maintained": "Terence Parr",
 	"lang": ["Java", "C#", "JavaScript", "Python2", "Python3"],
+	"ontop": {"EMFText": "http://www.emftext.org/index.php/EMFText"},
 	"wikipedia": {"ANTLR": ["en", "nl", "fr", "ru", "de"]}
 }

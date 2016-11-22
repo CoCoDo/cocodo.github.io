@@ -43,10 +43,6 @@
 			<tab>DCG</tab>
 			<tab>Eli</tab>
 			<div class="tabbertab">
-				<h2>EMFText</h2>
-				<h3><a href="http://www.emftext.org/index.php/EMFText"><img src="logo/emftext.png" alt="EMFText"/></a></h3>
-			</div>
-			<div class="tabbertab">
 				<h2>Ensō</h2>
 				<h3><a href="http://enso-lang.org/"><img src="logo/enso.png" alt="Ensō" /></a></h3>
 			</div>
