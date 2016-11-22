@@ -38,10 +38,7 @@
 		</div>
 		<div class="tabber">
 			<tab>ANTLR</tab>
-			<div class="tabbertab">
-				<h2>Bison</h2>
-				<h3><a href="https://www.gnu.org/software/bison/"><img src="logo/gnu.png" alt="Bison" /></a></h3>
-			</div>
+			<tab>Bison</tab>
 			<div class="tabbertab">
 				<h2>BiGUL</h2>
 				<h3><a href="http://www.prg.nii.ac.jp/project/bigul/"><img src="logo/bigul.png" alt="BiGUL" /></a></h3>

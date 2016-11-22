@@ -37,8 +37,8 @@
 		<div class="tabber">
 			<div class="tabbertab">
 				<h2>ANTLR</h2>
-				<h3><a href="http://www.antlr.org"><img src="logo/antlr.png" alt="ANTLR" width="150px"/></a></h3>
-				<ul><li>ANTLR version 4 (<a href="http://www.antlr.org/download.html">download</a>)</li><li>Main website: <a href="http://www.antlr.org">antlr.org</a></li><li>Wikipedia: (<a href="https://en.wikipedia.org/wiki/ANTLR">English</a>) (<a href="https://nl.wikipedia.org/wiki/ANTLR">Dutch</a>) (<a href="https://fr.wikipedia.org/wiki/ANTLR">French</a>) (<a href="https://ru.wikipedia.org/wiki/ANTLR">Russian</a>) (<a href="https://de.wikipedia.org/wiki/ANTLR">German</a>)</li><li>Parsing algorithm: <a href="http://www.antlr.org/papers/allstar-techreport.pdf">ALL(*)</a></li><li>Example from <a href="http://www.antlr.org/">antlr.org</a>: <blockquote><pre>grammar Expr;
+				<h3><a href="http://www.antlr.org"><img src="logo/antlr.png" alt="ANTLR" width="150px"/></a></a></h3>
+				<ul><li>ANTLR version 4 (<a href="http://www.antlr.org/download.html">download</a>)</li><li>Main website: <a href="http://www.antlr.org">antlr.org</a></li><li>Works with Java, C#, JavaScript, Python2, Python3</li><li>Wikipedia: (<a href="https://en.wikipedia.org/wiki/ANTLR">English</a>) (<a href="https://nl.wikipedia.org/wiki/ANTLR">Dutch</a>) (<a href="https://fr.wikipedia.org/wiki/ANTLR">French</a>) (<a href="https://ru.wikipedia.org/wiki/ANTLR">Russian</a>) (<a href="https://de.wikipedia.org/wiki/ANTLR">German</a>)</li><li>Parsing algorithm: <a href="http://www.antlr.org/papers/allstar-techreport.pdf">ALL(*)</a></li><li>Example from <a href="http://www.antlr.org/">antlr.org</a>: <blockquote><pre>grammar Expr;
 prog: (expr NEWLINE)* ;
 expr: expr ('*'|'/') expr
     | expr ('+'|'-') expr
@@ -51,7 +51,26 @@ INT     : [0-9]+ ;
 			</div>
 			<div class="tabbertab">
 				<h2>Bison</h2>
-				<h3><a href="https://www.gnu.org/software/bison/"><img src="logo/gnu.png" alt="Bison" /></a></h3>
+				<h3><a href="https://www.gnu.org/software/bison/"><img src="logo/gnu.png" alt="Bison" width="150px"/></a></a></h3>
+				<ul><li>Bison version 3.0.4 (<a href="http://ftp.gnu.org/gnu/bison/">download</a>)</li><li>Main website: <a href="https://www.gnu.org/software/bison/">gnu.org</a></li><li>Wikipedia: (<a href="https://fr.wikipedia.org/wiki/GNU Bison">French</a>) (<a href="https://ru.wikipedia.org/wiki/GNU Bison">Russian</a>) (<a href="https://de.wikipedia.org/wiki/GNU Bison">German</a>) (<a href="https://en.wikipedia.org/wiki/GNU bison">English</a>)</li><li>Parsing algorithms: <a href="https://en.wikipedia.org/wiki/LALR_parser">LALR(1)</a>, <a href="https://en.wikipedia.org/wiki/GLR_parser">GLR</a></li><li>Example from <a href="https://www.gnu.org/software/bison/manual/bison.html">gnu.org</a>: <blockquote><pre>%token TYPE DOTDOT ID
+
+%left '+' '-'
+%left '*' '/'
+
+%%
+type_decl: TYPE ID '=' type ';' ;
+
+type: '(' id_list ')'
+    | expr DOTDOT expr;
+id_list: ID
+       | id_list ',' ID;
+expr: '(' expr ')'
+    | expr '+' expr
+    | expr '-' expr
+    | expr '*' expr
+    | expr '/' expr
+    | ID;
+</pre></blockquote></li><li>More examples: <a href="https://www.gnu.org/software/bison/manual/bison.html">gnu.org</a></li></ul>
 			</div>
 			<div class="tabbertab">
 				<h2>BiGUL</h2>

@@ -1,11 +1,9 @@
 {
-	"name": "ANTLR",
 	"version": 4,
 	"uri": "http://www.antlr.org",
 	"logo": "antlr.png",
 	"download": "http://www.antlr.org/download.html",
-	"parsing": {"ALL(*)": "http://www.antlr.org/papers/allstar-techreport.pdf"},
-	"examples": "https://pragprog.com/titles/tpantlr2/source_code",
+	"parsing": ["ALL(*)"],
 	"example": [
 		"grammar Expr;",
 		"prog: (expr NEWLINE)* ;",
@@ -17,5 +15,8 @@
 		"NEWLINE : [\\r\\n]+ ;",
 		"INT     : [0-9]+ ;"],
 	"examplesrc": "http://www.antlr.org/",
+	"more": "https://pragprog.com/titles/tpantlr2/source_code",
+	"maintained": "Terence Parr",
+	"lang": ["Java", "C#", "JavaScript", "Python2", "Python3"],
 	"wikipedia": {"ANTLR": ["en", "nl", "fr", "ru", "de"]}
 }

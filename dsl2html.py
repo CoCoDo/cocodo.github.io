@@ -3,13 +3,31 @@
 
 import glob, datetime, json
 
-def bare(s):
-	return s.split('/')[2].replace('www.','')
-
 d = ('Zeroary', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August',\
 	'September', 'October', 'November', 'December')[datetime.date.today().month]+\
 	' '+str(datetime.date.today().year)
 lang = {"en": "English", "de": "German", "nl": "Dutch", "fr": "French", "ru": "Russian"}
+techs = {
+	"ALL(*)": "http://www.antlr.org/papers/allstar-techreport.pdf",
+	"LALR": "https://en.wikipedia.org/wiki/LALR_parser",
+	"LALR(1)": "https://en.wikipedia.org/wiki/LALR_parser",
+	"GLR": "https://en.wikipedia.org/wiki/GLR_parser",
+}
+
+def bare(s):
+	return s.split('/')[2].replace('www.','')
+
+def resolve(s,l):
+	if not l:
+		l = s
+		s = bare(l)
+	return '<a href="%s">%s</a>' % (l,s)
+
+def tryResolveTech(s):
+	if s in techs.keys():
+		return resolve(s,techs[s])
+	else:
+		return s
 
 print('Processing...')
 with open('index.dsl',  'r', encoding='utf-8') as f:
@@ -32,15 +50,17 @@ while i < len(lines):
 		print('Expanding %s...' % macro)
 		with open('tech-'+macro.lower()+'.json', 'r', encoding='utf-8') as f:
 			m = json.load(f)
-			print(m)
 			if 'logo' in m.keys():
-				logo = '<a href="%s"><img src="logo/%s" alt="%s" width="150px"/></a>' % (m['uri'], m['logo'], macro)
+				logo = resolve('<img src="logo/%s" alt="%s" width="150px"/></a>' % (m['logo'], macro), m['uri'])
 			else:
 				logo = macro
 			items = [macro]
 			items.append('Main website: <a href="%s">%s</a>' % (m['uri'], bare(m['uri'])))
 			if 'version' in m.keys():
 				items[0] += ' version %s' % m['version']
+			if 'lang' in m.keys():
+				item = 'Works with ' + ', '.join(m['lang'])
+				items.append(item)
 			if 'wikipedia' in m.keys():
 				item = 'Wikipedia:'
 				for k in m['wikipedia'].keys():
@@ -50,8 +70,10 @@ while i < len(lines):
 			if 'download' in m.keys():
 				items[0] += ' (<a href="%s">download</a>)' % m['download']
 			if 'parsing' in m.keys():
-				k = list(m['parsing'].keys())[0]
-				item = 'Parsing algorithm: <a href="%s">%s</a>' % (m['parsing'][k], k)
+				if len(m['parsing']) == 1:
+					item = 'Parsing algorithm: ' + tryResolveTech(m['parsing'][0])
+				else:
+					item = 'Parsing algorithms: ' + ', '.join([tryResolveTech(a) for a in m['parsing']])
 				items.append(item)
 			if 'example' in m.keys():
 				item = 'Example'
@@ -62,12 +84,13 @@ while i < len(lines):
 					item += line + '\n'
 				item += '</pre></blockquote>'
 				items.append(item)
-			if 'examples' in m.keys():
+			if 'more' in m.keys():
 				if 'example' in m.keys():
 					item = 'More e'
 				else:
 					item = 'E'
-				item += 'xamples: <a href="%s">%s</a>' % (m['examples'], bare(m['examples']))
+				item += 'xamples: ' + resolve(m['more'],'')
+				# item += 'xamples: <a href="%s">%s</a>' % (m['more'], bare(m['examples']))
 				items.append(item)
 			content = '<ul><li>' + '</li><li>'.join(items) + '</li></ul>'
 			g.write('''			<div class="tabbertab">
