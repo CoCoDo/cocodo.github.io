@@ -1,0 +1,13 @@
+{
+	"version": "1.18.5",
+	"uri": "https://www.haskell.org/happy/",
+	"logo": "happy.gif",
+	"download": "https://www.haskell.org/happy/#download",
+	"parsing": ["GLR"],
+	"example": "code/happy.g",
+	"examplesrc": "https://www.haskell.org/happy/doc/html/sec-using.html",
+	"more": "https://www.haskell.org/happy/doc/html/index.html",
+	"maintained": "Andy Gill and Simon Marlow",
+	"lang": ["Haskell"],
+	"oftenwith": {"Alex": ["https://www.haskell.org/alex/"]}
+}

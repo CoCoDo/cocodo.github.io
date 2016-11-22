@@ -49,11 +49,7 @@
 				<h2>GOLD</h2>
 				<h3><a href="http://www.goldparser.org/"><img src="logo/gold.png" alt="GOLD Parsing System"/></a></h3>
 			</div>
-			<div class="tabbertab">
-				<h2>Happy</h2>
-				<h3><a href="https://www.haskell.org/happy/"><img src="logo/happy.png" alt="Happy"/></a><br/></h3>
-				Also, <a href="https://www.haskell.org/alex/">Alex</a>.
-			</div>
+			<tab>Happy</tab>
 			<div class="tabbertab">
 				<h2>Irony</h2>
 				<h3><a href="https://irony.codeplex.com/"><img src="logo/dotnet.png" alt="Irony"/></a></h3>
