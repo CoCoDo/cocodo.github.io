@@ -1,0 +1,10 @@
+{
+	"uri": "https://github.com/enso-lang/enso",
+	"logo": "enso.png",
+	"download": "https://github.com/enso-lang/enso/archive/master.zip",
+	"parsing": ["GLL"],
+	"example": "code/enso.g",
+	"examplesrc": "http://www.cs.utexas.edu/~wcook/Drafts/2012/2012-07-13EnsoMSR.pdf",
+	"more": "http://enso-lang.org/blog/",
+	"maintained": "William R. Cook, Alex Loh and Tijs van der Storm"
+}

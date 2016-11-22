@@ -42,6 +42,7 @@
 			<tab>BiYacc</tab>
 			<tab>DCG</tab>
 			<tab>Eli</tab>
+			<tab>Ensō</tab>
 			<div class="tabbertab">
 				<h2>Ensō</h2>
 				<h3><a href="http://enso-lang.org/"><img src="logo/enso.png" alt="Ensō" /></a></h3>

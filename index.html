@@ -169,6 +169,27 @@ ClassBodyDeclarationList:
 			</div>
 			<div class="tabbertab">
 				<h2>Ensō</h2>
+				<h3><a href="https://github.com/enso-lang/enso"><img src="logo/enso.png" alt="Ensō" width="150px"/></a></a></h3>
+				<ul><li>Ensō (<a href="https://github.com/enso-lang/enso/archive/master.zip">download</a>)</li><li>Main website: <a href="https://github.com/enso-lang/enso">@enso-lang/enso</a></li><li>Parsing algorithm: <a href="http://dotat.at/tmp/gll.pdf">GLL</a></li><li>Example from <a href="http://www.cs.utexas.edu/~wcook/Drafts/2012/2012-07-13EnsoMSR.pdf">cs.utexas.edu</a>: <blockquote><pre>start G
+G ::= [Grammar] "start" start:</rules[it]> rules:R*
+R ::= [Rule] name:sym "::=" arg:A
+A ::= [Alt] alts:C + @"|"
+C ::= [Create] "[" name:sym "]" arg:S | S
+S ::= [Sequence] elements:F*
+F ::= [Field] name:sym  ":" arg:P | P
+P ::= [Lit] value:str
+    | [Value] kind:("int" | "str" | "real" | "sym")
+    | [Ref] "<" path:Path  ">"
+    | [Call] rule:</rules[it]>
+    | [Code] "{" code:Expr "}"
+    | [Regular] arg:P "*" Sep? { optional && many }
+    | [Regular] arg:P "?" { optional }
+    | "(" A ")"
+Sep ::= "@"sep:P
+</pre></blockquote></li><li>More examples: <a href="http://enso-lang.org/blog/">enso-lang.org</a></li><li>Maintained by William R. Cook, Alex Loh and Tijs van der Storm</li></ul>
+			</div>
+			<div class="tabbertab">
+				<h2>Ensō</h2>
 				<h3><a href="http://enso-lang.org/"><img src="logo/enso.png" alt="Ensō" /></a></h3>
 			</div>
 			<div class="tabbertab">
