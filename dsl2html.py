@@ -27,6 +27,7 @@ slang = {
 	"Prolog": "http://101companies.org/wiki/Language:Prolog",
 	"Python2": "https://docs.python.org/2/",
 	"Python3": "https://docs.python.org/3/",
+	"Racket": "https://en.wikipedia.org/wiki/Racket_features",
 }
 
 def bare(s):
@@ -125,7 +126,11 @@ while i < len(lines):
 					item = 'More e'
 				else:
 					item = 'E'
-				item += 'xamples: ' + resolve(m['more'],'')
+				item += 'xamples: '
+				if type(m['more']) == type(''):
+					item += resolve(m['more'],'')
+				else:
+					item += ', '.join([resolve(k,'') for k in m['more']])
 				# item += 'xamples: <a href="%s">%s</a>' % (m['more'], bare(m['examples']))
 				items.append(item)
 			if 'maintained' in m.keys():

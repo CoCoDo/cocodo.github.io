@@ -1,0 +1,12 @@
+{
+	"version": "6.7",
+	"uri": "https://racket-lang.org/",
+	"logo": "racket.png",
+	"download": "https://download.racket-lang.org/",
+	"parsing": ["LALR(1)"],
+	"example": "code/racket.g",
+	"examplesrc": "https://gist.github.com/danking/1068185",
+	"more": ["http://matt.might.net/articles/parsing-bibtex/", "https://docs.racket-lang.org/syntax/stxparse.html", "http://docs.racket-lang.org/parser-tools/"],
+	"lang": ["Racket"],
+	"wikipedia": {"Racket (programming language)": ["en"], "DrRacket": ["fr", "de"], "Racket (язык программирования)": ["ru"]}
+}

@@ -87,10 +87,7 @@
 				<h2>PLY</h2>
 				<h3><a href="http://www.dabeaz.com/ply/">PLY (Python Lex-Yacc)</a></h3>
 			</div>
-			<div class="tabbertab">
-				<h2>Racket</h2>
-				<h3><a href="https://racket-lang.org/"><img src="logo/racket.png" alt="Racket"/></a></h3>
-			</div>
+			<tab>Racket</tab>
 			<div class="tabbertab">
 				<h2>Rascal</h2>
 				<h3><a href="http://www.rascal-mpl.org/about/"><img src="logo/rascal.png" alt="Rascal"/></a></h3>
