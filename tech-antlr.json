@@ -1,0 +1,21 @@
+{
+	"name": "ANTLR",
+	"version": 4,
+	"uri": "http://www.antlr.org",
+	"logo": "antlr.png",
+	"download": "http://www.antlr.org/download.html",
+	"parsing": {"ALL(*)": "http://www.antlr.org/papers/allstar-techreport.pdf"},
+	"examples": "https://pragprog.com/titles/tpantlr2/source_code",
+	"example": [
+		"grammar Expr;",
+		"prog: (expr NEWLINE)* ;",
+		"expr: expr ('*'|'/') expr",
+		"    | expr ('+'|'-') expr",
+		"    | INT",
+		"    | '(' expr ')'",
+		"    ;",
+		"NEWLINE : [\\r\\n]+ ;",
+		"INT     : [0-9]+ ;"],
+	"examplesrc": "http://www.antlr.org/",
+	"wikipedia": {"ANTLR": ["en", "nl", "fr", "ru", "de"]}
+}

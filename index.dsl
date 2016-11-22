@@ -14,11 +14,13 @@
 		<link href="tabber.css" rel="stylesheet" type="text/css" media="screen" />
 		<script type="text/javascript" src="tabber.js" />
 		<script type="text/javascript">
+
 		  var _gaq = _gaq || [];
 		  _gaq.push(['_setAccount', 'UA-3743366-7']);
 		  _gaq.push(['_setDomainName', 'github.io']);
 		  _gaq.push(['_setAllowLinker', true]);
 		  _gaq.push(['_trackPageview']);
+
 		  (function() {
 		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
 		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
@@ -35,20 +37,7 @@
 			</h2>
 		</div>
 		<div class="tabber">
-			<div class="tabbertab">
-				<h2>ANTLR</h2>
-				<h3><a href="http://www.antlr.org"><img src="logo/antlr.png" alt="ANTLR" width="150px"/></a></h3>
-				<ul><li>ANTLR version 4 (<a href="http://www.antlr.org/download.html">download</a>)</li><li>Main website: <a href="http://www.antlr.org">antlr.org</a></li><li>Wikipedia: (<a href="https://en.wikipedia.org/wiki/ANTLR">English</a>) (<a href="https://nl.wikipedia.org/wiki/ANTLR">Dutch</a>) (<a href="https://fr.wikipedia.org/wiki/ANTLR">French</a>) (<a href="https://ru.wikipedia.org/wiki/ANTLR">Russian</a>) (<a href="https://de.wikipedia.org/wiki/ANTLR">German</a>)</li><li>Parsing algorithm: <a href="http://www.antlr.org/papers/allstar-techreport.pdf">ALL(*)</a></li><li>Example from <a href="http://www.antlr.org/">antlr.org</a>: <blockquote><pre>grammar Expr;
-prog: (expr NEWLINE)* ;
-expr: expr ('*'|'/') expr
-    | expr ('+'|'-') expr
-    | INT
-    | '(' expr ')'
-    ;
-NEWLINE : [\r\n]+ ;
-INT     : [0-9]+ ;
-</pre></blockquote></li><li>More examples: <a href="https://pragprog.com/titles/tpantlr2/source_code">pragprog.com</a></li></ul>
-			</div>
+			<tab>ANTLR</tab>
 			<div class="tabbertab">
 				<h2>Bison</h2>
 				<h3><a href="https://www.gnu.org/software/bison/"><img src="logo/gnu.png" alt="Bison" /></a></h3>
@@ -138,6 +127,7 @@ INT     : [0-9]+ ;
 				<h2>Whole</h2>
 				<h3><a href="http://whole.sourceforge.net/"><img src="logo/whote.png" alt="Whole Platform"/></a></h3>
 			</div>
+			<!-- TODO: http://bford.info/packrat/ -->
 			<div class="tabbertab">
 				<h2>xtc</h2>
 				<h3><a href="http://cs.nyu.edu/rgrimm/xtc/">xtc (eXTensible Compiler)</a></h3>
