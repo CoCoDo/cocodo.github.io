@@ -40,10 +40,7 @@
 			<tab>ANTLR</tab>
 			<tab>Bison</tab>
 			<tab>BiYacc</tab>
-			<div class="tabbertab">
-				<h2>DCG</h2>
-				<h3><a href="http://www.pathwayslms.com/swipltuts/dcg/">DCG (Definite Clause Grammars)</a> in Prolog</h3>
-			</div>
+			<tab>DCG</tab>
 			<div class="tabbertab">
 				<h2>Eli</h2>
 				<h3><a href="http://eli-project.sourceforge.net/"><img src="logo/eli.png" alt="Eli" /></a></h3>

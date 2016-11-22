@@ -10,13 +10,28 @@ lang = {"en": "English", "de": "German", "nl": "Dutch", "fr": "French", "ru": "R
 techs = {
 	"ALL(*)": "http://www.antlr.org/papers/allstar-techreport.pdf",
 	"BX": "http://www.prg.nii.ac.jp/project/bigul/",
+	"DCG": "https://pdfs.semanticscholar.org/fbc0/4a1951003ba164303b2898fb7f3c6b4e9083.pdf",
 	"GLR": "https://en.wikipedia.org/wiki/GLR_parser",
 	"LALR": "https://en.wikipedia.org/wiki/LALR_parser",
 	"LALR(1)": "https://en.wikipedia.org/wiki/LALR_parser",
 }
+slang = {
+	"C": "http://101companies.org/wiki/Language:C",
+	"C#": "http://101companies.org/wiki/Language:CSharp",
+	"C++": "http://101companies.org/wiki/Language:CPlusPlus",
+	"Haskell": "http://101companies.org/wiki/Language:Haskell",
+	"Java": "http://101companies.org/wiki/Language:Java",
+	"JavaScript": "http://101companies.org/wiki/Language:JavaScript",
+	"Prolog": "http://101companies.org/wiki/Language:Prolog",
+	"Python2": "https://docs.python.org/2/",
+	"Python3": "https://docs.python.org/3/",
+}
 
 def bare(s):
-	return s.split('/')[2].replace('www.','')
+	if s.startswith('https://github.com/') or s.startswith('http://github.com/'):
+		return '@%s/%s' % (s.split('/')[3], s.split('/')[4])
+	else:
+		return s.split('/')[2].replace('www.','')
 
 def resolve(s,l):
 	if not l:
@@ -24,9 +39,9 @@ def resolve(s,l):
 		s = bare(l)
 	return '<a href="%s">%s</a>' % (l,s)
 
-def tryResolveTech(s):
-	if s in techs.keys():
-		return resolve(s,techs[s])
+def tryresolve(s, d):
+	if s in d.keys():
+		return resolve(s,d[s])
 	else:
 		return s
 
@@ -53,14 +68,20 @@ while i < len(lines):
 			m = json.load(f)
 			if 'logo' in m.keys():
 				logo = resolve('<img src="logo/%s" alt="%s" width="150px"/></a>' % (m['logo'], macro), m['uri'])
+			elif 'fullname' in m.keys():
+				logo = m['fullname']
 			else:
 				logo = macro
-			items = [macro]
+			if 'toolname' in m.keys():
+				tool = m['toolname']
+			else:
+				tool = macro
+			items = [tool]
 			items.append('Main website: <a href="%s">%s</a>' % (m['uri'], bare(m['uri'])))
 			if 'version' in m.keys():
 				items[0] += ' version %s' % m['version']
 			if 'lang' in m.keys():
-				item = 'Works with ' + ', '.join(m['lang'])
+				item = 'Works with ' + ', '.join([tryresolve(l,slang) for l in m['lang']])
 				items.append(item)
 			if 'wikipedia' in m.keys():
 				item = 'Wikipedia:'
@@ -72,14 +93,14 @@ while i < len(lines):
 				items[0] += ' (<a href="%s">download</a>)' % m['download']
 			if 'parsing' in m.keys():
 				if len(m['parsing']) == 1:
-					item = 'Parsing algorithm: ' + tryResolveTech(m['parsing'][0])
+					item = 'Parsing algorithm: ' + tryresolve(m['parsing'][0],techs)
 				else:
-					item = 'Parsing algorithms: ' + ', '.join([tryResolveTech(a) for a in m['parsing']])
+					item = 'Parsing algorithms: ' + ', '.join([tryresolve(a,techs) for a in m['parsing']])
 				items.append(item)
 			if 'example' in m.keys():
 				item = 'Example'
 				if 'examplesrc' in m.keys():
-					item += ' from <a href="%s">%s</a>' % (m['examplesrc'], bare(m['examplesrc']))
+					item += ' from ' + resolve(m['examplesrc'], '')
 				item += ': <blockquote><pre>'
 				for line in open(m['example'], 'r', encoding='utf-8').readlines():
 					item += line
@@ -94,7 +115,10 @@ while i < len(lines):
 				# item += 'xamples: <a href="%s">%s</a>' % (m['more'], bare(m['examples']))
 				items.append(item)
 			if 'maintained' in m.keys():
-				item = 'Maintained by ' + m['maintained']
+				if m['maintained'].startswith('http://'):
+					item = resolve(macro + ' contributors', m['maintained'])
+				else:
+					item = 'Maintained by ' + m['maintained']
 				items.append(item)
 			content = '<ul><li>' + '</li><li>'.join(items) + '</li></ul>'
 			g.write('''			<div class="tabbertab">
