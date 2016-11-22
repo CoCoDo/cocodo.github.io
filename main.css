@@ -1,7 +1,7 @@
 body {background-color:#e0f2f1; color:#00695c; font-family: sans-serif}
 blockquote {border: 1px solid #004d40; padding: 10px}
 .red, .red a, .red a:visited {color:red}
-a, a:visited {color:#01579b}
+a, a:visited {color:#0277bd}
 .red a:hover {font-weight:bold}
 p, table {max-width:1000px; margin:auto; padding-bottom:20px}
 .c {text-align:center; font-weight:bold}
@@ -10,3 +10,4 @@ td {border:solid 1px black; padding:5px}
 td:first-child {white-space:nowrap}
 td:last-child {font-style:italic}
 .footer {width:100%; text-align:right; font-style:italic; font-size:smaller}
+.tabbertab a {font-weight: bold}

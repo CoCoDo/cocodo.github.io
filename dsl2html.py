@@ -6,6 +6,7 @@ import glob, datetime, json
 d = ('Zeroary', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August',\
 	'September', 'October', 'November', 'December')[datetime.date.today().month]+\
 	' '+str(datetime.date.today().year)
+langorder = ["en", "nl", "fr", "de", "ru"]
 lang = {"en": "English", "de": "German", "nl": "Dutch", "fr": "French", "ru": "Russian"}
 techs = {
 	"ALL(*)": "http://www.antlr.org/papers/allstar-techreport.pdf",
@@ -44,6 +45,16 @@ def tryresolve(s, d):
 		return resolve(s,d[s])
 	else:
 		return s
+
+def sortlangs(l):
+	inp = list(l)
+	outp = []
+	for x in langorder:
+		if x in inp:
+			inp.remove(x)
+			outp.append(x)
+	outp.extend(inp)
+	return outp
 
 print('Processing...')
 with open('index.dsl',  'r', encoding='utf-8') as f:
@@ -84,10 +95,12 @@ while i < len(lines):
 				item = 'Works with ' + ', '.join([tryresolve(l,slang) for l in m['lang']])
 				items.append(item)
 			if 'wikipedia' in m.keys():
-				item = 'Wikipedia:'
+				item = 'Wikipedia: '
+				bylang = {}
 				for k in m['wikipedia'].keys():
 					for v in m['wikipedia'][k]:
-						item += ' (<a href="https://%s.wikipedia.org/wiki/%s">%s</a>)' % (v,k,lang[v])
+						bylang[v] = '(<a href="https://%s.wikipedia.org/wiki/%s">%s</a>)' % (v,k,lang[v])
+				item += ' '.join([bylang[x] for x in sortlangs(bylang.keys())])
 				items.append(item)
 			if 'download' in m.keys():
 				items[0] += ' (<a href="%s">download</a>)' % m['download']
