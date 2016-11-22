@@ -35,6 +35,8 @@ slang = {
 def bare(s):
 	if s.startswith('https://github.com/') or s.startswith('http://github.com/'):
 		return '@%s/%s' % (s.split('/')[3], s.split('/')[4])
+	elif s.strip().split('://')[1][2:].startswith('.wikipedia.org/'):
+		return lang[s.strip().split('://')[1][:2]]
 	else:
 		return s.split('/')[2].replace('www.','')
 
@@ -145,6 +147,20 @@ while i < len(lines):
 				item = 'Built on top of ' + tool + ': <ul>'
 				for t in m['ontop'].keys():
 					item += '<li>' + resolve(t, m['ontop'][t]) + '</li>'
+				item += '</ul>'
+				items.append(item)
+			if 'oftenwith' in m.keys():
+				item = 'Often used with: <ul>'
+				for t in m['oftenwith'].keys():
+					item += '<li>' + resolve(t, m['oftenwith'][t][0])
+					for l in m['oftenwith'][t][1:]:
+						l = resolve(l,'')
+						if l.split('>')[1][0].isupper():
+							item += ' ('+l+')'
+						else:
+							item += ' '+l
+						# item += ' '+resolve(l,'')
+					item += '</li>'
 				item += '</ul>'
 				items.append(item)
 			content = '<ul><li>' + '</li><li>'.join(items) + '</li></ul>'

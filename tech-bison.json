@@ -9,5 +9,6 @@
 	"examplesrc": "https://www.gnu.org/software/bison/manual/bison.html",
 	"lang": ["C", "C++", "Java"],
 	"maintained": "Akim Demaille and Paul Eggert",
+	"oftenwith": {"flex": ["https://github.com/westes/flex", "https://en.wikipedia.org/wiki/Flex_(lexical_analyser_generator)", "https://fr.wikipedia.org/wiki/Flex_(logiciel)", "https://ru.wikipedia.org/wiki/Flex_(генератор_лексических_анализаторов)"]},
 	"wikipedia": {"GNU bison": ["en"], "GNU Bison": ["fr", "ru", "de"]}
 }
