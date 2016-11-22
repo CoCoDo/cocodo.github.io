@@ -189,12 +189,23 @@ Sep ::= "@"sep:P
 </pre></blockquote></li><li>More examples: <a href="http://enso-lang.org/blog/">enso-lang.org</a></li><li>Maintained by William R. Cook, Alex Loh and Tijs van der Storm</li></ul>
 			</div>
 			<div class="tabbertab">
-				<h2>Ensō</h2>
-				<h3><a href="http://enso-lang.org/"><img src="logo/enso.png" alt="Ensō" /></a></h3>
-			</div>
-			<div class="tabbertab">
 				<h2>GDK</h2>
-				<h3><a href="http://gdk.sourceforge.net/">Grammar Deployment sKit</a></h3>
+				<h3>Grammar Deployment Kit</h3>
+				<ul><li>GDK version 1.4.4 (<a href="http://gdk.sourceforge.net/gdk-1.4.4.tar.gz">download</a>)</li><li>Main website: <a href="http://gdk.sourceforge.net/">gdk.sourceforge.net</a></li><li>Works with <a href="http://101companies.org/wiki/Language:C">C</a></li><li>Parsing algorithm: <a href="https://en.wikipedia.org/wiki/LL_parser">LL</a></li><li>Example from <a href="https://github.com/slebok/zoo/blob/master/zoo/%C2%A7wip/metasyntax/lll-kort/fetched/src.gdkref.txt">@slebok/zoo</a>: <blockquote><pre>specification : rule+;
+rule          : ident ":" disjunction ";";
+disjunction   : {conjunction "|"};
+conjunction   : term+;
+term          : basis repetition?;
+basis         : ident
+              | literal
+              | "%epsilon"
+              | alternation
+              | group
+              ;
+repetition    : "+" | "*" | "?";
+alternation   : "{" basis basis "}" repetition;
+group : "(" disjunction ")" ;
+</pre></blockquote></li><li>More examples: <a href="http://gdk.sourceforge.net/gdkref.pdf">gdk.sourceforge.net</a></li><li>Maintained by Jan Kort</li></ul>
 			</div>
 			<div class="tabbertab">
 				<h2>GOLD</h2>

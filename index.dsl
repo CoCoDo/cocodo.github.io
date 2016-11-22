@@ -40,17 +40,11 @@
 			<tab>ANTLR</tab>
 			<tab>Bison</tab>
 			<tab>BiYacc</tab>
+			<!-- btyacc -->
 			<tab>DCG</tab>
 			<tab>Eli</tab>
 			<tab>Ensō</tab>
-			<div class="tabbertab">
-				<h2>Ensō</h2>
-				<h3><a href="http://enso-lang.org/"><img src="logo/enso.png" alt="Ensō" /></a></h3>
-			</div>
-			<div class="tabbertab">
-				<h2>GDK</h2>
-				<h3><a href="http://gdk.sourceforge.net/">Grammar Deployment sKit</a></h3>
-			</div>
+			<tab>GDK</tab>
 			<div class="tabbertab">
 				<h2>GOLD</h2>
 				<h3><a href="http://www.goldparser.org/"><img src="logo/gold.png" alt="GOLD Parsing System"/></a></h3>
@@ -76,6 +70,7 @@
 				<h2>MPS</h2>
 				<h3><a href="https://www.jetbrains.com/mps/"><img src="logo/mps.png" alt="MPS"/></a></h3>
 			</div>
+			<!-- ParseLib -->
 			<div class="tabbertab">
 				<h2>PetitParser</h2>
 				<h3><a href="http://scg.unibe.ch/research/helvetia/petitparser"><img src="logo/petitparser.png" alt="PetitParser"/></a></h3>

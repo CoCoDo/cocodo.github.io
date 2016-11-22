@@ -17,6 +17,7 @@ techs = {
 	"GLR": "https://en.wikipedia.org/wiki/GLR_parser",
 	"LALR": "https://en.wikipedia.org/wiki/LALR_parser",
 	"LALR(1)": "https://en.wikipedia.org/wiki/LALR_parser",
+	"LL": "https://en.wikipedia.org/wiki/LL_parser",
 }
 slang = {
 	"C": "http://101companies.org/wiki/Language:C",

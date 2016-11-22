@@ -1,0 +1,12 @@
+{
+	"fullname": "Grammar Deployment Kit",
+	"version": "1.4.4",
+	"uri": "http://gdk.sourceforge.net/",
+	"download": "http://gdk.sourceforge.net/gdk-1.4.4.tar.gz",
+	"parsing": ["LL"],
+	"example": "code/gdk.g",
+	"examplesrc": "https://github.com/slebok/zoo/blob/master/zoo/%C2%A7wip/metasyntax/lll-kort/fetched/src.gdkref.txt",
+	"more": "http://gdk.sourceforge.net/gdkref.pdf",
+	"maintained": "Jan Kort",
+	"lang": ["C"]
+}
