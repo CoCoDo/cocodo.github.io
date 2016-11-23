@@ -1,0 +1,20 @@
+{
+	"fullname": "GOLD Parsing System",
+	"version": 5,
+	"uri": "http://www.goldparser.org/",
+	"logo": "gold.png",
+	"download": "http://www.goldparser.org/engine/index.htm",
+	"parsing": ["LALR", "DFA"],
+	"example": "code/gold.g",
+	"examplesrc": "http://www.goldparser.org/doc/grammars/index.htm",
+	"more": ["http://www.goldparser.org/doc/grammars/index.htm", "http://www.goldparser.org/grammars/index.htm"],
+	"maintained": ["Devin Cook", "http://goldparser.org/contributors/"],
+	"lang": ["Intel Asm", "C", "C#", "D", "Delphi", "Java", "Pascal", "Python3", "VB", "VB.NET", "C++"],
+	"ontop": {
+		"PyGold": "https://sourceforge.net/projects/pygold/",
+		"C++ Gold Parser Engine": "https://sourceforge.net/projects/cpp-gpengine/",
+		"Calitha": "http://www.calitha.com/",
+		"goldengine for Java": "https://github.com/ridencww/goldengine"
+	},
+	"wikipedia": {"GOLD (parser)": ["en"], "GOLD Parsing System": ["de"]}
+}

@@ -232,7 +232,17 @@ group : "(" disjunction ")" ;
 			</div>
 			<div class="tabbertab">
 				<h2>GOLD</h2>
-				<h3><a href="http://www.goldparser.org/"><img src="logo/gold.png" alt="GOLD Parsing System"/></a></h3>
+				<h3><a href="http://www.goldparser.org/"><img src="logo/gold.png" alt="GOLD Parsing System" width="150px"/></a></a> GOLD Parsing System</h3>
+				<ul><li>GOLD version 5 (<a href="http://www.goldparser.org/engine/index.htm">download</a>)</li><li>Main website: <a href="http://www.goldparser.org/">goldparser.org</a></li><li>Works with Intel Asm, <a href="http://101companies.org/wiki/Language:C">C</a>, <a href="http://101companies.org/wiki/Language:CSharp">C#</a>, D, Delphi, <a href="http://101companies.org/wiki/Language:Java">Java</a>, Pascal, <a href="https://docs.python.org/3/">Python3</a>, VB, VB.NET, <a href="http://101companies.org/wiki/Language:CPlusPlus">C++</a></li><li>Wikipedia: (<a href="https://en.wikipedia.org/wiki/GOLD (parser)">English</a>) (<a href="https://de.wikipedia.org/wiki/GOLD Parsing System">German</a>)</li><li>Parsing algorithms: <a href="https://en.wikipedia.org/wiki/LALR_parser">LALR</a>, <a href="https://en.wikipedia.org/wiki/Deterministic_finite_automaton">DFA</a></li><li>Example from <a href="http://www.goldparser.org/doc/grammars/index.htm">goldparser.org</a>: <blockquote><pre>Id = {Letter}{AlphaNumeric}*
+
+<Statement> ::= if Id then <Statement>
+              | if Id then <Then Stm> else <Statement>
+              | Id ':=' Id
+
+<Then Stm>  ::= if Id then <Then Stm> else <Then Stm>
+              | Id ':=' Id
+
+</pre></blockquote></li><li>More examples: <a href="http://www.goldparser.org/doc/grammars/index.htm">goldparser.org</a>, <a href="http://www.goldparser.org/grammars/index.htm">goldparser.org</a></li><li>Devin Cook <a href="http://goldparser.org/contributors/">and others</a></li><li>Built on top of GOLD: <ul><li><a href="http://www.calitha.com/">Calitha</a></li><li><a href="https://sourceforge.net/projects/pygold/">PyGold</a></li><li><a href="https://sourceforge.net/projects/cpp-gpengine/">C++ Gold Parser Engine</a></li><li><a href="https://github.com/ridencww/goldengine">goldengine for Java</a></li></ul></li></ul>
 			</div>
 			<div class="tabbertab">
 				<h2>Happy</h2>

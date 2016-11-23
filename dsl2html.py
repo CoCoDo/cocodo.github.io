@@ -11,18 +11,19 @@ lang = {"en": "English", "de": "German", "nl": "Dutch", "fr": "French", "ru": "R
 techs = {
 	"AG": "https://en.wikipedia.org/wiki/Attribute_grammar",
 	"ALL(*)": "http://www.antlr.org/papers/allstar-techreport.pdf",
+	"backtracking": "https://en.wikipedia.org/wiki/Backtracking",
 	"BX": "http://www.prg.nii.ac.jp/project/bigul/",
 	"DCG": "https://pdfs.semanticscholar.org/fbc0/4a1951003ba164303b2898fb7f3c6b4e9083.pdf",
+	"DFA": "https://en.wikipedia.org/wiki/Deterministic_finite_automaton",
 	"GLL": "http://dotat.at/tmp/gll.pdf",
 	"GLR": "https://en.wikipedia.org/wiki/GLR_parser",
 	"LALR": "https://en.wikipedia.org/wiki/LALR_parser",
 	"LL": "https://en.wikipedia.org/wiki/LL_parser",
 	"LR": "https://en.wikipedia.org/wiki/LR_parser",
 	"RAG": "https://pdfs.semanticscholar.org/89f1/857e15d270c5c1f8417381368e4781c871e4.pdf",
-	"SLR": "https://en.wikipedia.org/wiki/Simple_LR_parser",
 	"scannerless": "https://en.wikipedia.org/wiki/Scannerless_parsing",
+	"SLR": "https://en.wikipedia.org/wiki/Simple_LR_parser",
 	"top-down": "https://en.wikipedia.org/wiki/Top-down_parsing",
-	"backtracking": "https://en.wikipedia.org/wiki/Backtracking",
 }
 slang = {
 	"C": "http://101companies.org/wiki/Language:C",
@@ -90,7 +91,9 @@ while i < len(lines):
 		print('Expanding %s...' % macro)
 		with open('tech-'+macro.lower().replace('ō','o')+'.json', 'r', encoding='utf-8') as f:
 			m = json.load(f)
-			if 'logo' in m.keys():
+			if 'logo' in m.keys() and 'fullname' in m.keys():
+				logo = resolve('<img src="logo/%s" alt="%s" width="150px"/></a>' % (m['logo'], m['fullname']), m['uri']) + ' ' + m['fullname']
+			elif 'logo' in m.keys():
 				logo = resolve('<img src="logo/%s" alt="%s" width="150px"/></a>' % (m['logo'], macro), m['uri'])
 			elif 'fullname' in m.keys():
 				logo = m['fullname']
@@ -145,7 +148,9 @@ while i < len(lines):
 				# item += 'xamples: <a href="%s">%s</a>' % (m['more'], bare(m['examples']))
 				items.append(item)
 			if 'maintained' in m.keys():
-				if m['maintained'].startswith('http://'):
+				if len(m['maintained']) == 2:
+					item = m['maintained'][0] + ' ' + resolve('and others', m['maintained'][1])
+				elif m['maintained'].startswith('http://'):
 					item = resolve(macro + ' contributors', m['maintained'])
 				else:
 					item = 'Maintained by ' + m['maintained']

@@ -46,10 +46,7 @@
 			<tab>Eli</tab>
 			<tab>Ensō</tab>
 			<tab>GDK</tab>
-			<div class="tabbertab">
-				<h2>GOLD</h2>
-				<h3><a href="http://www.goldparser.org/"><img src="logo/gold.png" alt="GOLD Parsing System"/></a></h3>
-			</div>
+			<tab>GOLD</tab>
 			<tab>Happy</tab>
 			<div class="tabbertab">
 				<h2>Irony</h2>
