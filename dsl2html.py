@@ -18,6 +18,7 @@ techs = {
 	"LALR": "https://en.wikipedia.org/wiki/LALR_parser",
 	"LALR(1)": "https://en.wikipedia.org/wiki/LALR_parser",
 	"LL": "https://en.wikipedia.org/wiki/LL_parser",
+	"RAG": "https://pdfs.semanticscholar.org/89f1/857e15d270c5c1f8417381368e4781c871e4.pdf",
 }
 slang = {
 	"C": "http://101companies.org/wiki/Language:C",
@@ -33,7 +34,7 @@ slang = {
 }
 
 def bare(s):
-	if s.startswith('https://github.com/') or s.startswith('http://github.com/'):
+	if s.startswith('https://github.com/') or s.startswith('http://github.com/') or s.startswith('https://bitbucket.org/') or s.startswith('http://bitbucket.org/'):
 		return '@%s/%s' % (s.split('/')[3], s.split('/')[4])
 	elif s.strip().split('://')[1][2:].startswith('.wikipedia.org/'):
 		return lang[s.strip().split('://')[1][:2]]
