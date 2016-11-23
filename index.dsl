@@ -60,6 +60,7 @@
 				<h2>JavaCC</h2>
 				<h3><a href="https://javacc.java.net/"><img src="logo/java.png" alt="JavaCC"/></a></h3>
 			</div>
+			<tab>Laja</tab>
 			<div class="tabbertab">
 				<h2>MetaEdit+</h2>
 				<h3><a href="http://www.metacase.com/download/"><img src="logo/metaeditplus.png" alt="MetaEdit+"/></a></h3>

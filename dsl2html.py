@@ -20,6 +20,9 @@ techs = {
 	"LR": "https://en.wikipedia.org/wiki/LR_parser",
 	"RAG": "https://pdfs.semanticscholar.org/89f1/857e15d270c5c1f8417381368e4781c871e4.pdf",
 	"SLR": "https://en.wikipedia.org/wiki/Simple_LR_parser",
+	"scannerless": "https://en.wikipedia.org/wiki/Scannerless_parsing",
+	"top-down": "https://en.wikipedia.org/wiki/Top-down_parsing",
+	"backtracking": "https://en.wikipedia.org/wiki/Backtracking",
 }
 slang = {
 	"C": "http://101companies.org/wiki/Language:C",
