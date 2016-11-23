@@ -70,7 +70,7 @@ expr = expr.a MULT  expr.b   {: return new Expr(a.value * b.value); :}
      | NUMBER.n              {: return new Expr(n.doubleValue());   :}
      | LPAREN expr.e RPAREN  {: return e; :}
      ;
-</pre></blockquote></li><li>More examples: <a href="http://beaver.sourceforge.net/">beaver.sourceforge.net</a></li><li>Often used with: <ul><li><a href="http://www.jflex.de/">JFlex</a></li><li><a href="https://www.cs.princeton.edu/~appel/modern/java/JLex/">JLex</a></li></ul></li></ul>
+</pre></blockquote></li><li>More examples: <a href="http://beaver.sourceforge.net/">beaver.sourceforge.net</a></li><li>Often used with: <ul><li><a href="https://www.cs.princeton.edu/~appel/modern/java/JLex/">JLex</a></li><li><a href="http://www.jflex.de/">JFlex</a></li></ul></li></ul>
 			</div>
 			<div class="tabbertab">
 				<h2>Bison</h2>
@@ -390,6 +390,36 @@ public start[Program] program(str s, loc l) {
 			<div class="tabbertab">
 				<h2>SableCC</h2>
 				<h3><a href="http://www.sablecc.org/"><img src="logo/sablecc.png" alt="SableCC"/></a></h3>
+			</div>
+			<div class="tabbertab">
+				<h2>SJPT</h2>
+				<h3>Simple Java Parsing Toolkit</h3>
+				<ul><li>SJPT version 0.10 (<a href="http://sjpt.sourceforge.net/download/index.html">download</a>)</li><li>Main website: <a href="http://sjpt.sourceforge.net/">sjpt.sourceforge.net</a></li><li>Works with <a href="http://101companies.org/wiki/Language:Java">Java</a></li><li>Parsing algorithms: <a href="https://en.wikipedia.org/wiki/LL_parser">LL(1)</a>, <a href="https://en.wikipedia.org/wiki/LR_parser">LR(0)</a>, <a href="https://en.wikipedia.org/wiki/Simple_LR_parser">SLR(1)</a>, <a href="https://en.wikipedia.org/wiki/LR_parser">LR(1)</a>, <a href="https://en.wikipedia.org/wiki/LALR_parser">LALR(1)</a></li><li>Example from <a href="http://prdownloads.sourceforge.net/sjpt/sjpt-0.10.zip?download">prdownloads.sourceforge.net</a>: <blockquote><pre>import ro.infoiasi.donald.compiler.parser0.runtime.*;
+   
+terminal SEMI, PLUS, MINUS, TIMES, DIVIDE, LPAREN, RPAREN;
+terminal Integer NUMBER, ID;
+   
+non terminal Object expr_list, expr_part;
+non terminal Integer expr, factor, term;
+    
+expr_list ::= expr_list expr_part
+            | expr_part;
+      
+expr_part ::= expr:e {: System.out.println(" = " + e); :} SEMI;
+   
+expr      ::= factor:f PLUS expr:e {: RESULT = new Integer(f.intValue() + e.intValue()); :}
+            | factor:f MINUS expr:e {: RESULT = new Integer(f.intValue() - e.intValue()); :}
+            | factor:f {: RESULT = new Integer(f.intValue()); :};
+   
+factor    ::= factor:f TIMES term:t {: RESULT = new Integer(f.intValue() * t.intValue()); :}
+            | factor:f DIVIDE term:t {: RESULT = new Integer(f.intValue() / t.intValue()); :}
+            | term:t {: RESULT = new Integer(t.intValue()); :};
+   
+   
+term      ::= LPAREN expr:e RPAREN {: RESULT = e; :}
+            | NUMBER:n {: RESULT = n; :}
+            | ID:i {: RESULT = i; :};
+</pre></blockquote></li><li>Maintained by Catalin Hritcu</li></ul>
 			</div>
 			<div class="tabbertab">
 				<h2>Spoofax</h2>

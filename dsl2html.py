@@ -16,9 +16,10 @@ techs = {
 	"GLL": "http://dotat.at/tmp/gll.pdf",
 	"GLR": "https://en.wikipedia.org/wiki/GLR_parser",
 	"LALR": "https://en.wikipedia.org/wiki/LALR_parser",
-	"LALR(1)": "https://en.wikipedia.org/wiki/LALR_parser",
 	"LL": "https://en.wikipedia.org/wiki/LL_parser",
+	"LR": "https://en.wikipedia.org/wiki/LR_parser",
 	"RAG": "https://pdfs.semanticscholar.org/89f1/857e15d270c5c1f8417381368e4781c871e4.pdf",
+	"SLR": "https://en.wikipedia.org/wiki/Simple_LR_parser",
 }
 slang = {
 	"C": "http://101companies.org/wiki/Language:C",
@@ -49,7 +50,9 @@ def resolve(s,l):
 
 def tryresolve(s, d):
 	if s in d.keys():
-		return resolve(s,d[s])
+		return resolve(s, d[s])
+	elif s.split('(')[0] in d.keys():
+		return resolve(s, d[s.split('(')[0]])
 	else:
 		return s
 

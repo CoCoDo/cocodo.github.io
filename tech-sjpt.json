@@ -1,0 +1,11 @@
+{
+	"fullname": "Simple Java Parsing Toolkit",
+	"version": "0.10",
+	"uri": "http://sjpt.sourceforge.net/",
+	"download": "http://sjpt.sourceforge.net/download/index.html",
+	"parsing": ["LL(1)", "LR(0)", "SLR(1)", "LR(1)", "LALR(1)"],
+	"example": "code/sjpt.g",
+	"examplesrc": "http://prdownloads.sourceforge.net/sjpt/sjpt-0.10.zip?download",
+	"maintained": "Catalin Hritcu",
+	"lang": ["Java"]
+}

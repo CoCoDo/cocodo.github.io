@@ -83,6 +83,7 @@
 				<h2>SableCC</h2>
 				<h3><a href="http://www.sablecc.org/"><img src="logo/sablecc.png" alt="SableCC"/></a></h3>
 			</div>
+			<tab>SJPT</tab>
 			<div class="tabbertab">
 				<h2>Spoofax</h2>
 				<h3><a href="http://metaborg.org/en/latest/"><img src="logo/spoofax.png" alt="Spoofax"/></a></h3>
