@@ -1,0 +1,12 @@
+{
+	"version": "0.9.11",
+	"uri": "http://beaver.sourceforge.net/",
+	"logo": "beaver.png",
+	"download": "https://sourceforge.net/projects/beaver/files/",
+	"parsing": ["LALR(1)"],
+	"more": "http://beaver.sourceforge.net/",
+	"example": "code/beaver.g",
+	"examplesrc": "http://beaver.sourceforge.net/spec.html",
+	"lang": ["Java"],
+	"oftenwith": {"JFlex": ["http://www.jflex.de/"], "JLex": ["https://www.cs.princeton.edu/~appel/modern/java/JLex/"]}
+}

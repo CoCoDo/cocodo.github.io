@@ -50,6 +50,29 @@ INT     : [0-9]+ ;
 </pre></blockquote></li><li>More examples: <a href="https://pragprog.com/titles/tpantlr2/source_code">pragprog.com</a></li><li>Maintained by Terence Parr</li><li>Built on top of ANTLR: <ul><li><a href="http://www.emftext.org/index.php/EMFText">EMFText</a></li></ul></li></ul>
 			</div>
 			<div class="tabbertab">
+				<h2>Beaver</h2>
+				<h3><a href="http://beaver.sourceforge.net/"><img src="logo/beaver.png" alt="Beaver" width="150px"/></a></a></h3>
+				<ul><li>Beaver version 0.9.11 (<a href="https://sourceforge.net/projects/beaver/files/">download</a>)</li><li>Main website: <a href="http://beaver.sourceforge.net/">beaver.sourceforge.net</a></li><li>Works with <a href="http://101companies.org/wiki/Language:Java">Java</a></li><li>Parsing algorithm: <a href="https://en.wikipedia.org/wiki/LALR_parser">LALR(1)</a></li><li>Example from <a href="http://beaver.sourceforge.net/spec.html">beaver.sourceforge.net</a>: <blockquote><pre>%%
+
+%left RPAREN;
+%left MULT, DIV;
+%left PLUS, MINUS;
+
+%typeof NUMBER = "Number";
+%typeof expr = "Expr";
+
+%%
+
+expr = expr.a MULT  expr.b   {: return new Expr(a.value * b.value); :}
+     | expr.a DIV   expr.b   {: return new Expr(a.value / b.value); :}
+     | expr.a PLUS  expr.b   {: return new Expr(a.value + b.value); :}
+     | expr.a MINUS expr.b   {: return new Expr(a.value - b.value); :}
+     | NUMBER.n              {: return new Expr(n.doubleValue());   :}
+     | LPAREN expr.e RPAREN  {: return e; :}
+     ;
+</pre></blockquote></li><li>More examples: <a href="http://beaver.sourceforge.net/">beaver.sourceforge.net</a></li><li>Often used with: <ul><li><a href="http://www.jflex.de/">JFlex</a></li><li><a href="https://www.cs.princeton.edu/~appel/modern/java/JLex/">JLex</a></li></ul></li></ul>
+			</div>
+			<div class="tabbertab">
 				<h2>Bison</h2>
 				<h3><a href="https://www.gnu.org/software/bison/"><img src="logo/gnu.png" alt="Bison" width="150px"/></a></a></h3>
 				<ul><li>Bison version 3.0.4 (<a href="http://ftp.gnu.org/gnu/bison/">download</a>)</li><li>Main website: <a href="https://www.gnu.org/software/bison/">gnu.org</a></li><li>Works with <a href="http://101companies.org/wiki/Language:C">C</a>, <a href="http://101companies.org/wiki/Language:CPlusPlus">C++</a>, <a href="http://101companies.org/wiki/Language:Java">Java</a></li><li>Wikipedia: (<a href="https://en.wikipedia.org/wiki/GNU bison">English</a>) (<a href="https://fr.wikipedia.org/wiki/GNU Bison">French</a>) (<a href="https://de.wikipedia.org/wiki/GNU Bison">German</a>) (<a href="https://ru.wikipedia.org/wiki/GNU Bison">Russian</a>)</li><li>Parsing algorithms: <a href="https://en.wikipedia.org/wiki/LALR_parser">LALR(1)</a>, <a href="https://en.wikipedia.org/wiki/GLR_parser">GLR</a></li><li>Example from <a href="https://www.gnu.org/software/bison/manual/bison.html">gnu.org</a>: <blockquote><pre>%token TYPE DOTDOT ID

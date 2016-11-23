@@ -38,6 +38,7 @@
 		</div>
 		<div class="tabber">
 			<tab>ANTLR</tab>
+			<tab>Beaver</tab>
 			<tab>Bison</tab>
 			<tab>BiYacc</tab>
 			<!-- btyacc -->
