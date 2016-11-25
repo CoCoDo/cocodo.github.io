@@ -327,7 +327,26 @@ BooleanLiteral : Exp ::= <Value:String>;
 			</div>
 			<div class="tabbertab">
 				<h2>JavaCC</h2>
-				<h3><a href="https://javacc.java.net/"><img src="logo/java.png" alt="JavaCC"/></a></h3>
+				<h3><a href="https://javacc.java.net/"><img src="logo/java.png" alt="JavaCC" width="150px"/></a></a></h3>
+				<ul><li>JavaCC version 6.0.1 (<a href="https://java.net/projects/javacc/downloads">download</a>)</li><li>Main website: <a href="https://javacc.java.net/">javacc.java.net</a></li><li>Works with <a href="http://101companies.org/wiki/Language:Java">Java</a>, <a href="http://101companies.org/wiki/Language:C">C</a>, <a href="http://101companies.org/wiki/Language:CPlusPlus">C++</a></li><li>Wikipedia: (<a href="https://en.wikipedia.org/wiki/JavaCC">English</a>) (<a href="https://fr.wikipedia.org/wiki/JavaCC">French</a>) (<a href="https://de.wikipedia.org/wiki/JavaCC">German</a>) (<a href="https://ru.wikipedia.org/wiki/JavaCC">Russian</a>)</li><li>Parsing algorithm: <a href="https://en.wikipedia.org/wiki/LL_parser">LL(k)</a></li><li>Example from <a href="http://www.engr.mun.ca/~theo/JavaCC-Tutorial/">engr.mun.ca</a>: <blockquote><pre>double Primary() throws NumberFormatException :
+{
+	Token t ;
+	double d ;
+}
+{
+	t=<NUMBER>
+	{ return Double.parseDouble( t.image ) ; }
+|
+	<PREVIOUS>
+	{ return previousValue ; }
+|
+	<OPEN_PAR> d=Expression() <CLOSE_PAR>
+	{ return d ; }
+|
+	<MINUS> d=Primary()
+	{ return -d ; }
+}
+</pre></blockquote></li><li>More examples: <a href="http://www.engr.mun.ca/~theo/JavaCC-FAQ/javacc-faq-moz.htm">engr.mun.ca</a>, <a href="http://javacc.org">javacc.org</a></li><li>Maintained by Glassfish Kenai, Paul Cager, Tom Copeland and sreeni. </li></ul>
 			</div>
 			<div class="tabbertab">
 				<h2>Laja</h2>

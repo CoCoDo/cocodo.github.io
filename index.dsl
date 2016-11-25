@@ -69,10 +69,7 @@
 			<tab>Happy</tab>
 			<tab>Irony</tab>
 			<tab>JastAdd</tab>
-			<div class="tabbertab">
-				<h2>JavaCC</h2>
-				<h3><a href="https://javacc.java.net/"><img src="logo/java.png" alt="JavaCC"/></a></h3>
-			</div>
+			<tab>JavaCC</tab>
 			<tab>Laja</tab>
 			<div class="tabbertab">
 				<h2>MetaEdit+</h2>

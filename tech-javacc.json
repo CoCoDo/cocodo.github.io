@@ -1,0 +1,13 @@
+{
+	"version": "6.0.1",
+	"uri": "https://javacc.java.net/",
+	"logo": "java.png",
+	"download": "https://java.net/projects/javacc/downloads",
+	"parsing": ["LL(k)"],
+	"example": "code/javacc.g",
+	"examplesrc": "http://www.engr.mun.ca/~theo/JavaCC-Tutorial/",
+	"more": ["http://www.engr.mun.ca/~theo/JavaCC-FAQ/javacc-faq-moz.htm", "http://javacc.org"],
+	"maintained": "Glassfish Kenai, Paul Cager, Tom Copeland and sreeni. ",
+	"lang": ["Java", "C", "C++"],
+	"wikipedia": {"JavaCC": ["en", "fr", "ru", "de"]}
+}
