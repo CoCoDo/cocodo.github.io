@@ -4,8 +4,7 @@
 	"logo": "laja.png",
 	"download": "https://sourceforge.net/projects/laja/",
 	"parsing": ["scannerless", "top-down", "backtracking"],
-	"example": "code/laja.g",
-	"examplesrc": "http://laja.tengstrand.nu/index.php/Parser_generator_-_Getting_started",
+	"example": "http://laja.tengstrand.nu/index.php/Parser_generator_-_Getting_started",
 	"more": "http://laja.tengstrand.nu/index.php/Code_generator_-_Documentation",
 	"maintained": "Joakim Tengstrand",
 	"lang": ["Java"]

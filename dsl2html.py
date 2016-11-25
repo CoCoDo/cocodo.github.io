@@ -75,6 +75,9 @@ def htmlify(s):
 		s = s.replace(k,v)
 	return s
 
+def tofname(m):
+	return m.lower().replace('ō','o').replace('/','')
+
 print('Processing...')
 with open('index.dsl',  'r', encoding='utf-8') as f:
 	lines = f.readlines()
@@ -94,7 +97,7 @@ while i < len(lines):
 	if lines[i].strip().startswith('<tab>') and lines[i].strip().endswith('</tab>'):
 		macro = lines[i].strip()[5:-6]
 		print('Expanding %s...' % macro)
-		with open('tech/'+macro.lower().replace('ō','o').replace('/','')+'.json', 'r', encoding='utf-8') as f:
+		with open('tech/'+tofname(macro)+'.json', 'r', encoding='utf-8') as f:
 			m = json.load(f)
 			if 'logo' in m.keys() and 'fullname' in m.keys():
 				logo = resolve('<img src="logo/%s" alt="%s" width="150px"/></a>' % (m['logo'], m['fullname']), m['uri']) + ' ' + m['fullname']
@@ -132,11 +135,9 @@ while i < len(lines):
 					item = 'Parsing algorithms: ' + ', '.join([tryresolve(a,techs) for a in m['parsing']])
 				items.append(item)
 			if 'example' in m.keys():
-				item = 'Example'
-				if 'examplesrc' in m.keys():
-					item += ' from ' + resolve(m['examplesrc'], '')
+				item = 'Example from ' + resolve(m['example'], '')
 				item += ': <blockquote><pre>'
-				for line in open(m['example'], 'r', encoding='utf-8').readlines():
+				for line in open('code/'+tofname(macro)+'.g', 'r', encoding='utf-8').readlines():
 					item += htmlify(line)
 				item += '</pre></blockquote>'
 				items.append(item)

@@ -3,8 +3,7 @@
 	"logo": "biyacc.png",
 	"download": "http://biyacc.yozora.moe/src/biyacc_src.zip",
 	"parsing": ["BX"],
-	"example": "code/biyacc.g",
-	"examplesrc": "http://biyacc.yozora.moe/",
+	"example": "http://biyacc.yozora.moe/",
 	"more": "http://biyacc.yozora.moe/",
 	"maintained": "Zirun Zhu, Yongzhe Zhang, Hsiang-Shang Ko, Pedro Martins, João Saraiva and Zhenjiang Hu",
 	"lang": ["Haskell"]

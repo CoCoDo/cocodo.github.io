@@ -4,7 +4,6 @@
 	"logo": "eli.gif",
 	"download": "https://sourceforge.net/projects/eli-project/",
 	"parsing": ["AG"],
-	"example": "code/eli.g",
-	"examplesrc": "http://eli-project.sourceforge.net/Java/node29.html",
+	"example": "http://eli-project.sourceforge.net/Java/node29.html",
 	"more": "http://eli-project.sourceforge.net/EliExamples.html"
 }
