@@ -1,4 +1,5 @@
 {
+	"version": "BETA",
 	"uri": "https://irony.codeplex.com/",
 	"logo": "dotnet.png",
 	"download": "http://download-codeplex.sec.s-msft.com/Download/Release?ProjectName=irony&amp;DownloadId=27478&amp;FileTime=130313476309630000&amp;Build=21031",

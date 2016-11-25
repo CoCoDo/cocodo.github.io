@@ -70,6 +70,11 @@ def sortlangs(l):
 	outp.extend(inp)
 	return outp
 
+def htmlify(s):
+	for k,v in {"<":"&lt;", ">": "&gt;"}.items():
+		s = s.replace(k,v)
+	return s
+
 print('Processing...')
 with open('index.dsl',  'r', encoding='utf-8') as f:
 	lines = f.readlines()
@@ -132,7 +137,7 @@ while i < len(lines):
 					item += ' from ' + resolve(m['examplesrc'], '')
 				item += ': <blockquote><pre>'
 				for line in open(m['example'], 'r', encoding='utf-8').readlines():
-					item += line
+					item += htmlify(line)
 				item += '</pre></blockquote>'
 				items.append(item)
 			if 'more' in m.keys():
@@ -145,7 +150,6 @@ while i < len(lines):
 					item += resolve(m['more'],'')
 				else:
 					item += ', '.join([resolve(k,'') for k in m['more']])
-				# item += 'xamples: <a href="%s">%s</a>' % (m['more'], bare(m['examples']))
 				items.append(item)
 			if 'maintained' in m.keys():
 				if len(m['maintained']) == 2:
@@ -157,7 +161,7 @@ while i < len(lines):
 				items.append(item)
 			if 'ontop' in m.keys():
 				item = 'Built on top of ' + tool + ': <ul>'
-				for t in m['ontop'].keys():
+				for t in sorted(m['ontop'].keys()):
 					item += '<li>' + resolve(t, m['ontop'][t]) + '</li>'
 				item += '</ul>'
 				items.append(item)
