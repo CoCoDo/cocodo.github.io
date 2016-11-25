@@ -94,7 +94,7 @@ while i < len(lines):
 	if lines[i].strip().startswith('<tab>') and lines[i].strip().endswith('</tab>'):
 		macro = lines[i].strip()[5:-6]
 		print('Expanding %s...' % macro)
-		with open('tech-'+macro.lower().replace('ō','o')+'.json', 'r', encoding='utf-8') as f:
+		with open('tech/'+macro.lower().replace('ō','o').replace('/','')+'.json', 'r', encoding='utf-8') as f:
 			m = json.load(f)
 			if 'logo' in m.keys() and 'fullname' in m.keys():
 				logo = resolve('<img src="logo/%s" alt="%s" width="150px"/></a>' % (m['logo'], m['fullname']), m['uri']) + ' ' + m['fullname']
