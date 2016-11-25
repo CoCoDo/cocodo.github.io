@@ -61,6 +61,7 @@
 			<tab>Bison</tab>
 			<tab>BiYacc</tab>
 			<!-- btyacc -->
+			<tab>Coco/R</tab>
 			<tab>DCG</tab>
 			<tab>Eli</tab>
 			<tab>Ensō</tab>

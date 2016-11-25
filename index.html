@@ -165,6 +165,36 @@ exp           +&gt; '(' (exp +&gt; Expr) ')';
 </pre></blockquote></li><li>More examples: <a href="http://biyacc.yozora.moe/">biyacc.yozora.moe</a></li><li>Maintained by Zirun Zhu, Yongzhe Zhang, Hsiang-Shang Ko, Pedro Martins, João Saraiva and Zhenjiang Hu</li></ul>
 			</div>
 			<div class="tabbertab">
+				<h2>Coco/R</h2>
+				<h3>Coco/R</h3>
+				<ul><li>Coco/R (<a href="http://ssw.jku.at/Coco/">download</a>)</li><li>Main website: <a href="http://ssw.jku.at/Coco/">ssw.jku.at</a></li><li>Works with <a href="http://101companies.org/wiki/Language:CSharp">C#</a>, <a href="http://101companies.org/wiki/Language:Java">Java</a>, <a href="http://101companies.org/wiki/Language:CPlusPlus">C++</a>, F#, VB.NET, Swift, Oberon</li><li>Wikipedia: (<a href="https://en.wikipedia.org/wiki/Coco/R">English</a>) (<a href="https://de.wikipedia.org/wiki/Coco/R">German</a>) (<a href="https://ru.wikipedia.org/wiki/Coco/R">Russian</a>)</li><li>Parsing algorithms: <a href="https://en.wikipedia.org/wiki/Recursive_descent_parser">recursive descent</a>, <a href="https://en.wikipedia.org/wiki/Attribute_grammar">AG</a>, <a href="https://en.wikipedia.org/wiki/LL_parser">LL(k)</a></li><li>Example from <a href="http://ssw.jku.at/Coco/Tutorial/">ssw.jku.at</a>: <blockquote><pre>COMPILER Sample
+
+CHARACTERS
+  digit = '0'..'9'.
+TOKENS
+  number = digit {digit}.
+IGNORE '\r' + '\n'
+
+PRODUCTIONS
+  Sample                     (. int n; .)
+  = {
+      "calc" 
+      Expr&lt;out n&gt;            (. Console.WriteLine(n); .)
+    }.
+
+  Expr&lt;out int n&gt;            (. int n1; .)
+  = Term&lt;out n&gt;
+    {
+      '+'
+      Term&lt;out n1&gt;           (. n = n + n1; .)
+    }.
+
+  Term&lt;out int n&gt; 
+  = number                   (. n = Convert.Int32(t.val); .)
+  .
+END Sample.</pre></blockquote></li><li>More examples: <a href="http://ssw.jku.at/Coco/Cookbook/">ssw.jku.at</a></li><li>Maintained by Hanspeter Mössenböck, Markus Löberbauer and Albrecht Wöß</li><li>Built on top of Coco/R: <ul><li><a href="http://www.zenspider.com/projects/cocor.html">Coco/Ruby</a></li><li><a href="https://pypi.python.org/pypi/CocoPy/">CocoPy</a></li><li><a href="https://code.google.com/archive/p/cocoxml/">CocoXml</a></li><li><a href="https://github.com/VilleKrumlinde/dcocor">DCocoR</a></li><li><a href="https://sourceforge.net/projects/parserbuilder/">ParserBuilder</a></li><li><a href="http://www.ada-ru.org/files/cocor_ada-1.53.1.tar.gz">cocor_ada</a></li></ul></li></ul>
+			</div>
+			<div class="tabbertab">
 				<h2>DCG</h2>
 				<h3>Definite Clause Grammars</h3>
 				<ul><li>SWI Prolog version 7.2.3 (<a href="http://www.swi-prolog.org/download/stable">download</a>)</li><li>Main website: <a href="http://www.swi-prolog.org/">swi-prolog.org</a></li><li>Works with <a href="http://101companies.org/wiki/Language:Prolog">Prolog</a></li><li>Wikipedia: (<a href="https://en.wikipedia.org/wiki/Definite clause grammar">English</a>) (<a href="https://ru.wikipedia.org/wiki/DC-грамматика">Russian</a>)</li><li>Parsing algorithm: <a href="https://pdfs.semanticscholar.org/fbc0/4a1951003ba164303b2898fb7f3c6b4e9083.pdf">DCG</a></li><li>Example from <a href="https://github.com/grammarware/slps/blob/master/topics/fl/prolog1/Parser.pro">@grammarware/slps</a>: <blockquote><pre>expr(E) --&gt; lassoc(ops,atom,binary,E).

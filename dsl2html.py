@@ -21,6 +21,7 @@ techs = {
 	"LL": "https://en.wikipedia.org/wiki/LL_parser",
 	"LR": "https://en.wikipedia.org/wiki/LR_parser",
 	"RAG": "https://pdfs.semanticscholar.org/89f1/857e15d270c5c1f8417381368e4781c871e4.pdf",
+	"recursive descent": "https://en.wikipedia.org/wiki/Recursive_descent_parser",
 	"scannerless": "https://en.wikipedia.org/wiki/Scannerless_parsing",
 	"SLR": "https://en.wikipedia.org/wiki/Simple_LR_parser",
 	"top-down": "https://en.wikipedia.org/wiki/Top-down_parsing",

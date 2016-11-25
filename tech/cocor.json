@@ -1,0 +1,18 @@
+{
+	"uri": "http://ssw.jku.at/Coco/",
+	"download": "http://ssw.jku.at/Coco/",
+	"parsing": ["recursive descent", "AG", "LL(k)"],
+	"example": "http://ssw.jku.at/Coco/Tutorial/",
+	"more": "http://ssw.jku.at/Coco/Cookbook/",
+	"maintained": "Hanspeter Mössenböck, Markus Löberbauer and Albrecht Wöß",
+	"lang": ["C#", "Java", "C++", "F#", "VB.NET", "Swift", "Oberon"],
+	"ontop": {
+		"CocoPy": "https://pypi.python.org/pypi/CocoPy/",
+		"DCocoR":"https://github.com/VilleKrumlinde/dcocor",
+		"ParserBuilder":"https://sourceforge.net/projects/parserbuilder/",
+		"cocor_ada":"http://www.ada-ru.org/files/cocor_ada-1.53.1.tar.gz",
+		"Coco/Ruby":"http://www.zenspider.com/projects/cocor.html",
+		"CocoXml":"https://code.google.com/archive/p/cocoxml/"
+	},
+	"wikipedia": {"Coco/R": ["en", "ru", "de"]}
+}
