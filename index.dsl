@@ -32,9 +32,8 @@
 		<div class="c">
 			<img src="logo/cocodo.png" alt="Compiler Coding Dojo" title="CoCoDo"/>
 			<h1>Compiler Coding Dojo</h1>
-			<h2 class="red">
-				Details T.B.A.
-			</h2>
+			<h2><a href="https://cocodo.github.io/">CoCoDo</a> @ <a href="http://2017.programming-conference.org/">‹Programming›</a></h2>
+			<h2>April 2017, Brussels, Belgium</h2>
 		</div>
 		<div class="tabber">
 			<tab>ANTLR</tab>
