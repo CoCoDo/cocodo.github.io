@@ -129,7 +129,13 @@ tabberObj.prototype.init = function(e) {
     DOM_li.appendChild(DOM_a);
     DOM_ul.appendChild(DOM_li);
   }
-  e.insertBefore(DOM_ul, e.firstChild);
+  DOM_div = document.createElement("div");
+  DOM_div.className = "tabbernavs";
+  DOM_span = document.createElement("span");
+  DOM_span.className = "clear";
+  DOM_div.appendChild(DOM_ul);
+  DOM_div.appendChild(DOM_span);
+  e.insertBefore(DOM_div, e.firstChild);
   e.className = e.className.replace(this.REclassMain, this.classMainLive);
   this.tabShow(defaultTab);
   if (typeof this.onLoad == 'function') {

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html version="-//W3C//DTD XHTML 1.1//EN"
       xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -35,6 +34,27 @@
 			<h2><a href="https://cocodo.github.io/">CoCoDo</a> @ <a href="http://2017.programming-conference.org/">‹Programming›</a></h2>
 			<h2>April 2017, Brussels, Belgium</h2>
 		</div>
+		<div class="tabber">
+			<div class="tabbertab">
+				<h2>About</h2>
+				<strong>CoCoDo</strong> is a <em>coding dojo</em> where you can enjoy an entire day of
+				compiler programming under gentle guidance of field experts.
+				<br/>
+				Compiler construction comprises, but is not limited to, lexical analysis,
+				syntactic analysis, preprocessing, context handling, code generation, code
+				optimisation, virtual machines, interpreters, smell detection, clone
+				management, portability, migration, refactoring, domain-specific language
+				design, linking and loading, assembling and disassembling, generics and
+				reflection, numerous paradigms and so much more.
+			</div>
+			<div class="tabbertab">
+				<h2>Participants</h2>
+				TBA
+				<br/>
+				<a href="mailto:vadim@raincode.com">(get in touch if interested!)</a>
+			</div>
+			<div class="tabbertab">
+				<h2>Technologies</h2>
 		<div class="tabber">
 			<tab>ANTLR</tab>
 			<tab>Beaver</tab>
@@ -111,8 +131,11 @@
 				<h3><a href="http://dinosaur.compilertools.net/">lex &amp; yacc</a></h3>
 			</div>
 		</div>
-		<div class="footer">
-			<br/><hr/>
+		</div>
+		</div>
+		<br/><hr/>
+		<div class="f">
+			<a href="http://www.raincodelabs.com/"><img src="logo/labs.png" alt="Raincode Labs"/></a>
 			The page is maintained by <a href="http://grammarware.github.io/">Dr. Vadim Zaytsev</a> a.k.a. @<a href="http://grammarware.net">grammarware</a>.<br/>
 			The picture used on this page is derivative from <a href="https://xkcd.com/303/">XKCD#303: Compiling</a> by Randall Munroe, <a href="http://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC</a>.<br/>
 			The tabber code used on this page, is <a href="http://www.kean.edu/~gkolodiy/5223/tabber.html">made by Patrick Fitzgerald</a> and is distributed under <a href="https://opensource.org/licenses/mit-license.php">the MIT license</a>.<br/>
