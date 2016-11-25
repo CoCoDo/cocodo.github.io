@@ -89,7 +89,7 @@ expr = expr.a MULT  expr.b   {: return new Expr(a.value * b.value); :}
      | NUMBER.n              {: return new Expr(n.doubleValue());   :}
      | LPAREN expr.e RPAREN  {: return e; :}
      ;
-</pre></blockquote></li><li>More examples: <a href="http://beaver.sourceforge.net/">beaver.sourceforge.net</a></li><li>Often used with: <ul><li><a href="http://www.jflex.de/">JFlex</a></li><li><a href="https://www.cs.princeton.edu/~appel/modern/java/JLex/">JLex</a></li></ul></li></ul>
+</pre></blockquote></li><li>More examples: <a href="http://beaver.sourceforge.net/">beaver.sourceforge.net</a></li><li>Often used with: <ul><li><a href="https://www.cs.princeton.edu/~appel/modern/java/JLex/">JLex</a></li><li><a href="http://www.jflex.de/">JFlex</a></li></ul></li></ul>
 			</div>
 			<div class="tabbertab">
 				<h2>Bison</h2>
@@ -261,7 +261,7 @@ group : "(" disjunction ")" ;
 <Then Stm>  ::= if Id then <Then Stm> else <Then Stm>
               | Id ':=' Id
 
-</pre></blockquote></li><li>More examples: <a href="http://www.goldparser.org/doc/grammars/index.htm">goldparser.org</a>, <a href="http://www.goldparser.org/grammars/index.htm">goldparser.org</a></li><li>Devin Cook <a href="http://goldparser.org/contributors/">and others</a></li><li>Built on top of GOLD: <ul><li><a href="https://sourceforge.net/projects/pygold/">PyGold</a></li><li><a href="https://sourceforge.net/projects/cpp-gpengine/">C++ Gold Parser Engine</a></li><li><a href="http://www.calitha.com/">Calitha</a></li><li><a href="https://github.com/ridencww/goldengine">goldengine for Java</a></li></ul></li></ul>
+</pre></blockquote></li><li>More examples: <a href="http://www.goldparser.org/doc/grammars/index.htm">goldparser.org</a>, <a href="http://www.goldparser.org/grammars/index.htm">goldparser.org</a></li><li>Devin Cook <a href="http://goldparser.org/contributors/">and others</a></li><li>Built on top of GOLD: <ul><li><a href="https://sourceforge.net/projects/cpp-gpengine/">C++ Gold Parser Engine</a></li><li><a href="http://www.calitha.com/">Calitha</a></li><li><a href="https://sourceforge.net/projects/pygold/">PyGold</a></li><li><a href="https://github.com/ridencww/goldengine">goldengine for Java</a></li></ul></li></ul>
 			</div>
 			<div class="tabbertab">
 				<h2>Happy</h2>
@@ -285,7 +285,24 @@ Factor
 			</div>
 			<div class="tabbertab">
 				<h2>Irony</h2>
-				<h3><a href="https://irony.codeplex.com/"><img src="logo/dotnet.png" alt="Irony"/></a></h3>
+				<h3><a href="https://irony.codeplex.com/"><img src="logo/dotnet.png" alt="Irony" width="150px"/></a></a></h3>
+				<ul><li>Irony (<a href="http://download-codeplex.sec.s-msft.com/Download/Release?ProjectName=irony&amp;DownloadId=27478&amp;FileTime=130313476309630000&amp;Build=21031">download</a>)</li><li>Main website: <a href="https://irony.codeplex.com/">irony.codeplex.com</a></li><li>Works with <a href="http://101companies.org/wiki/Language:CSharp">C#</a></li><li>Wikipedia: (<a href="https://en.wikipedia.org/wiki/Irony (framework)">English</a>)</li><li>Parsing algorithm: <a href="https://en.wikipedia.org/wiki/LALR_parser">LALR(1)</a></li><li>Example from <a href="https://irony.codeplex.com/wikipage?title=Expression%20Grammar%20sample">irony.codeplex.com</a>: <blockquote><pre>Expr.Rule = Term | UnExpr | BinExpr | PostFixExpr;
+Term.Rule = number | ParExpr | identifier;
+ParExpr.Rule = "(" + Expr + ")";
+UnExpr.Rule = UnOp + Term;
+UnOp.Rule = ToTerm("+") | "-" | "++" | "--";
+BinExpr.Rule = Expr + BinOp + Expr;
+BinOp.Rule = ToTerm("+") | "-" | "*" | "/" | "**";
+PostFixExpr.Rule = Term + PostFixOp;
+PostFixOp.Rule = ToTerm("++") | "--";
+AssignmentStmt.Rule = identifier + AssignmentOp + Expr;
+AssignmentOp.Rule = ToTerm("=") | "+=" | "-=" | "*=" | "/=";
+Statement.Rule = AssignmentStmt | Expr | Empty;
+ProgramLine.Rule = Statement + NewLine;
+Program.Rule = MakeStarRule(Program, ProgramLine);
+this.Root = Program;
+
+</pre></blockquote></li><li><a href="https://irony.codeplex.com/wikipage?title=Contributors">Irony contributors</a></li></ul>
 			</div>
 			<div class="tabbertab">
 				<h2>JastAdd</h2>
@@ -498,7 +515,7 @@ term      ::= LPAREN expr:e RPAREN {: RESULT = e; :}
 			<a href="http://www.raincodelabs.com/"><img src="logo/labs.png" alt="Raincode Labs"/></a>
 			The page is maintained by <a href="http://grammarware.github.io/">Dr. Vadim Zaytsev</a> a.k.a. @<a href="http://grammarware.net">grammarware</a>.<br/>
 			The picture used on this page is derivative from <a href="https://xkcd.com/303/">XKCD#303: Compiling</a> by Randall Munroe, <a href="http://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC</a>.<br/>
-			The tabber code used on this page, is <a href="http://www.kean.edu/~gkolodiy/5223/tabber.html">made by Patrick Fitzgerald</a> and is distributed under <a href="https://opensource.org/licenses/mit-license.php">the MIT license</a>.<br/>
+			The tabber code used on this page, is derivative from <a href="http://www.kean.edu/~gkolodiy/5223/tabber.html">the one made by Patrick Fitzgerald</a> and distributed under <a href="https://opensource.org/licenses/mit-license.php">the MIT license</a>.<br/>
 			All other referenced works of art, science and engineering, are subject to their own individual copyrights.<br/>
 			Last updated: November 2016.
 		</div>

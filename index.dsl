@@ -67,10 +67,7 @@
 			<tab>GDK</tab>
 			<tab>GOLD</tab>
 			<tab>Happy</tab>
-			<div class="tabbertab">
-				<h2>Irony</h2>
-				<h3><a href="https://irony.codeplex.com/"><img src="logo/dotnet.png" alt="Irony"/></a></h3>
-			</div>
+			<tab>Irony</tab>
 			<tab>JastAdd</tab>
 			<div class="tabbertab">
 				<h2>JavaCC</h2>
@@ -138,7 +135,7 @@
 			<a href="http://www.raincodelabs.com/"><img src="logo/labs.png" alt="Raincode Labs"/></a>
 			The page is maintained by <a href="http://grammarware.github.io/">Dr. Vadim Zaytsev</a> a.k.a. @<a href="http://grammarware.net">grammarware</a>.<br/>
 			The picture used on this page is derivative from <a href="https://xkcd.com/303/">XKCD#303: Compiling</a> by Randall Munroe, <a href="http://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC</a>.<br/>
-			The tabber code used on this page, is <a href="http://www.kean.edu/~gkolodiy/5223/tabber.html">made by Patrick Fitzgerald</a> and is distributed under <a href="https://opensource.org/licenses/mit-license.php">the MIT license</a>.<br/>
+			The tabber code used on this page, is derivative from <a href="http://www.kean.edu/~gkolodiy/5223/tabber.html">the one made by Patrick Fitzgerald</a> and distributed under <a href="https://opensource.org/licenses/mit-license.php">the MIT license</a>.<br/>
 			All other referenced works of art, science and engineering, are subject to their own individual copyrights.<br/>
 			Last updated: November 2016.
 		</div>

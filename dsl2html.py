@@ -150,7 +150,7 @@ while i < len(lines):
 			if 'maintained' in m.keys():
 				if len(m['maintained']) == 2:
 					item = m['maintained'][0] + ' ' + resolve('and others', m['maintained'][1])
-				elif m['maintained'].startswith('http://'):
+				elif m['maintained'].startswith('http://') or m['maintained'].startswith('https://'):
 					item = resolve(macro + ' contributors', m['maintained'])
 				else:
 					item = 'Maintained by ' + m['maintained']
