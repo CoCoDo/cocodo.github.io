@@ -1,0 +1,13 @@
+{
+	"version": "3.7",
+	"uri": "http://www.sablecc.org/",
+	"logo": "sablecc.png",
+	"download": "http://www.sablecc.org/downloads",
+	"parsing": ["LALR(1)"],
+	"example": "code/sablecc.g",
+	"examplesrc": "http://www.engr.mun.ca/~theo/JavaCC-Tutorial/",
+	"more": "https://github.com/SableCC/sablecc",
+	"maintained": "Etienne M. Gagnon, Patrick Pelletier, Jean Privat, Jérôme Dassonville and Lucas Satabin",
+	"lang": ["Java"],
+	"wikipedia": {"SableCC": ["en"]}
+}

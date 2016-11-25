@@ -466,7 +466,37 @@ public start[Program] program(str s, loc l) {
 			</div>
 			<div class="tabbertab">
 				<h2>SableCC</h2>
-				<h3><a href="http://www.sablecc.org/"><img src="logo/sablecc.png" alt="SableCC"/></a></h3>
+				<h3><a href="http://www.sablecc.org/"><img src="logo/sablecc.png" alt="SableCC" width="150px"/></a></a></h3>
+				<ul><li>SableCC version 3.7 (<a href="http://www.sablecc.org/downloads">download</a>)</li><li>Main website: <a href="http://www.sablecc.org/">sablecc.org</a></li><li>Works with <a href="http://101companies.org/wiki/Language:Java">Java</a></li><li>Wikipedia: (<a href="https://en.wikipedia.org/wiki/SableCC">English</a>)</li><li>Parsing algorithm: <a href="https://en.wikipedia.org/wiki/LALR_parser">LALR(1)</a></li><li>Example from <a href="http://www.engr.mun.ca/~theo/JavaCC-Tutorial/">engr.mun.ca</a>: <blockquote><pre>Grammar expression;
+
+Lexer
+
+  num = digit+;
+  digit = '0'..'9';
+  blanks = (' ' | eol | tab)+;
+
+  eol = cr | lf | cr lf;
+  cr = #13;
+  lf = #10;
+  tab = #9;
+
+Parser
+
+  Ignored
+    blanks;
+
+  program =
+    exp ';';
+
+  exp =
+    {mul:} exp [op:]'*' exp |
+    {add:} exp [op:]'+' exp |
+    {num:} num;
+
+    Precedence
+      Left mul;
+      Left add;
+</pre></blockquote></li><li>More examples: <a href="https://github.com/SableCC/sablecc">@SableCC/sablecc</a></li><li>Maintained by Etienne M. Gagnon, Patrick Pelletier, Jean Privat, Jérôme Dassonville and Lucas Satabin</li></ul>
 			</div>
 			<div class="tabbertab">
 				<h2>SJPT</h2>

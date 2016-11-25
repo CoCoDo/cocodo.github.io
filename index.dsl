@@ -90,10 +90,7 @@
 			</div>
 			<tab>Racket</tab>
 			<tab>Rascal</tab>
-			<div class="tabbertab">
-				<h2>SableCC</h2>
-				<h3><a href="http://www.sablecc.org/"><img src="logo/sablecc.png" alt="SableCC"/></a></h3>
-			</div>
+			<tab>SableCC</tab>
 			<tab>SJPT</tab>
 			<div class="tabbertab">
 				<h2>Spoofax</h2>
