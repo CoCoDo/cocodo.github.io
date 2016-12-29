@@ -71,7 +71,9 @@
 			<tab>Irony</tab>
 			<tab>JastAdd</tab>
 			<tab>JavaCC</tab>
+			<tab>Kleenex</tab>
 			<tab>Laja</tab>
+			<!-- Lark http://www.cocolab.com/cocktail.html not included because a license key must be preordered -->
 			<div class="tabbertab">
 				<h2>MetaEdit+</h2>
 				<h3><a href="http://www.metacase.com/download/"><img src="logo/metaeditplus.png" alt="MetaEdit+"/></a></h3>
@@ -89,6 +91,7 @@
 				<h2>PLY</h2>
 				<h3><a href="http://www.dabeaz.com/ply/">PLY (Python Lex-Yacc)</a></h3>
 			</div>
+			<tab>PRECC</tab>
 			<tab>Racket</tab>
 			<tab>Rascal</tab>
 			<tab>SableCC</tab>

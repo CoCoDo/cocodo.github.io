@@ -1,0 +1,10 @@
+{
+	"uri": "http://kleenexlang.org/",
+	"logo": "kleenex.png",
+	"download": "http://www.antlr.org/download.html",
+	"parsing": ["FST"],
+	"example": "https://github.com/diku-kmc/kleenexlang",
+	"keywords": [":=", "/[", "]/", "*", "/./", "|", "{", "}", "^"],
+	"maintained": "Niels Bjørn Bugge Grathwohl, Fritz Henglein, Ulrik Terp Rasmussen, Kristoffer Aalund Søholm, Sebastian Paaske Tørholm",
+	"lang": ["C"]
+}

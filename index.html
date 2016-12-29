@@ -89,7 +89,7 @@ expr<span class="kw"> = </span>expr.a MULT  expr.b   <span class="kw">{:</span> 
      <span class="kw">|</span> NUMBER.n              <span class="kw">{:</span> return new Expr(n.doubleValue());   <span class="kw">:}</span>
      <span class="kw">|</span> LPAREN expr.e RPAREN  <span class="kw">{:</span> return e; <span class="kw">:}</span>
      ;
-</pre></blockquote></li><li>More examples: <a href="http://beaver.sourceforge.net/">beaver.sourceforge.net</a></li><li>Often used with: <ul><li><a href="https://www.cs.princeton.edu/~appel/modern/java/JLex/">JLex</a></li><li><a href="http://www.jflex.de/">JFlex</a></li></ul></li></ul>
+</pre></blockquote></li><li>More examples: <a href="http://beaver.sourceforge.net/">beaver.sourceforge.net</a></li><li>Often used with: <ul><li><a href="http://www.jflex.de/">JFlex</a></li><li><a href="https://www.cs.princeton.edu/~appel/modern/java/JLex/">JLex</a></li></ul></li></ul>
 			</div>
 			<div class="tabbertab">
 				<h2>Bison</h2>
@@ -167,7 +167,7 @@ exp           <span class="kw">+&gt;</span> '(' (exp <span class="kw">+&gt;</spa
 			<div class="tabbertab">
 				<h2>BtYacc</h2>
 				<h3>BtYacc</h3>
-				<ul><li>BtYacc version 3.0 (<a href="http://www.siber.com/btyacc/">download</a>)</li><li>Main website: <a href="http://www.siber.com/btyacc/">siber.com</a></li><li>Works with <a href="http://101companies.org/wiki/Language:CPlusPlus">C++</a></li><li>Parsing algorithms: <a href="https://en.wikipedia.org/wiki/Backtracking">backtracking</a>, bottom-up</li><li>Example from <a href="http://www.siber.com/btyacc/btyacc-3-0.zip">siber.com</a>: <blockquote><pre><span class="kw">%left</span> LO '+' '-'
+				<ul><li>BtYacc version 3.0 (<a href="http://www.siber.com/btyacc/">download</a>)</li><li>Main website: <a href="http://www.siber.com/btyacc/">siber.com</a></li><li>Works with <a href="http://101companies.org/wiki/Language:CPlusPlus">C++</a></li><li>Parsing algorithms: <a href="https://en.wikipedia.org/wiki/Backtracking">backtracking</a>, <a href="https://en.wikipedia.org/wiki/Bottom-up_parsing">bottom-up</a></li><li>Example from <a href="http://www.siber.com/btyacc/btyacc-3-0.zip">siber.com</a>: <blockquote><pre><span class="kw">%left</span> LO '+' '-'
 <span class="kw">%left</span> HI '*' '/' '%'
 <span class="kw">%nonassoc</span> UNARY
 
@@ -404,6 +404,14 @@ BooleanLiteral <span class="kw">:</span> Exp <span class="kw"><span class="kw">:
 </pre></blockquote></li><li>More examples: <a href="http://www.engr.mun.ca/~theo/JavaCC-FAQ/javacc-faq-moz.htm">engr.mun.ca</a>, <a href="http://javacc.org">javacc.org</a></li><li>Maintained by Glassfish Kenai, Paul Cager, Tom Copeland and sreeni. </li></ul>
 			</div>
 			<div class="tabbertab">
+				<h2>Kleenex</h2>
+				<h3><a href="http://kleenexlang.org/"><img src="logo/kleenex.png" alt="Kleenex" width="150px"/></a></a></h3>
+				<ul><li>Kleenex (<a href="http://www.antlr.org/download.html">download</a>)</li><li>Main website: <a href="http://kleenexlang.org/">kleenexlang.org</a></li><li>Works with <a href="http://101companies.org/wiki/Language:C">C</a></li><li>Parsing algorithm: <a href="https://en.wikipedia.org/wiki/Finite-state_transducer">FST</a></li><li>Example from <a href="https://github.com/diku-kmc/kleenexlang">@diku-kmc/kleenexlang</a>: <blockquote><pre>main <span class="kw">:=</span> (num <span class="kw">/[</span><span class="kw">^</span>0-9<span class="kw">]/</span> <span class="kw">|</span> other)<span class="kw">*</span>
+num <span class="kw">:=</span> digit<span class="kw">{</span>1,3<span class="kw">}</span> ("," digit<span class="kw">{</span>3<span class="kw">}</span>)<span class="kw">*</span>
+digit <span class="kw">:=</span> <span class="kw">/[</span>0-9<span class="kw">]/</span>
+other <span class="kw">:=</span> <span class="kw">/./</span></pre></blockquote></li><li>Maintained by Niels Bjørn Bugge Grathwohl, Fritz Henglein, Ulrik Terp Rasmussen, Kristoffer Aalund Søholm, Sebastian Paaske Tørholm</li></ul>
+			</div>
+			<div class="tabbertab">
 				<h2>Laja</h2>
 				<h3><a href="http://laja.tengstrand.nu/index.php/Main_Page"><img src="logo/laja.png" alt="Laja" width="150px"/></a></a></h3>
 				<ul><li>Laja version 2-007-beta (<a href="https://sourceforge.net/projects/laja/">download</a>)</li><li>Main website: <a href="http://laja.tengstrand.nu/index.php/Main_Page">laja.tengstrand.nu</a></li><li>Works with <a href="http://101companies.org/wiki/Language:Java">Java</a></li><li>Parsing algorithms: <a href="https://en.wikipedia.org/wiki/Scannerless_parsing">scannerless</a>, <a href="https://en.wikipedia.org/wiki/Top-down_parsing">top-down</a>, <a href="https://en.wikipedia.org/wiki/Backtracking">backtracking</a></li><li>Example from <a href="http://laja.tengstrand.nu/index.php/Parser_generator_-_Getting_started">laja.tengstrand.nu</a>: <blockquote><pre><span class="kw">grammar</span> example {
@@ -430,6 +438,15 @@ BooleanLiteral <span class="kw">:</span> Exp <span class="kw"><span class="kw">:
 			<div class="tabbertab">
 				<h2>PLY</h2>
 				<h3><a href="http://www.dabeaz.com/ply/">PLY (Python Lex-Yacc)</a></h3>
+			</div>
+			<div class="tabbertab">
+				<h2>PRECC</h2>
+				<h3><a href="http://preccx.sourceforge.net/"><img src="logo/redo.gif" alt="PRECC" width="150px"/></a></a></h3>
+				<ul><li>PRECC version 2.60 (<a href="ftp://oboe.it.uc3m.es/pub/Programs/">download</a>)</li><li>Main website: <a href="http://preccx.sourceforge.net/">preccx.sourceforge.net</a></li><li>Works with <a href="http://101companies.org/wiki/Language:C">C</a></li><li>Parsing algorithm: <a href="https://en.wikipedia.org/wiki/LL_parser">LL(k)</a></li><li>Example from <a href="http://preccx.sourceforge.net/archive/redo/precc/user-manual.html">preccx.sourceforge.net</a>: <blockquote><pre>integer = <span class="kw">[</span> <span class="kw">&lt;</span>'+'<span class="kw">&gt;</span>|<span class="kw">&lt;</span>'-'<span class="kw">&gt;</span> <span class="kw">]</span>
+          unsigned_int
+          <span class="kw">[</span> <span class="kw">{</span><span class="kw">&lt;</span>'E'<span class="kw">&gt;</span>|<span class="kw">&lt;</span>'e'<span class="kw">&gt;</span><span class="kw">}</span> <span class="kw">[</span><span class="kw">&lt;</span>'+'<span class="kw">&gt;</span><span class="kw">]</span> unsigned_int <span class="kw">]</span>
+
+unsigned_int = (isdigit)<span class="kw">+</span></pre></blockquote></li><li>Maintained by Peter Breuer and Jonathan Bowen</li></ul>
 			</div>
 			<div class="tabbertab">
 				<h2>Racket</h2>
@@ -561,8 +578,8 @@ BooleanLiteral <span class="kw">:</span> Exp <span class="kw"><span class="kw">:
 <span class="kw">terminal</span> SEMI, PLUS, MINUS, TIMES, DIVIDE, LPAREN, RPAREN;
 <span class="kw">terminal</span> Integer NUMBER, ID;
    
-non <span class="kw">terminal</span> Object expr_list, expr_part;
-non <span class="kw">terminal</span> Integer expr, factor, term;
+<span class="kw">non</span> <span class="kw">terminal</span> Object expr_list, expr_part;
+<span class="kw">non</span> <span class="kw">terminal</span> Integer expr, factor, term;
     
 expr_list <span class="kw">::=</span> expr_list expr_part
             <span class="kw">|</span> expr_part;

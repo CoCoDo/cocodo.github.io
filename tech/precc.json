@@ -1,0 +1,12 @@
+{
+	"version": "2.60",
+	"uri": "http://preccx.sourceforge.net/",
+	"logo": "redo.gif",
+	"download": "ftp://oboe.it.uc3m.es/pub/Programs/",
+	"parsing": ["LL(k)"],
+	"example": "http://preccx.sourceforge.net/archive/redo/precc/user-manual.html",
+	"keywords": ["[", "]", "&gt;", "&lt;", "{", "}", "+"],
+	"notkeywords": ["'+'"],
+	"maintained": "Peter Breuer and Jonathan Bowen",
+	"lang": ["C"]
+}
