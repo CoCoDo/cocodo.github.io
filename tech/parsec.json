@@ -1,0 +1,20 @@
+{
+	"version": "3.1.11",
+	"uri": "https://wiki.haskell.org/Parsec",
+	"logo": "parsec.gif",
+	"download": "http://hackage.haskell.org/package/parsec",
+	"parsing": ["monadic", "recursive descent"],
+	"example": "https://web.archive.org/web/20140529211116/http://legacy.cs.uu.nl/daan/download/parsec/parsec.html",
+	"keywords": ["import", "::", "&lt;?&gt;", "&lt;|&gt;", "do{", "}", "&lt;-", "where", "return", "[", "]"],
+	"maintained": "Antoine Latter",
+	"lang": ["Haskell", "F#", "Java", "JavaScript", "Erlang"],
+	"ontop": {
+		"FParsec": "http://www.quanttec.com/fparsec/",
+		"XParsec": "http://xparsec.corsis.tech/",
+		"Parsec-Erlang": "https://bitbucket.org/dmercer/parsec-erlang/",
+		"jsparsec": "https://github.com/balazs-endresz/jsparsec",
+		"Bennu": "https://github.com/mattbierner/bennu/",
+		"ParsecJ": "https://github.com/jon-hanson/parsecj/"
+	},
+	"wikipedia": {"Parsec (parser)": ["en"]}
+}

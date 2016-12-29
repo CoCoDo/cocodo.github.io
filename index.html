@@ -89,7 +89,7 @@ expr<span class="kw"> = </span>expr.a MULT  expr.b   <span class="kw">{:</span> 
      <span class="kw">|</span> NUMBER.n              <span class="kw">{:</span> return new Expr(n.doubleValue());   <span class="kw">:}</span>
      <span class="kw">|</span> LPAREN expr.e RPAREN  <span class="kw">{:</span> return e; <span class="kw">:}</span>
      ;
-</pre></blockquote></li><li>More examples: <a href="http://beaver.sourceforge.net/">beaver.sourceforge.net</a></li><li>Often used with: <ul><li><a href="http://www.jflex.de/">JFlex</a></li><li><a href="https://www.cs.princeton.edu/~appel/modern/java/JLex/">JLex</a></li></ul></li></ul>
+</pre></blockquote></li><li>More examples: <a href="http://beaver.sourceforge.net/">beaver.sourceforge.net</a></li><li>Often used with: <ul><li><a href="https://www.cs.princeton.edu/~appel/modern/java/JLex/">JLex</a></li><li><a href="http://www.jflex.de/">JFlex</a></li></ul></li></ul>
 			</div>
 			<div class="tabbertab">
 				<h2>Bison</h2>
@@ -286,6 +286,32 @@ Sep <span class="kw">::=</span> "@"sep:P
 </pre></blockquote></li><li>More examples: <a href="http://enso-lang.org/blog/">enso-lang.org</a></li><li>Maintained by William R. Cook, Alex Loh and Tijs van der Storm</li></ul>
 			</div>
 			<div class="tabbertab">
+				<h2>Frown</h2>
+				<h3><a href="http://www.cs.ox.ac.uk/ralf.hinze/frown/"><img src="logo/frown.gif" alt="Frown" width="150px"/></a></a></h3>
+				<ul><li>Frown version 0.6.1 (<a href="http://www.cs.ox.ac.uk/ralf.hinze/frown/frown-0.6.1.tar.gz">download</a>)</li><li>Main website: <a href="http://www.cs.ox.ac.uk/ralf.hinze/frown/">cs.ox.ac.uk</a></li><li>Works with <a href="http://101companies.org/wiki/Language:Haskell">Haskell</a></li><li>Parsing algorithm: <a href="https://en.wikipedia.org/wiki/LALR_parser">LALR(k)</a></li><li>Example from <a href="http://www.cs.ox.ac.uk/ralf.hinze/frown/">cs.ox.ac.uk</a>: <blockquote><pre><span class="kw">import</span> Char
+
+<span class="kw">data</span> Expr  =  Ident  Char
+           |  Apply  Expr Expr
+              <span class="kw">deriving</span> (Show)
+
+<span class="kw">type</span> Terminal  =  Char
+
+<span class="kw">%{</span>
+
+Terminal  =  <span class="kw">guard</span> {isAlpha}<span class="kw"> as </span>"letter"
+          |  '('
+          |  ')';
+
+Nonterminal  =  expr {Expr};
+
+expr  {Ident x}    :  "letter" {x};
+      {Apply t u}  |  expr {t}, '(', expr {u}, ')';
+     
+<span class="kw">}%</span>
+
+frown ts  =  <span class="kw">fail</span> "syntax error"</pre></blockquote></li><li>Maintained by Ralf Hinze and Arjan Oosting</li><li>Built on top of Frown: <ul><li><a href="https://launchpad.net/ubuntu/+source/frown/0.6.1-6">frown 0.6.1-6</a></li></ul></li></ul>
+			</div>
+			<div class="tabbertab">
 				<h2>GDK</h2>
 				<h3>Grammar Deployment Kit</h3>
 				<ul><li>GDK version 1.4.4 (<a href="http://gdk.sourceforge.net/gdk-1.4.4.tar.gz">download</a>)</li><li>Main website: <a href="http://gdk.sourceforge.net/">gdk.sourceforge.net</a></li><li>Works with <a href="http://101companies.org/wiki/Language:C">C</a></li><li>Parsing algorithm: <a href="https://en.wikipedia.org/wiki/LL_parser">LL</a></li><li>Example from <a href="https://github.com/slebok/zoo/blob/master/zoo/%C2%A7wip/metasyntax/lll-kort/fetched/src.gdkref.txt">@slebok/zoo</a>: <blockquote><pre>specification <span class="kw">:</span> rule<span class="kw">+</span><span class="kw">;</span>
@@ -432,6 +458,50 @@ other <span class="kw">:=</span> <span class="kw">/./</span></pre></blockquote><
 				<h3><a href="https://www.jetbrains.com/mps/"><img src="logo/mps.png" alt="MPS"/></a></h3>
 			</div>
 			<div class="tabbertab">
+				<h2>Parsec</h2>
+				<h3><a href="https://wiki.haskell.org/Parsec"><img src="logo/parsec.gif" alt="Parsec" width="150px"/></a></a></h3>
+				<ul><li>Parsec version 3.1.11 (<a href="http://hackage.haskell.org/package/parsec">download</a>)</li><li>Main website: <a href="https://wiki.haskell.org/Parsec">wiki.haskell.org</a></li><li>Works with <a href="http://101companies.org/wiki/Language:Haskell">Haskell</a>, F#, <a href="http://101companies.org/wiki/Language:Java">Java</a>, <a href="http://101companies.org/wiki/Language:JavaScript">JavaScript</a>, Erlang</li><li>Wikipedia: (<a href="https://en.wikipedia.org/wiki/Parsec (parser)">English</a>)</li><li>Parsing algorithms: <a href="http://www.cs.nott.ac.uk/~pszgmh/monparsing.pdf">monadic</a>, <a href="https://en.wikipedia.org/wiki/Recursive_descent_parser">recursive descent</a></li><li>Example from <a href="https://web.archive.org/web/20140529211116/http://legacy.cs.uu.nl/daan/download/parsec/parsec.html">web.archive.org</a>: <blockquote><pre><span class="kw">import</span> ParsecExpr
+
+expr    <span class="kw">::</span> Parser Integer
+expr    = buildExpressionParser table factor
+        <span class="kw">&lt;?&gt;</span> "expression"
+
+table   = <span class="kw">[</span><span class="kw">[</span>op "*" (*) AssocLeft, op "/" div AssocLeft<span class="kw">]</span>
+          ,<span class="kw">[</span>op "+" (+) AssocLeft, op "-" (-) AssocLeft<span class="kw">]</span>
+          <span class="kw">]</span>          
+        <span class="kw">where</span>
+          op s f assoc
+             = Infix (<span class="kw">do{</span> string s; <span class="kw">return</span> f<span class="kw">}</span>) assoc
+
+factor  = <span class="kw">do{</span> char '('
+            ; x <span class="kw">&lt;-</span> expr
+            ; char ')'
+            ; <span class="kw">return</span> x 
+            <span class="kw">}</span>
+        <span class="kw">&lt;|&gt;</span> number
+        <span class="kw">&lt;?&gt;</span> "simple expression"
+
+number  <span class="kw">::</span> Parser Integer
+number  = <span class="kw">do{</span> ds <span class="kw">&lt;-</span> many1 digit
+            ; <span class="kw">return</span> (read ds)
+            <span class="kw">}</span>
+        <span class="kw">&lt;?&gt;</span> "number"</pre></blockquote></li><li>Maintained by Antoine Latter</li><li>Built on top of Parsec: <ul><li><a href="https://github.com/mattbierner/bennu/">Bennu</a></li><li><a href="http://www.quanttec.com/fparsec/">FParsec</a></li><li><a href="https://bitbucket.org/dmercer/parsec-erlang/">Parsec-Erlang</a></li><li><a href="https://github.com/jon-hanson/parsecj/">ParsecJ</a></li><li><a href="http://xparsec.corsis.tech/">XParsec</a></li><li><a href="https://github.com/balazs-endresz/jsparsec">jsparsec</a></li></ul></li></ul>
+			</div>
+			<div class="tabbertab">
+				<h2>ParseLib</h2>
+				<h3>ParseLib</h3>
+				<ul><li>ParseLib version 2015.1.1 (<a href="http://hackage.haskell.org/package/uu-tc-2015.1.1/uu-tc-2015.1.1.tar.gz">download</a>)</li><li>Main website: <a href="http://hackage.haskell.org/package/uu-tc">hackage.haskell.org</a></li><li>Works with <a href="http://101companies.org/wiki/Language:Haskell">Haskell</a></li><li>Parsing algorithm: <a href="http://www.cs.nott.ac.uk/~pszgmh/monparsing.pdf">monadic</a></li><li>Example from <a href="https://www.haskell.org/happy/doc/html/sec-using.html">haskell.org</a>: <blockquote><pre>exprparser <span class="kw">::</span> Parser Expr
+exprparser<span class="kw"> = </span>buildExpressionParser table term <span class="kw">&lt;?&gt;</span> "expression"
+table<span class="kw"> = </span><span class="kw">[</span> <span class="kw">[</span>Prefix (m_reservedOp "~" <span class="kw">&gt;&gt;</span> <span class="kw">return</span> (Uno Not))<span class="kw">]</span>
+        , <span class="kw">[</span>Infix (m_reservedOp "&amp;" <span class="kw">&gt;&gt;</span> <span class="kw">return</span> (Duo And)) AssocLeft<span class="kw">]</span>
+        , <span class="kw">[</span>Infix (m_reservedOp "=" <span class="kw">&gt;&gt;</span> <span class="kw">return</span> (Duo Iff)) AssocLeft<span class="kw">]</span>
+        <span class="kw">]</span>
+term<span class="kw"> = </span>m_parens exprparser
+       <span class="kw">&lt;|&gt;</span> <span class="kw">fmap</span> Var m_identifier
+       <span class="kw">&lt;|&gt;</span> (m_reserved "true" <span class="kw">&gt;&gt;</span> <span class="kw">return</span> (Con True))
+       <span class="kw">&lt;|&gt;</span> (m_reserved "false" <span class="kw">&gt;&gt;</span> <span class="kw">return</span> (Con False))</pre></blockquote></li><li>Maintained by Jurriën Stutterheim and João Paulo Pizani Flor</li><li>Built on top of ParseLib: <ul><li><a href="https://github.com/pepijnkokke/ParseLib">ParseLib in Frege/JVM</a></li></ul></li></ul>
+			</div>
+			<div class="tabbertab">
 				<h2>PetitParser</h2>
 				<h3><a href="http://scg.unibe.ch/research/helvetia/petitparser"><img src="logo/petitparser.png" alt="PetitParser"/></a></h3>
 			</div>
@@ -441,13 +511,14 @@ other <span class="kw">:=</span> <span class="kw">/./</span></pre></blockquote><
 			</div>
 			<div class="tabbertab">
 				<h2>PRECC</h2>
-				<h3><a href="http://preccx.sourceforge.net/"><img src="logo/redo.gif" alt="PRECC" width="150px"/></a></a></h3>
+				<h3><a href="http://preccx.sourceforge.net/"><img src="logo/redo.gif" alt="PREttier Compiler-Compiler" width="150px"/></a></a> PREttier Compiler-Compiler</h3>
 				<ul><li>PRECC version 2.60 (<a href="ftp://oboe.it.uc3m.es/pub/Programs/">download</a>)</li><li>Main website: <a href="http://preccx.sourceforge.net/">preccx.sourceforge.net</a></li><li>Works with <a href="http://101companies.org/wiki/Language:C">C</a></li><li>Parsing algorithm: <a href="https://en.wikipedia.org/wiki/LL_parser">LL(k)</a></li><li>Example from <a href="http://preccx.sourceforge.net/archive/redo/precc/user-manual.html">preccx.sourceforge.net</a>: <blockquote><pre>integer = <span class="kw">[</span> <span class="kw">&lt;</span>'+'<span class="kw">&gt;</span>|<span class="kw">&lt;</span>'-'<span class="kw">&gt;</span> <span class="kw">]</span>
           unsigned_int
           <span class="kw">[</span> <span class="kw">{</span><span class="kw">&lt;</span>'E'<span class="kw">&gt;</span>|<span class="kw">&lt;</span>'e'<span class="kw">&gt;</span><span class="kw">}</span> <span class="kw">[</span><span class="kw">&lt;</span>'+'<span class="kw">&gt;</span><span class="kw">]</span> unsigned_int <span class="kw">]</span>
 
 unsigned_int = (isdigit)<span class="kw">+</span></pre></blockquote></li><li>Maintained by Peter Breuer and Jonathan Bowen</li></ul>
 			</div>
+			<!-- pysec http://www.valuedlessons.com/2008/02/pysec-monadic-combinatoric-parsing-in.html -->
 			<div class="tabbertab">
 				<h2>Racket</h2>
 				<h3><a href="https://racket-lang.org/"><img src="logo/racket.png" alt="Racket" width="150px"/></a></a></h3>

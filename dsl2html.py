@@ -22,6 +22,7 @@ techs = {
 	"LALR": "https://en.wikipedia.org/wiki/LALR_parser",
 	"LL": "https://en.wikipedia.org/wiki/LL_parser",
 	"LR": "https://en.wikipedia.org/wiki/LR_parser",
+	"monadic": "http://www.cs.nott.ac.uk/~pszgmh/monparsing.pdf",
 	"RAG": "https://pdfs.semanticscholar.org/89f1/857e15d270c5c1f8417381368e4781c871e4.pdf",
 	"recursive descent": "https://en.wikipedia.org/wiki/Recursive_descent_parser",
 	"scannerless": "https://en.wikipedia.org/wiki/Scannerless_parsing",

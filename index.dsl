@@ -65,12 +65,14 @@
 			<tab>DCG</tab>
 			<tab>Eli</tab>
 			<tab>Ensō</tab>
+			<tab>Frown</tab>
 			<tab>GDK</tab>
 			<tab>GOLD</tab>
 			<tab>Happy</tab>
 			<tab>Irony</tab>
 			<tab>JastAdd</tab>
 			<tab>JavaCC</tab>
+			<!-- jparsec https://github.com/jparsec/jparsec/wiki/Overview -->
 			<tab>Kleenex</tab>
 			<tab>Laja</tab>
 			<!-- Lark http://www.cocolab.com/cocktail.html not included because a license key must be preordered -->
@@ -82,20 +84,26 @@
 				<h2>MPS</h2>
 				<h3><a href="https://www.jetbrains.com/mps/"><img src="logo/mps.png" alt="MPS"/></a></h3>
 			</div>
-			<!-- ParseLib -->
+			<tab>Parsec</tab>
+			<tab>ParseLib</tab>
 			<div class="tabbertab">
 				<h2>PetitParser</h2>
 				<h3><a href="http://scg.unibe.ch/research/helvetia/petitparser"><img src="logo/petitparser.png" alt="PetitParser"/></a></h3>
 			</div>
+			<!-- parsnip http://parsnip-parser.sourceforge.net/ -->
 			<div class="tabbertab">
 				<h2>PLY</h2>
 				<h3><a href="http://www.dabeaz.com/ply/">PLY (Python Lex-Yacc)</a></h3>
 			</div>
 			<tab>PRECC</tab>
+			<!-- pyparsing -->
+			<!-- pysec http://www.valuedlessons.com/2008/02/pysec-monadic-combinatoric-parsing-in.html -->
 			<tab>Racket</tab>
 			<tab>Rascal</tab>
+			<!-- rec::descent https://metacpan.org/pod/Parse::RecDescent -->
 			<tab>SableCC</tab>
 			<tab>SJPT</tab>
+			<!-- Spirit http://boost-spirit.com/home/doc/ -->
 			<div class="tabbertab">
 				<h2>Spoofax</h2>
 				<h3><a href="http://metaborg.org/en/latest/"><img src="logo/spoofax.png" alt="Spoofax"/></a></h3>

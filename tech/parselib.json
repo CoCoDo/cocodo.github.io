@@ -1,0 +1,11 @@
+{
+	"version": "2015.1.1",
+	"uri": "http://hackage.haskell.org/package/uu-tc",
+	"download": "http://hackage.haskell.org/package/uu-tc-2015.1.1/uu-tc-2015.1.1.tar.gz",
+	"parsing": ["monadic"],
+	"example": "https://www.haskell.org/happy/doc/html/sec-using.html",
+	"keywords": ["::", " = ", "&lt;?&gt;", "&lt;|&gt;", "fmap", "return", "[", "]", "&gt;&gt;"],
+	"maintained": "Jurriën Stutterheim and João Paulo Pizani Flor",
+	"lang": ["Haskell"],
+	"ontop": {"ParseLib in Frege/JVM": "https://github.com/pepijnkokke/ParseLib"}
+}
