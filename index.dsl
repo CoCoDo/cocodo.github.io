@@ -30,7 +30,7 @@
 	<body>
 		<div class="c">
 			<img src="logo/cocodo.png" alt="Compiler Coding Dojo" title="CoCoDo"/>
-			<h1>Compiler Coding Dojo</h1>
+			<h1>Raincode Labs Compiler Coding Dojo</h1>
 			<h2><a href="https://cocodo.github.io/">CoCoDo</a> @ <a href="http://2017.programming-conference.org/">‹Programming›</a></h2>
 			<h2>April 2017, Brussels, Belgium</h2>
 		</div>
@@ -51,7 +51,7 @@
 				<h2>Participants</h2>
 				TBA
 				<br/>
-				<a href="mailto:vadim@raincode.com">(get in touch if interested!)</a>
+				<a href="mailto:vadim@raincodelabs.com">(get in touch if interested!)</a>
 			</div>
 			<div class="tabbertab">
 				<h2>Technologies</h2>
@@ -60,7 +60,7 @@
 			<tab>Beaver</tab>
 			<tab>Bison</tab>
 			<tab>BiYacc</tab>
-			<!-- btyacc -->
+			<tab>BtYacc</tab>
 			<tab>Coco/R</tab>
 			<tab>DCG</tab>
 			<tab>Eli</tab>
@@ -128,7 +128,7 @@
 		<br/><hr/>
 		<div class="f">
 			<a href="http://www.raincodelabs.com/"><img src="logo/labs.png" alt="Raincode Labs"/></a>
-			The page is maintained by <a href="http://grammarware.github.io/">Dr. Vadim Zaytsev</a> a.k.a. @<a href="http://grammarware.net">grammarware</a>.<br/>
+			The page is maintained by <a href="http://grammarware.github.io/">Dr. Vadim Zaytsev</a> a.k.a. @<a href="http://grammarware.net">grammarware</a>, <a href="https://en.wikipedia.org/wiki/Chief_science_officer" title="Chief Science Officer">CSO</a> of <a href="http://www.raincodelabs.com/">Raincode Labs</a>.<br/>
 			The picture used on this page is derivative from <a href="https://xkcd.com/303/">XKCD#303: Compiling</a> by Randall Munroe, <a href="http://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC</a>.<br/>
 			The tabber code used on this page, is derivative from <a href="http://www.kean.edu/~gkolodiy/5223/tabber.html">the one made by Patrick Fitzgerald</a> and distributed under <a href="https://opensource.org/licenses/mit-license.php">the MIT license</a>.<br/>
 			All other referenced works of art, science and engineering, are subject to their own individual copyrights.<br/>

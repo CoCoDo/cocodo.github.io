@@ -1,0 +1,10 @@
+{
+	"version": "3.0",
+	"uri": "http://www.siber.com/btyacc/",
+	"download": "http://www.siber.com/btyacc/",
+	"parsing": ["backtracking", "bottom-up"],
+	"example": "http://www.siber.com/btyacc/btyacc-3-0.zip",
+	"keywords": ["%left", "%nonassoc", "%%", "%prec", "|"],
+	"maintained": "Chris Dodd and Vadim Maslov",
+	"lang": ["C++"]
+}
