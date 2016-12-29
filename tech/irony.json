@@ -5,6 +5,8 @@
 	"download": "http://download-codeplex.sec.s-msft.com/Download/Release?ProjectName=irony&amp;DownloadId=27478&amp;FileTime=130313476309630000&amp;Build=21031",
 	"parsing": ["LALR(1)"],
 	"example": "https://irony.codeplex.com/wikipage?title=Expression%20Grammar%20sample",
+	"keywords": ["=", "|", "+", "this", ";", ","],
+	"notkeywords": ["\"+\"", "++", "=\"", "\"+=\""],
 	"maintained": "https://irony.codeplex.com/wikipage?title=Contributors",
 	"lang": ["C#"],
 	"wikipedia": {"Irony (framework)": ["en"]}

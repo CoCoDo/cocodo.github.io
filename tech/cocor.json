@@ -3,6 +3,7 @@
 	"download": "http://ssw.jku.at/Coco/",
 	"parsing": ["recursive descent", "AG", "LL(k)"],
 	"example": "http://ssw.jku.at/Coco/Tutorial/",
+	"keywords": ["COMPILER", "CHARACTERS", "TOKENS", "IGNORE", "PRODUCTIONS", "(.", ".)", "out", "END", "{", "}", "&gt;", "&lt;"],
 	"more": "http://ssw.jku.at/Coco/Cookbook/",
 	"maintained": "Hanspeter Mössenböck, Markus Löberbauer and Albrecht Wöß",
 	"lang": ["C#", "Java", "C++", "F#", "VB.NET", "Swift", "Oberon"],

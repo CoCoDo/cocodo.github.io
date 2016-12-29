@@ -5,6 +5,7 @@
 	"download": "http://sjpt.sourceforge.net/download/index.html",
 	"parsing": ["LL(1)", "LR(0)", "SLR(1)", "LR(1)", "LALR(1)"],
 	"example": "http://prdownloads.sourceforge.net/sjpt/sjpt-0.10.zip?download",
+	"keywords": ["import", "terminal", "non", "::=", "|", "{:", ":}"],
 	"maintained": "Catalin Hritcu",
 	"lang": ["Java"]
 }

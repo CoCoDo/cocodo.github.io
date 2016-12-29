@@ -71,9 +71,14 @@ def sortlangs(l):
 	outp.extend(inp)
 	return outp
 
-def htmlify(s):
+def htmlify(s,kws,nkws):
+	s = s.replace('&','&amp;')
 	for k,v in {"<":"&lt;", ">": "&gt;"}.items():
 		s = s.replace(k,v)
+	for k in kws:
+		s = s.replace(k, '<span class="kw">%s</span>' % k)
+	for nk in nkws:
+		s = s.replace(htmlify(nk,kws,[]), nk)
 	return s
 
 def tofname(m):
@@ -138,8 +143,10 @@ while i < len(lines):
 			if 'example' in m.keys():
 				item = 'Example from ' + resolve(m['example'], '')
 				item += ': <blockquote><pre>'
+				keywords = m['keywords'] if 'keywords' in m.keys() else []
+				notkwrds = m['notkeywords'] if 'notkeywords' in m.keys() else []
 				for line in open('code/'+tofname(macro)+'.g', 'r', encoding='utf-8').readlines():
-					item += htmlify(line)
+					item += htmlify(line, keywords, notkwrds)
 				item += '</pre></blockquote>'
 				items.append(item)
 			if 'more' in m.keys():

@@ -6,6 +6,7 @@
 	"download": "http://www.swi-prolog.org/download/stable",
 	"parsing": ["DCG"],
 	"example": "https://github.com/grammarware/slps/blob/master/topics/fl/prolog1/Parser.pro",
+	"keywords": ["--&gt;"],
 	"more": "http://www.pathwayslms.com/swipltuts/dcg/",
 	"maintained": "http://www.swi-prolog.org/Contributors.html",
 	"lang": ["Prolog"],

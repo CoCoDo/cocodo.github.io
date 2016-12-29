@@ -4,6 +4,7 @@
 	"download": "http://biyacc.yozora.moe/src/biyacc_src.zip",
 	"parsing": ["BX"],
 	"example": "http://biyacc.yozora.moe/",
+	"keywords": ["Abstract", "Concrete", "Actions", "-&gt;", "+&gt;", "|", "data", "deriving"],
 	"more": "http://biyacc.yozora.moe/",
 	"maintained": "Zirun Zhu, Yongzhe Zhang, Hsiang-Shang Ko, Pedro Martins, João Saraiva and Zhenjiang Hu",
 	"lang": ["Haskell"]

@@ -5,6 +5,7 @@
 	"download": "https://sourceforge.net/projects/laja/",
 	"parsing": ["scannerless", "top-down", "backtracking"],
 	"example": "http://laja.tengstrand.nu/index.php/Parser_generator_-_Getting_started",
+	"keywords": ["grammar", "Example", "String"],
 	"more": "http://laja.tengstrand.nu/index.php/Code_generator_-_Documentation",
 	"maintained": "Joakim Tengstrand",
 	"lang": ["Java"]

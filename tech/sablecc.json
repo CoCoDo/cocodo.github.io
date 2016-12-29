@@ -5,6 +5,8 @@
 	"download": "http://www.sablecc.org/downloads",
 	"parsing": ["LALR(1)"],
 	"example": "http://www.engr.mun.ca/~theo/JavaCC-Tutorial/",
+	"keywords": ["Grammar", "Lexer", "Parser", "Precedence", "Ignored", "Left", "..", "+", "{", "}", "[", "]", "#"],
+	"notkeywords": ["'+'"],
 	"more": "https://github.com/SableCC/sablecc",
 	"maintained": "Etienne M. Gagnon, Patrick Pelletier, Jean Privat, Jérôme Dassonville and Lucas Satabin",
 	"lang": ["Java"],

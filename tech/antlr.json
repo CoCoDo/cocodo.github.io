@@ -5,6 +5,8 @@
 	"download": "http://www.antlr.org/download.html",
 	"parsing": ["ALL(*)"],
 	"example": "http://www.antlr.org/",
+	"keywords": ["grammar", "[", "]", "|", ":", "*", "+"],
+	"notkeywords": ["'*'", "'+'"],
 	"more": "https://pragprog.com/titles/tpantlr2/source_code",
 	"maintained": "Terence Parr",
 	"lang": ["Java", "C#", "JavaScript", "Python2", "Python3"],

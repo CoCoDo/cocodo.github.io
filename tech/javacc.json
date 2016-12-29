@@ -5,6 +5,7 @@
 	"download": "https://java.net/projects/javacc/downloads",
 	"parsing": ["LL(k)"],
 	"example": "http://www.engr.mun.ca/~theo/JavaCC-Tutorial/",
+	"keywords": ["{", "}", "&gt;", "&lt;"],
 	"more": ["http://www.engr.mun.ca/~theo/JavaCC-FAQ/javacc-faq-moz.htm", "http://javacc.org"],
 	"maintained": "Glassfish Kenai, Paul Cager, Tom Copeland and sreeni. ",
 	"lang": ["Java", "C", "C++"],

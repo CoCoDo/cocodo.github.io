@@ -6,6 +6,7 @@
 	"parsing": ["LALR(1)"],
 	"more": "http://beaver.sourceforge.net/",
 	"example": "http://beaver.sourceforge.net/spec.html",
+	"keywords": ["%left", "%typeof", "{:", ":}", "|", "%%", " = "],
 	"lang": ["Java"],
 	"oftenwith": {"JFlex": ["http://www.jflex.de/"], "JLex": ["https://www.cs.princeton.edu/~appel/modern/java/JLex/"]}
 }

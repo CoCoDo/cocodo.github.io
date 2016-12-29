@@ -5,6 +5,8 @@
 	"download": "http://www.rascal-mpl.org/start/",
 	"parsing": ["GLL"],
 	"example": "https://github.com/usethesource/rascal/blob/master/src/org/rascalmpl/library/lang/pico/syntax/Main.rsc",
+	"keywords": ["start", "syntax", "@category", "public", "lexical", "layout", "str", "loc", "return", "#", "{", "}", "|", "*", "+", "&gt;", "&lt;", "!"],
+	"notkeywords": ["\"||\"", "string", "\"*\"", "\"+\""],
 	"more": "http://tutor.rascal-mpl.org/",
 	"maintained": "Paul Klint, Jurgen Vinju and Tijs van der Storm",
 	"wikipedia": {"RascalMPL": ["en"]}

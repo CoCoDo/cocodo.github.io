@@ -4,6 +4,8 @@
 	"download": "https://github.com/enso-lang/enso/archive/master.zip",
 	"parsing": ["GLL"],
 	"example": "http://www.cs.utexas.edu/~wcook/Drafts/2012/2012-07-13EnsoMSR.pdf",
+	"keywords": ["start", "::=", "[it]", "{", "}", "optional", "&amp;&amp;", "many", "|", "*", "?", "@"],
+	"notkeywords": ["\"start\"", "\"::=\"", "\"|\"", "\"*\"", "\"?\"", "\"@\""],
 	"more": "http://enso-lang.org/blog/",
 	"maintained": "William R. Cook, Alex Loh and Tijs van der Storm"
 }
