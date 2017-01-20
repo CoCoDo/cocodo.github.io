@@ -89,7 +89,7 @@ expr<span class="kw"> = </span>expr.a MULT  expr.b   <span class="kw">{:</span> 
      <span class="kw">|</span> NUMBER.n              <span class="kw">{:</span> return new Expr(n.doubleValue());   <span class="kw">:}</span>
      <span class="kw">|</span> LPAREN expr.e RPAREN  <span class="kw">{:</span> return e; <span class="kw">:}</span>
      ;
-</pre></blockquote></li><li>More examples: <a href="http://beaver.sourceforge.net/">beaver.sourceforge.net</a></li><li>Often used with: <ul><li><a href="https://www.cs.princeton.edu/~appel/modern/java/JLex/">JLex</a></li><li><a href="http://www.jflex.de/">JFlex</a></li></ul></li></ul>
+</pre></blockquote></li><li>More examples: <a href="http://beaver.sourceforge.net/">beaver.sourceforge.net</a></li><li>Often used with: <ul><li><a href="http://www.jflex.de/">JFlex</a></li><li><a href="https://www.cs.princeton.edu/~appel/modern/java/JLex/">JLex</a></li></ul></li></ul>
 			</div>
 			<div class="tabbertab">
 				<h2>Bison</h2>
@@ -681,7 +681,30 @@ term      <span class="kw">::=</span> LPAREN expr:e RPAREN <span class="kw">{:</
 			</div>
 			<div class="tabbertab">
 				<h2>TXL</h2>
-				<h3><a href="http://www.txl.ca/"><img src="logo/txl.png" alt="TXL"/></a></h3>
+				<h3><a href="http://www.txl.ca"><img src="logo/txl.png" alt="TXL" width="150px"/></a></a></h3>
+				<ul><li>TXL version 10.6d (<a href="http://www.txl.ca/ndownload.html">download</a>)</li><li>Main website: <a href="http://www.txl.ca">txl.ca</a></li><li>Works with TXL, XML</li><li>Wikipedia: (<a href="https://en.wikipedia.org/wiki/TXL_(programming_language)">English</a>)</li><li>Parsing algorithms: <a href="https://en.wikipedia.org/wiki/Top-down_parsing">top-down</a>, <a href="https://en.wikipedia.org/wiki/Backtracking">backtracking</a></li><li>Example from <a href="http://www.txl.ca/examples/Standard/examples.zip">txl.ca</a>: <blockquote><pre><span class="kw">define</span> program 
+        <span class="kw">[</span>compilation_unit<span class="kw">]</span>
+<span class="kw">end</span> <span class="kw">define</span>
+
+<span class="kw">define</span> compilation_unit
+        <span class="kw">[</span>definition_module<span class="kw">]</span> 
+    <span class="kw">|</span>   <span class="kw">[</span><span class="kw">opt</span> 'IMPLEMENTATION<span class="kw">]</span> <span class="kw">[</span>program_module<span class="kw">]</span>
+<span class="kw">end</span> <span class="kw">define</span>
+
+<span class="kw">define</span> definition_module
+                                        <span class="kw">[</span><span class="kw">NL</span><span class="kw">]</span>
+        DEFINITION MODULE <span class="kw">[</span>id<span class="kw">]</span> ;        <span class="kw">[</span><span class="kw">NL</span><span class="kw">]</span><span class="kw">[</span><span class="kw">NL</span><span class="kw">]</span>
+                <span class="kw">[</span><span class="kw">repeat</span> import_<span class="kw">]</span>
+                <span class="kw">[</span><span class="kw">repeat</span> definition<span class="kw">]</span>
+        END <span class="kw">[</span>id<span class="kw">]</span> .                      <span class="kw">[</span><span class="kw">NL</span><span class="kw">]</span>
+<span class="kw">end</span> <span class="kw">define</span>
+
+<span class="kw">define</span> program_module
+        MODULE <span class="kw">[</span>id<span class="kw">]</span> <span class="kw">[</span><span class="kw">opt</span> priority<span class="kw">]</span> ;    <span class="kw">[</span><span class="kw">NL</span><span class="kw">]</span><span class="kw">[</span><span class="kw">NL</span><span class="kw">]</span>
+                <span class="kw">[</span><span class="kw">repeat</span> import_<span class="kw">]</span>
+                <span class="kw">[</span>block<span class="kw">]</span> <span class="kw">[</span>id<span class="kw">]</span> .          
+<span class="kw">end</span> <span class="kw">define</span>
+</pre></blockquote></li><li>More examples: <a href="http://www.txl.ca/nresources.html">txl.ca</a></li><li>Maintained by James Cordy</li></ul>
 			</div>
 			<div class="tabbertab">
 				<h2>Whole</h2>
@@ -709,7 +732,7 @@ term      <span class="kw">::=</span> LPAREN expr:e RPAREN <span class="kw">{:</
 			The picture used on this page is derivative from <a href="https://xkcd.com/303/">XKCD#303: Compiling</a> by Randall Munroe, <a href="http://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC</a>.<br/>
 			The tabber code used on this page, is derivative from <a href="http://www.kean.edu/~gkolodiy/5223/tabber.html">the one made by Patrick Fitzgerald</a> and distributed under <a href="https://opensource.org/licenses/mit-license.php">the MIT license</a>.<br/>
 			All other referenced works of art, science and engineering, are subject to their own individual copyrights.<br/>
-			Last updated: November 2016.
+			Last updated: January 2017.
 		</div>
 	</body>
 </html>

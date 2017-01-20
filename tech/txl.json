@@ -1,0 +1,13 @@
+{
+	"version": "10.6d",
+	"uri": "http://www.txl.ca",
+	"logo": "txl.png",
+	"download": "http://www.txl.ca/ndownload.html",
+	"parsing": ["top-down", "backtracking"],
+	"example": "http://www.txl.ca/examples/Standard/examples.zip",
+	"keywords": ["define", "end", "opt", "repeat", "NL", "[", "]", "|"],
+	"more": "http://www.txl.ca/nresources.html",
+	"maintained": "James Cordy",
+	"lang": ["TXL", "XML"],
+	"wikipedia": {"TXL_(programming_language)": ["en"]}
+}
