@@ -99,6 +99,7 @@
 			<!-- pyparsing -->
 			<!-- pysec http://www.valuedlessons.com/2008/02/pysec-monadic-combinatoric-parsing-in.html -->
 			<tab>Racket</tab>
+			<tab>Ragel</tab>
 			<tab>Rascal</tab>
 			<!-- rec::descent https://metacpan.org/pod/Parse::RecDescent -->
 			<tab>SableCC</tab>

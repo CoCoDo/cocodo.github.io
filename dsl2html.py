@@ -16,6 +16,7 @@ techs = {
 	"BX": "http://www.prg.nii.ac.jp/project/bigul/",
 	"DCG": "https://pdfs.semanticscholar.org/fbc0/4a1951003ba164303b2898fb7f3c6b4e9083.pdf",
 	"DFA": "https://en.wikipedia.org/wiki/Deterministic_finite_automaton",
+	"FSM": "https://en.wikipedia.org/wiki/Finite-state_machine",
 	"FST": "https://en.wikipedia.org/wiki/Finite-state_transducer",
 	"GLL": "http://dotat.at/tmp/gll.pdf",
 	"GLR": "https://en.wikipedia.org/wiki/GLR_parser",
