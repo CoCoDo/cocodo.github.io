@@ -19,6 +19,8 @@ td:last-child {font-style:italic}
 div.rl {width: 24em; height: 220px; border: solid #00695C 2px; border-top: none; right: 0; left: 0; margin-left: auto;margin-right: auto}
 h2.rl {background-color:#E0F2F1; width: 14em; right: 0; left: 0; margin-left: auto;margin-right: auto; margin-top:-15px}
 
+@media screen and (max-width: 440px) { div.rl {width: 95%} }
+
 /* A font by Jovanny Lemonad, see http://www.exljbris.com/fontinsans.html */
 @font-face {font-family: 'Fontin Sans'; font-style: normal; font-weight: 400; src: local("☺"), url(fonts/FontinSans_Cyrillic_R_46b.otf) format("opentype")}
 @font-face {font-family: 'Fontin Sans'; font-style: italic; font-weight: 400; src: local("☺"), url(fonts/FontinSans_Cyrillic_I_46b.otf) format("opentype")}
