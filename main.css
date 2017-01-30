@@ -1,6 +1,6 @@
 body {background-color:#E0F2F1; color:#00695C; font-family: 'Fontin Sans',sans-serif}
 blockquote {border: 1px solid #004D40; padding: 10px}
-.red, .red a, .red a:visited {color:red}
+.red, .red a, .red a:visited, .cool a, .cool a:visited {color:red}
 a, a:visited {color:#0277BD}
 .red a:hover {font-weight:bold}
 p, table {max-width:1000px; margin:auto; padding-bottom:20px}
@@ -15,6 +15,9 @@ td:last-child {font-style:italic}
 .f img {float: left}
 .tabbertab a {font-weight: bold}
 .kw {color: #8C61DF; font-weight: bold}
+
+div.rl {width: 24em; height: 220px; border: solid #00695C 2px; border-top: none; right: 0; left: 0; margin-left: auto;margin-right: auto}
+h2.rl {background-color:#E0F2F1; width: 14em; right: 0; left: 0; margin-left: auto;margin-right: auto; margin-top:-15px}
 
 /* A font by Jovanny Lemonad, see http://www.exljbris.com/fontinsans.html */
 @font-face {font-family: 'Fontin Sans'; font-style: normal; font-weight: 400; src: local("☺"), url(fonts/FontinSans_Cyrillic_R_46b.otf) format("opentype")}

@@ -29,14 +29,16 @@
 	</head>
 	<body>
 		<div class="c">
-			<img src="logo/cocodo.png" alt="Compiler Coding Dojo" title="CoCoDo"/>
 			<h1>Raincode Labs Compiler Coding Dojo</h1>
-			<h2><a href="https://cocodo.github.io/">CoCoDo</a> @ <a href="http://2017.programming-conference.org/">‹Programming›</a></h2>
-			<h2>April 2017, Brussels, Belgium</h2>
+			<div class="rl">
+			<img src="logo/cocodo.png" alt="Compiler Coding Dojo" title="CoCoDo"/>
+			</div>
+			<h2 class="rl"><a href="https://cocodo.github.io/">CoCoDo</a> @ <a href="http://2017.programming-conference.org/">‹Programming›</a></h2>
+			<h2>4 April 2017, Brussels, Belgium</h2>
 		</div>
 		<div class="tabber">
 			<div class="tabbertab">
-				<h2>About</h2>
+				<h2>Sessions</h2>
 				<strong>CoCoDo</strong> is a <em>coding dojo</em> where you can enjoy an entire day of
 				compiler programming under gentle guidance of field experts.
 				<br/>
@@ -46,12 +48,16 @@
 				management, portability, migration, refactoring, domain-specific language
 				design, linking and loading, assembling and disassembling, generics and
 				reflection, numerous paradigms and so much more.
-			</div>
-			<div class="tabbertab">
-				<h2>Participants</h2>
-				TBA
-				<br/>
-				<a href="mailto:vadim@raincodelabs.com">(get in touch if interested!)</a>
+				<h3>Confirmed experts</h3>
+				<ul class="cool">
+					<li><a href="https://pure.royalholloway.ac.uk/portal/en/persons/adrian-johnstone_7cc2e828-2b0f-4cb7-a169-337193b854b8.html">Adrian Johnstone</a> and <a href="https://pure.royalholloway.ac.uk/portal/en/persons/elizabeth-scott(2b634c08-8249-413d-9654-031aed1f680b).html">Elizabeth Scott</a> with <a href="https://pure.royalholloway.ac.uk/portal/files/25269180/artTool.pdf">ART</a></li>
+					<li><a href="https://www.eecs.northwestern.edu/~robby/">Robby Findler</a> with <a href="http://www.racket-lang.org/">Racket</a></li>
+				</ul>
+				<h3>Participants</h3>
+				<ul>
+					<li>TBA</li>
+					<li><a href="mailto:vadim@raincodelabs.com">(get in touch if interested!)</a></li>
+				</ul>
 			</div>
 			<div class="tabbertab">
 				<h2>Technologies</h2>
