@@ -1,0 +1,13 @@
+{
+	"fullname": "Python Lex-Yacc",
+	"version": "3.9",
+	"uri": "http://www.dabeaz.com/ply/",
+	"download": "http://www.dabeaz.com/ply/ply-3.9.tar.gz",
+	"parsing": ["LR"],
+	"example": "http://www.dabeaz.com/ply/example.html",
+	"more": "http://www.dabeaz.com/ply/ply.html",
+	"keywords": ["def", "elif", "if", "try", "except"],
+	"notkeywords": ["Undefined"],
+	"maintained": "David Beazley",
+	"lang": ["Python2", "Python3"]
+}

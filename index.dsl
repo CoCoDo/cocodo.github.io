@@ -95,19 +95,18 @@
 			<tab>ParseLib</tab>
 			<tab>PetitParser</tab>
 			<!-- parsnip http://parsnip-parser.sourceforge.net/ -->
-			<div class="tabbertab">
-				<h2>PLY</h2>
-				<h3><a href="http://www.dabeaz.com/ply/">PLY (Python Lex-Yacc)</a></h3>
-			</div>
+			<tab>PLY</tab>
 			<tab>PRECC</tab>
-			<!-- pyparsing -->
+			<!-- pyparsing http://pyparsing.wikispaces.com/ -->
 			<!-- pysec http://www.valuedlessons.com/2008/02/pysec-monadic-combinatoric-parsing-in.html -->
 			<tab>Racket</tab>
 			<tab>Ragel</tab>
 			<tab>Rascal</tab>
 			<!-- rec::descent https://metacpan.org/pod/Parse::RecDescent -->
 			<tab>SableCC</tab>
+			<!-- simpleparse http://simpleparse.sourceforge.net/ -->
 			<tab>SJPT</tab>
+			<!-- spark http://pages.cpsc.ucalgary.ca/~aycock/spark/ -->
 			<!-- Spirit http://boost-spirit.com/home/doc/ -->
 			<div class="tabbertab">
 				<h2>Spoofax</h2>

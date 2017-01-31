@@ -569,7 +569,7 @@ term<span class="kw"> = </span>m_parens exprparser
 			<div class="tabbertab">
 				<h2>PetitParser</h2>
 				<h3><a href="http://scg.unibe.ch/research/helvetia/petitparser"><img src="logo/petitparser.png" alt="PetitParser" width="150px"/></a></a></h3>
-				<ul><li>PetitParser version Pharo 5.0 / Helvetia (<a href="['http://pharo.org/', 'http://source.lukas-renggli.ch/built/oneclick/Helvetia-OneClick.zip']">download</a>) (<a href="['http://pharo.org/', 'http://source.lukas-renggli.ch/built/oneclick/Helvetia-OneClick.zip']">download</a>)</li><li>Main website: <a href="http://scg.unibe.ch/research/helvetia/petitparser">scg.unibe.ch</a></li><li>Works with Smalltalk</li><li>Parsing algorithms: <a href="https://en.wikipedia.org/wiki/Scannerless_parsing">scannerless</a>, <a href="http://www.cs.nott.ac.uk/~pszgmh/monparsing.pdf">monadic</a>, <a href="http://bford.info/packrat/">Packrat</a>, <a href="http://www.slideshare.net/esug/parsing-contexts-for-petitparser">contexts</a></li><li>Example from <a href="https://www.lukas-renggli.ch/blog/petitparser-1">lukas-renggli.ch</a>: <blockquote><pre>identifier <span class="kw">:=</span> (<span class="kw">#letter</span> <span class="kw">asParser</span> , (<span class="kw">#letter</span> <span class="kw">asParser</span> / <span class="kw">#digit</span> <span class="kw">asParser</span>) <span class="kw">star</span>) <span class="kw">flatten</span>.
+				<ul><li>Helvetia / Pharo version 5.0 (<a href="['http://pharo.org/', 'http://source.lukas-renggli.ch/built/oneclick/Helvetia-OneClick.zip']">download</a>) (<a href="['http://pharo.org/', 'http://source.lukas-renggli.ch/built/oneclick/Helvetia-OneClick.zip']">download</a>)</li><li>Main website: <a href="http://scg.unibe.ch/research/helvetia/petitparser">scg.unibe.ch</a></li><li>Works with Smalltalk</li><li>Parsing algorithms: <a href="https://en.wikipedia.org/wiki/Scannerless_parsing">scannerless</a>, <a href="http://www.cs.nott.ac.uk/~pszgmh/monparsing.pdf">monadic</a>, <a href="http://bford.info/packrat/">Packrat</a>, <a href="http://www.slideshare.net/esug/parsing-contexts-for-petitparser">contexts</a></li><li>Example from <a href="https://www.lukas-renggli.ch/blog/petitparser-1">lukas-renggli.ch</a>: <blockquote><pre>identifier <span class="kw">:=</span> (<span class="kw">#letter</span> <span class="kw">asParser</span> , (<span class="kw">#letter</span> <span class="kw">asParser</span> / <span class="kw">#digit</span> <span class="kw">asParser</span>) <span class="kw">star</span>) <span class="kw">flatten</span>.
 number <span class="kw">:=</span>  <span class="kw">#digit</span> <span class="kw">asParser</span> <span class="kw">plus</span> <span class="kw">token</span> <span class="kw">trim</span> <span class="kw">==&gt;</span> [ :<span class="kw">token</span> | <span class="kw">token</span> value <span class="kw">asNumber</span> ].
 
 term <span class="kw">:=</span> PPUnresolvedParser <span class="kw">new</span>.
@@ -583,11 +583,40 @@ prod <span class="kw">def</span>: (prim , <span class="kw">$*</span> <span class
 prim <span class="kw">def</span>: (<span class="kw">$(</span> <span class="kw">asParser</span> <span class="kw">trim</span> , term , <span class="kw">$)</span> <span class="kw">asParser</span> <span class="kw">trim</span> <span class="kw">==&gt;</span> [ :nodes | nodes second ])
    / number.
 
-<span class="kw">star</span>t <span class="kw">:=</span> term <span class="kw">end</span>.</pre></blockquote></li><li>Maintained by Tudor Gîrba, Jan Kurš</li><li>Built on top of PetitParser: <ul><li><a href="https://github.com/petitparser/dart-petitparser">PetitParser for Dart</a></li><li><a href="https://github.com/petitparser/java-petitparser">PetitParser for Java</a></li><li><a href="https://github.com/mindplay-dk/petitparserphp">PetitParser for PHP</a></li><li><a href="https://bitbucket.org/janvrany/stx-goodies-petitparser/overview">PetitParser for Smalltalk/X</a></li><li><a href="https://github.com/mindplay-dk/petitparser-ts">PetitParser for TypeScript</a></li></ul></li></ul>
+<span class="kw">star</span>t <span class="kw">:=</span> term <span class="kw">end</span>.</pre></blockquote></li><li>Maintained by Tudor Gîrba, Jan Kurš</li><li>Built on top of Helvetia / Pharo: <ul><li><a href="https://github.com/petitparser/dart-petitparser">PetitParser for Dart</a></li><li><a href="https://github.com/petitparser/java-petitparser">PetitParser for Java</a></li><li><a href="https://github.com/mindplay-dk/petitparserphp">PetitParser for PHP</a></li><li><a href="https://bitbucket.org/janvrany/stx-goodies-petitparser/overview">PetitParser for Smalltalk/X</a></li><li><a href="https://github.com/mindplay-dk/petitparser-ts">PetitParser for TypeScript</a></li></ul></li></ul>
 			</div>
 			<div class="tabbertab">
 				<h2>PLY</h2>
-				<h3><a href="http://www.dabeaz.com/ply/">PLY (Python Lex-Yacc)</a></h3>
+				<h3>Python Lex-Yacc</h3>
+				<ul><li>PLY version 3.9 (<a href="http://www.dabeaz.com/ply/ply-3.9.tar.gz">download</a>)</li><li>Main website: <a href="http://www.dabeaz.com/ply/">dabeaz.com</a></li><li>Works with <a href="https://docs.python.org/2/">Python2</a>, <a href="https://docs.python.org/3/">Python3</a></li><li>Parsing algorithm: <a href="https://en.wikipedia.org/wiki/LR_parser">LR</a></li><li>Example from <a href="http://www.dabeaz.com/ply/example.html">dabeaz.com</a>: <blockquote><pre>names = { }
+
+<span class="kw">def</span> p_statement_assign(t):
+    names[t[1]] = t[3]
+
+<span class="kw">def</span> p_statement_expr(t):
+    print(t[1])
+
+<span class="kw">def</span> p_expression_binop(t):
+    <span class="kw">if</span> t[2] == '+'  : t[0] = t[1] + t[3]
+    <span class="kw">el<span class="kw">if</span></span> t[2] == '-': t[0] = t[1] - t[3]
+    <span class="kw">el<span class="kw">if</span></span> t[2] == '*': t[0] = t[1] * t[3]
+    <span class="kw">el<span class="kw">if</span></span> t[2] == '/': t[0] = t[1] / t[3]
+
+<span class="kw">def</span> p_expression_uminus(t):
+    t[0] = -t[2]
+
+<span class="kw">def</span> p_expression_group(t):
+    t[0] = t[2]
+
+<span class="kw">def</span> p_expression_number(t):
+    t[0] = t[1]
+
+<span class="kw">def</span> p_expression_name(t):
+    <span class="kw">try</span>:
+        t[0] = names[t[1]]
+    <span class="kw">except</span> LookupError:
+        print("Undefined name '%s'" % t[1])
+        t[0] = 0</pre></blockquote></li><li>More examples: <a href="http://www.dabeaz.com/ply/ply.html">dabeaz.com</a></li><li>Maintained by David Beazley</li></ul>
 			</div>
 			<div class="tabbertab">
 				<h2>PRECC</h2>
@@ -767,6 +796,7 @@ term      <span class="kw">::=</span> LPAREN expr:e RPAREN <span class="kw">{:</
             <span class="kw">|</span> ID:i <span class="kw">{:</span> RESULT = i; <span class="kw">:}</span>;
 </pre></blockquote></li><li>Maintained by Catalin Hritcu</li></ul>
 			</div>
+			<!-- Spirit http://boost-spirit.com/home/doc/ -->
 			<div class="tabbertab">
 				<h2>Spoofax</h2>
 				<h3><a href="http://metaborg.org/en/latest/"><img src="logo/spoofax.png" alt="Spoofax"/></a></h3>
