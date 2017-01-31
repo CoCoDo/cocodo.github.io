@@ -50,6 +50,7 @@ slang = {
 	"Oberon": "https://en.wikipedia.org/wiki/Oberon_(programming_language)",
 	"Obj-C": "https://en.wikipedia.org/wiki/Objective-C",
 	"Pascal": "https://en.wikipedia.org/wiki/Pascal_(programming_language)",
+	"Perl": "https://en.wikipedia.org/wiki/Perl",
 	"Prolog": "http://101companies.org/wiki/Language:Prolog",
 	"Python2": "https://docs.python.org/2/",
 	"Python3": "https://docs.python.org/3/",

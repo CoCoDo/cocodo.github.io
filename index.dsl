@@ -96,8 +96,8 @@
 			</div>
 			<tab>Parsec</tab>
 			<tab>ParseLib</tab>
+			<tab>parsnip</tab>
 			<tab>PetitParser</tab>
-			<!-- parsnip http://parsnip-parser.sourceforge.net/ -->
 			<tab>PLY</tab>
 			<tab>PRECC</tab>
 			<tab>pyparsing</tab>
@@ -105,13 +105,13 @@
 			<tab>Racket</tab>
 			<tab>Ragel</tab>
 			<tab>Rascal</tab>
-			<!-- rec::descent https://metacpan.org/pod/Parse::RecDescent -->
+			<tab>RecDescent</tab>
 			<tab>SableCC</tab>
 			<tab>Silver</tab>
 			<!-- simpleparse http://simpleparse.sourceforge.net/ -->
 			<tab>SJPT</tab>
 			<!-- spark http://pages.cpsc.ucalgary.ca/~aycock/spark/ -->
-			<!-- Spirit http://boost-spirit.com/home/doc/ -->
+			<tab>Spirit</tab>
 			<div class="tabbertab">
 				<h2>Spoofax</h2>
 				<h3><a href="http://metaborg.org/en/latest/"><img src="logo/spoofax.png" alt="Spoofax"/></a></h3>

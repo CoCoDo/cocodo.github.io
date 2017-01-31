@@ -95,7 +95,7 @@ expr<span class="kw"> = </span>expr.a MULT  expr.b   <span class="kw">{:</span> 
      <span class="kw">|</span> NUMBER.n              <span class="kw">{:</span> return new Expr(n.doubleValue());   <span class="kw">:}</span>
      <span class="kw">|</span> LPAREN expr.e RPAREN  <span class="kw">{:</span> return e; <span class="kw">:}</span>
      ;
-</pre></blockquote></li><li>More examples: <a href="http://beaver.sourceforge.net/">beaver.sourceforge.net</a></li><li>Often used with: <ul><li><a href="http://www.jflex.de/">JFlex</a></li><li><a href="https://www.cs.princeton.edu/~appel/modern/java/JLex/">JLex</a></li></ul></li></ul>
+</pre></blockquote></li><li>More examples: <a href="http://beaver.sourceforge.net/">beaver.sourceforge.net</a></li><li>Often used with: <ul><li><a href="https://www.cs.princeton.edu/~appel/modern/java/JLex/">JLex</a></li><li><a href="http://www.jflex.de/">JFlex</a></li></ul></li></ul>
 			</div>
 			<div class="tabbertab">
 				<h2>Bison</h2>
@@ -716,6 +716,31 @@ term<span class="kw"> = </span>m_parens exprparser
        <span class="kw">&lt;|&gt;</span> (m_reserved "false" <span class="kw">&gt;&gt;</span> <span class="kw">return</span> (Con False))</pre></blockquote></li><li>Maintained by Jurriën Stutterheim and João Paulo Pizani Flor</li><li>Built on top of ParseLib: <ul><li><a href="https://github.com/pepijnkokke/ParseLib">ParseLib in Frege/JVM</a></li></ul></li></ul>
 			</div>
 			<div class="tabbertab">
+				<h2>parsnip</h2>
+				<h3>parsnip</h3>
+				<ul><li>parsnip version 0.23 (<a href="https://sourceforge.net/projects/parsnip-parser/files/">download</a>)</li><li>Main website: <a href="http://parsnip-parser.sourceforge.net/">parsnip-parser.sourceforge.net</a></li><li>Works with <a href="http://101companies.org/wiki/Language:CPlusPlus">C++</a></li><li>Parsing algorithm: <a href="http://bford.info/packrat/">Packrat</a></li><li>Example from <a href="http://spikebucket.blogspot.be/2007/10/simple-calculator.html">spikebucket.blogspot.be</a>: <blockquote><pre><span class="kw">double</span> multiply(<span class="kw">double</span> x, <span class="kw">double</span> y) { <span class="kw">return</span> x*y; }
+<span class="kw">double</span> add(<span class="kw">double</span> x, <span class="kw">double</span> y) { <span class="kw">return</span> x+y; }
+<span class="kw">double</span> subtract(<span class="kw">double</span> x, <span class="kw">double</span> y) { <span class="kw">return</span> x-y; }
+<span class="kw">double</span> divide(<span class="kw">double</span> x, <span class="kw">double</span> y) { <span class="kw">return</span> x/y; }
+
+<span class="kw">typedef</span> Parser&lt;string, <span class="kw">double</span>&gt;::type NumParser;
+
+NumParser ops = op_table(real)
+                 <span class="kw">-&gt;</span>infix_left("+", 10, add)
+                 <span class="kw">-&gt;</span>infix_left("-", 10, subtract)
+                 <span class="kw">-&gt;</span>infix_left("*", 20, multiply)
+                 <span class="kw">-&gt;</span>infix_left("/", 20, divide);
+
+ParseResult&lt;<span class="kw">double</span>&gt; result;
+ 
+result = parse("3+4*2", ops);
+
+<span class="kw">if</span> (result.parse_finished())
+{
+  std::cout <span class="kw">&lt;&lt;</span> parse.data(); 
+}</pre></blockquote></li><li>Maintained by Alex Rubinsteyn</li></ul>
+			</div>
+			<div class="tabbertab">
 				<h2>PetitParser</h2>
 				<h3><a href="http://scg.unibe.ch/research/helvetia/petitparser"><img src="logo/petitparser.png" alt="PetitParser" width="150px"/></a></a></h3>
 				<ul><li>Helvetia / Pharo version 5.0 (<a href="['http://pharo.org/', 'http://source.lukas-renggli.ch/built/oneclick/Helvetia-OneClick.zip']">download</a>) (<a href="['http://pharo.org/', 'http://source.lukas-renggli.ch/built/oneclick/Helvetia-OneClick.zip']">download</a>)</li><li>Main website: <a href="http://scg.unibe.ch/research/helvetia/petitparser">scg.unibe.ch</a></li><li>Works with <a href="https://en.wikipedia.org/wiki/Smalltalk">Smalltalk</a></li><li>Parsing algorithms: <a href="https://en.wikipedia.org/wiki/Scannerless_parsing">scannerless</a>, <a href="http://www.cs.nott.ac.uk/~pszgmh/monparsing.pdf">monadic</a>, <a href="http://bford.info/packrat/">Packrat</a>, <a href="http://www.slideshare.net/esug/parsing-contexts-for-petitparser">contexts</a></li><li>Example from <a href="https://www.lukas-renggli.ch/blog/petitparser-1">lukas-renggli.ch</a>: <blockquote><pre>identifier <span class="kw">:=</span> (<span class="kw">#letter</span> <span class="kw">asParser</span> , (<span class="kw">#letter</span> <span class="kw">asParser</span> / <span class="kw">#digit</span> <span class="kw">asParser</span>) <span class="kw">star</span>) <span class="kw">flatten</span>.
@@ -906,6 +931,19 @@ main := ( number '\n' )*;</pre></blockquote></li><li>Maintained by Adrian D. Thu
 </pre></blockquote></li><li>More examples: <a href="http://tutor.rascal-mpl.org/">tutor.rascal-mpl.org</a></li><li>Maintained by Paul Klint, Jurgen Vinju and Tijs van der Storm</li></ul>
 			</div>
 			<div class="tabbertab">
+				<h2>RecDescent</h2>
+				<h3>Parse::RecDescent</h3>
+				<ul><li>RecDescent version 1.967013 (<a href="https://cpan.metacpan.org/authors/id/J/JT/JTBRAUN/Parse-RecDescent-1.967013.tar.gz">download</a>)</li><li>Main website: <a href="https://metacpan.org/pod/Parse::RecDescent">metacpan.org</a></li><li>Works with <a href="https://en.wikipedia.org/wiki/Perl">Perl</a></li><li>Parsing algorithm: <a href="https://en.wikipedia.org/wiki/Recursive_descent_parser">recursive descent</a></li><li>Example from <a href="https://metacpan.org/pod/Parse::RecDescent">metacpan.org</a>: <blockquote><pre>parser = Parse::RecDescent<span class="kw">-&gt;</span>new(<span class="kw">q<span class="kw">{</span></span>
+&lt;<span class="kw">autoaction</span>: <span class="kw">{</span> [<span class="kw">@item</span>] <span class="kw">}</span> &gt;
+ 
+expression: and_expr '||' expression <span class="kw">|</span> and_expr
+and_expr:   not_expr '&amp;&amp;' and_expr   <span class="kw">|</span> not_expr
+not_expr:   '!' brack_expr       <span class="kw">|</span> brack_expr
+brack_expr: '(' expression ')'       <span class="kw">|</span> identifier
+identifier:<span class="kw"> /</span>[a-z]<span class="kw">+/</span>i
+<span class="kw">}</span>);</pre></blockquote></li><li>Maintained by Jeremy T. Braun</li></ul>
+			</div>
+			<div class="tabbertab">
 				<h2>SableCC</h2>
 				<h3><a href="http://www.sablecc.org/"><img src="logo/sablecc.png" alt="SableCC" width="150px"/></a></a></h3>
 				<ul><li>SableCC version 3.7 (<a href="http://www.sablecc.org/downloads">download</a>)</li><li>Main website: <a href="http://www.sablecc.org/">sablecc.org</a></li><li>Works with <a href="http://101companies.org/wiki/Language:Java">Java</a></li><li>Wikipedia: (<a href="https://en.wikipedia.org/wiki/SableCC">English</a>)</li><li>Parsing algorithm: <a href="https://en.wikipedia.org/wiki/LALR_parser">LALR(1)</a></li><li>Example from <a href="http://www.engr.mun.ca/~theo/JavaCC-Tutorial/">engr.mun.ca</a>: <blockquote><pre><span class="kw">Grammar</span> expression;
@@ -1018,7 +1056,32 @@ term      <span class="kw">::=</span> LPAREN expr:e RPAREN <span class="kw">{:</
             <span class="kw">|</span> ID:i <span class="kw">{:</span> RESULT = i; <span class="kw">:}</span>;
 </pre></blockquote></li><li>Maintained by Catalin Hritcu</li></ul>
 			</div>
-			<!-- Spirit http://boost-spirit.com/home/doc/ -->
+			<div class="tabbertab">
+				<h2>Spirit</h2>
+				<h3><a href="http://boost-spirit.com/home/"><img src="logo/spirit.png" alt="Spirit" width="150px"/></a></a></h3>
+				<ul><li>Spirit version 3.0.0 (<a href="http://boost-spirit.com/home/download/">download</a>)</li><li>Main website: <a href="http://boost-spirit.com/home/">boost-spirit.com</a></li><li>Works with <a href="http://101companies.org/wiki/Language:CPlusPlus">C++</a></li><li>Wikipedia: (<a href="https://en.wikipedia.org/wiki/Spirit Parser Framework">English</a>) (<a href="https://de.wikipedia.org/wiki/Spirit (Parser)">German</a>)</li><li>Parsing algorithms: <a href="https://en.wikipedia.org/wiki/Backtracking">backtracking</a>, <a href="https://en.wikipedia.org/wiki/LL_parser">LL(*)</a></li><li>Example from <a href="https://en.wikipedia.org/wiki/Spirit_Parser_Framework#Example">English</a>: <blockquote><pre><span class="kw">#include</span> &lt;string&gt;
+<span class="kw">#include</span> &lt;iostream&gt;
+<span class="kw">#include</span> &lt;boost/spirit/include/qi.hpp&gt;
+<span class="kw">#include</span> &lt;boost/spirit/include/phoenix.hpp&gt;
+ 
+<span class="kw">int</span> main()
+{
+  <span class="kw">namespace</span> qi = boost::spirit::qi;
+
+  std::string input;
+ 
+  std::cout <span class="kw">&lt;&lt;</span> "Input a line: \n";
+  getline(std::cin, input);
+  std::cout <span class="kw">&lt;&lt;</span> "Got '" <span class="kw">&lt;&lt;</span> input <span class="kw">&lt;&lt;</span> "'.\n";
+ 
+  <span class="kw">unsigned</span> count = 0;
+
+  <span class="kw">auto</span> rule = *(qi::lit("cat") [ ++qi::_val ] | qi::omit[qi::char_]);
+  qi::parse(input.begin(), input.end(), rule, count);
+  
+  std::cout <span class="kw">&lt;&lt;</span> "The input contained " <span class="kw">&lt;&lt;</span> count <span class="kw">&lt;&lt;</span> " occurrences of 'cat'\n";
+}</pre></blockquote></li><li>Maintained by Joel de Guzman, Hartmut Kaiser, Carl Barron, François Barel, Dan Nuffer, Ben Hanson, Martijn van der Lee, John David, Juan Carlos Arevalo-Baeza, Martin Wille, Peter Simons, Jeff Westfahl, João Abecasis, Dan Marsden, Nicola Musatti, Tobias Schwinger, Thomas Heller, Bryce Lelbach, Jeroen Habraken, Agustín Bergé, Kohei Takahashi</li></ul>
+			</div>
 			<div class="tabbertab">
 				<h2>Spoofax</h2>
 				<h3><a href="http://metaborg.org/en/latest/"><img src="logo/spoofax.png" alt="Spoofax"/></a></h3>

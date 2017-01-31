@@ -1,0 +1,10 @@
+{
+	"version": "0.23",
+	"uri": "http://parsnip-parser.sourceforge.net/",
+	"download": "https://sourceforge.net/projects/parsnip-parser/files/",
+	"parsing": ["Packrat"],
+	"example": "http://spikebucket.blogspot.be/2007/10/simple-calculator.html",
+	"keywords": ["double", "typedef", "-&gt;", "&lt;&lt;", "if", "return"],
+	"maintained": "Alex Rubinsteyn",
+	"lang": ["C++"]
+}

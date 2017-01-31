@@ -1,0 +1,12 @@
+{
+	"version": "3.0.0",
+	"uri": "http://boost-spirit.com/home/",
+	"logo": "spirit.png",
+	"download": "http://boost-spirit.com/home/download/",
+	"parsing": ["backtracking", "LL(*)"],
+	"example": "https://en.wikipedia.org/wiki/Spirit_Parser_Framework#Example",
+	"keywords": ["#include", "int", "namespace", "&lt;&lt;", "unsigned", "auto"],
+	"maintained": "Joel de Guzman, Hartmut Kaiser, Carl Barron, François Barel, Dan Nuffer, Ben Hanson, Martijn van der Lee, John David, Juan Carlos Arevalo-Baeza, Martin Wille, Peter Simons, Jeff Westfahl, João Abecasis, Dan Marsden, Nicola Musatti, Tobias Schwinger, Thomas Heller, Bryce Lelbach, Jeroen Habraken, Agustín Bergé, Kohei Takahashi",
+	"lang": ["C++"],
+	"wikipedia": {"Spirit Parser Framework": ["en"], "Spirit (Parser)": ["de"]}
+}
