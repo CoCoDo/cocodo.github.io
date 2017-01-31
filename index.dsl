@@ -78,7 +78,7 @@
 			<tab>Irony</tab>
 			<tab>JastAdd</tab>
 			<tab>JavaCC</tab>
-			<!-- jparsec https://github.com/jparsec/jparsec/wiki/Overview -->
+			<tab>jparsec</tab>
 			<tab>Kiama</tab>
 			<tab>Kleenex</tab>
 			<tab>Laja</tab>
@@ -93,10 +93,7 @@
 			</div>
 			<tab>Parsec</tab>
 			<tab>ParseLib</tab>
-			<div class="tabbertab">
-				<h2>PetitParser</h2>
-				<h3><a href="http://scg.unibe.ch/research/helvetia/petitparser"><img src="logo/petitparser.png" alt="PetitParser"/></a></h3>
-			</div>
+			<tab>PetitParser</tab>
 			<!-- parsnip http://parsnip-parser.sourceforge.net/ -->
 			<div class="tabbertab">
 				<h2>PLY</h2>

@@ -1,0 +1,19 @@
+{
+	"version": "Pharo 5.0 / Helvetia",
+	"uri": "http://scg.unibe.ch/research/helvetia/petitparser",
+	"logo": "petitparser.png",
+	"download": ["http://pharo.org/", "http://source.lukas-renggli.ch/built/oneclick/Helvetia-OneClick.zip"],
+	"license": "MIT",
+	"parsing": ["scannerless", "monadic", "Packrat", "contexts"],
+	"example": "https://www.lukas-renggli.ch/blog/petitparser-1",
+	"keywords": ["#letter", "asParser", "#digit", "flatten", "new", "def", "==&gt;", "star", "plus", "token", "trim", "first", "last", "$*", "$+", "end", "asNumber", "$(", "$)", ":="],
+	"maintained": "Tudor Gîrba, Jan Kurš",
+	"lang": ["Smalltalk"],
+	"ontop": {
+		"PetitParser for Java": "https://github.com/petitparser/java-petitparser",
+		"PetitParser for Dart": "https://github.com/petitparser/dart-petitparser",
+		"PetitParser for PHP": "https://github.com/mindplay-dk/petitparserphp",
+		"PetitParser for TypeScript": "https://github.com/mindplay-dk/petitparser-ts",
+		"PetitParser for Smalltalk/X": "https://bitbucket.org/janvrany/stx-goodies-petitparser/overview"
+	}
+}

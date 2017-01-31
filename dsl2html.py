@@ -14,6 +14,7 @@ techs = {
 	"backtracking": "https://en.wikipedia.org/wiki/Backtracking",
 	"bottom-up": "https://en.wikipedia.org/wiki/Bottom-up_parsing",
 	"BX": "http://www.prg.nii.ac.jp/project/bigul/",
+	"contexts": "http://www.slideshare.net/esug/parsing-contexts-for-petitparser",
 	"DCG": "https://pdfs.semanticscholar.org/fbc0/4a1951003ba164303b2898fb7f3c6b4e9083.pdf",
 	"DFA": "https://en.wikipedia.org/wiki/Deterministic_finite_automaton",
 	"FSM": "https://en.wikipedia.org/wiki/Finite-state_machine",
@@ -29,6 +30,7 @@ techs = {
 	"recursive descent": "https://en.wikipedia.org/wiki/Recursive_descent_parser",
 	"scannerless": "https://en.wikipedia.org/wiki/Scannerless_parsing",
 	"SLR": "https://en.wikipedia.org/wiki/Simple_LR_parser",
+	"Smalltalk": "https://en.wikipedia.org/wiki/Smalltalk",
 	"top-down": "https://en.wikipedia.org/wiki/Top-down_parsing",
 }
 slang = {
@@ -139,7 +141,11 @@ while i < len(lines):
 				item += ' '.join([bylang[x] for x in sortlangs(bylang.keys())])
 				items.append(item)
 			if 'download' in m.keys():
-				items[0] += ' (<a href="%s">download</a>)' % m['download']
+				if type(m['download']) == type(''):
+					items[0] += ' (<a href="%s">download</a>)' % m['download']
+				else:
+					for link in m['download']:
+						items[0] += ' (<a href="%s">download</a>)' % m['download']
 			if 'parsing' in m.keys():
 				if len(m['parsing']) == 1:
 					item = 'Parsing algorithm: ' + tryresolve(m['parsing'][0],techs)
