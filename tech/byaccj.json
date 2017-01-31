@@ -1,0 +1,12 @@
+{
+	"fullname": "Berkeley Yacc Java extension",
+	"version": "1.15",
+	"uri": "http://byaccj.sourceforge.net/",
+	"download": "http://byaccj.sourceforge.net/#download",
+	"parsing": ["LALR"],
+	"example": "http://byaccj.sourceforge.net/",
+	"keywords": ["%left", "%prec", "%token", "%%", ":", "|", "import", "%{", "%}", "%right", "$1", "$2", "$3", "$$", "void", "boolean", "int", "try", "catch", "return", "new", "if", "else", "true", "false", "public", "static", "while"],
+	"notkeywords": ["println", "newline"],
+	"maintained": "Tomas Hurka",
+	"lang": ["C", "C++", "Java"]
+}

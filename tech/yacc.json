@@ -1,0 +1,11 @@
+{
+	"fullname": "Yet Another Compiler-compiler",
+	"uri": "http://dinosaur.compilertools.net/#yacc",
+	"parsing": ["LALR"],
+	"example": "http://dinosaur.compilertools.net/yacc/index.html",
+	"keywords": ["%left", "%prec", "%token", "%%", ":", "|"],
+	"maintained": "Stephen C. Johnson",
+	"lang": ["C"],
+	"oftenwith": {"lex": ["http://dinosaur.compilertools.net/#lex", "https://en.wikipedia.org/wiki/Lex_(software)", "https://fr.wikipedia.org/wiki/Lex_(logiciel)", "https://nl.wikipedia.org/wiki/Lex_(computerprogramma)", "https://ru.wikipedia.org/wiki/Lex"]},
+	"wikipedia": {"Yacc": ["en", "nl", "ru", "de"], "Yacc (logiciel)": ["fr"]}
+}

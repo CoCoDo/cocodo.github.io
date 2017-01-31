@@ -67,6 +67,8 @@
 			<tab>Bison</tab>
 			<tab>BiYacc</tab>
 			<tab>BtYacc</tab>
+			<tab>byacc</tab>
+			<tab>BYACC/J</tab>
 			<tab>Coco/R</tab>
 			<tab>DCG</tab>
 			<tab>Eli</tab>
@@ -130,10 +132,7 @@
 				<h2>Xtext</h2>
 				<h3><a href="http://www.eclipse.org/Xtext/"><img src="logo/xtext.png" alt="Xtext"/></a></h3>
 			</div>
-			<div class="tabbertab">
-				<h2>yacc</h2>
-				<h3><a href="http://dinosaur.compilertools.net/">lex &amp; yacc</a></h3>
-			</div>
+			<tab>yacc</tab>
 		</div>
 		</div>
 		</div>

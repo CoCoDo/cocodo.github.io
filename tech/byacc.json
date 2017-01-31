@@ -1,0 +1,13 @@
+{
+	"fullname": "Berkeley Yacc",
+	"version": "1.9",
+	"uri": "http://invisible-island.net/byacc/byacc.html",
+	"download": "ftp://ftp.cs.berkeley.edu/pub/4bsd/byacc.1.9.tar.Z",
+	"parsing": ["LALR"],
+	"example": "http://dinosaur.compilertools.net/yacc/index.html",
+	"keywords": ["%left", "%prec", "%token", "%%", ":", "|"],
+	"maintained": "Robert Corbett",
+	"lang": ["C"],
+	"oftenwith": {"lex": ["http://dinosaur.compilertools.net/#lex", "https://en.wikipedia.org/wiki/Lex_(software)", "https://fr.wikipedia.org/wiki/Lex_(logiciel)", "https://nl.wikipedia.org/wiki/Lex_(computerprogramma)", "https://ru.wikipedia.org/wiki/Lex"], "flex": ["https://github.com/westes/flex", "https://en.wikipedia.org/wiki/Flex_(lexical_analyser_generator)", "https://fr.wikipedia.org/wiki/Flex_(logiciel)", "https://ru.wikipedia.org/wiki/Flex_(генератор_лексических_анализаторов)"]},
+	"wikipedia": {"Berkeley Yacc": ["en"]}
+}

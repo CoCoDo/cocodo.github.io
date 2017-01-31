@@ -196,6 +196,112 @@ op2 : '*'
 unary : '+' <span class="kw">|</span> '-' <span class="kw">|</span> '*' <span class="kw">|</span> '&amp;' ;</pre></blockquote></li><li>Maintained by Chris Dodd and Vadim Maslov</li></ul>
 			</div>
 			<div class="tabbertab">
+				<h2>byacc</h2>
+				<h3>Berkeley Yacc</h3>
+				<ul><li>byacc version 1.9 (<a href="ftp://ftp.cs.berkeley.edu/pub/4bsd/byacc.1.9.tar.Z">download</a>)</li><li>Main website: <a href="http://invisible-island.net/byacc/byacc.html">invisible-island.net</a></li><li>Works with <a href="http://101companies.org/wiki/Language:C">C</a></li><li>Wikipedia: (<a href="https://en.wikipedia.org/wiki/Berkeley Yacc">English</a>)</li><li>Parsing algorithm: <a href="https://en.wikipedia.org/wiki/LALR_parser">LALR</a></li><li>Example from <a href="http://dinosaur.compilertools.net/yacc/index.html">dinosaur.compilertools.net</a>: <blockquote><pre><span class="kw">%left</span>  '+'  '-'
+<span class="kw">%left</span>  '*'  '/'
+
+<span class="kw">%%</span>
+
+expr    <span class="kw">:</span>       expr  '+'  expr
+        <span class="kw">|</span>       expr  '-'  expr
+        <span class="kw">|</span>       expr  '*'  expr
+        <span class="kw">|</span>       expr  '/'  expr
+        <span class="kw">|</span>       '-'  expr      <span class="kw">%prec</span>  '*'
+        <span class="kw">|</span>       NAME
+        ;</pre></blockquote></li><li>Maintained by Robert Corbett</li><li>Often used with: <ul><li><a href="https://github.com/westes/flex">flex</a> (<a href="https://en.wikipedia.org/wiki/Flex_(lexical_analyser_generator)">English</a>) (<a href="https://fr.wikipedia.org/wiki/Flex_(logiciel)">French</a>) (<a href="https://ru.wikipedia.org/wiki/Flex_(генератор_лексических_анализаторов)">Russian</a>)</li><li><a href="http://dinosaur.compilertools.net/#lex">lex</a> (<a href="https://en.wikipedia.org/wiki/Lex_(software)">English</a>) (<a href="https://fr.wikipedia.org/wiki/Lex_(logiciel)">French</a>) (<a href="https://nl.wikipedia.org/wiki/Lex_(computerprogramma)">Dutch</a>) (<a href="https://ru.wikipedia.org/wiki/Lex">Russian</a>)</li></ul></li></ul>
+			</div>
+			<div class="tabbertab">
+				<h2>BYACC/J</h2>
+				<h3>Berkeley Yacc Java extension</h3>
+				<ul><li>BYACC/J version 1.15 (<a href="http://byaccj.sourceforge.net/#download">download</a>)</li><li>Main website: <a href="http://byaccj.sourceforge.net/">byaccj.sourceforge.net</a></li><li>Works with <a href="http://101companies.org/wiki/Language:C">C</a>, <a href="http://101companies.org/wiki/Language:CPlusPlus">C++</a>, <a href="http://101companies.org/wiki/Language:Java">Java</a></li><li>Parsing algorithm: <a href="https://en.wikipedia.org/wiki/LALR_parser">LALR</a></li><li>Example from <a href="http://byaccj.sourceforge.net/">byaccj.sourceforge.net</a>: <blockquote><pre><span class="kw">%{</span>
+<span class="kw">import</span> java.lang.Math;
+<span class="kw">import</span> java.io.*;
+<span class="kw">import</span> java.util.StringTokenizer;
+<span class="kw">%}</span>
+
+/* YACC Declarations */
+<span class="kw">%token</span> NUM
+<span class="kw">%left</span> '-' '+'
+<span class="kw">%left</span> '*' '/'
+<span class="kw">%left</span> NEG /* negation--unary minus */
+<span class="kw">%right</span> '^' /* exponentiation */
+
+/* Grammar follows */
+<span class="kw">%%</span>
+input<span class="kw">:</span> /* empty string */
+ <span class="kw">|</span> input line
+ ;
+
+line<span class="kw">:</span> '\n'
+ <span class="kw">|</span> exp '\n' { System.out.println(" " + <span class="kw">$1</span>.dval + " "); }
+ ;
+
+exp<span class="kw">:</span> NUM { <span class="kw">$$</span> = <span class="kw">$1</span>; }
+ <span class="kw">|</span> exp '+' exp { <span class="kw">$$</span> = <span class="kw">new</span> ParserVal(<span class="kw">$1</span>.dval + <span class="kw">$3</span>.dval); }
+ <span class="kw">|</span> exp '-' exp { <span class="kw">$$</span> = <span class="kw">new</span> ParserVal(<span class="kw">$1</span>.dval - <span class="kw">$3</span>.dval); }
+ <span class="kw">|</span> exp '*' exp { <span class="kw">$$</span> = <span class="kw">new</span> ParserVal(<span class="kw">$1</span>.dval * <span class="kw">$3</span>.dval); }
+ <span class="kw">|</span> exp '/' exp { <span class="kw">$$</span> = <span class="kw">new</span> ParserVal(<span class="kw">$1</span>.dval / <span class="kw">$3</span>.dval); }
+ <span class="kw">|</span> '-' exp <span class="kw">%prec</span> NEG { <span class="kw">$$</span> = <span class="kw">new</span> ParserVal(-<span class="kw">$2</span>.dval); }
+ <span class="kw">|</span> exp '^' exp { <span class="kw">$$</span> = <span class="kw">new</span> ParserVal(Math.pow(<span class="kw">$1</span>.dval, <span class="kw">$3</span>.dval)); }
+ <span class="kw">|</span> '(' exp ')' { <span class="kw">$$</span> = <span class="kw">$2</span>; }
+ ;
+<span class="kw">%%</span>
+
+String ins;
+StringTokenizer st;
+
+<span class="kw">void</span> yyerror(String s) { System.out.println("par<span class="kw">:</span>"+s); }
+
+<span class="kw">boolean</span> newline;
+<span class="kw">int</span> yylex()
+{
+	String s;
+	<span class="kw">int</span> tok;
+	Double d;
+	<span class="kw">if</span> (!st.hasMoreTokens())
+		<span class="kw">if</span> (!newline)
+		{
+			newline=<span class="kw">true</span>;
+			<span class="kw">return</span> '\n';
+		}
+		<span class="kw">else</span>
+			<span class="kw">return</span> 0;
+	s = st.nextToken();
+	<span class="kw">try</span>
+	{
+		d = Double.valueOf(s);
+		yylval = <span class="kw">new</span> ParserVal(d.doubleValue());
+		tok = NUM;
+	}
+	<span class="kw">catch</span> (Exception e)
+	{
+		tok = s.charAt(0);
+	}
+	<span class="kw">return</span> tok;
+}
+
+<span class="kw">void</span> dotest()
+{
+	BufferedReader in = <span class="kw">new</span> BufferedReader(<span class="kw">new</span> InputStreamReader(System.in));
+	<span class="kw">while</span> (<span class="kw">true</span>)
+	{
+		System.out.pr<span class="kw">int</span>("expression<span class="kw">:</span>");
+		<span class="kw">try</span> { ins = in.readLine(); }
+		<span class="kw">catch</span> (Exception e) {}
+		st = <span class="kw">new</span> StringTokenizer(ins);
+		newline=<span class="kw">false</span>;
+		yyparse();
+	}
+}
+
+<span class="kw">public</span> <span class="kw">static</span> <span class="kw">void</span> main(String args[])
+{
+	Parser par = <span class="kw">new</span> Parser(<span class="kw">false</span>);
+	par.dotest();
+}</pre></blockquote></li><li>Maintained by Tomas Hurka</li></ul>
+			</div>
+			<div class="tabbertab">
 				<h2>Coco/R</h2>
 				<h3>Coco/R</h3>
 				<ul><li>Coco/R (<a href="http://ssw.jku.at/Coco/">download</a>)</li><li>Main website: <a href="http://ssw.jku.at/Coco/">ssw.jku.at</a></li><li>Works with <a href="http://101companies.org/wiki/Language:CSharp">C#</a>, <a href="http://101companies.org/wiki/Language:Java">Java</a>, <a href="http://101companies.org/wiki/Language:CPlusPlus">C++</a>, F#, VB.NET, Swift, Oberon</li><li>Wikipedia: (<a href="https://en.wikipedia.org/wiki/Coco/R">English</a>) (<a href="https://de.wikipedia.org/wiki/Coco/R">German</a>) (<a href="https://ru.wikipedia.org/wiki/Coco/R">Russian</a>)</li><li>Parsing algorithms: <a href="https://en.wikipedia.org/wiki/Recursive_descent_parser">recursive descent</a>, <a href="https://en.wikipedia.org/wiki/Attribute_grammar">AG</a>, <a href="https://en.wikipedia.org/wiki/LL_parser">LL(k)</a></li><li>Example from <a href="http://ssw.jku.at/Coco/Tutorial/">ssw.jku.at</a>: <blockquote><pre><span class="kw">COMPILER</span> Sample
@@ -846,7 +952,19 @@ term      <span class="kw">::=</span> LPAREN expr:e RPAREN <span class="kw">{:</
 			</div>
 			<div class="tabbertab">
 				<h2>yacc</h2>
-				<h3><a href="http://dinosaur.compilertools.net/">lex &amp; yacc</a></h3>
+				<h3>Yet Another Compiler-compiler</h3>
+				<ul><li>yacc</li><li>Main website: <a href="http://dinosaur.compilertools.net/#yacc">dinosaur.compilertools.net</a></li><li>Works with <a href="http://101companies.org/wiki/Language:C">C</a></li><li>Wikipedia: (<a href="https://en.wikipedia.org/wiki/Yacc">English</a>) (<a href="https://nl.wikipedia.org/wiki/Yacc">Dutch</a>) (<a href="https://fr.wikipedia.org/wiki/Yacc (logiciel)">French</a>) (<a href="https://de.wikipedia.org/wiki/Yacc">German</a>) (<a href="https://ru.wikipedia.org/wiki/Yacc">Russian</a>)</li><li>Parsing algorithm: <a href="https://en.wikipedia.org/wiki/LALR_parser">LALR</a></li><li>Example from <a href="http://dinosaur.compilertools.net/yacc/index.html">dinosaur.compilertools.net</a>: <blockquote><pre><span class="kw">%left</span>  '+'  '-'
+<span class="kw">%left</span>  '*'  '/'
+
+<span class="kw">%%</span>
+
+expr    <span class="kw">:</span>       expr  '+'  expr
+        <span class="kw">|</span>       expr  '-'  expr
+        <span class="kw">|</span>       expr  '*'  expr
+        <span class="kw">|</span>       expr  '/'  expr
+        <span class="kw">|</span>       '-'  expr      <span class="kw">%prec</span>  '*'
+        <span class="kw">|</span>       NAME
+        ;</pre></blockquote></li><li>Maintained by Stephen C. Johnson</li><li>Often used with: <ul><li><a href="http://dinosaur.compilertools.net/#lex">lex</a> (<a href="https://en.wikipedia.org/wiki/Lex_(software)">English</a>) (<a href="https://fr.wikipedia.org/wiki/Lex_(logiciel)">French</a>) (<a href="https://nl.wikipedia.org/wiki/Lex_(computerprogramma)">Dutch</a>) (<a href="https://ru.wikipedia.org/wiki/Lex">Russian</a>)</li></ul></li></ul>
 			</div>
 		</div>
 		</div>
