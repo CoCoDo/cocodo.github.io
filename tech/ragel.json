@@ -6,7 +6,7 @@
 	"example": "http://www.colm.net/open-source/ragel/",
 	"keywords": ["action", "$", "@", "%", "/*NUMBER*/"],
 	"maintained": "Adrian D. Thurston",
-	"lang": ["C", "C++", "Assembler", "Objective C", "D", "Go", "Ruby", "Java"],
+	"lang": ["C", "C++", "Intel Asm", "Obj-C", "D", "Go", "Ruby", "Java"],
 	"ontop": {"Colm": "http://www.colm.net/open-source/colm/"},
 	"wikipedia": {"Ragel": ["en", "fr", "ru", "de"]}
 }
