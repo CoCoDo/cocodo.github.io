@@ -209,7 +209,7 @@ expr    <span class="kw">:</span>       expr  '+'  expr
         <span class="kw">|</span>       expr  '/'  expr
         <span class="kw">|</span>       '-'  expr      <span class="kw">%prec</span>  '*'
         <span class="kw">|</span>       NAME
-        ;</pre></blockquote></li><li>Maintained by Robert Corbett</li><li>Often used with: <ul><li><a href="https://github.com/westes/flex">flex</a> (<a href="https://en.wikipedia.org/wiki/Flex_(lexical_analyser_generator)">English</a>) (<a href="https://fr.wikipedia.org/wiki/Flex_(logiciel)">French</a>) (<a href="https://ru.wikipedia.org/wiki/Flex_(генератор_лексических_анализаторов)">Russian</a>)</li><li><a href="http://dinosaur.compilertools.net/#lex">lex</a> (<a href="https://en.wikipedia.org/wiki/Lex_(software)">English</a>) (<a href="https://fr.wikipedia.org/wiki/Lex_(logiciel)">French</a>) (<a href="https://nl.wikipedia.org/wiki/Lex_(computerprogramma)">Dutch</a>) (<a href="https://ru.wikipedia.org/wiki/Lex">Russian</a>)</li></ul></li></ul>
+        ;</pre></blockquote></li><li>Maintained by Robert Corbett</li><li>Often used with: <ul><li><a href="http://dinosaur.compilertools.net/#lex">lex</a> (<a href="https://en.wikipedia.org/wiki/Lex_(software)">English</a>) (<a href="https://fr.wikipedia.org/wiki/Lex_(logiciel)">French</a>) (<a href="https://nl.wikipedia.org/wiki/Lex_(computerprogramma)">Dutch</a>) (<a href="https://ru.wikipedia.org/wiki/Lex">Russian</a>)</li><li><a href="https://github.com/westes/flex">flex</a> (<a href="https://en.wikipedia.org/wiki/Flex_(lexical_analyser_generator)">English</a>) (<a href="https://fr.wikipedia.org/wiki/Flex_(logiciel)">French</a>) (<a href="https://ru.wikipedia.org/wiki/Flex_(генератор_лексических_анализаторов)">Russian</a>)</li></ul></li></ul>
 			</div>
 			<div class="tabbertab">
 				<h2>BYACC/J</h2>
@@ -776,7 +776,31 @@ prim <span class="kw">def</span>: (<span class="kw">$(</span> <span class="kw">a
 
 unsigned_int = (isdigit)<span class="kw">+</span></pre></blockquote></li><li>Maintained by Peter Breuer and Jonathan Bowen</li></ul>
 			</div>
-			<!-- pysec http://www.valuedlessons.com/2008/02/pysec-monadic-combinatoric-parsing-in.html -->
+			<div class="tabbertab">
+				<h2>pyparsing</h2>
+				<h3>pyparsing</h3>
+				<ul><li>pyparsing version 2.1.10 (<a href="https://sourceforge.net/projects/pyparsing/">download</a>)</li><li>Main website: <a href="http://pyparsing.wikispaces.com/">pyparsing.wikispaces.com</a></li><li>Works with <a href="https://docs.python.org/2/">Python2</a>, <a href="https://docs.python.org/3/">Python3</a></li><li>Parsing algorithms: <a href="https://en.wikipedia.org/wiki/Scannerless_parsing">scannerless</a>, <a href="https://en.wikipedia.org/wiki/Recursive_descent_parser">recursive descent</a></li><li>Example from <a href="http://pyparsing.wikispaces.com/">pyparsing.wikispaces.com</a>: <blockquote><pre><span class="kw">from</span> pyparsing <span class="kw">import</span> Word, alphas
+greet = Word( alphas ) + "," + Word( alphas ) + "!"
+hello = "Hello, World!"
+<span class="kw">print</span> (hello, "-&gt;", greet.parseString( hello ))</pre></blockquote></li><li>More examples: <a href="http://pyparsing.wikispaces.com/Examples">pyparsing.wikispaces.com</a></li><li>Maintained by Paul McGuire</li></ul>
+			</div>
+			<div class="tabbertab">
+				<h2>pysec</h2>
+				<h3>pysec</h3>
+				<ul><li>pysec</li><li>Main website: <a href="http://www.valuedlessons.com/2008/02/pysec-monadic-combinatoric-parsing-in.html">valuedlessons.com</a></li><li>Works with <a href="https://docs.python.org/2/">Python2</a></li><li>Parsing algorithms: <a href="http://www.cs.nott.ac.uk/~pszgmh/monparsing.pdf">monadic</a>, <a href="https://en.wikipedia.org/wiki/Recursive_descent_parser">recursive descent</a></li><li>Example from <a href="http://www.valuedlessons.com/2008/02/pysec-monadic-combinatoric-parsing-in.html">valuedlessons.com</a>: <blockquote><pre><span class="kw">from</span> Pysec <span class="kw">import</span> Parser, choice, quoted_chars, group_chars, option_chars, digits, between, pair, spaces, match, quoted_collection
+
+json_choices = []
+json         = choice(json_choices)
+text         = quoted_chars("'", "'")
+number       = group_chars([option_chars(["-"]), digits, option_chars([".", digits])]) <span class="kw">&gt;&gt;</span> Parser.lift(float)
+joiner       = between(spaces, match(","), spaces)
+mapping_pair = pair(text, spaces &amp; match(":") &amp; spaces &amp; json)
+collection   = quoted_collection("[", spaces, json,         joiner, "]") <span class="kw">&gt;&gt;</span> Parser.lift(list)
+mapping      = quoted_collection("{", spaces, mapping_pair, joiner, "}") <span class="kw">&gt;&gt;</span> Parser.lift(dict)
+json_choices.extend([text, number, mapping, collection])
+
+<span class="kw">print</span> json.parseString("{'a' : -1.0, 'b' : 2.0, 'z' : {'c' : [1.0, [2.0, [3.0]]]}}")</pre></blockquote></li><li>Maintained by Peter Thatcher</li></ul>
+			</div>
 			<div class="tabbertab">
 				<h2>Racket</h2>
 				<h3><a href="https://racket-lang.org/"><img src="logo/racket.png" alt="Racket" width="150px"/></a></a></h3>

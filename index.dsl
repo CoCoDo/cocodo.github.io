@@ -100,8 +100,8 @@
 			<!-- parsnip http://parsnip-parser.sourceforge.net/ -->
 			<tab>PLY</tab>
 			<tab>PRECC</tab>
-			<!-- pyparsing http://pyparsing.wikispaces.com/ -->
-			<!-- pysec http://www.valuedlessons.com/2008/02/pysec-monadic-combinatoric-parsing-in.html -->
+			<tab>pyparsing</tab>
+			<tab>pysec</tab>
 			<tab>Racket</tab>
 			<tab>Ragel</tab>
 			<tab>Rascal</tab>

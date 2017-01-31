@@ -1,0 +1,8 @@
+{
+	"uri": "http://www.valuedlessons.com/2008/02/pysec-monadic-combinatoric-parsing-in.html",
+	"parsing": ["monadic", "recursive descent"],
+	"example": "http://www.valuedlessons.com/2008/02/pysec-monadic-combinatoric-parsing-in.html",
+	"keywords": ["from", "import", "print", "&gt;&gt;"],
+	"maintained": "Peter Thatcher",
+	"lang": ["Python2"]
+}

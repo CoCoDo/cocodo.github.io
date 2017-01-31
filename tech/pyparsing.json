@@ -1,0 +1,11 @@
+{
+	"version": "2.1.10",
+	"uri": "http://pyparsing.wikispaces.com/",
+	"download": "https://sourceforge.net/projects/pyparsing/",
+	"parsing": ["scannerless", "recursive descent"],
+	"example": "http://pyparsing.wikispaces.com/",
+	"keywords": ["from", "import", "print"],
+	"more": "http://pyparsing.wikispaces.com/Examples",
+	"maintained": "Paul McGuire",
+	"lang": ["Python2", "Python3"]
+}
