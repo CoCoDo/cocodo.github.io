@@ -70,6 +70,7 @@
 			<tab>byacc</tab>
 			<tab>BYACC/J</tab>
 			<tab>Coco/R</tab>
+			<tab>Copper</tab>
 			<tab>DCG</tab>
 			<tab>Eli</tab>
 			<tab>Ensō</tab>
@@ -106,6 +107,7 @@
 			<tab>Rascal</tab>
 			<!-- rec::descent https://metacpan.org/pod/Parse::RecDescent -->
 			<tab>SableCC</tab>
+			<tab>Silver</tab>
 			<!-- simpleparse http://simpleparse.sourceforge.net/ -->
 			<tab>SJPT</tab>
 			<!-- spark http://pages.cpsc.ucalgary.ca/~aycock/spark/ -->

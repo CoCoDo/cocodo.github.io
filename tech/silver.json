@@ -1,0 +1,11 @@
+{
+	"version": "0.4.0",
+	"uri": "http://melt.cs.umn.edu/silver/",
+	"download": "https://github.com/melt-umn/silver",
+	"parsing": ["context-aware", "LALR(1)", "AG"],
+	"example": "http://melt.cs.umn.edu/silver/doc/tutorial/4_attribute_grammars/",
+	"keywords": ["nonterminal", "synthesized", "attribute", "concrete", "production", "occurs on", "with", "::="],
+	"more": "http://melt.cs.umn.edu/silver/doc/tutorial",
+	"maintained": "Ted Kaminski and Eric Van Wyk",
+	"lang": ["Silver"]
+}

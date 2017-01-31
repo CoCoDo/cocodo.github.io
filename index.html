@@ -95,7 +95,7 @@ expr<span class="kw"> = </span>expr.a MULT  expr.b   <span class="kw">{:</span> 
      <span class="kw">|</span> NUMBER.n              <span class="kw">{:</span> return new Expr(n.doubleValue());   <span class="kw">:}</span>
      <span class="kw">|</span> LPAREN expr.e RPAREN  <span class="kw">{:</span> return e; <span class="kw">:}</span>
      ;
-</pre></blockquote></li><li>More examples: <a href="http://beaver.sourceforge.net/">beaver.sourceforge.net</a></li><li>Often used with: <ul><li><a href="https://www.cs.princeton.edu/~appel/modern/java/JLex/">JLex</a></li><li><a href="http://www.jflex.de/">JFlex</a></li></ul></li></ul>
+</pre></blockquote></li><li>More examples: <a href="http://beaver.sourceforge.net/">beaver.sourceforge.net</a></li><li>Often used with: <ul><li><a href="http://www.jflex.de/">JFlex</a></li><li><a href="https://www.cs.princeton.edu/~appel/modern/java/JLex/">JLex</a></li></ul></li></ul>
 			</div>
 			<div class="tabbertab">
 				<h2>Bison</h2>
@@ -330,6 +330,49 @@ StringTokenizer st;
   = number                   <span class="kw">(.</span> n = Convert.Int32(t.val); <span class="kw">.)</span>
   .
 <span class="kw">END</span> Sample.</pre></blockquote></li><li>More examples: <a href="http://ssw.jku.at/Coco/Cookbook/">ssw.jku.at</a></li><li>Maintained by Hanspeter Mössenböck, Markus Löberbauer and Albrecht Wöß</li><li>Built on top of Coco/R: <ul><li><a href="http://www.zenspider.com/projects/cocor.html">Coco/Ruby</a></li><li><a href="https://pypi.python.org/pypi/CocoPy/">CocoPy</a></li><li><a href="https://code.google.com/archive/p/cocoxml/">CocoXml</a></li><li><a href="https://github.com/VilleKrumlinde/dcocor">DCocoR</a></li><li><a href="https://sourceforge.net/projects/parserbuilder/">ParserBuilder</a></li><li><a href="http://www.ada-ru.org/files/cocor_ada-1.53.1.tar.gz">cocor_ada</a></li></ul></li></ul>
+			</div>
+			<div class="tabbertab">
+				<h2>Copper</h2>
+				<h3>Copper</h3>
+				<ul><li>Copper version 0.7.2 (<a href="https://github.com/melt-umn/copper">download</a>)</li><li>Main website: <a href="http://melt.cs.umn.edu/copper/index.html">melt.cs.umn.edu</a></li><li>Works with <a href="http://melt.cs.umn.edu/silver/">Silver</a></li><li>Parsing algorithms: <a href="http://www-users.cs.umn.edu/~evw/pubs/vanwyk07gpce/">context-aware</a>, <a href="https://en.wikipedia.org/wiki/LALR_parser">LALR(1)</a></li><li>Example from <a href="https://github.com/melt-umn/copper/blob/develop/tests/grammars/CExprGrammar.x">@melt-umn/copper</a>: <blockquote><pre><span class="kw">%cf{</span>
+    <span class="kw">non terminal</span> stmt;
+    <span class="kw">non terminal</span> Double stmts,expr;
+
+    <span class="kw">start with</span> stmts;
+
+    <span class="kw">precedence left</span> PLUS, BINARY_MINUS;
+    <span class="kw">precedence left</span> TIMES, DIVIDE;
+    <span class="kw">precedence left</span> UNARY_MINUS;
+
+    stmts <span class="kw">::=</span>
+      stmts:hd stmt:tl   <span class="kw">{:</span> RESULT = (env.containsKey("RESULT") ? env.get("RESULT") : 0.0/0.0); <span class="kw">:}</span>
+    | stmt:s             <span class="kw">{:</span> RESULT = (env.containsKey("RESULT") ? env.get("RESULT") : 0.0/0.0);  <span class="kw">:}</span>
+    ;
+
+    stmt <span class="kw">::=</span>
+      UNASSIGNED_ID:i ASSIGN expr:e SEMI      <span class="kw">{:</span> env.put(i,e); <span class="kw">:}</span>
+    | expr:e SEMI                             <span class="kw">{:</span> env.put("_e" + (nextUnnamed++),e); <span class="kw">:}</span>
+    ;
+
+    /* Expressions */
+    expr <span class="kw">::=</span>
+      expr:l PLUS expr:r           <span class="kw">{:</span> RESULT = l + r;    <span class="kw">:}</span>
+    | expr:l BINARY_MINUS expr:r   <span class="kw">{:</span> RESULT = l - r;    <span class="kw">:}</span>
+    | expr:l TIMES expr:r          <span class="kw">{:</span> RESULT = l * r;    <span class="kw">:}</span>
+    | expr:l DIVIDE expr:r         <span class="kw">{:</span> RESULT = l / r;    <span class="kw">:}</span>
+    | UNARY_MINUS expr:e           <span class="kw">{:</span> RESULT = -1.0 * e; <span class="kw">:}</span>
+        <span class="kw">%layout</span> ()
+    | LPAREN expr:e RPAREN         <span class="kw">{:</span> RESULT = e;        <span class="kw">:}</span>
+    | NUMBER:n                     <span class="kw">{:</span> RESULT = n;        <span class="kw">:}</span>
+    | ASSIGNED_ID:i                <span class="kw">{:</span> RESULT = i;        <span class="kw">:}</span>
+    | UNASSIGNED_ID:u
+      <span class="kw">{:</span>
+          error(_pos,"Undefined symbol '" + u + "'");
+          RESULT = 0.0/0.0;
+      <span class="kw">:}</span>
+    ;
+
+<span class="kw">%cf}</span></pre></blockquote></li><li>More examples: <a href="https://github.com/melt-umn/copper/tree/develop/tests/grammars">@melt-umn/copper</a></li><li>Maintained by Eric Van Wyk</li></ul>
 			</div>
 			<div class="tabbertab">
 				<h2>DCG</h2>
@@ -871,6 +914,55 @@ main := ( number '\n' )*;</pre></blockquote></li><li>Maintained by Adrian D. Thu
       <span class="kw">Left</span> mul;
       <span class="kw">Left</span> add;
 </pre></blockquote></li><li>More examples: <a href="https://github.com/SableCC/sablecc">@SableCC/sablecc</a></li><li>Maintained by Etienne M. Gagnon, Patrick Pelletier, Jean Privat, Jérôme Dassonville and Lucas Satabin</li></ul>
+			</div>
+			<div class="tabbertab">
+				<h2>Silver</h2>
+				<h3>Silver</h3>
+				<ul><li>Silver version 0.4.0 (<a href="https://github.com/melt-umn/silver">download</a>)</li><li>Main website: <a href="http://melt.cs.umn.edu/silver/">melt.cs.umn.edu</a></li><li>Works with <a href="http://melt.cs.umn.edu/silver/">Silver</a></li><li>Parsing algorithms: <a href="http://www-users.cs.umn.edu/~evw/pubs/vanwyk07gpce/">context-aware</a>, <a href="https://en.wikipedia.org/wiki/LALR_parser">LALR(1)</a>, <a href="https://en.wikipedia.org/wiki/Attribute_grammar">AG</a></li><li>Example from <a href="http://melt.cs.umn.edu/silver/doc/tutorial/4_attribute_grammars/">melt.cs.umn.edu</a>: <blockquote><pre><span class="kw">nonterminal</span> Root_c ;
+<span class="kw">synthesized</span> <span class="kw">attribute</span> pp :: String ;
+<span class="kw">synthesized</span> <span class="kw">attribute</span> ast_Root :: Root;
+<span class="kw">attribute</span> pp, ast_Root <span class="kw">occurs on</span> Root_c ;
+
+<span class="kw">concrete</span> <span class="kw">production</span> root_c
+r::Root_c <span class="kw">::=</span> e::Expr_c
+{ r.pp = e.pp;
+  r.ast_Root = root(e.ast_Expr);
+}
+
+<span class="kw">synthesized</span> <span class="kw">attribute</span> ast_Expr :: Expr ;
+<span class="kw">nonterminal</span> Expr_c <span class="kw">with</span> pp, ast_Expr;
+<span class="kw">nonterminal</span> Term_c <span class="kw">with</span> pp, ast_Expr;
+<span class="kw">nonterminal</span> Factor_c <span class="kw">with</span> pp, ast_Expr;
+
+<span class="kw">concrete</span> <span class="kw">production</span> add_c
+sum::Expr_c <span class="kw">::=</span> e::Expr_c ’+’ t::Term_c
+{ sum.pp = e.pp ++ " + " ++ t.pp ;
+  sum.ast_Expr = add(e.ast_Expr, t.ast_Expr );
+}
+
+<span class="kw">concrete</span> <span class="kw">production</span> exprTerm_c
+e::Expr_c <span class="kw">::=</span> t::Term_c
+{ e.pp = t.pp ;
+  e.ast_Expr = t.ast_Expr ;
+}
+
+<span class="kw">concrete</span> <span class="kw">production</span> mul_c
+prd::Term_c <span class="kw">::=</span> t::Term_c ’*’ f::Factor_c
+{ prd.pp = t.pp ++ " * " ++ f.pp ;
+  prd.ast_Expr = mul(t.ast_Expr, f.ast_Expr);
+}
+
+<span class="kw">concrete</span> <span class="kw">production</span> termFactor_c
+t::Term_c <span class="kw">::=</span> f::Factor_c
+{ t.pp = f.pp ;
+  t.ast_Expr = f.ast_Expr ;
+}
+
+<span class="kw">concrete</span> <span class="kw">production</span> integerConstant_c
+ic::Factor_c <span class="kw">::=</span> i::IntLit_t
+{ ic.pp = i.lexeme ;
+  ic.ast_Expr = integerConstant(i);
+}</pre></blockquote></li><li>More examples: <a href="http://melt.cs.umn.edu/silver/doc/tutorial">melt.cs.umn.edu</a></li><li>Maintained by Ted Kaminski and Eric Van Wyk</li></ul>
 			</div>
 			<div class="tabbertab">
 				<h2>SJPT</h2>

@@ -1,0 +1,11 @@
+{
+	"version": "0.7.2",
+	"uri": "http://melt.cs.umn.edu/copper/index.html",
+	"download": "https://github.com/melt-umn/copper",
+	"parsing": ["context-aware", "LALR(1)"],
+	"example": "https://github.com/melt-umn/copper/blob/develop/tests/grammars/CExprGrammar.x",
+	"keywords": ["non terminal", "start with", "precedence left", "{:", ":}", "%layout", "%cf}", "%cf{", "::="],
+	"more": "https://github.com/melt-umn/copper/tree/develop/tests/grammars",
+	"maintained": "Eric Van Wyk",
+	"lang": ["Silver"]
+}
