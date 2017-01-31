@@ -1,6 +1,7 @@
 {
 	"fullname": "Berkeley Yacc Java extension",
 	"version": "1.15",
+	"logo": "byaccj.jpg",
 	"uri": "http://byaccj.sourceforge.net/",
 	"download": "http://byaccj.sourceforge.net/#download",
 	"parsing": ["LALR"],
