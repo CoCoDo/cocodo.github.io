@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"uri": "https://bitbucket.org/inkytonik/kiama",
+	"logo": "kiama.png",
+	"license": "GNU LGPL",
+	"download": "https://bitbucket.org/inkytonik/kiama/src",
+	"parsing": ["Packrat", "AG"],
+	"example": "https://bitbucket.org/inkytonik/kiama/src/21ee36be99e8d9c6c697b80aca0a56e2eb4d2db3/library/src/test/scala/org/bitbucket/inkytonik/kiama/example/imperative/SyntaxAnalyser.scala",
+	"keywords": ["class", "extends", "lazy", "val", "import", "~&gt;", "&lt;~", "^^", "~", "|"],
+	"more": "https://bitbucket.org/inkytonik/kiama/src/21ee36be99e8d9c6c697b80aca0a56e2eb4d2db3/library/src/test/scala/org/bitbucket/inkytonik/kiama/example/",
+	"maintained": "Anthony Sloane",
+	"lang": ["Scala"]
+}

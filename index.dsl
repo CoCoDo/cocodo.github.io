@@ -79,6 +79,7 @@
 			<tab>JastAdd</tab>
 			<tab>JavaCC</tab>
 			<!-- jparsec https://github.com/jparsec/jparsec/wiki/Overview -->
+			<tab>Kiama</tab>
 			<tab>Kleenex</tab>
 			<tab>Laja</tab>
 			<!-- Lark http://www.cocolab.com/cocktail.html not included because a license key must be preordered -->

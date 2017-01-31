@@ -436,6 +436,53 @@ BooleanLiteral <span class="kw">:</span> Exp <span class="kw"><span class="kw">:
 </pre></blockquote></li><li>More examples: <a href="http://www.engr.mun.ca/~theo/JavaCC-FAQ/javacc-faq-moz.htm">engr.mun.ca</a>, <a href="http://javacc.org">javacc.org</a></li><li>Maintained by Glassfish Kenai, Paul Cager, Tom Copeland and sreeni. </li></ul>
 			</div>
 			<div class="tabbertab">
+				<h2>Kiama</h2>
+				<h3><a href="https://bitbucket.org/inkytonik/kiama"><img src="logo/kiama.png" alt="Kiama" width="150px"/></a></a></h3>
+				<ul><li>Kiama version 2.0.0 (<a href="https://bitbucket.org/inkytonik/kiama/src">download</a>)</li><li>Main website: <a href="https://bitbucket.org/inkytonik/kiama">@inkytonik/kiama</a></li><li>Works with <a href="https://en.wikipedia.org/wiki/Scala_(programming_language)">Scala</a></li><li>Parsing algorithms: <a href="http://bford.info/packrat/">Packrat</a>, <a href="https://en.wikipedia.org/wiki/Attribute_grammar">AG</a></li><li>Example from <a href="https://bitbucket.org/inkytonik/kiama/src/21ee36be99e8d9c6c697b80aca0a56e2eb4d2db3/library/src/test/scala/org/bitbucket/inkytonik/kiama/example/imperative/SyntaxAnalyser.scala">@inkytonik/kiama</a>: <blockquote><pre><span class="kw">class</span> SyntaxAnalyser(positions : Positions) <span class="kw">extends</span> Parsers(positions)
+{
+    <span class="kw">lazy</span> <span class="kw">val</span> stmt : Parser[Stmt] =
+        ";" <span class="kw">^^</span> (_ =&gt; Null()) <span class="kw">|</span> sequence <span class="kw">|</span> asgnStmt <span class="kw">|</span> whileStmt
+
+    <span class="kw">lazy</span> <span class="kw">val</span> asgnStmt =
+        variable <span class="kw">~</span> ("=" <span class="kw"><span class="kw">~</span>&gt;</span> exp) <span class="kw">&lt;<span class="kw">~</span></span> ";" <span class="kw">^^</span> Asgn
+
+    <span class="kw">lazy</span> <span class="kw">val</span> whileStmt =
+        ("while" <span class="kw"><span class="kw">~</span>&gt;</span> "(" <span class="kw"><span class="kw">~</span>&gt;</span> exp <span class="kw">&lt;<span class="kw">~</span></span> ")") <span class="kw">~</span> stmt <span class="kw">^^</span> While
+
+    <span class="kw">lazy</span> <span class="kw">val</span> sequence =
+        "{" <span class="kw"><span class="kw">~</span>&gt;</span> (stmt*) <span class="kw">&lt;<span class="kw">~</span></span> "}" <span class="kw">^^</span> Seqn
+
+    <span class="kw">lazy</span> <span class="kw">val</span> exp : PackratParser[Exp] =
+        exp <span class="kw">~</span> ("+" <span class="kw"><span class="kw">~</span>&gt;</span> term) <span class="kw">^^</span> Add <span class="kw">|</span>
+            exp <span class="kw">~</span> ("-" <span class="kw"><span class="kw">~</span>&gt;</span> term) <span class="kw">^^</span> Sub <span class="kw">|</span>
+            term
+
+    <span class="kw">lazy</span> <span class="kw">val</span> term : PackratParser[Exp] =
+        term <span class="kw">~</span> ("*" <span class="kw"><span class="kw">~</span>&gt;</span> factor) <span class="kw">^^</span> Mul <span class="kw">|</span>
+            term <span class="kw">~</span> ("/" <span class="kw"><span class="kw">~</span>&gt;</span> factor) <span class="kw">^^</span> Div <span class="kw">|</span>
+            factor
+
+    <span class="kw">lazy</span> <span class="kw">val</span> factor : Parser[Exp] =
+        double <span class="kw">|</span> integer <span class="kw">|</span> variable <span class="kw">|</span> "-" <span class="kw"><span class="kw">~</span>&gt;</span> exp <span class="kw">^^</span> Neg <span class="kw">|</span> "(" <span class="kw"><span class="kw">~</span>&gt;</span> exp <span class="kw">&lt;<span class="kw">~</span></span> ")"
+
+    <span class="kw">lazy</span> <span class="kw">val</span> double =
+        """[0-9]+\.[0-9]+""".r <span class="kw">^^</span> (s =&gt; Num(s.toDouble))
+
+    <span class="kw">lazy</span> <span class="kw">val</span> integer =
+        "[0-9]+".r <span class="kw">^^</span> (s =&gt; Num(s.toInt))
+
+    <span class="kw">lazy</span> <span class="kw">val</span> variable =
+        idn <span class="kw">^^</span> Var
+
+    <span class="kw">lazy</span> <span class="kw">val</span> idn =
+        not(keyword) <span class="kw"><span class="kw">~</span>&gt;</span> "[a-zA-Z][a-zA-Z0-9]*".r
+
+    <span class="kw">lazy</span> <span class="kw">val</span> keyword =
+        keywords("[^a-zA-Z0-9]".r, List("while"))
+
+}</pre></blockquote></li><li>More examples: <a href="https://bitbucket.org/inkytonik/kiama/src/21ee36be99e8d9c6c697b80aca0a56e2eb4d2db3/library/src/test/scala/org/bitbucket/inkytonik/kiama/example/">@inkytonik/kiama</a></li><li>Maintained by Anthony Sloane</li></ul>
+			</div>
+			<div class="tabbertab">
 				<h2>Kleenex</h2>
 				<h3><a href="http://kleenexlang.org/"><img src="logo/kleenex.png" alt="Kleenex" width="150px"/></a></a></h3>
 				<ul><li>Kleenex (<a href="http://www.antlr.org/download.html">download</a>)</li><li>Main website: <a href="http://kleenexlang.org/">kleenexlang.org</a></li><li>Works with <a href="http://101companies.org/wiki/Language:C">C</a></li><li>Parsing algorithm: <a href="https://en.wikipedia.org/wiki/Finite-state_transducer">FST</a></li><li>Example from <a href="https://github.com/diku-kmc/kleenexlang">@diku-kmc/kleenexlang</a>: <blockquote><pre>main <span class="kw">:=</span> (num <span class="kw">/[</span><span class="kw">^</span>0-9<span class="kw">]/</span> <span class="kw">|</span> other)<span class="kw">*</span>

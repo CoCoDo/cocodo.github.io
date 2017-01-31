@@ -24,6 +24,7 @@ techs = {
 	"LL": "https://en.wikipedia.org/wiki/LL_parser",
 	"LR": "https://en.wikipedia.org/wiki/LR_parser",
 	"monadic": "http://www.cs.nott.ac.uk/~pszgmh/monparsing.pdf",
+	"Packrat": "http://bford.info/packrat/",
 	"RAG": "https://pdfs.semanticscholar.org/89f1/857e15d270c5c1f8417381368e4781c871e4.pdf",
 	"recursive descent": "https://en.wikipedia.org/wiki/Recursive_descent_parser",
 	"scannerless": "https://en.wikipedia.org/wiki/Scannerless_parsing",
@@ -41,6 +42,7 @@ slang = {
 	"Python2": "https://docs.python.org/2/",
 	"Python3": "https://docs.python.org/3/",
 	"Racket": "https://en.wikipedia.org/wiki/Racket_features",
+	"Scala": "https://en.wikipedia.org/wiki/Scala_(programming_language)",
 }
 
 def bare(s):
