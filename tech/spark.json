@@ -1,0 +1,11 @@
+{
+	"fullname": "Scanning, Parsing, and Rewriting Kit",
+	"version": "0.6.1",
+	"uri": "http://pages.cpsc.ucalgary.ca/~aycock/spark/",
+	"download": "http://pages.cpsc.ucalgary.ca/~aycock/spark/spark-0.6.1.tar.gz",
+	"parsing": ["?"],
+	"example": "http://pages.cpsc.ucalgary.ca/~aycock/spark/paper.pdf",
+	"keywords": ["::=", "class", "def", "self"],
+	"maintained": "John Aycock",
+	"lang": ["Python2"]
+}

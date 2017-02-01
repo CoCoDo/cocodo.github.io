@@ -18,7 +18,6 @@
     | expr:e SEMI                             {: env.put("_e" + (nextUnnamed++),e); :}
     ;
 
-    /* Expressions */
     expr ::=
       expr:l PLUS expr:r           {: RESULT = l + r;    :}
     | expr:l BINARY_MINUS expr:r   {: RESULT = l - r;    :}

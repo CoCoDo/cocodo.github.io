@@ -209,7 +209,7 @@ expr    <span class="kw">:</span>       expr  '+'  expr
         <span class="kw">|</span>       expr  '/'  expr
         <span class="kw">|</span>       '-'  expr      <span class="kw">%prec</span>  '*'
         <span class="kw">|</span>       NAME
-        ;</pre></blockquote></li><li>Maintained by Robert Corbett</li><li>Often used with: <ul><li><a href="http://dinosaur.compilertools.net/#lex">lex</a> (<a href="https://en.wikipedia.org/wiki/Lex_(software)">English</a>) (<a href="https://fr.wikipedia.org/wiki/Lex_(logiciel)">French</a>) (<a href="https://nl.wikipedia.org/wiki/Lex_(computerprogramma)">Dutch</a>) (<a href="https://ru.wikipedia.org/wiki/Lex">Russian</a>)</li><li><a href="https://github.com/westes/flex">flex</a> (<a href="https://en.wikipedia.org/wiki/Flex_(lexical_analyser_generator)">English</a>) (<a href="https://fr.wikipedia.org/wiki/Flex_(logiciel)">French</a>) (<a href="https://ru.wikipedia.org/wiki/Flex_(генератор_лексических_анализаторов)">Russian</a>)</li></ul></li></ul>
+        ;</pre></blockquote></li><li>Maintained by Robert Corbett</li><li>Often used with: <ul><li><a href="https://github.com/westes/flex">flex</a> (<a href="https://en.wikipedia.org/wiki/Flex_(lexical_analyser_generator)">English</a>) (<a href="https://fr.wikipedia.org/wiki/Flex_(logiciel)">French</a>) (<a href="https://ru.wikipedia.org/wiki/Flex_(генератор_лексических_анализаторов)">Russian</a>)</li><li><a href="http://dinosaur.compilertools.net/#lex">lex</a> (<a href="https://en.wikipedia.org/wiki/Lex_(software)">English</a>) (<a href="https://fr.wikipedia.org/wiki/Lex_(logiciel)">French</a>) (<a href="https://nl.wikipedia.org/wiki/Lex_(computerprogramma)">Dutch</a>) (<a href="https://ru.wikipedia.org/wiki/Lex">Russian</a>)</li></ul></li></ul>
 			</div>
 			<div class="tabbertab">
 				<h2>BYACC/J</h2>
@@ -354,7 +354,6 @@ StringTokenizer st;
     | expr:e SEMI                             <span class="kw">{:</span> env.put("_e" + (nextUnnamed++),e); <span class="kw">:}</span>
     ;
 
-    /* Expressions */
     expr <span class="kw">::=</span>
       expr:l PLUS expr:r           <span class="kw">{:</span> RESULT = l + r;    <span class="kw">:}</span>
     | expr:l BINARY_MINUS expr:r   <span class="kw">{:</span> RESULT = l - r;    <span class="kw">:}</span>
@@ -377,18 +376,18 @@ StringTokenizer st;
 			<div class="tabbertab">
 				<h2>DCG</h2>
 				<h3>Definite Clause Grammars</h3>
-				<ul><li>SWI Prolog version 7.2.3 (<a href="http://www.swi-prolog.org/download/stable">download</a>)</li><li>Main website: <a href="http://www.swi-prolog.org/">swi-prolog.org</a></li><li>Works with <a href="http://101companies.org/wiki/Language:Prolog">Prolog</a></li><li>Wikipedia: (<a href="https://en.wikipedia.org/wiki/Definite clause grammar">English</a>) (<a href="https://ru.wikipedia.org/wiki/DC-грамматика">Russian</a>)</li><li>Parsing algorithm: <a href="https://pdfs.semanticscholar.org/fbc0/4a1951003ba164303b2898fb7f3c6b4e9083.pdf">DCG</a></li><li>Example from <a href="https://github.com/grammarware/slps/blob/master/topics/fl/prolog1/Parser.pro">@grammarware/slps</a>: <blockquote><pre>expr(E) <span class="kw">--&gt;</span> lassoc(ops,atom,binary,E).
+				<ul><li>SWI Prolog version 7.2.3 (<a href="http://www.swi-prolog.org/download/stable">download</a>)</li><li>Main website: <a href="http://www.swi-prolog.org/">swi-prolog.org</a></li><li>Works with <a href="http://101companies.org/wiki/Language:Prolog">Prolog</a></li><li>Wikipedia: (<a href="https://en.wikipedia.org/wiki/Definite clause grammar">English</a>) (<a href="https://ru.wikipedia.org/wiki/DC-грамматика">Russian</a>)</li><li>Parsing algorithm: <a href="https://pdfs.semanticscholar.org/fbc0/4a1951003ba164303b2898fb7f3c6b4e9083.pdf">DCG</a></li><li>Example from <a href="https://github.com/grammarware/slps/blob/master/topics/fl/prolog1/Parser.pro">@grammarware/slps</a>: <blockquote><pre>expr(E) <span class="kw">--&gt;</span> lassoc(ops<span class="kw">,</span>atom<span class="kw">,</span>binary<span class="kw">,</span>E).
 
-expr(apply(N,Es)) <span class="kw">--&gt;</span>
-	name(N),
-	+(atom,Es).
+expr(apply(N<span class="kw">,</span>Es)) <span class="kw">--&gt;</span>
+	name(N)<span class="kw">,</span>
+	+(atom<span class="kw">,</span>Es).
 
-expr(ifThenElse(E1,E2,E3)) <span class="kw">--&gt;</span>
-	reserved("if"),
-	expr(E1),
-	reserved("then"),
-	expr(E2),
-	reserved("else"),
+expr(ifThenElse(E1<span class="kw">,</span>E2<span class="kw">,</span>E3)) <span class="kw">--&gt;</span>
+	reserved("if")<span class="kw">,</span>
+	expr(E1)<span class="kw">,</span>
+	reserved("then")<span class="kw">,</span>
+	expr(E2)<span class="kw">,</span>
+	reserved("else")<span class="kw">,</span>
 	expr(E3).
 </pre></blockquote></li><li>More examples: <a href="http://www.pathwayslms.com/swipltuts/dcg/">pathwayslms.com</a></li><li><a href="http://www.swi-prolog.org/Contributors.html">DCG contributors</a></li></ul>
 			</div>
@@ -446,7 +445,7 @@ Sep <span class="kw">::=</span> "@"sep:P
 				<ul><li>Frown version 0.6.1 (<a href="http://www.cs.ox.ac.uk/ralf.hinze/frown/frown-0.6.1.tar.gz">download</a>)</li><li>Main website: <a href="http://www.cs.ox.ac.uk/ralf.hinze/frown/">cs.ox.ac.uk</a></li><li>Works with <a href="http://101companies.org/wiki/Language:Haskell">Haskell</a></li><li>Parsing algorithm: <a href="https://en.wikipedia.org/wiki/LALR_parser">LALR(k)</a></li><li>Example from <a href="http://www.cs.ox.ac.uk/ralf.hinze/frown/">cs.ox.ac.uk</a>: <blockquote><pre><span class="kw">import</span> Char
 
 <span class="kw">data</span> Expr  =  Ident  Char
-           |  Apply  Expr Expr
+           <span class="kw">|</span>  Apply  Expr Expr
               <span class="kw">deriving</span> (Show)
 
 <span class="kw">type</span> Terminal  =  Char
@@ -454,13 +453,13 @@ Sep <span class="kw">::=</span> "@"sep:P
 <span class="kw">%{</span>
 
 Terminal  =  <span class="kw">guard</span> {isAlpha}<span class="kw"> as </span>"letter"
-          |  '('
-          |  ')';
+          <span class="kw">|</span>  '('
+          <span class="kw">|</span>  ')';
 
 Nonterminal  =  expr {Expr};
 
 expr  {Ident x}    :  "letter" {x};
-      {Apply t u}  |  expr {t}, '(', expr {u}, ')';
+      {Apply t u}  <span class="kw">|</span>  expr {t}, '(', expr {u}, ')';
      
 <span class="kw">}%</span>
 
@@ -652,6 +651,21 @@ digit <span class="kw">:=</span> <span class="kw">/[</span>0-9<span class="kw">]
 other <span class="kw">:=</span> <span class="kw">/./</span></pre></blockquote></li><li>Maintained by Niels Bjørn Bugge Grathwohl, Fritz Henglein, Ulrik Terp Rasmussen, Kristoffer Aalund Søholm, Sebastian Paaske Tørholm</li></ul>
 			</div>
 			<div class="tabbertab">
+				<h2>kwParsing</h2>
+				<h3>kwParsing</h3>
+				<ul><li>kwParsing (<a href="http://web.archive.org/web/19980422214116/http://starship.skyport.net/crew/aaron_watters/kwParsing/kwP.tar.gz">download</a>)</li><li>Main website: <a href="http://web.archive.org/web/19980422214116/http://starship.skyport.net/crew/aaron_watters/kwParsing/">web.archive.org</a></li><li>Works with <a href="https://docs.python.org/2/">Python2</a></li><li>Parsing algorithm: ?</li><li>Example from <a href="http://web.archive.org/web/19980716070842/http://starship.skyport.net/crew/aaron_watters/kwParsing/kwParsing.html">web.archive.org</a>: <blockquote><pre>GRAMMARSTRING ="""
+       Value <span class="kw">::</span>  ## indicates Value is the root nonterminal for the grammar
+         <span class="kw">@R</span> SetqRule <span class="kw">::</span> Value <span class="kw">&gt;&gt;</span> ( setq var Value )
+         <span class="kw">@R</span> ListRule <span class="kw">::</span> Value <span class="kw">&gt;&gt;</span> ( ListTail
+         <span class="kw">@R</span> TailFull <span class="kw">::</span> ListTail <span class="kw">&gt;&gt;</span> Value ListTail
+         <span class="kw">@R</span> TailEmpty <span class="kw">::</span> ListTail <span class="kw">&gt;&gt;</span> )
+         <span class="kw">@R</span> Varrule <span class="kw">::</span> Value <span class="kw">&gt;&gt;</span> var
+         <span class="kw">@R</span> Intrule <span class="kw">::</span> Value <span class="kw">&gt;&gt;</span> int
+         <span class="kw">@R</span> Strrule <span class="kw">::</span> Value <span class="kw">&gt;&gt;</span> str
+         <span class="kw">@R</span> PrintRule <span class="kw">::</span> Value <span class="kw">&gt;&gt;</span> ( print Value )
+"""</pre></blockquote></li><li>Maintained by Aaron Watters</li></ul>
+			</div>
+			<div class="tabbertab">
 				<h2>Laja</h2>
 				<h3><a href="http://laja.tengstrand.nu/index.php/Main_Page"><img src="logo/laja.png" alt="Laja" width="150px"/></a></a></h3>
 				<ul><li>Laja version 2-007-beta (<a href="https://sourceforge.net/projects/laja/">download</a>)</li><li>Main website: <a href="http://laja.tengstrand.nu/index.php/Main_Page">laja.tengstrand.nu</a></li><li>Works with <a href="http://101companies.org/wiki/Language:Java">Java</a></li><li>Parsing algorithms: <a href="https://en.wikipedia.org/wiki/Scannerless_parsing">scannerless</a>, <a href="https://en.wikipedia.org/wiki/Top-down_parsing">top-down</a>, <a href="https://en.wikipedia.org/wiki/Backtracking">backtracking</a></li><li>Example from <a href="http://laja.tengstrand.nu/index.php/Parser_generator_-_Getting_started">laja.tengstrand.nu</a>: <blockquote><pre><span class="kw">grammar</span> example {
@@ -680,8 +694,8 @@ expr    <span class="kw">::</span> Parser Integer
 expr    = buildExpressionParser table factor
         <span class="kw">&lt;?&gt;</span> "expression"
 
-table   = <span class="kw">[</span><span class="kw">[</span>op "*" (*) AssocLeft, op "/" div AssocLeft<span class="kw">]</span>
-          ,<span class="kw">[</span>op "+" (+) AssocLeft, op "-" (-) AssocLeft<span class="kw">]</span>
+table   = <span class="kw">[</span><span class="kw">[</span>op "*" (*) AssocLeft<span class="kw">,</span> op "/" div AssocLeft<span class="kw">]</span>
+          <span class="kw">,</span><span class="kw">[</span>op "+" (+) AssocLeft<span class="kw">,</span> op "-" (-) AssocLeft<span class="kw">]</span>
           <span class="kw">]</span>          
         <span class="kw">where</span>
           op s f assoc
@@ -800,6 +814,54 @@ prim <span class="kw">def</span>: (<span class="kw">$(</span> <span class="kw">a
           <span class="kw">[</span> <span class="kw">{</span><span class="kw">&lt;</span>'E'<span class="kw">&gt;</span>|<span class="kw">&lt;</span>'e'<span class="kw">&gt;</span><span class="kw">}</span> <span class="kw">[</span><span class="kw">&lt;</span>'+'<span class="kw">&gt;</span><span class="kw">]</span> unsigned_int <span class="kw">]</span>
 
 unsigned_int = (isdigit)<span class="kw">+</span></pre></blockquote></li><li>Maintained by Peter Breuer and Jonathan Bowen</li></ul>
+			</div>
+			<div class="tabbertab">
+				<h2>PyBison</h2>
+				<h3>PyBison</h3>
+				<ul><li>PyBison version 0.1.8 (<a href="http://www.freenet.org.nz/python/pybison/pybison-0.1.8.tar.gz">download</a>)</li><li>Main website: <a href="http://freenet.mcnabhosting.com/python/pybison/">freenet.mcnabhosting.com</a></li><li>Works with <a href="https://docs.python.org/2/">Python2</a></li><li>Parsing algorithm: <a href="https://en.wikipedia.org/wiki/LALR_parser">LALR(1)</a></li><li>Example from <a href="http://freenet.mcnabhosting.com/python/pybison/calc.py">freenet.mcnabhosting.com</a>: <blockquote><pre><span class="kw">def</span> on_exp(self, target, option, names, values):
+    """
+    exp : NUMBER
+        <span class="kw">|</span> exp PLUS exp
+        <span class="kw">|</span> exp MINUS exp
+        <span class="kw">|</span> exp TIMES exp
+        <span class="kw">|</span> exp DIVIDE exp
+        <span class="kw">|</span> MINUS exp %prec NEG
+        <span class="kw">|</span> exp POW exp
+        <span class="kw">|</span> LPAREN exp RPAREN
+    """
+    <span class="kw">if</span> option == 0:
+        <span class="kw">return</span> float(values[0])
+    <span class="kw">el<span class="kw">if</span></span> option == 1:
+        <span class="kw">return</span> values[0] + values[2]
+    <span class="kw">el<span class="kw">if</span></span> option == 2:
+        <span class="kw">return</span> values[0] - values[2]
+    <span class="kw">el<span class="kw">if</span></span> option == 3:
+        <span class="kw">return</span> values[0] * values[2]
+    <span class="kw">el<span class="kw">if</span></span> option == 4:
+        <span class="kw">return</span> values[0] / values[2]
+    <span class="kw">el<span class="kw">if</span></span> option == 5:
+        <span class="kw">return</span> - values[1]
+    <span class="kw">el<span class="kw">if</span></span> option == 6:
+        <span class="kw">return</span> values[0] ** values[2]
+    <span class="kw">el<span class="kw">if</span></span> option == 7:
+        <span class="kw">return</span> values[1]</pre></blockquote></li><li>More examples: <a href="http://freenet.mcnabhosting.com/python/pybison/walkthrough.html">freenet.mcnabhosting.com</a></li><li>Maintained by David McNab</li><li>Not to be confused with <a href="https://wiki.python.org/moin/PyBison">PyBison by Scott Hassan</a>!</li></ul>
+			</div>
+			<div class="tabbertab">
+				<h2>PyLR</h2>
+				<h3>PyLR</h3>
+				<ul><li>PyLR (<a href="http://web.archive.org/web/19991009130507/http://starship.skyport.net/crew/scott/PyLR.tgz">download</a>)</li><li>Main website: <a href="http://web.archive.org/web/19991009130507/http://starship.skyport.net/crew/scott/PyLR.html">web.archive.org</a></li><li>Works with <a href="https://docs.python.org/2/">Python2</a></li><li>Parsing algorithm: <a href="https://en.wikipedia.org/wiki/LR_parser">LR</a></li><li>Example from <a href="http://web.archive.org/web/19991012163829/http://starship.skyport.net/crew/scott/manual.html">web.archive.org</a>: <blockquote><pre><span class="kw">_class</span> SimpleMathParser
+<span class="kw">_lex</span> mathlex.mathlex()
+<span class="kw">_code</span> from PyLR.Lexers import mathlex
+"""
+expression<span class="kw">:</span> expression PLUS term (addfunc)
+     <span class="kw">|</span>      term;
+
+term<span class="kw">:</span> term TIMES factor (timesfunc)
+  <span class="kw">|</span>   factor;
+
+factor<span class="kw">:</span> LPAREN expression RPAREN (parenfunc)
+   <span class="kw">|</span>    INT;
+"""</pre></blockquote></li><li>Maintained by Scott</li></ul>
 			</div>
 			<div class="tabbertab">
 				<h2>pyparsing</h2>
@@ -1027,6 +1089,22 @@ ic::Factor_c <span class="kw">::=</span> i::IntLit_t
 }</pre></blockquote></li><li>More examples: <a href="http://melt.cs.umn.edu/silver/doc/tutorial">melt.cs.umn.edu</a></li><li>Maintained by Ted Kaminski and Eric Van Wyk</li></ul>
 			</div>
 			<div class="tabbertab">
+				<h2>SimpleParse</h2>
+				<h3>SimpleParse</h3>
+				<ul><li>SimpleParse version 2.1.0a1 (<a href="http://www.antlr.org/download.html">download</a>)</li><li>Main website: <a href="http://simpleparse.sourceforge.net/">simpleparse.sourceforge.net</a></li><li>Works with <a href="https://docs.python.org/2/">Python2</a></li><li>Parsing algorithms: <a href="https://en.wikipedia.org/wiki/Top-down_parsing">top-down</a>, <a href="https://en.wikipedia.org/wiki/One-pass_compiler">one-pass</a></li><li>Example from <a href="http://simpleparse.sourceforge.net/simpleparse_grammars.html">simpleparse.sourceforge.net</a>: <blockquote><pre>declaration = r'''# note use of raw string when embedding in python code...
+file           <span class="kw">:=</span>  [ \t\n]<span class="kw">*</span><span class="kw">,</span> section<span class="kw">+</span>
+section        <span class="kw">:=</span>  '['<span class="kw">,</span> identifier<span class="kw">!</span><span class="kw">,</span> ']'<span class="kw">!</span><span class="kw">,</span> ts<span class="kw">,</span> '\n'<span class="kw">,</span> body
+body           <span class="kw">:=</span>  statement<span class="kw">*</span>
+statement      <span class="kw">:=</span>  (ts<span class="kw">,</span> semicolon_comment) <span class="kw">/</span> equality <span class="kw">/</span> nullline
+nullline       <span class="kw">:=</span>  ts<span class="kw">,</span> '\n'
+comment        <span class="kw">:=</span>  -'\n'<span class="kw">*</span>
+equality       <span class="kw">:=</span>  ts<span class="kw">,</span> identifier<span class="kw">,</span> ts<span class="kw">,</span> '='<span class="kw">,</span> ts<span class="kw">,</span> identified<span class="kw">,</span> ts<span class="kw">,</span> '\n'
+identifier     <span class="kw">:=</span>  [a-zA-Z]<span class="kw">,</span> [a-zA-Z0-9_]<span class="kw">*</span>
+identified     <span class="kw">:=</span>  string <span class="kw">/</span> number <span class="kw">/</span> identifier
+ts             <span class="kw">:=</span>  [ \t]<span class="kw">*</span>
+'''</pre></blockquote></li><li>Maintained by Mike C. Fletcher</li></ul>
+			</div>
+			<div class="tabbertab">
 				<h2>SJPT</h2>
 				<h3>Simple Java Parsing Toolkit</h3>
 				<ul><li>SJPT version 0.10 (<a href="http://sjpt.sourceforge.net/download/index.html">download</a>)</li><li>Main website: <a href="http://sjpt.sourceforge.net/">sjpt.sourceforge.net</a></li><li>Works with <a href="http://101companies.org/wiki/Language:Java">Java</a></li><li>Parsing algorithms: <a href="https://en.wikipedia.org/wiki/LL_parser">LL(1)</a>, <a href="https://en.wikipedia.org/wiki/LR_parser">LR(0)</a>, <a href="https://en.wikipedia.org/wiki/Simple_LR_parser">SLR(1)</a>, <a href="https://en.wikipedia.org/wiki/LR_parser">LR(1)</a>, <a href="https://en.wikipedia.org/wiki/LALR_parser">LALR(1)</a></li><li>Example from <a href="http://prdownloads.sourceforge.net/sjpt/sjpt-0.10.zip?download">prdownloads.sourceforge.net</a>: <blockquote><pre><span class="kw">import</span> ro.infoiasi.donald.compiler.parser0.runtime.*;
@@ -1057,6 +1135,24 @@ term      <span class="kw">::=</span> LPAREN expr:e RPAREN <span class="kw">{:</
 </pre></blockquote></li><li>Maintained by Catalin Hritcu</li></ul>
 			</div>
 			<div class="tabbertab">
+				<h2>SPARK</h2>
+				<h3>Scanning, Parsing, and Rewriting Kit</h3>
+				<ul><li>SPARK version 0.6.1 (<a href="http://pages.cpsc.ucalgary.ca/~aycock/spark/spark-0.6.1.tar.gz">download</a>)</li><li>Main website: <a href="http://pages.cpsc.ucalgary.ca/~aycock/spark/">pages.cpsc.ucalgary.ca</a></li><li>Works with <a href="https://docs.python.org/2/">Python2</a></li><li>Parsing algorithm: ?</li><li>Example from <a href="http://pages.cpsc.ucalgary.ca/~aycock/spark/paper.pdf">pages.cpsc.ucalgary.ca</a>: <blockquote><pre><span class="kw">class</span> ExprParser(GenericParser):
+	<span class="kw">def</span> __init__(<span class="kw">self</span>, start='expr'):
+		GenericParser.__init__(<span class="kw">self</span>, start)
+
+	<span class="kw">def</span> p_rules(<span class="kw">self</span> args):
+		'''
+			expr <span <span class="kw">class</span>="kw">::=</span> expr + term
+			expr <span <span class="kw">class</span>="kw">::=</span> term
+			term <span <span class="kw">class</span>="kw">::=</span> term * factor
+			term <span <span class="kw">class</span>="kw">::=</span> factor
+			factor <span <span class="kw">class</span>="kw">::=</span> number
+			factor <span <span class="kw">class</span>="kw">::=</span> float
+		'''
+</pre></blockquote></li><li>Maintained by John Aycock</li></ul>
+			</div>
+			<div class="tabbertab">
 				<h2>Spirit</h2>
 				<h3><a href="http://boost-spirit.com/home/"><img src="logo/spirit.png" alt="Spirit" width="150px"/></a></a></h3>
 				<ul><li>Spirit version 3.0.0 (<a href="http://boost-spirit.com/home/download/">download</a>)</li><li>Main website: <a href="http://boost-spirit.com/home/">boost-spirit.com</a></li><li>Works with <a href="http://101companies.org/wiki/Language:CPlusPlus">C++</a></li><li>Wikipedia: (<a href="https://en.wikipedia.org/wiki/Spirit Parser Framework">English</a>) (<a href="https://de.wikipedia.org/wiki/Spirit (Parser)">German</a>)</li><li>Parsing algorithms: <a href="https://en.wikipedia.org/wiki/Backtracking">backtracking</a>, <a href="https://en.wikipedia.org/wiki/LL_parser">LL(*)</a></li><li>Example from <a href="https://en.wikipedia.org/wiki/Spirit_Parser_Framework#Example">English</a>: <blockquote><pre><span class="kw">#include</span> &lt;string&gt;
@@ -1066,20 +1162,20 @@ term      <span class="kw">::=</span> LPAREN expr:e RPAREN <span class="kw">{:</
  
 <span class="kw">int</span> main()
 {
-  <span class="kw">namespace</span> qi = boost::spirit::qi;
+  <span class="kw">namespace</span> qi = boost<span class="kw">::</span>spirit<span class="kw">::</span>qi;
 
-  std::string input;
+  std<span class="kw">::</span>string input;
  
-  std::cout <span class="kw">&lt;&lt;</span> "Input a line: \n";
-  getline(std::cin, input);
-  std::cout <span class="kw">&lt;&lt;</span> "Got '" <span class="kw">&lt;&lt;</span> input <span class="kw">&lt;&lt;</span> "'.\n";
+  std<span class="kw">::</span>cout <span class="kw">&lt;&lt;</span> "Input a line: \n";
+  getline(std<span class="kw">::</span>cin, input);
+  std<span class="kw">::</span>cout <span class="kw">&lt;&lt;</span> "Got '" <span class="kw">&lt;&lt;</span> input <span class="kw">&lt;&lt;</span> "'.\n";
  
   <span class="kw">unsigned</span> count = 0;
 
-  <span class="kw">auto</span> rule = *(qi::lit("cat") [ ++qi::_val ] | qi::omit[qi::char_]);
-  qi::parse(input.begin(), input.end(), rule, count);
+  <span class="kw">auto</span> rule = *(qi<span class="kw">::</span>lit("cat") [ ++qi<span class="kw">::</span>_val ] | qi<span class="kw">::</span>omit[qi<span class="kw">::</span>char_]);
+  qi<span class="kw">::</span>parse(input.begin(), input.end(), rule, count);
   
-  std::cout <span class="kw">&lt;&lt;</span> "The input contained " <span class="kw">&lt;&lt;</span> count <span class="kw">&lt;&lt;</span> " occurrences of 'cat'\n";
+  std<span class="kw">::</span>cout <span class="kw">&lt;&lt;</span> "The input contained " <span class="kw">&lt;&lt;</span> count <span class="kw">&lt;&lt;</span> " occurrences of 'cat'\n";
 }</pre></blockquote></li><li>Maintained by Joel de Guzman, Hartmut Kaiser, Carl Barron, François Barel, Dan Nuffer, Ben Hanson, Martijn van der Lee, John David, Juan Carlos Arevalo-Baeza, Martin Wille, Peter Simons, Jeff Westfahl, João Abecasis, Dan Marsden, Nicola Musatti, Tobias Schwinger, Thomas Heller, Bryce Lelbach, Jeroen Habraken, Agustín Bergé, Kohei Takahashi</li></ul>
 			</div>
 			<div class="tabbertab">
@@ -1118,6 +1214,23 @@ term      <span class="kw">::=</span> LPAREN expr:e RPAREN <span class="kw">{:</
 </pre></blockquote></li><li>More examples: <a href="http://www.txl.ca/nresources.html">txl.ca</a></li><li>Maintained by James Cordy</li></ul>
 			</div>
 			<div class="tabbertab">
+				<h2>Waxeye</h2>
+				<h3><a href="http://waxeye.org/"><img src="logo/waxeye.jpg" alt="Waxeye" width="150px"/></a></a></h3>
+				<ul><li>Waxeye version 0.8.0 (<a href="http://sourceforge.net/project/platformdownload.php?group_id=210831">download</a>)</li><li>Main website: <a href="http://waxeye.org/">waxeye.org</a></li><li>Works with <a href="http://101companies.org/wiki/Language:C">C</a>, <a href="http://101companies.org/wiki/Language:Java">Java</a>, <a href="http://101companies.org/wiki/Language:JavaScript">JavaScript</a>, <a href="https://docs.python.org/2/">Python2</a>, <a href="https://en.wikipedia.org/wiki/Ruby_(programming_language)">Ruby</a>, <a href="https://en.wikipedia.org/wiki/Scheme_(programming_language)">Scheme</a></li><li>Parsing algorithm: <a href="http://bford.info/packrat/">Packrat</a></li><li>Example from <a href="http://waxeye.org/manual.html#_example_a_calculator">waxeye.org</a>: <blockquote><pre>calc  <span class="kw">&lt;-</span> ws sum
+
+sum   <span class="kw">&lt;-</span> prod *([+-] ws prod)
+
+prod  <span class="kw">&lt;-</span> unary *([*/] ws unary)
+
+unary <span class="kw">&lt;=</span> '-' ws unary
+       | :'(' ws sum :')' ws
+       | num
+
+num   <span class="kw">&lt;-</span> +[0-9] ?('.' +[0-9]) ws
+
+ws    <span class="kw">&lt;:</span> *[ \t\n\r]</pre></blockquote></li><li>More examples: <a href="https://github.com/orlandohill/waxeye">@orlandohill/waxeye</a></li><li>Maintained by Orlando Hill</li></ul>
+			</div>
+			<div class="tabbertab">
 				<h2>Whole</h2>
 				<h3><a href="http://whole.sourceforge.net/"><img src="logo/whote.png" alt="Whole Platform"/></a></h3>
 			</div>
@@ -1145,6 +1258,27 @@ expr    <span class="kw">:</span>       expr  '+'  expr
         <span class="kw">|</span>       NAME
         ;</pre></blockquote></li><li>Maintained by Stephen C. Johnson</li><li>Often used with: <ul><li><a href="http://dinosaur.compilertools.net/#lex">lex</a> (<a href="https://en.wikipedia.org/wiki/Lex_(software)">English</a>) (<a href="https://fr.wikipedia.org/wiki/Lex_(logiciel)">French</a>) (<a href="https://nl.wikipedia.org/wiki/Lex_(computerprogramma)">Dutch</a>) (<a href="https://ru.wikipedia.org/wiki/Lex">Russian</a>)</li></ul></li></ul>
 			</div>
+			<div class="tabbertab">
+				<h2>YAPPS</h2>
+				<h3>Yet Another Python Parser System</h3>
+				<ul><li>YAPPS version 2 (<a href="http://web.archive.org/web/20161120233057/http://theory.stanford.edu/~amitp/yapps/yapps.py">download</a>)</li><li>Main website: <a href="http://web.archive.org/web/20161120233057/http://theory.stanford.edu/~amitp/yapps/#yapps2">web.archive.org</a></li><li>Works with <a href="https://docs.python.org/release/1.5/">Python1.5</a></li><li>Parsing algorithm: <a href="https://en.wikipedia.org/wiki/Recursive_descent_parser">recursive descent</a></li><li>Example from <a href="http://web.archive.org/web/20161217113346/http://theory.stanford.edu/%7Eamitp/yapps/expr.g">web.archive.org</a>: <blockquote><pre><span class="kw">parser</span> Calculator:
+    <span class="kw">option</span>:    "context-insensitive-scanner"
+    <span class="kw">token</span> END: "$"
+    <span class="kw">token</span> NUM: "[0-9]+"
+
+    <span class="kw">rule</span> goal:           expr END                         <span class="kw">-&gt;</span> <span class="kw">&lt;&lt;</span> expr        <span class="kw">&gt;&gt;</span>
+    <span class="kw">rule</span> expr:           factor expr_tail<span class="kw">&lt;&lt;</span>factor<span class="kw">&gt;&gt;</span>       <span class="kw">-&gt;</span> <span class="kw">&lt;&lt;</span> expr_tail   <span class="kw">&gt;&gt;</span>
+    <span class="kw">rule</span> expr_tail<span class="kw">&lt;&lt;</span>v<span class="kw">&gt;&gt;</span>:                                  <span class="kw">-&gt;</span> <span class="kw">&lt;&lt;</span> v           <span class="kw">&gt;&gt;</span>
+                       <span class="kw">|</span> "+" factor expr_tail<span class="kw">&lt;&lt;</span>v+factor<span class="kw">&gt;&gt;</span> <span class="kw">-&gt;</span> <span class="kw">&lt;&lt;</span> expr_tail   <span class="kw">&gt;&gt;</span>
+                       <span class="kw">|</span> "-" factor expr_tail<span class="kw">&lt;&lt;</span>v-factor<span class="kw">&gt;&gt;</span> <span class="kw">-&gt;</span> <span class="kw">&lt;&lt;</span> expr_tail   <span class="kw">&gt;&gt;</span>
+    <span class="kw">rule</span> factor:         term factor_tail<span class="kw">&lt;&lt;</span>term<span class="kw">&gt;&gt;</span>         <span class="kw">-&gt;</span> <span class="kw">&lt;&lt;</span> factor_tail <span class="kw">&gt;&gt;</span>
+    <span class="kw">rule</span> factor_tail<span class="kw">&lt;&lt;</span>v<span class="kw">&gt;&gt;</span>:                                <span class="kw">-&gt;</span> <span class="kw">&lt;&lt;</span> v           <span class="kw">&gt;&gt;</span>
+                       <span class="kw">|</span> "*" term factor_tail<span class="kw">&lt;&lt;</span>v*term<span class="kw">&gt;&gt;</span>   <span class="kw">-&gt;</span> <span class="kw">&lt;&lt;</span> factor_tail <span class="kw">&gt;&gt;</span>
+                       <span class="kw">|</span> "/" term factor_tail<span class="kw">&lt;&lt;</span>v/term<span class="kw">&gt;&gt;</span>   <span class="kw">-&gt;</span> <span class="kw">&lt;&lt;</span> factor_tail <span class="kw">&gt;&gt;</span>
+    <span class="kw">rule</span> term:           NUM                              <span class="kw">-&gt;</span> <span class="kw">&lt;&lt;</span> atoi(NUM)   <span class="kw">&gt;&gt;</span>
+                       <span class="kw">|</span> "(" expr ")"                     <span class="kw">-&gt;</span> <span class="kw">&lt;&lt;</span> expr        <span class="kw">&gt;&gt;</span>
+</pre></blockquote></li><li>Maintained by Amit Patel</li></ul>
+			</div>
 		</div>
 		</div>
 		</div>
@@ -1155,7 +1289,7 @@ expr    <span class="kw">:</span>       expr  '+'  expr
 			The picture used on this page is derivative from <a href="https://xkcd.com/303/">XKCD#303: Compiling</a> by Randall Munroe, <a href="http://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC</a>.<br/>
 			The tabber code used on this page, is derivative from <a href="http://www.kean.edu/~gkolodiy/5223/tabber.html">the one made by Patrick Fitzgerald</a> and distributed under <a href="https://opensource.org/licenses/mit-license.php">the MIT license</a>.<br/>
 			All other referenced works of art, science and engineering, are subject to their own individual copyrights.<br/>
-			Last updated: January 2017.
+			Last updated: February 2017.
 		</div>
 	</body>
 </html>

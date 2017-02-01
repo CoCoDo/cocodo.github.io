@@ -1,0 +1,12 @@
+{
+	"logo": "waxeye.jpg",
+	"version": "0.8.0",
+	"parsing": ["Packrat"],
+	"uri": "http://waxeye.org/",
+	"download": "http://sourceforge.net/project/platformdownload.php?group_id=210831",
+	"example": "http://waxeye.org/manual.html#_example_a_calculator",
+	"more": "https://github.com/orlandohill/waxeye",
+	"keywords": ["&lt;-", "&lt;=", "&lt;:"],
+	"lang": ["C", "Java", "JavaScript", "Python2", "Ruby", "Scheme"],
+	"maintained": "Orlando Hill"
+}

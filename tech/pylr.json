@@ -1,0 +1,9 @@
+{
+	"uri": "http://web.archive.org/web/19991009130507/http://starship.skyport.net/crew/scott/PyLR.html",
+	"download": "http://web.archive.org/web/19991009130507/http://starship.skyport.net/crew/scott/PyLR.tgz",
+	"parsing": ["LR"],
+	"example": "http://web.archive.org/web/19991012163829/http://starship.skyport.net/crew/scott/manual.html",
+	"keywords": ["_class", "_lex", "_code", ":", "|"],
+	"maintained": "Scott",
+	"lang": ["Python2"]
+}

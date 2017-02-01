@@ -84,6 +84,7 @@
 			<tab>jparsec</tab>
 			<tab>Kiama</tab>
 			<tab>Kleenex</tab>
+			<tab>kwParsing</tab>
 			<tab>Laja</tab>
 			<!-- Lark http://www.cocolab.com/cocktail.html not included because a license key must be preordered -->
 			<div class="tabbertab">
@@ -100,6 +101,8 @@
 			<tab>PetitParser</tab>
 			<tab>PLY</tab>
 			<tab>PRECC</tab>
+			<tab>PyBison</tab>
+			<tab>PyLR</tab>
 			<tab>pyparsing</tab>
 			<tab>pysec</tab>
 			<tab>Racket</tab>
@@ -108,9 +111,9 @@
 			<tab>RecDescent</tab>
 			<tab>SableCC</tab>
 			<tab>Silver</tab>
-			<!-- simpleparse http://simpleparse.sourceforge.net/ -->
+			<tab>SimpleParse</tab>
 			<tab>SJPT</tab>
-			<!-- spark http://pages.cpsc.ucalgary.ca/~aycock/spark/ -->
+			<tab>SPARK</tab>
 			<tab>Spirit</tab>
 			<div class="tabbertab">
 				<h2>Spoofax</h2>
@@ -121,6 +124,7 @@
 				<h3><a href="https://www.student.informatik.tu-darmstadt.de/~xx00seba/projects/sugarj/"><img src="logo/sugarj.png" alt="SugarJ"/></a></h3>
 			</div>
 			<tab>TXL</tab>
+			<tab>Waxeye</tab>
 			<div class="tabbertab">
 				<h2>Whole</h2>
 				<h3><a href="http://whole.sourceforge.net/"><img src="logo/whote.png" alt="Whole Platform"/></a></h3>
@@ -135,6 +139,7 @@
 				<h3><a href="http://www.eclipse.org/Xtext/"><img src="logo/xtext.png" alt="Xtext"/></a></h3>
 			</div>
 			<tab>yacc</tab>
+			<tab>YAPPS</tab>
 		</div>
 		</div>
 		</div>
@@ -145,7 +150,7 @@
 			The picture used on this page is derivative from <a href="https://xkcd.com/303/">XKCD#303: Compiling</a> by Randall Munroe, <a href="http://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC</a>.<br/>
 			The tabber code used on this page, is derivative from <a href="http://www.kean.edu/~gkolodiy/5223/tabber.html">the one made by Patrick Fitzgerald</a> and distributed under <a href="https://opensource.org/licenses/mit-license.php">the MIT license</a>.<br/>
 			All other referenced works of art, science and engineering, are subject to their own individual copyrights.<br/>
-			Last updated: January 2017.
+			Last updated: February 2017.
 		</div>
 	</body>
 </html>

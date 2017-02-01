@@ -1,0 +1,11 @@
+{
+	"fullname": "Yet Another Python Parser System",
+	"version": 2,
+	"parsing": ["recursive descent"],
+	"uri": "http://web.archive.org/web/20161120233057/http://theory.stanford.edu/~amitp/yapps/#yapps2",
+	"download": "http://web.archive.org/web/20161120233057/http://theory.stanford.edu/~amitp/yapps/yapps.py",
+	"example": "http://web.archive.org/web/20161217113346/http://theory.stanford.edu/%7Eamitp/yapps/expr.g",
+	"keywords": ["parser", "option", "rule", "token", "-&gt;", "&lt;&lt;", "&gt;&gt;", "|"],
+	"lang": ["Python1.5"],
+	"maintained": "Amit Patel"
+}

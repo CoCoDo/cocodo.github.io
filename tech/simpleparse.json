@@ -1,0 +1,10 @@
+{
+	"version": "2.1.0a1",
+	"uri": "http://simpleparse.sourceforge.net/",
+	"download": "http://www.antlr.org/download.html",
+	"parsing": ["top-down", "one-pass"],
+	"example": "http://simpleparse.sourceforge.net/simpleparse_grammars.html",
+	"keywords": [":=", "!", "+", "*", ",", "/"],
+	"maintained": "Mike C. Fletcher",
+	"lang": ["Python2"]
+}

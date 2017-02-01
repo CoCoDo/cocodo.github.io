@@ -1,0 +1,9 @@
+{
+	"uri": "http://web.archive.org/web/19980422214116/http://starship.skyport.net/crew/aaron_watters/kwParsing/",
+	"download": "http://web.archive.org/web/19980422214116/http://starship.skyport.net/crew/aaron_watters/kwParsing/kwP.tar.gz",
+	"parsing": ["?"],
+	"example": "http://web.archive.org/web/19980716070842/http://starship.skyport.net/crew/aaron_watters/kwParsing/kwParsing.html",
+	"keywords": ["@R", "::", "&gt;&gt;"],
+	"maintained": "Aaron Watters",
+	"lang": ["Python2"]
+}

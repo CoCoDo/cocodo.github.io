@@ -5,7 +5,7 @@
 	"download": "http://www.cs.ox.ac.uk/ralf.hinze/frown/frown-0.6.1.tar.gz",
 	"parsing": ["LALR(k)"],
 	"example": "http://www.cs.ox.ac.uk/ralf.hinze/frown/",
-	"keywords": ["import", "data", "deriving", "type", "%{", "}%", "guard", " as ", "fail"],
+	"keywords": ["import", "data", "deriving", "type", "%{", "}%", "guard", " as ", "fail", "|"],
 	"maintained": "Ralf Hinze and Arjan Oosting",
 	"ontop": {"frown 0.6.1-6": "https://launchpad.net/ubuntu/+source/frown/0.6.1-6"},
 	"lang": ["Haskell"]

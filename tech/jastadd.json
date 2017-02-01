@@ -5,7 +5,7 @@
 	"download": "http://jastadd.org/web/download.php",
 	"parsing": ["RAG"],
 	"example": "https://bitbucket.org/jastadd/examples/src/013a8f218469b994d221f3f5c24812be8fc3908c/PicoJava/spec/picojava.ast?at=master&fileviewer=file-view-default",
-	"keywords": ["::=", " /", "*/", "*", "abstract", "[", "]", "&gt;", "&lt;", ":"],
+	"keywords": ["::=", " /", "*/", "*", "abstract", "[", "]", "&gt;", "&lt;", ":", "|"],
 	"more": ["https://bitbucket.org/jastadd/examples/src", "http://jastadd.org/web/documentation/"],
 	"maintained": "Görel Hedin, Emma Söderberg, Emma Söderberg and Jesper Öqvist"
 }

@@ -26,6 +26,7 @@ techs = {
 	"LL": "https://en.wikipedia.org/wiki/LL_parser",
 	"LR": "https://en.wikipedia.org/wiki/LR_parser",
 	"monadic": "http://www.cs.nott.ac.uk/~pszgmh/monparsing.pdf",
+	"one-pass": "https://en.wikipedia.org/wiki/One-pass_compiler",
 	"Packrat": "http://bford.info/packrat/",
 	"RAG": "https://pdfs.semanticscholar.org/89f1/857e15d270c5c1f8417381368e4781c871e4.pdf",
 	"recursive descent": "https://en.wikipedia.org/wiki/Recursive_descent_parser",
@@ -52,11 +53,13 @@ slang = {
 	"Pascal": "https://en.wikipedia.org/wiki/Pascal_(programming_language)",
 	"Perl": "https://en.wikipedia.org/wiki/Perl",
 	"Prolog": "http://101companies.org/wiki/Language:Prolog",
+	"Python1.5": "https://docs.python.org/release/1.5/",
 	"Python2": "https://docs.python.org/2/",
 	"Python3": "https://docs.python.org/3/",
 	"Racket": "https://en.wikipedia.org/wiki/Racket_features",
 	"Ruby": "https://en.wikipedia.org/wiki/Ruby_(programming_language)",
 	"Scala": "https://en.wikipedia.org/wiki/Scala_(programming_language)",
+	"Scheme": "https://en.wikipedia.org/wiki/Scheme_(programming_language)",
 	"Silver": "http://melt.cs.umn.edu/silver/",
 	"Smalltalk": "https://en.wikipedia.org/wiki/Smalltalk",
 	"Swift": "https://en.wikipedia.org/wiki/Swift_(programming_language)",
@@ -99,10 +102,15 @@ def sortlangs(l):
 
 def htmlify(s,kws,nkws):
 	s = s.replace('&','&amp;')
-	for k,v in {"<":"&lt;", ">": "&gt;"}.items():
+	for k,v in {"<": "&lt;", ">": "&gt;"}.items():
 		s = s.replace(k,v)
 	for k in kws:
-		s = s.replace(k, '<span class="kw">%s</span>' % k)
+		if k == '/':
+			s = s.replace('/span', 'THISWILLNEVEROCCURNATURALLY')
+			s = s.replace('/', '<span class="kw">/</span>')
+			s = s.replace('THISWILLNEVEROCCURNATURALLY', '/span')
+		else:
+			s = s.replace(k, '<span class="kw">%s</span>' % k)
 	for nk in nkws:
 		s = s.replace(htmlify(nk,kws,[]), nk)
 	return s
@@ -218,6 +226,11 @@ while i < len(lines):
 					item += '</li>'
 				item += '</ul>'
 				items.append(item)
+			if 'confusedwith' in m.keys():
+				for k in m['confusedwith']:
+					item = 'Not to be confused with '
+					item += '<a href="%s">%s</a>!' % (m['confusedwith'][k], k)
+					items.append(item)
 			content = '<ul><li>' + '</li><li>'.join(items) + '</li></ul>'
 			g.write('''			<div class="tabbertab">
 				<h2>%s</h2>

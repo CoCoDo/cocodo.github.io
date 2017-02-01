@@ -5,7 +5,7 @@
 	"download": "http://hackage.haskell.org/package/parsec",
 	"parsing": ["monadic", "recursive descent"],
 	"example": "https://web.archive.org/web/20140529211116/http://legacy.cs.uu.nl/daan/download/parsec/parsec.html",
-	"keywords": ["import", "::", "&lt;?&gt;", "&lt;|&gt;", "do{", "}", "&lt;-", "where", "return", "[", "]"],
+	"keywords": ["import", "::", "&lt;?&gt;", "&lt;|&gt;", "do{", "}", "&lt;-", "where", "return", "[", "]", ","],
 	"maintained": "Antoine Latter",
 	"lang": ["Haskell", "F#", "Java", "JavaScript", "Erlang"],
 	"ontop": {
