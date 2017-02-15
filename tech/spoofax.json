@@ -1,0 +1,14 @@
+{
+	"logo": "spoofax.svg",
+	"version": "2.1.0",
+	"parsing": ["SGLR"],
+	"uri": "http://metaborg.org/en/latest/",
+	"download": "http://www.metaborg.org/en/latest/source/download.html",
+	"example": "http://www.metaborg.org/en/latest/source/langdev/meta/lang/sdf3.html",
+	"more": "http://declare-your-language.metaborg.org/",
+	"keywords": ["=", "{case-insensitive}"],
+	"lang": ["SDF3"],
+	"maintained": "Eelco Visser et al",
+	"oftenwith": {"Stratego": ["http://www.metaborg.org/en/latest/source/langdev/meta/lang/stratego/index.html"], "NaBL": ["http://www.metaborg.org/en/latest/source/langdev/meta/lang/nabl2/getting-started.html"], "DynSem": ["http://www.metaborg.org/en/latest/source/langdev/meta/lang/dynsem/index.html"]},
+	"wikipedia": {"Stratego/XT": ["en"]}
+}

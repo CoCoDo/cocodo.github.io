@@ -1,7 +1,7 @@
 #!/c/Users/vadim/AppData/Local/Programs/Python/Python35/python
 # -*- coding: utf-8 -*-
 
-import glob, datetime, json
+import glob, datetime, json, os
 
 d = ('Zeroary', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August',\
 	'September', 'October', 'November', 'December')[datetime.date.today().month]+\
@@ -16,6 +16,7 @@ techs = {
 	"BX": "http://www.prg.nii.ac.jp/project/bigul/",
 	"contexts": "http://www.slideshare.net/esug/parsing-contexts-for-petitparser",
 	"context-aware": "http://www-users.cs.umn.edu/~evw/pubs/vanwyk07gpce/",
+	"data dependency": "http://iguana-parser.github.io/documentation.html#data-dependent-grammars",
 	"DCG": "https://pdfs.semanticscholar.org/fbc0/4a1951003ba164303b2898fb7f3c6b4e9083.pdf",
 	"DFA": "https://en.wikipedia.org/wiki/Deterministic_finite_automaton",
 	"FSM": "https://en.wikipedia.org/wiki/Finite-state_machine",
@@ -31,6 +32,8 @@ techs = {
 	"RAG": "https://pdfs.semanticscholar.org/89f1/857e15d270c5c1f8417381368e4781c871e4.pdf",
 	"recursive descent": "https://en.wikipedia.org/wiki/Recursive_descent_parser",
 	"scannerless": "https://en.wikipedia.org/wiki/Scannerless_parsing",
+	# "SGLR": "https://ivi.fnwi.uva.nl/tcs/pub/reports/1997/P9707.ps.Z",
+	"SGLR": "https://pdfs.semanticscholar.org/90f2/8a411455fb783da17ad4b4efdda4464606c4.pdf",
 	"SLR": "https://en.wikipedia.org/wiki/Simple_LR_parser",
 	"Smalltalk": "https://en.wikipedia.org/wiki/Smalltalk",
 	"top-down": "https://en.wikipedia.org/wiki/Top-down_parsing",
@@ -60,6 +63,7 @@ slang = {
 	"Ruby": "https://en.wikipedia.org/wiki/Ruby_(programming_language)",
 	"Scala": "https://en.wikipedia.org/wiki/Scala_(programming_language)",
 	"Scheme": "https://en.wikipedia.org/wiki/Scheme_(programming_language)",
+	"SDF3": "https://en.wikipedia.org/wiki/Syntax_Definition_Formalism",
 	"Silver": "http://melt.cs.umn.edu/silver/",
 	"Smalltalk": "https://en.wikipedia.org/wiki/Smalltalk",
 	"Swift": "https://en.wikipedia.org/wiki/Swift_(programming_language)",
@@ -183,8 +187,13 @@ while i < len(lines):
 				item += ': <blockquote><pre>'
 				keywords = m['keywords'] if 'keywords' in m.keys() else []
 				notkwrds = m['notkeywords'] if 'notkeywords' in m.keys() else []
-				for line in open('code/'+tofname(macro)+'.g', 'r', encoding='utf-8').readlines():
-					item += htmlify(line, keywords, notkwrds)
+				if os.path.exists('code/'+tofname(macro)+'.g'):
+					for line in open('code/'+tofname(macro)+'.g', 'r', encoding='utf-8').readlines():
+						item += htmlify(line, keywords, notkwrds)
+				elif os.path.exists('code/'+tofname(macro)+'.png'):
+					item += '<img src="code/'+tofname(macro)+'.png" alt="Screenshot" class="ss"/>'
+				else:
+					print('\tNeither grammar text nor screenshot found!')
 				item += '</pre></blockquote>'
 				items.append(item)
 			if 'more' in m.keys():

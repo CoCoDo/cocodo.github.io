@@ -78,6 +78,7 @@
 			<tab>GDK</tab>
 			<tab>GOLD</tab>
 			<tab>Happy</tab>
+			<tab>Iguana</tab>
 			<tab>Irony</tab>
 			<tab>JastAdd</tab>
 			<tab>JavaCC</tab>
@@ -115,25 +116,16 @@
 			<tab>SJPT</tab>
 			<tab>SPARK</tab>
 			<tab>Spirit</tab>
-			<div class="tabbertab">
-				<h2>Spoofax</h2>
-				<h3><a href="http://metaborg.org/en/latest/"><img src="logo/spoofax.png" alt="Spoofax"/></a></h3>
-			</div>
+			<tab>Spoofax</tab>
 			<div class="tabbertab">
 				<h2>SugarJ</h2>
 				<h3><a href="https://www.student.informatik.tu-darmstadt.de/~xx00seba/projects/sugarj/"><img src="logo/sugarj.png" alt="SugarJ"/></a></h3>
 			</div>
 			<tab>TXL</tab>
 			<tab>Waxeye</tab>
-			<div class="tabbertab">
-				<h2>Whole</h2>
-				<h3><a href="http://whole.sourceforge.net/"><img src="logo/whote.png" alt="Whole Platform"/></a></h3>
-			</div>
+			<tab>Whole</tab>
 			<!-- TODO: http://bford.info/packrat/ -->
-			<div class="tabbertab">
-				<h2>xtc</h2>
-				<h3><a href="http://cs.nyu.edu/rgrimm/xtc/">xtc (eXTensible Compiler)</a></h3>
-			</div>
+			<tab>xtc</tab>
 			<div class="tabbertab">
 				<h2>Xtext</h2>
 				<h3><a href="http://www.eclipse.org/Xtext/"><img src="logo/xtext.png" alt="Xtext"/></a></h3>

@@ -95,7 +95,7 @@ expr<span class="kw"> = </span>expr.a MULT  expr.b   <span class="kw">{:</span> 
      <span class="kw">|</span> NUMBER.n              <span class="kw">{:</span> return new Expr(n.doubleValue());   <span class="kw">:}</span>
      <span class="kw">|</span> LPAREN expr.e RPAREN  <span class="kw">{:</span> return e; <span class="kw">:}</span>
      ;
-</pre></blockquote></li><li>More examples: <a href="http://beaver.sourceforge.net/">beaver.sourceforge.net</a></li><li>Often used with: <ul><li><a href="https://www.cs.princeton.edu/~appel/modern/java/JLex/">JLex</a></li><li><a href="http://www.jflex.de/">JFlex</a></li></ul></li></ul>
+</pre></blockquote></li><li>More examples: <a href="http://beaver.sourceforge.net/">beaver.sourceforge.net</a></li><li>Often used with: <ul><li><a href="http://www.jflex.de/">JFlex</a></li><li><a href="https://www.cs.princeton.edu/~appel/modern/java/JLex/">JLex</a></li></ul></li></ul>
 			</div>
 			<div class="tabbertab">
 				<h2>Bison</h2>
@@ -517,6 +517,29 @@ Factor
       <span class="kw">|</span> var                     <span class="kw">{</span> Var <span class="kw">$</span>1 <span class="kw">}</span>
       <span class="kw">|</span> '(' Exp ')'             <span class="kw">{</span> Brack <span class="kw">$</span>2 <span class="kw">}</span>
 </pre></blockquote></li><li>More examples: <a href="https://www.haskell.org/happy/doc/html/index.html">haskell.org</a></li><li>Maintained by Andy Gill and Simon Marlow</li><li>Often used with: <ul><li><a href="https://www.haskell.org/alex/">Alex</a></li></ul></li></ul>
+			</div>
+			<div class="tabbertab">
+				<h2>Iguana</h2>
+				<h3><a href="http://iguana-parser.github.io/"><img src="logo/iguana.png" alt="Iguana" width="150px"/></a></a></h3>
+				<ul><li>Iguana (<a href="https://github.com/iguana-parser/iguana">download</a>)</li><li>Main website: <a href="http://iguana-parser.github.io/">iguana-parser.github.io</a></li><li>Works with Rascal, <a href="http://101companies.org/wiki/Language:Java">Java</a>, <a href="https://en.wikipedia.org/wiki/Scala_(programming_language)">Scala</a></li><li>Parsing algorithms: <a href="http://dotat.at/tmp/gll.pdf">GLL</a>, <a href="http://iguana-parser.github.io/documentation.html#data-dependent-grammars">data dependency</a></li><li>Example from <a href="https://github.com/iguana-parser/examples/blob/master/src/resources/grammars/XML.iggy">@iguana-parser/examples</a>: <blockquote><pre>Start <span class="kw">::=</span> Element
+
+Element <span class="kw">::=</span> s=STag Content ETag(s)
+STag    <span class="kw">::=</span> '&lt;' n:Name Attribute* '&gt;' {n.yield}
+ETag(s) <span class="kw">::=</span> '&lt;/' n:Name [n.yield == s] '&gt;'
+
+Attribute <span class="kw">::=</span> Name "=" String
+Content <span class="kw">::=</span> Element* | Text
+
+<span class="kw">@Layout</span>
+L <span class="kw">::=</span> Whitespaces
+
+<span class="kw">regex</span>
+{
+	Name <span class="kw">::=</span> [a-zA-Z][a-zA-Z0-9]*
+	Text <span class="kw">::=</span> [a-zA-Z0-9]+
+	String <span class="kw">::=</span> '\"' [a-zA-Z0-9]+ '\"'
+	Whitespaces <span class="kw">::=</span> [\n\r\t\f\ ]*
+}</pre></blockquote></li><li>More examples: <a href="https://github.com/iguana-parser/examples/tree/master/src/resources/grammars">@iguana-parser/examples</a></li><li>Maintained by Ali Afroozeh and Anastasia Izmaylova</li></ul>
 			</div>
 			<div class="tabbertab">
 				<h2>Irony</h2>
@@ -1180,7 +1203,13 @@ term      <span class="kw">::=</span> LPAREN expr:e RPAREN <span class="kw">{:</
 			</div>
 			<div class="tabbertab">
 				<h2>Spoofax</h2>
-				<h3><a href="http://metaborg.org/en/latest/"><img src="logo/spoofax.png" alt="Spoofax"/></a></h3>
+				<h3><a href="http://metaborg.org/en/latest/"><img src="logo/spoofax.svg" alt="Spoofax" width="150px"/></a></a></h3>
+				<ul><li>Spoofax version 2.1.0 (<a href="http://www.metaborg.org/en/latest/source/download.html">download</a>)</li><li>Main website: <a href="http://metaborg.org/en/latest/">metaborg.org</a></li><li>Works with <a href="https://en.wikipedia.org/wiki/Syntax_Definition_Formalism">SDF3</a></li><li>Wikipedia: (<a href="https://en.wikipedia.org/wiki/Stratego/XT">English</a>)</li><li>Parsing algorithm: <a href="https://pdfs.semanticscholar.org/90f2/8a411455fb783da17ad4b4efdda4464606c4.pdf">SGLR</a></li><li>Example from <a href="http://www.metaborg.org/en/latest/source/langdev/meta/lang/sdf3.html">metaborg.org</a>: <blockquote><pre>Exp.If <span class="kw">=</span> &lt;
+   if(&lt;Exp&gt;)
+     &lt;Exp&gt;
+   else
+     &lt;Exp&gt;
+&gt; <span class="kw">{case-insensitive}</span></pre></blockquote></li><li>More examples: <a href="http://declare-your-language.metaborg.org/">declare-your-language.metaborg.org</a></li><li>Maintained by Eelco Visser et al</li><li>Often used with: <ul><li><a href="http://www.metaborg.org/en/latest/source/langdev/meta/lang/stratego/index.html">Stratego</a></li><li><a href="http://www.metaborg.org/en/latest/source/langdev/meta/lang/nabl2/getting-started.html">NaBL</a></li><li><a href="http://www.metaborg.org/en/latest/source/langdev/meta/lang/dynsem/index.html">DynSem</a></li></ul></li></ul>
 			</div>
 			<div class="tabbertab">
 				<h2>SugarJ</h2>
@@ -1232,11 +1261,37 @@ ws    <span class="kw">&lt;:</span> *[ \t\n\r]</pre></blockquote></li><li>More e
 			</div>
 			<div class="tabbertab">
 				<h2>Whole</h2>
-				<h3><a href="http://whole.sourceforge.net/"><img src="logo/whote.png" alt="Whole Platform"/></a></h3>
+				<h3><a href="http://whole.sourceforge.net/"><img src="logo/whole.png" alt="Whole Platform" width="150px"/></a></a> Whole Platform</h3>
+				<ul><li>Whole version 1.0.0 (<a href="https://sourceforge.net/projects/whole/files/latest/download">download</a>)</li><li>Main website: <a href="http://whole.sourceforge.net/">whole.sourceforge.net</a></li><li>Works with <a href="http://101companies.org/wiki/Language:Java">Java</a></li><li>Example from <a href="https://www.flickr.com/photos/wholeplatform/5384032367/in/photostream/">flickr.com</a>: <blockquote><pre><img src="code/whole.png" alt="Screenshot" class="ss"/></pre></blockquote></li><li>Maintained by Riccardo Solmi</li></ul>
 			</div>
 			<div class="tabbertab">
 				<h2>xtc</h2>
-				<h3><a href="http://cs.nyu.edu/rgrimm/xtc/">xtc (eXTensible Compiler)</a></h3>
+				<h3>eXTensible Compiler</h3>
+				<ul><li>xtc version 2.4.0 (<a href="http://cs.nyu.edu/rgrimm/xtc/#distribution">download</a>)</li><li>Main website: <a href="http://cs.nyu.edu/rgrimm/xtc/">cs.nyu.edu</a></li><li>Works with <a href="http://101companies.org/wiki/Language:Java">Java</a></li><li>Parsing algorithm: <a href="http://bford.info/packrat/">Packrat</a></li><li>Example from <a href="http://cs.nyu.edu/rgrimm/xtc/rats-intro.html">cs.nyu.edu</a>: <blockquote><pre>Module        <span class="kw">&lt;-</span> Spacing Intro Production<span class="kw">*</span> EOF
+Intro         <span class="kw">&lt;-</span> ModuleDecl Dependency<span class="kw">*</span> Header<span class="kw">?</span> Body<span class="kw">?</span> Footer<span class="kw">?</span> Option<span class="kw">?</span>
+ModuleDecl    <span class="kw">&lt;-</span> "module" FSpacing ModuleRef SEMICOLON
+Dependency    <span class="kw">&lt;-</span> Modification <span class="kw">/ </span>Instantiation <span class="kw">/ </span>Import
+Modification  <span class="kw">&lt;-</span> "modify" FSpacing ModuleRef ModuleTarget<span class="kw">?</span> SEMICOLON
+Instantiation <span class="kw">&lt;-</span> "instantiate" FSpacing ModuleRef ModuleTarget<span class="kw">?</span> SEMICOLON
+Import        <span class="kw">&lt;-</span> "import" FSpacing ModuleRef ModuleTarget<span class="kw">?</span> SEMICOLON
+ModuleRef     <span class="kw">&lt;-</span> QName ModuleParams<span class="kw">?</span>
+ModuleParams  <span class="kw">&lt;-</span> OPEN ( QName (COMMA QName)<span class="kw">*</span> )<span class="kw">?</span> CLOSE
+ModuleTarget  <span class="kw">&lt;-</span> "as" FSpacing QName
+Header        <span class="kw">&lt;-</span> "header" Spacing Action
+Body          <span class="kw">&lt;-</span> "body" Spacing Action
+Footer        <span class="kw">&lt;-</span> "footer" Spacing Action
+Option        <span class="kw">&lt;-</span> "option" FSpacing Attribute (COMMA Attribute)<span class="kw">*</span> SEMICOLON
+Production    <span class="kw">&lt;-</span> Full <span class="kw">/ </span>Addition <span class="kw">/ </span>Removal <span class="kw">/ </span>Override
+Full          <span class="kw">&lt;-</span> PAttributes QName Identifier EQUAL Choice SEMICOLON
+Addition      <span class="kw">&lt;-</span> QName Identifier PLUSEQUAL
+                 ( SName ELLIPSIS SLASH Choice SEMICOLON
+                 <span class="kw">/ </span>Choice SLASH SName ELLIPSIS SEMICOLON )
+Removal       <span class="kw">&lt;-</span> QName Identifier MINUSEQUAL
+                 SName ( COMMA SName )<span class="kw">*</span> SEMICOLON
+Override      <span class="kw">&lt;-</span> QName Identifier COLONEQUAL Choice SEMICOLON
+                 <span class="kw">/ </span>QName Identifier COLONEQUAL ELLIPSIS SLASH Choice SEMICOLON
+                 <span class="kw">/ </span>QName Identifier COLONEQUAL Choice SLASH ELLIPSIS SEMICOLON
+                 <span class="kw">/ </span>PAttributes QName Identifier COLONEQUAL ELLIPSIS SEMICOLON</pre></blockquote></li><li>More examples: <a href="http://cs.nyu.edu/rgrimm/xtc/#documentation">cs.nyu.edu</a></li><li>Maintained by Robert Grimm</li></ul>
 			</div>
 			<div class="tabbertab">
 				<h2>Xtext</h2>

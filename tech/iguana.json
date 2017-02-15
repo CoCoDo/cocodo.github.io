@@ -1,0 +1,11 @@
+{
+	"logo": "iguana.png",
+	"parsing": ["GLL", "data dependency"],
+	"uri": "http://iguana-parser.github.io/",
+	"download": "https://github.com/iguana-parser/iguana",
+	"example": "https://github.com/iguana-parser/examples/blob/master/src/resources/grammars/XML.iggy",
+	"more": "https://github.com/iguana-parser/examples/tree/master/src/resources/grammars",
+	"keywords": ["regex", "@Layout", "::="],
+	"lang": ["Rascal", "Java", "Scala"],
+	"maintained": "Ali Afroozeh and Anastasia Izmaylova"
+}
