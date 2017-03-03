@@ -53,10 +53,11 @@
 					<li><a href="https://pure.royalholloway.ac.uk/portal/en/persons/adrian-johnstone_7cc2e828-2b0f-4cb7-a169-337193b854b8.html">Adrian Johnstone</a> and <a href="https://pure.royalholloway.ac.uk/portal/en/persons/elizabeth-scott(2b634c08-8249-413d-9654-031aed1f680b).html">Elizabeth Scott</a> with <a href="https://pure.royalholloway.ac.uk/portal/files/25269180/artTool.pdf">ART</a></li>
 					<li><a href="https://www.eecs.northwestern.edu/~robby/">Robby Findler</a> with <a href="http://www.racket-lang.org/">Racket</a></li>
 				</ul>
-				<h3>Participants</h3>
+				<h3>Links</h3>
 				<ul>
-					<li>TBA</li>
-					<li><a href="mailto:vadim@raincodelabs.com">(get in touch if interested!)</a></li>
+					<li><a href="https://goo.gl/forms/e8uj7zPN0xF0Y0Qx1">Register to get a t-shirt!</a></li>
+					<li><a href="https://www.facebook.com/events/1769565396626015/">RVSP to a Facebook event</a></li>
+					<li><a href="https://twitter.com/search?f=tweets&amp;vertical=default&amp;q=cocodo&amp;src=spxr">Browse #cocodo on Twitter</a></li>
 				</ul>
 			</div>
 			<div class="tabbertab">
@@ -142,7 +143,7 @@
 			The picture used on this page is derivative from <a href="https://xkcd.com/303/">XKCD#303: Compiling</a> by Randall Munroe, <a href="http://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC</a>.<br/>
 			The tabber code used on this page, is derivative from <a href="http://www.kean.edu/~gkolodiy/5223/tabber.html">the one made by Patrick Fitzgerald</a> and distributed under <a href="https://opensource.org/licenses/mit-license.php">the MIT license</a>.<br/>
 			All other referenced works of art, science and engineering, are subject to their own individual copyrights.<br/>
-			Last updated: February 2017.
+			Last updated: March 2017.
 		</div>
 	</body>
 </html>
