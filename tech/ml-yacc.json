@@ -1,0 +1,12 @@
+{
+	"version": "2.4",
+	"parsing": ["LALR"],
+	"uri": "http://www.smlnj.org/doc/ML-Yacc/index.html",
+	"download": "https://www.cs.princeton.edu/~appel/modern/ml/whichver.html",
+	"example": "http://www.smlnj.org/doc/ML-Yacc/mlyacc007.html#toc14",
+	"more": "http://www.smlnj.org/doc/ML-Yacc/mlyacc002.html",
+	"keywords": ["%%", "%keyword", "%eop", "%left", "%name", "%nodefault", "%nonterm", "%noshift", "%pos", "%prefer", "%right", "%subst", "%term", "%value", "%verbose", "of int", "of string", "fun", "let", "in ", "end"],
+	"notkeywords": [],
+	"lang": ["ML"],
+	"maintained": "David R. Tarditi and Andrew W. Appel"
+}

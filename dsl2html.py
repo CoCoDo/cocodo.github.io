@@ -7,7 +7,7 @@ d = ('Zeroary', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 
 	'September', 'October', 'November', 'December')[datetime.date.today().month]+\
 	' '+str(datetime.date.today().year)
 langorder = ["en", "nl", "fr", "de", "ru"]
-lang = {"en": "English", "de": "German", "nl": "Dutch", "fr": "French", "ru": "Russian"}
+lang = {"en": "English", "de": "German", "nl": "Dutch", "fr": "French", "ru": "Russian", "es": "Spanish"}
 techs = {
 	"AG": "https://en.wikipedia.org/wiki/Attribute_grammar",
 	"ALL(*)": "http://www.antlr.org/papers/allstar-techreport.pdf",
@@ -19,6 +19,7 @@ techs = {
 	"data dependency": "http://iguana-parser.github.io/documentation.html#data-dependent-grammars",
 	"DCG": "https://pdfs.semanticscholar.org/fbc0/4a1951003ba164303b2898fb7f3c6b4e9083.pdf",
 	"DFA": "https://en.wikipedia.org/wiki/Deterministic_finite_automaton",
+	"drag and drop": "https://en.wikipedia.org/wiki/Drag_and_drop",
 	"FSM": "https://en.wikipedia.org/wiki/Finite-state_machine",
 	"FST": "https://en.wikipedia.org/wiki/Finite-state_transducer",
 	"GLL": "http://dotat.at/tmp/gll.pdf",
@@ -51,6 +52,8 @@ slang = {
 	"Intel Asm": "https://en.wikipedia.org/wiki/x86_assembly_language",
 	"Java": "http://101companies.org/wiki/Language:Java",
 	"JavaScript": "http://101companies.org/wiki/Language:JavaScript",
+	"Kotlin": "https://kotlinlang.org/",
+	"ML": "https://en.wikipedia.org/wiki/ML_(programming_language)",
 	"Oberon": "https://en.wikipedia.org/wiki/Oberon_(programming_language)",
 	"Obj-C": "https://en.wikipedia.org/wiki/Objective-C",
 	"Pascal": "https://en.wikipedia.org/wiki/Pascal_(programming_language)",
@@ -222,7 +225,7 @@ while i < len(lines):
 				item += '</ul>'
 				items.append(item)
 			if 'oftenwith' in m.keys():
-				item = 'Often used with: <ul>'
+				item = 'Used with: <ul>'
 				for t in m['oftenwith'].keys():
 					item += '<li>' + resolve(t, m['oftenwith'][t][0])
 					for l in m['oftenwith'][t][1:]:

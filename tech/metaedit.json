@@ -1,0 +1,12 @@
+{
+	"logo": "metaeditplus.png",
+	"fullname": "MetaEdit+",
+	"license": "31-day trial",
+	"parsing": ["drag and drop"],
+	"uri": "http://www.metacase.com/mwb/",
+	"download": "http://www.metacase.com/download/",
+	"example": "http://www.metacase.com/mwb/choose_rules.html",
+	"more": "http://www.metacase.com/webcasts/DSM_Definition.html",
+	"maintained": "MetaCase",
+	"wikipedia": {"MetaEdit+": ["en"]}
+}

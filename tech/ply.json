@@ -6,7 +6,7 @@
 	"parsing": ["LR"],
 	"example": "http://www.dabeaz.com/ply/example.html",
 	"more": "http://www.dabeaz.com/ply/ply.html",
-	"keywords": ["def", "elif", "if", "try", "except"],
+	"keywords": ["def", "elif", "if", "try", "except", "%prec"],
 	"notkeywords": ["Undefined"],
 	"maintained": "David Beazley",
 	"lang": ["Python2", "Python3"]

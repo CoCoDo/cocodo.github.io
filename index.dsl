@@ -52,10 +52,11 @@
 				<ul class="cool">
 					<li><a href="https://pure.royalholloway.ac.uk/portal/en/persons/adrian-johnstone_7cc2e828-2b0f-4cb7-a169-337193b854b8.html">Adrian Johnstone</a> and <a href="https://pure.royalholloway.ac.uk/portal/en/persons/elizabeth-scott(2b634c08-8249-413d-9654-031aed1f680b).html">Elizabeth Scott</a> with <a href="https://pure.royalholloway.ac.uk/portal/files/25269180/artTool.pdf">ART</a></li>
 					<li><a href="https://www.eecs.northwestern.edu/~robby/">Robby Findler</a> with <a href="http://www.racket-lang.org/">Racket</a></li>
+					<li><a href="https://www.linkedin.com/in/arendsrik/">Rik Arends</a> with <a href="https://makepad.github.io/makepad.html">MakePad</a></li>
 				</ul>
 				<h3>Links</h3>
 				<ul>
-					<li><a href="https://goo.gl/forms/e8uj7zPN0xF0Y0Qx1">Register to get a t-shirt!</a></li>
+					<li><a href="https://goo.gl/forms/e8uj7zPN0xF0Y0Qx1">Register and get a t-shirt!</a></li>
 					<li><a href="https://www.facebook.com/events/1769565396626015/">RVSP to a Facebook event</a></li>
 					<li><a href="https://twitter.com/search?f=tweets&amp;vertical=default&amp;q=cocodo&amp;src=spxr">Browse #cocodo on Twitter</a></li>
 				</ul>
@@ -89,10 +90,8 @@
 			<tab>kwParsing</tab>
 			<tab>Laja</tab>
 			<!-- Lark http://www.cocolab.com/cocktail.html not included because a license key must be preordered -->
-			<div class="tabbertab">
-				<h2>MetaEdit+</h2>
-				<h3><a href="http://www.metacase.com/download/"><img src="logo/metaeditplus.png" alt="MetaEdit+"/></a></h3>
-			</div>
+			<tab>MetaEdit</tab>
+			<tab>ML-Yacc</tab>
 			<div class="tabbertab">
 				<h2>MPS</h2>
 				<h3><a href="https://www.jetbrains.com/mps/"><img src="logo/mps.png" alt="MPS"/></a></h3>
@@ -118,19 +117,18 @@
 			<tab>SPARK</tab>
 			<tab>Spirit</tab>
 			<tab>Spoofax</tab>
-			<div class="tabbertab">
+			<!-- no SugarJ due to dead links -->
+			<!-- <div class="tabbertab">
 				<h2>SugarJ</h2>
 				<h3><a href="https://www.student.informatik.tu-darmstadt.de/~xx00seba/projects/sugarj/"><img src="logo/sugarj.png" alt="SugarJ"/></a></h3>
-			</div>
+			</div> -->
 			<tab>TXL</tab>
 			<tab>Waxeye</tab>
+			<tab>Whimsy</tab>
 			<tab>Whole</tab>
 			<!-- TODO: http://bford.info/packrat/ -->
 			<tab>xtc</tab>
-			<div class="tabbertab">
-				<h2>Xtext</h2>
-				<h3><a href="http://www.eclipse.org/Xtext/"><img src="logo/xtext.png" alt="Xtext"/></a></h3>
-			</div>
+			<tab>Xtext</tab>
 			<tab>yacc</tab>
 			<tab>YAPPS</tab>
 		</div>

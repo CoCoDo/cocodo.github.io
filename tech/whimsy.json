@@ -1,0 +1,11 @@
+{
+	"logo": "whimsy.png",
+	"toolname": "Autumn",
+	"parsing": ["PEG", "monadic"],
+	"uri": "https://github.com/norswap/whimsy",
+	"download": "https://github.com/norswap/whimsy/archive/master.zip",
+	"example": "https://github.com/norswap/whimsy/blob/master/doc/autumn/guide/first-grammar.md",
+	"keywords": ["import", "class ", "fun", "override"],
+	"lang": ["Kotlin"],
+	"maintained": "Nicolas Laurent"
+}

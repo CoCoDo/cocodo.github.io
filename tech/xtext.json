@@ -1,0 +1,13 @@
+{
+	"logo": "xtext.png",
+	"version": "2.11.0",
+	"license": "Eclipse Public License",
+	"uri": "http://www.eclipse.org/Xtext/",
+	"download": "http://www.eclipse.org/Xtext/download.html",
+	"example": "http://www.eclipse.org/Xtext/documentation/102_domainmodelwalkthrough.html",
+	"more": "http://www.eclipse.org/Xtext/documentation/103_domainmodelnextsteps.html",
+	"keywords": ["grammar", "with", "generate"],
+	"lang": ["Java"],
+	"oftenwith": {"ANTLR": ["http://www.antlr.org/"]},
+	"wikipedia": {"Xtext": ["en", "de", "es"]}
+}
