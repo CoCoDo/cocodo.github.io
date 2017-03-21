@@ -122,6 +122,7 @@
 				<h2>SugarJ</h2>
 				<h3><a href="https://www.student.informatik.tu-darmstadt.de/~xx00seba/projects/sugarj/"><img src="logo/sugarj.png" alt="SugarJ"/></a></h3>
 			</div> -->
+			<tab>SwiftParsec</tab>
 			<tab>TXL</tab>
 			<tab>Waxeye</tab>
 			<tab>Whimsy</tab>
