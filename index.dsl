@@ -53,6 +53,7 @@
 					<li><a href="https://pure.royalholloway.ac.uk/portal/en/persons/adrian-johnstone_7cc2e828-2b0f-4cb7-a169-337193b854b8.html">Adrian Johnstone</a> and <a href="https://pure.royalholloway.ac.uk/portal/en/persons/elizabeth-scott(2b634c08-8249-413d-9654-031aed1f680b).html">Elizabeth Scott</a> with <a href="https://pure.royalholloway.ac.uk/portal/files/25269180/artTool.pdf">ART</a></li>
 					<li><a href="https://www.eecs.northwestern.edu/~robby/">Robby Findler</a> with <a href="http://www.racket-lang.org/">Racket</a></li>
 					<li><a href="https://www.linkedin.com/in/arendsrik/">Rik Arends</a> with <a href="https://makepad.github.io/makepad.html">MakePad</a></li>
+					<li><a href="http://softlang.wikidot.com/rlaemmel:home">Ralf Lämmel</a> with <a href="http://www.softlang.org/book">The Software Languages Book</a></li>
 				</ul>
 				<h3>Links</h3>
 				<ul>
