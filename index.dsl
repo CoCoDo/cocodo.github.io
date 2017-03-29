@@ -48,12 +48,18 @@
 				management, portability, migration, refactoring, domain-specific language
 				design, linking and loading, assembling and disassembling, generics and
 				reflection, numerous paradigms and so much more.
-				<h3>Confirmed experts</h3>
+				<h3>Programme (<a href="http://2017.programming-conference.org/track/cocodo-2017#program">@‹P›</a>)</h3>
 				<ul class="cool">
-					<li><a href="https://pure.royalholloway.ac.uk/portal/en/persons/adrian-johnstone_7cc2e828-2b0f-4cb7-a169-337193b854b8.html">Adrian Johnstone</a> and <a href="https://pure.royalholloway.ac.uk/portal/en/persons/elizabeth-scott(2b634c08-8249-413d-9654-031aed1f680b).html">Elizabeth Scott</a> with <a href="https://pure.royalholloway.ac.uk/portal/files/25269180/artTool.pdf">ART</a></li>
-					<li><a href="https://www.eecs.northwestern.edu/~robby/">Robby Findler</a> with <a href="http://www.racket-lang.org/">Racket</a></li>
-					<li><a href="https://www.linkedin.com/in/arendsrik/">Rik Arends</a> with <a href="https://makepad.github.io/makepad.html">MakePad</a></li>
-					<li><a href="http://softlang.wikidot.com/rlaemmel:home">Ralf Lämmel</a> with <a href="http://www.softlang.org/book">The Software Languages Book</a></li>
+					<li><strong>09:00–09:15</strong>: Opening and introductions (<a href="http://grammarware.github.io">Vadim Zaytsev</a>)
+					<li><strong>09:15–10:30</strong>: Attribute Grammars for DSLs for Music and 3D Graphics (<a href="https://pure.royalholloway.ac.uk/portal/en/persons/elizabeth-scott(2b634c08-8249-413d-9654-031aed1f680b).html">Elizabeth Scott</a>, <a href="https://pure.royalholloway.ac.uk/portal/en/persons/adrian-johnstone_7cc2e828-2b0f-4cb7-a169-337193b854b8.html">Adrian Johnstone</a>) with <a href="https://pure.royalholloway.ac.uk/portal/files/25269180/artTool.pdf">ART</a></li>
+					<li><strong>11:00–12:00</strong>: Metaprogramming in Late Phases of Compilation (<a href="http://www.ii.uib.no/~anya/">Anya Helene Bagge</a>) with <a href="http://www.rascal-mpl.org/">Rascal</a></li>
+					<li><strong>13:30–15:00</strong>: Experimenting with Racket as a Language Workbench (<a href="https://www.eecs.northwestern.edu/~robby/">Robby Findler</a>) with <a href="http://www.racket-lang.org/">Racket</a></li>
+					<li><strong>15:30–17:00</strong>: The Future of Compilers (presentations and pitches)
+					<ul>
+						<li><a href="https://www.linkedin.com/in/arendsrik/">Rik Arends</a> with <a href="https://makepad.github.io/makepad.html">MakePad</a></li>
+						<li><a href="http://softlang.wikidot.com/rlaemmel:home">Ralf Lämmel</a> with <a href="http://www.softlang.org/book">The Software Languages Book</a></li>
+						<li><a href="https://pure.royalholloway.ac.uk/portal/en/persons/adrian-johnstone_7cc2e828-2b0f-4cb7-a169-337193b854b8.html">Adrian Johnstone</a> with <a href="http://plancomps.csle.cs.rhul.ac.uk/">FunCons</a></li>
+					</ul>
 				</ul>
 				<h3>Links</h3>
 				<ul>
