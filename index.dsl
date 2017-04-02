@@ -59,6 +59,7 @@
 						<li><a href="https://www.linkedin.com/in/arendsrik/">Rik Arends</a> with <a href="https://makepad.github.io/makepad.html">MakePad</a></li>
 						<li><a href="http://softlang.wikidot.com/rlaemmel:home">Ralf Lämmel</a> with <a href="http://www.softlang.org/book">The Software Languages Book</a></li>
 						<li><a href="https://pure.royalholloway.ac.uk/portal/en/persons/adrian-johnstone_7cc2e828-2b0f-4cb7-a169-337193b854b8.html">Adrian Johnstone</a> with <a href="http://plancomps.csle.cs.rhul.ac.uk/">FunCons</a></li>
+						<li><a href="https://uclouvain.be/fr/repertoires/nicolas.laurent">Nicolas Laurent</a> with <a href="https://github.com/norswap/whimsy">Whimsy</a> and <a href="https://github.com/norswap/autumn">Autumn</a></li>
 					</ul>
 				</ul>
 				<h3>Links</h3>
