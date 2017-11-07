@@ -33,12 +33,12 @@
 			<div class="rl">
 			<img src="logo/cocodo.png" alt="Compiler Coding Dojo" title="CoCoDo"/>
 			</div>
-			<h2 class="rl"><a href="https://cocodo.github.io/">CoCoDo</a> @ <a href="http://2017.programming-conference.org/">‹Programming›</a></h2>
-			<h2>4 April 2017, Brussels, Belgium</h2>
+			<h2 class="rl"><a href="https://cocodo.github.io/">CoCoDo</a> @ <a href="http://2018.programming-conference.org/">‹Programming›</a></h2>
+			<h2>9 April 2018, Nice, France</h2>
 		</div>
 		<div class="tabber">
 			<div class="tabbertab">
-				<h2>Sessions</h2>
+				<h2>2018 Sessions</h2>
 				<strong>CoCoDo</strong> is a <em>coding dojo</em> where you can enjoy an entire day of
 				compiler programming under gentle guidance of field experts.
 				<br/>
@@ -48,7 +48,20 @@
 				management, portability, migration, refactoring, domain-specific language
 				design, linking and loading, assembling and disassembling, generics and
 				reflection, numerous paradigms and so much more.
-				<h3>Programme (<a href="http://2017.programming-conference.org/track/cocodo-2017#program">@‹P›</a>)</h3>
+				<h3>Programme (<a href="https://2018.programming-conference.org/track/cocodo-2018-papers">@‹P›</a>) TBA</h3>
+				Confirmed speakers:
+				<ul class="cool">
+					<li><strong><a href="http://www.cs.swan.ac.uk/~cspdm/">Peter D. Mosses</a></strong></li>
+				</ul>
+				<h3>Links</h3>
+				<ul>
+					<li><a href="https://twitter.com/search?f=tweets&amp;vertical=default&amp;q=cocodo&amp;src=spxr">Browse #cocodo on Twitter</a></li>
+				</ul>
+			</div>
+			<div class="tabbertab">
+				<h2>2017</h2>
+				<strong>CoCoDo 2017</strong> took place on 4 April 2017 in Brussels, Belgium as a part of the <a href="http://2017.programming-conference.org/track/cocodo-2017#program">‹Programming›</a> conference.
+				<h3>Programme</h3>
 				<ul class="cool">
 					<li><strong>09:00–09:15</strong>: Opening and introductions (<a href="http://grammarware.github.io">Vadim Zaytsev</a>)
 					<li><strong>09:15–10:30</strong>: Attribute Grammars for DSLs for Music and 3D Graphics (<a href="https://pure.royalholloway.ac.uk/portal/en/persons/elizabeth-scott(2b634c08-8249-413d-9654-031aed1f680b).html">Elizabeth Scott</a>, <a href="https://pure.royalholloway.ac.uk/portal/en/persons/adrian-johnstone_7cc2e828-2b0f-4cb7-a169-337193b854b8.html">Adrian Johnstone</a>) with <a href="https://pure.royalholloway.ac.uk/portal/files/25269180/artTool.pdf">ART</a></li>
@@ -146,11 +159,11 @@
 		<br/><hr/>
 		<div class="f">
 			<a href="http://www.raincodelabs.com/"><img src="logo/labs.png" alt="Raincode Labs"/></a>
-			The page is maintained by <a href="http://grammarware.github.io/">Dr. Vadim Zaytsev</a> a.k.a. @<a href="http://grammarware.net">grammarware</a>, <a href="https://en.wikipedia.org/wiki/Chief_science_officer" title="Chief Science Officer">CSO</a> of <a href="http://www.raincodelabs.com/">Raincode Labs</a>.<br/>
+			The page is maintained by <a href="http://grammarware.github.io/">Dr. Vadim Zaytsev</a> a.k.a. @<a href="http://grammarware.net">grammarware</a>, <a href="https://en.wikipedia.org/wiki/Chief_scientific_officer" title="Chief Science Officer">CSO</a> of <a href="http://www.raincodelabs.com/">Raincode Labs</a>.<br/>
 			The picture used on this page is derivative from <a href="https://xkcd.com/303/">XKCD#303: Compiling</a> by Randall Munroe, <a href="http://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC</a>.<br/>
 			The tabber code used on this page, is derivative from <a href="http://www.kean.edu/~gkolodiy/5223/tabber.html">the one made by Patrick Fitzgerald</a> and distributed under <a href="https://opensource.org/licenses/mit-license.php">the MIT license</a>.<br/>
 			All other referenced works of art, science and engineering, are subject to their own individual copyrights.<br/>
-			Last updated: March 2017.
+			Last updated: November 2017.
 		</div>
 	</body>
 </html>
