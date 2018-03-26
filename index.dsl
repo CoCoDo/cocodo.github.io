@@ -53,7 +53,7 @@
 					<li><strong>08:45–09:00</strong>: Opening and introductions (<a href="http://grammarware.github.io">Vadim Zaytsev</a>)</li>
 					<li><strong>09:00–10:30</strong>: <a href="http://www.cs.swan.ac.uk/~cspdm/">Peter D. Mosses</a> with <a href="http://plancomps.csle.cs.rhul.ac.uk/">FunCons</a></li>
 					<li><strong>11:00–12:30</strong>: <a href="http://cs.lth.se/jesper-oqvist/">Jesper Öqvist</a> with <a href="http://jastadd.org/web/">JastAdd</a></li>
-					<li><strong>14:30–16:00</strong>: TBA</li>
+					<li><strong>14:30–16:00</strong>: <a href="http://www.ii.uib.no/~anya/">Anya Helene Bagge</a> with <a href="https://www.rascal-mpl.org/">Rascal</a></li>
 					<li>
 						<strong>16:30–18:00</strong>: Presentations and pitches:
 						<ul>
