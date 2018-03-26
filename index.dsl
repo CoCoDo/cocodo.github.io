@@ -48,10 +48,18 @@
 				management, portability, migration, refactoring, domain-specific language
 				design, linking and loading, assembling and disassembling, generics and
 				reflection, numerous paradigms and so much more.
-				<h3>Programme (<a href="https://2018.programming-conference.org/track/cocodo-2018-papers">@‹P›</a>) TBA</h3>
-				Confirmed speakers:
+				<h3>Programme (<a href="https://2018.programming-conference.org/track/cocodo-2018-papers">@‹P›</a>)</h3>
 				<ul class="cool">
-					<li><strong><a href="http://www.cs.swan.ac.uk/~cspdm/">Peter D. Mosses</a></strong></li>
+					<li><strong>08:45–09:00</strong>: Opening and introductions (<a href="http://grammarware.github.io">Vadim Zaytsev</a>)</li>
+					<li><strong>09:00–10:30</strong>: <a href="http://www.cs.swan.ac.uk/~cspdm/">Peter D. Mosses</a> with <a href="http://plancomps.csle.cs.rhul.ac.uk/">FunCons</a></li>
+					<li><strong>11:00–12:30</strong>: <a href="http://cs.lth.se/jesper-oqvist/">Jesper Öqvist</a> with <a href="http://jastadd.org/web/">JastAdd</a></li>
+					<li><strong>14:30–16:00</strong>: TBA</li>
+					<li>
+						<strong>16:30–18:00</strong>: Presentations and pitches:
+						<ul>
+							<li><a href="https://twitter.com/johanfabry">Johan Fabry</a></li>
+						</ul>
+					</li>
 				</ul>
 				<h3>Links</h3>
 				<ul>
@@ -63,7 +71,7 @@
 				<strong>CoCoDo 2017</strong> took place on 4 April 2017 in Brussels, Belgium as a part of the <a href="http://2017.programming-conference.org/track/cocodo-2017#program">‹Programming›</a> conference.
 				<h3>Programme</h3>
 				<ul class="cool">
-					<li><strong>09:00–09:15</strong>: Opening and introductions (<a href="http://grammarware.github.io">Vadim Zaytsev</a>)
+					<li><strong>09:00–09:15</strong>: Opening and introductions (<a href="http://grammarware.github.io">Vadim Zaytsev</a>)</li>
 					<li><strong>09:15–10:30</strong>: Attribute Grammars for DSLs for Music and 3D Graphics (<a href="https://pure.royalholloway.ac.uk/portal/en/persons/elizabeth-scott(2b634c08-8249-413d-9654-031aed1f680b).html">Elizabeth Scott</a>, <a href="https://pure.royalholloway.ac.uk/portal/en/persons/adrian-johnstone_7cc2e828-2b0f-4cb7-a169-337193b854b8.html">Adrian Johnstone</a>) with <a href="https://pure.royalholloway.ac.uk/portal/files/25269180/artTool.pdf">ART</a></li>
 					<li><strong>11:00–12:00</strong>: Metaprogramming in Late Phases of Compilation (<a href="http://www.ii.uib.no/~anya/">Anya Helene Bagge</a>) with <a href="http://www.rascal-mpl.org/">Rascal</a></li>
 					<li><strong>13:30–15:00</strong>: Experimenting with Racket as a Language Workbench (<a href="https://www.eecs.northwestern.edu/~robby/">Robby Findler</a>) with <a href="http://www.racket-lang.org/">Racket</a></li>
