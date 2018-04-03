@@ -58,6 +58,7 @@
 						<strong>16:30–18:00</strong>: Presentations and pitches:
 						<ul>
 							<li><a href="https://twitter.com/johanfabry">Johan Fabry</a></li>
+							<li><a href="https://www.fernuni-hagen.de/ps/team/friedrich.steimann.shtml">Friedrich Steimann</a></li>
 						</ul>
 					</li>
 				</ul>
