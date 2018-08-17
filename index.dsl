@@ -33,8 +33,8 @@
 			<div class="rl">
 			<img src="logo/cocodo.png" alt="Compiler Coding Dojo" title="CoCoDo"/>
 			</div>
-			<h2 class="rl"><a href="https://cocodo.github.io/">CoCoDo</a> @ <a href="http://2018.programming-conference.org/">‹Programming›</a></h2>
-			<h2>9 April 2018, Nice, France</h2>
+			<h2 class="rl"><a href="https://cocodo.github.io/">CoCoDo</a> @ <a href="http://2019.programming-conference.org/">‹Programming›</a></h2>
+			<h2>April 2019, Genova, Italy</h2>
 		</div>
 		<div class="tabber">
 			<div class="tabbertab">
@@ -180,7 +180,7 @@
 			The picture used on this page is derivative from <a href="https://xkcd.com/303/">XKCD#303: Compiling</a> by Randall Munroe, <a href="http://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC</a>.<br/>
 			The tabber code used on this page, is derivative from <a href="http://www.kean.edu/~gkolodiy/5223/tabber.html">the one made by Patrick Fitzgerald</a> and distributed under <a href="https://opensource.org/licenses/mit-license.php">the MIT license</a>.<br/>
 			All other referenced works of art, science and engineering, are subject to their own individual copyrights.<br/>
-			Last updated: November 2017.
+			Last updated: August 2018.
 		</div>
 	</body>
 </html>
