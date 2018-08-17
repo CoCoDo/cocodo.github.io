@@ -38,9 +38,10 @@
 		</div>
 		<div class="tabber">
 			<div class="tabbertab">
-				<h2>2018 Sessions</h2>
+				<h2>2019</h2>
 				<strong>CoCoDo</strong> is a <em>coding dojo</em> where you can enjoy an entire day of
 				compiler programming under gentle guidance of field experts.
+				<br/>
 				<br/>
 				Compiler construction comprises, but is not limited to, lexical analysis,
 				syntactic analysis, preprocessing, context handling, code generation, code
@@ -48,7 +49,14 @@
 				management, portability, migration, refactoring, domain-specific language
 				design, linking and loading, assembling and disassembling, generics and
 				reflection, numerous paradigms and so much more.
-				<h3>Programme (<a href="https://2018.programming-conference.org/track/cocodo-2018-papers">@‹P›</a>)</h3>
+				<br/>
+				<br/>
+				Organised by <a href="http://grammarware.github.io">Vadim Zaytsev</a> and <a href="https://twitter.com/johanfabry">Johan Fabry</a> as a part of Raincode Labs academic activities. Get in touch if you are interested in participating!
+			</div>
+			<div class="tabbertab">
+				<h2>2018</h2>
+				<strong>CoCoDo 2018</strong> took place on 9 April 2018 in Nice, France as a part of the <a href="https://2018.programming-conference.org/track/cocodo-2018-dojo">‹Programming›</a> conference.
+				<h3>Programme</h3>
 				<ul class="cool">
 					<li><strong>08:45–09:00</strong>: Opening and introductions (<a href="http://grammarware.github.io">Vadim Zaytsev</a>)</li>
 					<li><strong>09:00–10:30</strong>: <a href="http://www.cs.swan.ac.uk/~cspdm/">Peter D. Mosses</a> with <a href="http://plancomps.csle.cs.rhul.ac.uk/">FunCons</a></li>
