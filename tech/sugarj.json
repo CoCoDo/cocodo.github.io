@@ -1,0 +1,10 @@
+{
+	"logo": "sugarj.png",
+	"license": "Apache 2.0",
+	"uri": "http://www.erdweg.org/projects/sugarj/",
+	"download": ["http://www.erdweg.org/projects/sugarj/update/", "https://github.com/sugar-lang/"],
+	"example": "https://www.student.informatik.tu-darmstadt.de/~xx00seba/projects/sugarj/",
+	"more": "https://github.com/sugar-lang/case-studies",
+	"lang": ["Java"],
+	"maintained": "Sebastian Erdweg"
+}

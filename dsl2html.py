@@ -211,6 +211,8 @@ while i < len(lines):
 						item += htmlify(line, keywords, notkwrds)
 				elif os.path.exists('code/'+tofname(macro)+'.png'):
 					item += '<img src="code/'+tofname(macro)+'.png" alt="Screenshot" class="ss"/>'
+				elif os.path.exists('code/'+tofname(macro)+'.jpg'):
+					item += '<img src="code/'+tofname(macro)+'.jpg" alt="Screenshot" class="ss"/>'
 				else:
 					print('\tNeither grammar text nor screenshot found!')
 				item += '</pre></blockquote>'
@@ -242,10 +244,10 @@ while i < len(lines):
 				items.append(item)
 			if 'oftenwith' in m.keys():
 				item = 'Used with: <ul>'
-				for t in m['oftenwith'].keys():
+				for t in sorted(m['oftenwith'].keys()):
 					item += '<li>' + resolve(t, m['oftenwith'][t][0])
 					for l in m['oftenwith'][t][1:]:
-						l = resolve(l,'')
+						l = resolve(l, '')
 						if l.split('>')[1][0].isupper():
 							item += ' ('+l+')'
 						else:

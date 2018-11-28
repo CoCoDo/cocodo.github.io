@@ -156,11 +156,7 @@
 			<tab>SPARK</tab>
 			<tab>Spirit</tab>
 			<tab>Spoofax</tab>
-			<!-- no SugarJ due to dead links -->
-			<!-- <div class="tabbertab">
-				<h2>SugarJ</h2>
-				<h3><a href="https://www.student.informatik.tu-darmstadt.de/~xx00seba/projects/sugarj/"><img src="logo/sugarj.png" alt="SugarJ"/></a></h3>
-			</div> -->
+			<tab>SugarJ</tab>
 			<tab>SwiftParsec</tab>
 			<tab>Takmela</tab>
 			<tab>TXL</tab>
@@ -182,7 +178,7 @@
 			The picture used on this page is derivative from <a href="https://xkcd.com/303/">XKCD#303: Compiling</a> by Randall Munroe, <a href="http://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC</a>.<br/>
 			The tabber code used on this page, is derivative from <a href="http://www.kean.edu/~gkolodiy/5223/tabber.html">the one made by Patrick Fitzgerald</a> and distributed under <a href="https://opensource.org/licenses/mit-license.php">the MIT license</a>.<br/>
 			All other referenced works of art, science and engineering, are subject to their own individual copyrights.<br/>
-			Last updated: August 2018.
+			Last updated: #LASTMOD#.
 		</div>
 	</body>
 </html>
