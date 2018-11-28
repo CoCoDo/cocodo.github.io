@@ -1,7 +1,7 @@
 {
 	"version": "2.1.0a1",
 	"uri": "http://simpleparse.sourceforge.net/",
-	"download": "http://www.antlr.org/download.html",
+	"download": "https://sourceforge.net/projects/simpleparse/files/",
 	"parsing": ["top-down", "one-pass"],
 	"example": "http://simpleparse.sourceforge.net/simpleparse_grammars.html",
 	"keywords": [":=", "!", "+", "*", ",", "/"],

@@ -1,7 +1,7 @@
 {
 	"uri": "http://kleenexlang.org/",
 	"logo": "kleenex.png",
-	"download": "http://www.antlr.org/download.html",
+	"download": "https://github.com/diku-kmc/kleenexlang",
 	"parsing": ["FST"],
 	"example": "https://github.com/diku-kmc/kleenexlang",
 	"keywords": [":=", "/[", "]/", "*", "/./", "|", "{", "}", "^"],

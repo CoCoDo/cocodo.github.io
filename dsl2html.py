@@ -3,6 +3,17 @@
 
 import glob, datetime, json, os
 
+def download_link(link):
+	if link.startswith('http://github.com') or link.startswith('https://github.com'):
+		linktext = "github"
+	elif link.startswith('http://bitbucket.') or link.startswith('https://bitbucket.'):
+		linktext = "bitbucket"
+	elif link.find('sourceforge.net') > -1:
+		linktext = "sourceforge"
+	else:
+		linktext = "download"
+	return ' (<a href="%s">%s</a>)' % (link, linktext)
+
 d = ('Zeroary', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August',\
 	'September', 'October', 'November', 'December')[datetime.date.today().month]+\
 	' '+str(datetime.date.today().year)
@@ -80,6 +91,8 @@ def bare(s):
 		return '@%s/%s' % (s.split('/')[3], s.split('/')[4])
 	elif s.strip().split('://')[1][2:].startswith('.wikipedia.org/'):
 		return lang[s.strip().split('://')[1][:2]]
+	elif s.find('web.archive.org') > -1:
+		return bare(s.strip().split('://web.archive.org')[1][20:])
 	else:
 		return s.split('/')[2].replace('www.','')
 
@@ -175,10 +188,12 @@ while i < len(lines):
 				items.append(item)
 			if 'download' in m.keys():
 				if type(m['download']) == type(''):
-					items[0] += ' (<a href="%s">download</a>)' % m['download']
+					items[0] += download_link(m['download'])
+				elif type(m['download']) == type([]) and len(m['download']) == 1:
+					items[0] += download_link(m['download'][0])
 				else:
 					for link in m['download']:
-						items[0] += ' (<a href="%s">download</a>)' % m['download']
+						items[0] += download_link(link)
 			if 'parsing' in m.keys():
 				if len(m['parsing']) == 1:
 					item = 'Parsing algorithm: ' + tryresolve(m['parsing'][0],techs)
