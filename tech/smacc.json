@@ -1,0 +1,12 @@
+{
+	"toolname": "SmaCC",
+	"version": "2.0.5",
+	"uri": "http://www.refactoryworkers.com/SmaCC.html",
+	"download": ["http://www.refactoryworkers.com/SmaCC/Download.html", "https://github.com/SmaCCRefactoring/SmaCC"],
+	"license": "MIT",
+	"parsing": ["LR(1)", "LALR(1)", "GLR"],
+	"example": "http://www.refactoryworkers.com/SmaCC/Tutorial.html",
+	"keywords": ["%left", "%right", "{", "}"],
+	"maintained": "John Brant, Don Roberts",
+	"lang": ["Smalltalk"]
+}

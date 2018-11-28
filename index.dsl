@@ -152,6 +152,7 @@
 			<tab>Silver</tab>
 			<tab>SimpleParse</tab>
 			<tab>SJPT</tab>
+			<tab>SmaCC</tab>
 			<tab>SPARK</tab>
 			<tab>Spirit</tab>
 			<tab>Spoofax</tab>
