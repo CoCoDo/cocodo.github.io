@@ -1,0 +1,11 @@
+{
+	"toolname": "Takmela",
+	"uri": "https://github.com/samiz/takmela",
+	"download": "https://github.com/samiz/takmela/archive/master.zip",
+	"license": "MIT",
+	"parsing": ["recursive descent", "memoisation"],
+	"example": "https://github.com/samiz/takmela/blob/master/Takmela/test/expr.g",
+	"keywords": ["skip", ":"],
+	"maintained": "Mohamed Samy",
+	"lang": ["Java"]
+}

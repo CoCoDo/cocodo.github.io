@@ -38,6 +38,7 @@ techs = {
 	"LALR": "https://en.wikipedia.org/wiki/LALR_parser",
 	"LL": "https://en.wikipedia.org/wiki/LL_parser",
 	"LR": "https://en.wikipedia.org/wiki/LR_parser",
+	"memoisation": "https://en.wikipedia.org/wiki/Memoization",
 	"monadic": "http://www.cs.nott.ac.uk/~pszgmh/monparsing.pdf",
 	"one-pass": "https://en.wikipedia.org/wiki/One-pass_compiler",
 	"Packrat": "http://bford.info/packrat/",
