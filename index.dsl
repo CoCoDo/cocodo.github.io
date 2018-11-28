@@ -127,13 +127,16 @@
 			<tab>Kleenex</tab>
 			<tab>kwParsing</tab>
 			<tab>Laja</tab>
+			<tab>LGI</tab>
 			<!-- Lark http://www.cocolab.com/cocktail.html not included because a license key must be preordered -->
 			<tab>MetaEdit</tab>
 			<tab>ML-Yacc</tab>
+			<tab>Mouse</tab>
 			<div class="tabbertab">
 				<h2>MPS</h2>
 				<h3><a href="https://www.jetbrains.com/mps/"><img src="logo/mps.png" alt="MPS"/></a></h3>
 			</div>
+			<tab>parboiled</tab>
 			<tab>Parsec</tab>
 			<tab>ParseLib</tab>
 			<tab>parsnip</tab>
@@ -160,6 +163,7 @@
 			<tab>SwiftParsec</tab>
 			<tab>Takmela</tab>
 			<tab>TXL</tab>
+			<tab>vembyr</tab>
 			<tab>Waxeye</tab>
 			<tab>Whimsy</tab>
 			<tab>Whole</tab>

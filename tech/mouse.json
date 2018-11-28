@@ -1,0 +1,11 @@
+{
+	"version": "1.9.2",
+	"license": "Apache 2.0",
+	"uri": "http://www.romanredz.se/Mouse/index.htm",
+	"download": "https://sourceforge.net/projects/mousepeg/",
+	"example": "http://www.romanredz.se/Mouse/Java.1.8.peg",
+	"keywords": ["=", "/"],
+	"lang": ["Java"],
+	"parsing": ["recursive descent", "backtracking"],
+	"maintained": "Roman Redziejowski"
+}

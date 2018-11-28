@@ -5,7 +5,7 @@
 	"download": "http://pages.cpsc.ucalgary.ca/~aycock/spark/spark-0.7.pre-alpha-7.py",
 	"parsing": ["?"],
 	"example": "http://pages.cpsc.ucalgary.ca/~aycock/spark/paper.pdf",
-	"keywords": ["::=", "def", "self"],
+	"keywords": ["::=", "class ", "def", "self"],
 	"maintained": "John Aycock",
 	"lang": ["Python2"]
 }

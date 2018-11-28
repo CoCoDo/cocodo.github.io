@@ -1,0 +1,12 @@
+{
+	"fullname": "Language Generator by Instil",
+	"version": "0.95",
+	"license": "GNU GPL",
+	"uri": "https://sourceforge.net/projects/instil-lang/",
+	"download": "https://sourceforge.net/projects/instil-lang/files/latest/download",
+	"example": "https://sourceforge.net/projects/instil-lang/",
+	"keywords": ["&lt;-", "!", "/"],
+	"lang": ["Java"],
+	"parsing": ["Packrat"],
+	"maintained": "Edgar A. Duenez-Guzman"
+}

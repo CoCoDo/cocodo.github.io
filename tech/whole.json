@@ -2,7 +2,7 @@
 	"logo": "whole.png",
 	"fullname": "Whole Platform",
 	"version": "1.0.0",
-	"license": "GNO LGPL",
+	"license": "GNU LGPL",
 	"uri": "http://whole.sourceforge.net/",
 	"download": "https://sourceforge.net/projects/whole/files/latest/download",
 	"example": "https://www.flickr.com/photos/wholeplatform/5384032367/in/photostream/",

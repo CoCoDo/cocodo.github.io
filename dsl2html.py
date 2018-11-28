@@ -42,6 +42,7 @@ techs = {
 	"monadic": "http://www.cs.nott.ac.uk/~pszgmh/monparsing.pdf",
 	"one-pass": "https://en.wikipedia.org/wiki/One-pass_compiler",
 	"Packrat": "http://bford.info/packrat/",
+	"PEG": "https://en.wikipedia.org/wiki/Parsing_expression_grammar",
 	"RAG": "https://pdfs.semanticscholar.org/89f1/857e15d270c5c1f8417381368e4781c871e4.pdf",
 	"recursive descent": "https://en.wikipedia.org/wiki/Recursive_descent_parser",
 	"scannerless": "https://en.wikipedia.org/wiki/Scannerless_parsing",

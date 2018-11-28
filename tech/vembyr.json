@@ -1,0 +1,9 @@
+{
+	"version": "1.1",
+	"license": "BSD",
+	"uri": "https://code.google.com/archive/p/vembyr/",
+	"download": "http://svn.code.sourceforge.net/p/paintown/code/trunk/src/mugen/parser",
+	"lang": ["C++", "Python2", "Ruby"],
+	"parsing": ["Packrat"],
+	"maintained": "Jon Rafkind"
+}

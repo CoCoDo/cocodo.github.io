@@ -743,6 +743,28 @@ other <span class="kw">:=</span> <span class="kw">/./</span></pre></blockquote><
 </pre></blockquote></li><li>More examples: <a href="http://laja.tengstrand.nu/index.php/Code_generator_-_Documentation">laja.tengstrand.nu</a></li><li>Maintained by Joakim Tengstrand</li></ul>
 			</div>
 			<div class="tabbertab">
+				<h2>LGI</h2>
+				<h3>Language Generator by Instil</h3>
+				<ul><li>LGI version 0.95 (<a href="https://sourceforge.net/projects/instil-lang/files/latest/download">sourceforge</a>)</li><li>Main website: <a href="https://sourceforge.net/projects/instil-lang/">sourceforge.net</a></li><li>Works with <a href="http://101companies.org/wiki/Language:Java">Java</a></li><li>Parsing algorithm: <a href="http://bford.info/packrat/">Packrat</a></li><li>Example from <a href="https://sourceforge.net/projects/instil-lang/">sourceforge.net</a>: <blockquote><pre>Grammar    <span class="kw">&lt;-</span> Spacing Definition+ EndOfFile
+Definition <span class="kw">&lt;-</span> Identifier LEFTARROW Expression
+Expression <span class="kw">&lt;-</span> Sequence (SLASH Sequence)*
+Sequence   <span class="kw">&lt;-</span> Prefix*
+Prefix     <span class="kw">&lt;-</span> (AND <span class="kw">/</span> NOT)? Suffix
+Suffix     <span class="kw">&lt;-</span> Primary (QUESTION <span class="kw">/</span> STAR <span class="kw">/</span> PLUS)?
+Primary    <span class="kw">&lt;-</span> Identifier <span class="kw">!</span>LEFTARROW
+            <span class="kw">/</span> OPEN Expression CLOSE
+            <span class="kw">/</span> Literal <span class="kw">/</span> DOT
+
+Identifier <span class="kw">&lt;-</span> '[a-zA-Z_][a-zA-Z_0-9]*' Spacing
+Literal    <span class="kw">&lt;-</span> "'" (<span class="kw">!</span>"'" Char)* "'" Spacing
+            <span class="kw">/</span> '"' (<span class="kw">!</span>'"' Char)* '"' Spacing
+Char       <span class="kw">&lt;-</span> '\\[nrt\'"\+\-\*\.\?\^\$\{\}\(\)\[\]\\]'
+            <span class="kw">/</span> '\\[0-2][0-7][0-7]'
+            <span class="kw">/</span> '\\[0-7][0-7]?'
+            <span class="kw">/</span> <span class="kw">!</span>'\\' .
+</pre></blockquote></li><li>Maintained by Edgar A. Duenez-Guzman</li></ul>
+			</div>
+			<div class="tabbertab">
 				<h2>MetaEdit</h2>
 				<h3><a href="http://www.metacase.com/mwb/"><img src="logo/metaeditplus.png" alt="MetaEdit+" width="150px"/></a></a> MetaEdit+</h3>
 				<ul><li>MetaEdit (<a href="http://www.metacase.com/download/">download</a>)</li><li>Main website: <a href="http://www.metacase.com/mwb/">metacase.com</a></li><li>Wikipedia: (<a href="https://en.wikipedia.org/wiki/MetaEdit+">English</a>)</li><li>Parsing algorithm: <a href="https://en.wikipedia.org/wiki/Drag_and_drop">drag and drop</a></li><li>Example from <a href="http://www.metacase.com/mwb/choose_rules.html">metacase.com</a>: <blockquote><pre><img src="code/metaedit.png" alt="Screenshot" class="ss"/></pre></blockquote></li><li>More examples: <a href="http://www.metacase.com/webcasts/DSM_Definition.html">metacase.com</a></li><li>Maintained by MetaCase</li></ul>
@@ -796,8 +818,85 @@ EXP : NUM             (NUM)
                        <span class="kw">end</span>)</pre></blockquote></li><li>More examples: <a href="http://www.smlnj.org/doc/ML-Yacc/mlyacc002.html">smlnj.org</a></li><li>Maintained by David R. Tarditi and Andrew W. Appel</li></ul>
 			</div>
 			<div class="tabbertab">
+				<h2>Mouse</h2>
+				<h3>Mouse</h3>
+				<ul><li>Mouse version 1.9.2 (<a href="https://sourceforge.net/projects/mousepeg/">sourceforge</a>)</li><li>Main website: <a href="http://www.romanredz.se/Mouse/index.htm">romanredz.se</a></li><li>Works with <a href="http://101companies.org/wiki/Language:Java">Java</a></li><li>Parsing algorithms: <a href="https://en.wikipedia.org/wiki/Recursive_descent_parser">recursive descent</a>, <a href="https://en.wikipedia.org/wiki/Backtracking">backtracking</a></li><li>Example from <a href="http://www.romanredz.se/Mouse/Java.1.8.peg">romanredz.se</a>: <blockquote><pre>MethodDeclaration
+    <span class="kw">=</span> MethodModifier* MethodHeader MethodBody ;
+
+MethodHeader
+    <span class="kw">=</span> Result MethodDeclarator Throws?
+    <span class="kw">/</span> TypeParameters Annotation* Result MethodDeclarator Throws?
+    ;
+
+MethodDeclarator
+    <span class="kw">=</span> Identifier LPAR FormalParameterList? RPAR Dim* ;
+
+FormalParameterList
+    <span class="kw">=</span> (ReceiverParameter <span class="kw">/</span> FormalParameter)(COMMA FormalParameter)* ;
+
+FormalParameter
+    <span class="kw">=</span> VariableModifier* UnannType VariableDeclaratorId
+    <span class="kw">/</span> VariableModifier* UnannType Annotation* ELLIPSIS VariableDeclaratorId !COMMA
+    ;
+
+VariableModifier
+    <span class="kw">=</span> Annotation
+    <span class="kw">/</span> FINAL
+    ;
+
+ReceiverParameter
+    <span class="kw">=</span> VariableModifier* UnannType (Identifier DOT)? THIS ;
+
+Result
+    <span class="kw">=</span> UnannType
+    <span class="kw">/</span> VOID
+    ;
+
+MethodModifier
+    <span class="kw">=</span> Annotation
+    <span class="kw">/</span> PUBLIC
+    <span class="kw">/</span> PROTECTED
+    <span class="kw">/</span> PRIVATE
+    <span class="kw">/</span> ABSTRACT
+    <span class="kw">/</span> STATIC
+    <span class="kw">/</span> FINAL
+    <span class="kw">/</span> SYNCHRONIZED
+    <span class="kw">/</span> NATIVE
+    <span class="kw">/</span> STRICTFP
+    ;
+
+Throws
+    <span class="kw">=</span> THROWS ExceptionTypeList ;
+
+ExceptionTypeList
+    <span class="kw">=</span> ExceptionType (COMMA ExceptionType)* ;
+
+ExceptionType
+    <span class="kw">=</span> ClassType
+    <span class="kw">/</span> TypeVariable
+    ;
+
+MethodBody
+    <span class="kw">=</span> Block
+    <span class="kw">/</span> SEMI
+    ;</pre></blockquote></li><li>Maintained by Roman Redziejowski</li></ul>
+			</div>
+			<div class="tabbertab">
 				<h2>MPS</h2>
 				<h3><a href="https://www.jetbrains.com/mps/"><img src="logo/mps.png" alt="MPS"/></a></h3>
+			</div>
+			<div class="tabbertab">
+				<h2>parboiled</h2>
+				<h3><a href="https://github.com/sirthias/parboiled/wiki"><img src="logo/parboiled.png" alt="parboiled" width="150px"/></a></a></h3>
+				<ul><li>parboiled version 1.2.0 (<a href="http://repo1.maven.org/maven2/org/parboiled/">download</a>)</li><li>Main website: <a href="https://github.com/sirthias/parboiled/wiki">@sirthias/parboiled</a></li><li>Works with <a href="http://101companies.org/wiki/Language:Java">Java</a>, <a href="https://en.wikipedia.org/wiki/Scala_(programming_language)">Scala</a></li><li>Parsing algorithm: <a href="http://bford.info/packrat/">Packrat</a></li><li>Example from <a href="https://github.com/sirthias/parboiled/wiki/Simple-Scala-Example">@sirthias/parboiled</a>: <blockquote><pre><span class="kw">import</span> org.parboiled.scala._
+
+<span class="kw">class </span>SimpleCalculator <span class="kw">extends</span> Parser
+{
+  <span class="kw">def</span> Expression: Rule0 = rule { Term <span class="kw">~</span> zeroOrMore(anyOf("+-") <span class="kw">~</span> Term) }
+  <span class="kw">def</span> Term = rule { Factor <span class="kw">~</span> zeroOrMore(anyOf("*/") <span class="kw">~</span> Factor) }
+  <span class="kw">def</span> Factor = rule { Number | "(" <span class="kw">~</span> Expression <span class="kw">~</span> ")" }
+  <span class="kw">def</span> Number = rule { <span class="kw">oneOrMore</span>("0" - "9") }
+}</pre></blockquote></li><li>Maintained by Edgar A. Duenez-Guzman</li></ul>
 			</div>
 			<div class="tabbertab">
 				<h2>Parsec</h2>
@@ -1283,7 +1382,7 @@ Number
 			<div class="tabbertab">
 				<h2>SPARK</h2>
 				<h3>Scanning, Parsing, and Rewriting Kit</h3>
-				<ul><li>SPARK version 0.7 pre-alpha-7 (<a href="http://pages.cpsc.ucalgary.ca/~aycock/spark/spark-0.7.pre-alpha-7.py">download</a>)</li><li>Main website: <a href="http://pages.cpsc.ucalgary.ca/~aycock/spark/">pages.cpsc.ucalgary.ca</a></li><li>Works with <a href="https://docs.python.org/2/">Python2</a></li><li>Parsing algorithm: ?</li><li>Example from <a href="http://pages.cpsc.ucalgary.ca/~aycock/spark/paper.pdf">pages.cpsc.ucalgary.ca</a>: <blockquote><pre>class ExprParser(GenericParser):
+				<ul><li>SPARK version 0.7 pre-alpha-7 (<a href="http://pages.cpsc.ucalgary.ca/~aycock/spark/spark-0.7.pre-alpha-7.py">download</a>)</li><li>Main website: <a href="http://pages.cpsc.ucalgary.ca/~aycock/spark/">pages.cpsc.ucalgary.ca</a></li><li>Works with <a href="https://docs.python.org/2/">Python2</a></li><li>Parsing algorithm: ?</li><li>Example from <a href="http://pages.cpsc.ucalgary.ca/~aycock/spark/paper.pdf">pages.cpsc.ucalgary.ca</a>: <blockquote><pre><span class="kw">class </span>ExprParser(GenericParser):
 	<span class="kw">def</span> __init__(<span class="kw">self</span>, start='expr'):
 		GenericParser.__init__(<span class="kw">self</span>, start)
 
@@ -1466,6 +1565,11 @@ WS <span class="kw">skip</span><span class="kw">:</span> ' '*;</pre></blockquote
 </pre></blockquote></li><li>More examples: <a href="http://www.txl.ca/nresources.html">txl.ca</a></li><li>Maintained by James Cordy</li></ul>
 			</div>
 			<div class="tabbertab">
+				<h2>vembyr</h2>
+				<h3>vembyr</h3>
+				<ul><li>vembyr version 1.1 (<a href="http://svn.code.sourceforge.net/p/paintown/code/trunk/src/mugen/parser">sourceforge</a>)</li><li>Main website: <a href="https://code.google.com/archive/p/vembyr/">code.google.com</a></li><li>Works with <a href="http://101companies.org/wiki/Language:CPlusPlus">C++</a>, <a href="https://docs.python.org/2/">Python2</a>, <a href="https://en.wikipedia.org/wiki/Ruby_(programming_language)">Ruby</a></li><li>Parsing algorithm: <a href="http://bford.info/packrat/">Packrat</a></li><li>Maintained by Jon Rafkind</li></ul>
+			</div>
+			<div class="tabbertab">
 				<h2>Waxeye</h2>
 				<h3><a href="http://waxeye.org/"><img src="logo/waxeye.jpg" alt="Waxeye" width="150px"/></a></a></h3>
 				<ul><li>Waxeye version 0.8.0 (<a href="http://sourceforge.net/project/platformdownload.php?group_id=210831">sourceforge</a>)</li><li>Main website: <a href="http://waxeye.org/">waxeye.org</a></li><li>Works with <a href="http://101companies.org/wiki/Language:C">C</a>, <a href="http://101companies.org/wiki/Language:Java">Java</a>, <a href="http://101companies.org/wiki/Language:JavaScript">JavaScript</a>, <a href="https://docs.python.org/2/">Python2</a>, <a href="https://en.wikipedia.org/wiki/Ruby_(programming_language)">Ruby</a>, <a href="https://en.wikipedia.org/wiki/Scheme_(programming_language)">Scheme</a></li><li>Parsing algorithm: <a href="http://bford.info/packrat/">Packrat</a></li><li>Example from <a href="http://waxeye.org/manual.html#_example_a_calculator">waxeye.org</a>: <blockquote><pre>calc  <span class="kw">&lt;-</span> ws sum
@@ -1485,7 +1589,7 @@ ws    <span class="kw">&lt;:</span> *[ \t\n\r]</pre></blockquote></li><li>More e
 			<div class="tabbertab">
 				<h2>Whimsy</h2>
 				<h3><a href="https://github.com/norswap/whimsy"><img src="logo/whimsy.png" alt="Whimsy" width="150px"/></a></a></h3>
-				<ul><li>Autumn (<a href="https://github.com/norswap/whimsy/archive/master.zip">github</a>)</li><li>Main website: <a href="https://github.com/norswap/whimsy">@norswap/whimsy</a></li><li>Works with <a href="https://kotlinlang.org/">Kotlin</a></li><li>Parsing algorithms: PEG, <a href="http://www.cs.nott.ac.uk/~pszgmh/monparsing.pdf">monadic</a></li><li>Example from <a href="https://github.com/norswap/whimsy/blob/master/doc/autumn/guide/first-grammar.md">@norswap/whimsy</a>: <blockquote><pre><span class="kw">import</span> norswap.autumn.Grammar
+				<ul><li>Autumn (<a href="https://github.com/norswap/whimsy/archive/master.zip">github</a>)</li><li>Main website: <a href="https://github.com/norswap/whimsy">@norswap/whimsy</a></li><li>Works with <a href="https://kotlinlang.org/">Kotlin</a></li><li>Parsing algorithms: <a href="https://en.wikipedia.org/wiki/Parsing_expression_grammar">PEG</a>, <a href="http://www.cs.nott.ac.uk/~pszgmh/monparsing.pdf">monadic</a></li><li>Example from <a href="https://github.com/norswap/whimsy/blob/master/doc/autumn/guide/first-grammar.md">@norswap/whimsy</a>: <blockquote><pre><span class="kw">import</span> norswap.autumn.Grammar
 <span class="kw">import</span> norswap.autumn.parsers.*
 
 <span class="kw">class </span>RegexGrammar: Grammar()

@@ -1,0 +1,12 @@
+{
+	"logo": "parboiled.png",
+	"version": "1.2.0",
+	"license": "Apache 2.0",
+	"uri": "https://github.com/sirthias/parboiled/wiki",
+	"download": "http://repo1.maven.org/maven2/org/parboiled/",
+	"example": "https://github.com/sirthias/parboiled/wiki/Simple-Scala-Example",
+	"keywords": ["import", "class ", "extends", "def", "~", "oneOrMore"],
+	"lang": ["Java", "Scala"],
+	"parsing": ["Packrat"],
+	"maintained": "Edgar A. Duenez-Guzman"
+}
