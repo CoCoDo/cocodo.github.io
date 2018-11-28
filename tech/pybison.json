@@ -3,7 +3,6 @@
 	"license": "GPL",
 	"parsing": ["LALR(1)"],
 	"uri": "http://freenet.mcnabhosting.com/python/pybison/",
-	"download": "http://www.freenet.org.nz/python/pybison/pybison-0.1.8.tar.gz",
 	"example": "http://freenet.mcnabhosting.com/python/pybison/calc.py",
 	"more": "http://freenet.mcnabhosting.com/python/pybison/walkthrough.html",
 	"keywords": ["def", "elif", "if", "return", "|"],

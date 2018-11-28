@@ -1,5 +1,5 @@
 {
-	"version": "2.1.0a1",
+	"version": "2.1.1a2",
 	"uri": "http://simpleparse.sourceforge.net/",
 	"download": "https://sourceforge.net/projects/simpleparse/files/",
 	"parsing": ["top-down", "one-pass"],

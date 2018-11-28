@@ -1,14 +1,14 @@
 {
 	"logo": "spoofax.svg",
-	"version": "2.1.0",
+	"version": "2.5.1",
 	"parsing": ["SGLR"],
-	"uri": "http://metaborg.org/en/latest/",
-	"download": "http://www.metaborg.org/en/latest/source/download.html",
-	"example": "http://www.metaborg.org/en/latest/source/langdev/meta/lang/sdf3.html",
+	"uri": "https://www.metaborg.org/en/latest/",
+	"download": "https://www.metaborg.org/en/latest/source/install.html",
+	"example": "https://github.com/MetaBorgCube/metaborg-pascal/blob/master/org.metaborg.lang.pascal/syntax/Pascal.sdf3",
 	"more": "http://declare-your-language.metaborg.org/",
-	"keywords": ["=", "{case-insensitive}"],
+	"keywords": ["=", "{case-insensitive}", "module", "context-free", "start-symbols", "syntax"],
 	"lang": ["SDF3"],
 	"maintained": "Eelco Visser et al",
-	"oftenwith": {"Stratego": ["http://www.metaborg.org/en/latest/source/langdev/meta/lang/stratego/index.html"], "NaBL": ["http://www.metaborg.org/en/latest/source/langdev/meta/lang/nabl2/getting-started.html"], "DynSem": ["http://www.metaborg.org/en/latest/source/langdev/meta/lang/dynsem/index.html"]},
+	"oftenwith": {"Stratego": ["https://www.metaborg.org/en/latest/source/langdev/meta/lang/stratego/index.html"], "NaBL": ["https://www.metaborg.org/en/latest/source/langdev/meta/lang/nabl2/index.html"], "DynSem": ["https://www.metaborg.org/en/latest/source/langdev/meta/lang/dynsem/index.html"], "FlowSpec": ["https://www.metaborg.org/en/latest/source/langdev/meta/lang/flowspec/index.html"], "SPT": ["https://www.metaborg.org/en/latest/source/langdev/meta/lang/spt/index.html"]},
 	"wikipedia": {"Stratego/XT": ["en"]}
 }

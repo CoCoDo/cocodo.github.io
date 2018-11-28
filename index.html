@@ -103,7 +103,7 @@
 			<div class="tabbertab">
 				<h2>ANTLR</h2>
 				<h3><a href="http://www.antlr.org"><img src="logo/antlr.png" alt="ANTLR" width="150px"/></a></a></h3>
-				<ul><li>ANTLR version 4 (<a href="http://www.antlr.org/download.html">download</a>)</li><li>Main website: <a href="http://www.antlr.org">antlr.org</a></li><li>Works with <a href="http://101companies.org/wiki/Language:Java">Java</a>, <a href="http://101companies.org/wiki/Language:CSharp">C#</a>, <a href="http://101companies.org/wiki/Language:JavaScript">JavaScript</a>, <a href="https://docs.python.org/2/">Python2</a>, <a href="https://docs.python.org/3/">Python3</a></li><li>Wikipedia: (<a href="https://en.wikipedia.org/wiki/ANTLR">English</a>) (<a href="https://nl.wikipedia.org/wiki/ANTLR">Dutch</a>) (<a href="https://fr.wikipedia.org/wiki/ANTLR">French</a>) (<a href="https://de.wikipedia.org/wiki/ANTLR">German</a>) (<a href="https://ru.wikipedia.org/wiki/ANTLR">Russian</a>)</li><li>Parsing algorithm: <a href="http://www.antlr.org/papers/allstar-techreport.pdf">ALL(*)</a></li><li>Example from <a href="http://www.antlr.org/">antlr.org</a>: <blockquote><pre><span class="kw">grammar</span> Expr;
+				<ul><li>ANTLR version 4.7.1 (<a href="http://www.antlr.org/download.html">download</a>)</li><li>Main website: <a href="http://www.antlr.org">antlr.org</a></li><li>Works with <a href="http://101companies.org/wiki/Language:Java">Java</a>, <a href="http://101companies.org/wiki/Language:CSharp">C#</a>, <a href="http://101companies.org/wiki/Language:JavaScript">JavaScript</a>, <a href="https://docs.python.org/2/">Python2</a>, <a href="https://docs.python.org/3/">Python3</a></li><li>Wikipedia: (<a href="https://en.wikipedia.org/wiki/ANTLR">English</a>) (<a href="https://nl.wikipedia.org/wiki/ANTLR">Dutch</a>) (<a href="https://fr.wikipedia.org/wiki/ANTLR">French</a>) (<a href="https://de.wikipedia.org/wiki/ANTLR">German</a>) (<a href="https://ru.wikipedia.org/wiki/ANTLR">Russian</a>)</li><li>Parsing algorithm: <a href="http://www.antlr.org/papers/allstar-techreport.pdf">ALL(*)</a></li><li>Example from <a href="http://www.antlr.org/">antlr.org</a>: <blockquote><pre><span class="kw">grammar</span> Expr;
 prog<span class="kw">:</span> (expr NEWLINE)<span class="kw">*</span> ;
 expr<span class="kw">:</span> expr ('*'<span class="kw">|</span>'/') expr
     <span class="kw">|</span> expr ('+'<span class="kw">|</span>'-') expr
@@ -135,12 +135,12 @@ expr<span class="kw"> = </span>expr.a MULT  expr.b   <span class="kw">{:</span> 
      <span class="kw">|</span> NUMBER.n              <span class="kw">{:</span> return new Expr(n.doubleValue());   <span class="kw">:}</span>
      <span class="kw">|</span> LPAREN expr.e RPAREN  <span class="kw">{:</span> return e; <span class="kw">:}</span>
      ;
-</pre></blockquote></li><li>More examples: <a href="http://beaver.sourceforge.net/">beaver.sourceforge.net</a></li><li>Used with: <ul><li><a href="http://www.jflex.de/">JFlex</a></li><li><a href="https://www.cs.princeton.edu/~appel/modern/java/JLex/">JLex</a></li></ul></li></ul>
+</pre></blockquote></li><li>More examples: <a href="http://beaver.sourceforge.net/">beaver.sourceforge.net</a></li><li>Used with: <ul><li><a href="https://www.cs.princeton.edu/~appel/modern/java/JLex/">JLex</a></li><li><a href="http://www.jflex.de/">JFlex</a></li></ul></li></ul>
 			</div>
 			<div class="tabbertab">
 				<h2>Bison</h2>
 				<h3><a href="https://www.gnu.org/software/bison/"><img src="logo/gnu.png" alt="Bison" width="150px"/></a></a></h3>
-				<ul><li>Bison version 3.0.4 (<a href="http://ftp.gnu.org/gnu/bison/">download</a>)</li><li>Main website: <a href="https://www.gnu.org/software/bison/">gnu.org</a></li><li>Works with <a href="http://101companies.org/wiki/Language:C">C</a>, <a href="http://101companies.org/wiki/Language:CPlusPlus">C++</a>, <a href="http://101companies.org/wiki/Language:Java">Java</a></li><li>Wikipedia: (<a href="https://en.wikipedia.org/wiki/GNU bison">English</a>) (<a href="https://fr.wikipedia.org/wiki/GNU Bison">French</a>) (<a href="https://de.wikipedia.org/wiki/GNU Bison">German</a>) (<a href="https://ru.wikipedia.org/wiki/GNU Bison">Russian</a>)</li><li>Parsing algorithms: <a href="https://en.wikipedia.org/wiki/LALR_parser">LALR(1)</a>, <a href="https://en.wikipedia.org/wiki/GLR_parser">GLR</a></li><li>Example from <a href="https://www.gnu.org/software/bison/manual/bison.html">gnu.org</a>: <blockquote><pre><span class="kw">%token</span> TYPE DOTDOT ID
+				<ul><li>Bison version 3.2 (<a href="http://ftp.gnu.org/gnu/bison/">download</a>)</li><li>Main website: <a href="https://www.gnu.org/software/bison/">gnu.org</a></li><li>Works with <a href="http://101companies.org/wiki/Language:C">C</a>, <a href="http://101companies.org/wiki/Language:CPlusPlus">C++</a>, <a href="http://101companies.org/wiki/Language:Java">Java</a></li><li>Wikipedia: (<a href="https://en.wikipedia.org/wiki/GNU bison">English</a>) (<a href="https://fr.wikipedia.org/wiki/GNU Bison">French</a>) (<a href="https://de.wikipedia.org/wiki/GNU Bison">German</a>) (<a href="https://ru.wikipedia.org/wiki/GNU Bison">Russian</a>)</li><li>Parsing algorithms: <a href="https://en.wikipedia.org/wiki/LALR_parser">LALR(1)</a>, <a href="https://en.wikipedia.org/wiki/GLR_parser">GLR</a></li><li>Example from <a href="https://www.gnu.org/software/bison/manual/bison.html">gnu.org</a>: <blockquote><pre><span class="kw">%token</span> TYPE DOTDOT ID
 
 <span class="kw">%left</span> '+' '-'
 <span class="kw">%left</span> '*' '/'
@@ -249,7 +249,7 @@ expr    <span class="kw">:</span>       expr  '+'  expr
         <span class="kw">|</span>       expr  '/'  expr
         <span class="kw">|</span>       '-'  expr      <span class="kw">%prec</span>  '*'
         <span class="kw">|</span>       NAME
-        ;</pre></blockquote></li><li>Maintained by Robert Corbett</li><li>Used with: <ul><li><a href="https://github.com/westes/flex">flex</a> (<a href="https://en.wikipedia.org/wiki/Flex_(lexical_analyser_generator)">English</a>) (<a href="https://fr.wikipedia.org/wiki/Flex_(logiciel)">French</a>) (<a href="https://ru.wikipedia.org/wiki/Flex_(генератор_лексических_анализаторов)">Russian</a>)</li><li><a href="http://dinosaur.compilertools.net/#lex">lex</a> (<a href="https://en.wikipedia.org/wiki/Lex_(software)">English</a>) (<a href="https://fr.wikipedia.org/wiki/Lex_(logiciel)">French</a>) (<a href="https://nl.wikipedia.org/wiki/Lex_(computerprogramma)">Dutch</a>) (<a href="https://ru.wikipedia.org/wiki/Lex">Russian</a>)</li></ul></li></ul>
+        ;</pre></blockquote></li><li>Maintained by Robert Corbett</li><li>Used with: <ul><li><a href="http://dinosaur.compilertools.net/#lex">lex</a> (<a href="https://en.wikipedia.org/wiki/Lex_(software)">English</a>) (<a href="https://fr.wikipedia.org/wiki/Lex_(logiciel)">French</a>) (<a href="https://nl.wikipedia.org/wiki/Lex_(computerprogramma)">Dutch</a>) (<a href="https://ru.wikipedia.org/wiki/Lex">Russian</a>)</li><li><a href="https://github.com/westes/flex">flex</a> (<a href="https://en.wikipedia.org/wiki/Flex_(lexical_analyser_generator)">English</a>) (<a href="https://fr.wikipedia.org/wiki/Flex_(logiciel)">French</a>) (<a href="https://ru.wikipedia.org/wiki/Flex_(генератор_лексических_анализаторов)">Russian</a>)</li></ul></li></ul>
 			</div>
 			<div class="tabbertab">
 				<h2>BYACC/J</h2>
@@ -374,7 +374,7 @@ StringTokenizer st;
 			<div class="tabbertab">
 				<h2>Copper</h2>
 				<h3>Copper</h3>
-				<ul><li>Copper version 0.7.2 (<a href="https://github.com/melt-umn/copper">github</a>)</li><li>Main website: <a href="http://melt.cs.umn.edu/copper/index.html">melt.cs.umn.edu</a></li><li>Works with <a href="http://melt.cs.umn.edu/silver/">Silver</a></li><li>Parsing algorithms: <a href="http://www-users.cs.umn.edu/~evw/pubs/vanwyk07gpce/">context-aware</a>, <a href="https://en.wikipedia.org/wiki/LALR_parser">LALR(1)</a></li><li>Example from <a href="https://github.com/melt-umn/copper/blob/develop/tests/grammars/CExprGrammar.x">@melt-umn/copper</a>: <blockquote><pre><span class="kw">%cf{</span>
+				<ul><li>Copper version 0.8.0 (<a href="https://github.com/melt-umn/copper">github</a>)</li><li>Main website: <a href="http://melt.cs.umn.edu/copper/index.html">melt.cs.umn.edu</a></li><li>Works with <a href="http://melt.cs.umn.edu/silver/">Silver</a></li><li>Parsing algorithms: <a href="http://www-users.cs.umn.edu/~evw/pubs/vanwyk07gpce/">context-aware</a>, <a href="https://en.wikipedia.org/wiki/LALR_parser">LALR(1)</a></li><li>Example from <a href="https://github.com/melt-umn/copper/blob/develop/tests/grammars/CExprGrammar.x">@melt-umn/copper</a>: <blockquote><pre><span class="kw">%cf{</span>
     <span class="kw">non terminal</span> stmt;
     <span class="kw">non terminal</span> Double stmts,expr;
 
@@ -416,7 +416,7 @@ StringTokenizer st;
 			<div class="tabbertab">
 				<h2>DCG</h2>
 				<h3>Definite Clause Grammars</h3>
-				<ul><li>SWI Prolog version 7.2.3 (<a href="http://www.swi-prolog.org/download/stable">download</a>)</li><li>Main website: <a href="http://www.swi-prolog.org/">swi-prolog.org</a></li><li>Works with <a href="http://101companies.org/wiki/Language:Prolog">Prolog</a></li><li>Wikipedia: (<a href="https://en.wikipedia.org/wiki/Definite clause grammar">English</a>) (<a href="https://ru.wikipedia.org/wiki/DC-грамматика">Russian</a>)</li><li>Parsing algorithm: <a href="https://pdfs.semanticscholar.org/fbc0/4a1951003ba164303b2898fb7f3c6b4e9083.pdf">DCG</a></li><li>Example from <a href="https://github.com/grammarware/slps/blob/master/topics/fl/prolog1/Parser.pro">@grammarware/slps</a>: <blockquote><pre>expr(E) <span class="kw">--&gt;</span> lassoc(ops<span class="kw">,</span>atom<span class="kw">,</span>binary<span class="kw">,</span>E).
+				<ul><li>SWI Prolog version 7.6.4 (<a href="http://www.swi-prolog.org/download/stable">download</a>)</li><li>Main website: <a href="http://www.swi-prolog.org/">swi-prolog.org</a></li><li>Works with <a href="http://101companies.org/wiki/Language:Prolog">Prolog</a></li><li>Wikipedia: (<a href="https://en.wikipedia.org/wiki/Definite clause grammar">English</a>) (<a href="https://ru.wikipedia.org/wiki/DC-грамматика">Russian</a>)</li><li>Parsing algorithm: <a href="https://pdfs.semanticscholar.org/fbc0/4a1951003ba164303b2898fb7f3c6b4e9083.pdf">DCG</a></li><li>Example from <a href="https://github.com/grammarware/slps/blob/master/topics/fl/prolog1/Parser.pro">@grammarware/slps</a>: <blockquote><pre>expr(E) <span class="kw">--&gt;</span> lassoc(ops<span class="kw">,</span>atom<span class="kw">,</span>binary<span class="kw">,</span>E).
 
 expr(apply(N<span class="kw">,</span>Es)) <span class="kw">--&gt;</span>
 	name(N)<span class="kw">,</span>
@@ -583,29 +583,31 @@ L <span class="kw">::=</span> Whitespaces
 			</div>
 			<div class="tabbertab">
 				<h2>Irony</h2>
-				<h3><a href="https://irony.codeplex.com/"><img src="logo/dotnet.png" alt="Irony" width="150px"/></a></a></h3>
-				<ul><li>Irony version BETA (<a href="http://download-codeplex.sec.s-msft.com/Download/Release?ProjectName=irony&amp;DownloadId=27478&amp;FileTime=130313476309630000&amp;Build=21031">download</a>)</li><li>Main website: <a href="https://irony.codeplex.com/">irony.codeplex.com</a></li><li>Works with <a href="http://101companies.org/wiki/Language:CSharp">C#</a></li><li>Wikipedia: (<a href="https://en.wikipedia.org/wiki/Irony (framework)">English</a>)</li><li>Parsing algorithm: <a href="https://en.wikipedia.org/wiki/LALR_parser">LALR(1)</a></li><li>Example from <a href="https://irony.codeplex.com/wikipage?title=Expression%20Grammar%20sample">irony.codeplex.com</a>: <blockquote><pre>Expr.Rule <span class="kw">=</span> Term <span class="kw">|</span> UnExpr <span class="kw">|</span> BinExpr <span class="kw">|</span> PostFixExpr<span class="kw">;</span>
+				<h3><a href="https://github.com/IronyProject/Irony"><img src="logo/dotnet.png" alt="Irony" width="150px"/></a></a></h3>
+				<ul><li>Irony version BETA (<a href="https://github.com/IronyProject/Irony/archive/master.zip">github</a>)</li><li>Main website: <a href="https://github.com/IronyProject/Irony">@IronyProject/Irony</a></li><li>Works with <a href="http://101companies.org/wiki/Language:CSharp">C#</a></li><li>Wikipedia: (<a href="https://en.wikipedia.org/wiki/Irony (framework)">English</a>)</li><li>Parsing algorithm: <a href="https://en.wikipedia.org/wiki/LALR_parser">LALR(1)</a></li><li>Example from <a href="https://github.com/IronyProject/Irony/wiki/Expression-Grammar-sample">@IronyProject/Irony</a>: <blockquote><pre>Expr.Rule <span class="kw">=</span> Term <span class="kw">|</span> UnExpr <span class="kw">|</span> BinExpr <span class="kw">|</span> PostFixExpr<span class="kw">;</span>
 Term.Rule <span class="kw">=</span> number <span class="kw">|</span> ParExpr <span class="kw">|</span> identifier<span class="kw">;</span>
 ParExpr.Rule <span class="kw">=</span> "(" <span class="kw">+</span> Expr <span class="kw">+</span> ")"<span class="kw">;</span>
 UnExpr.Rule <span class="kw">=</span> UnOp <span class="kw">+</span> Term<span class="kw">;</span>
-UnOp.Rule <span class="kw">=</span> ToTerm("+") <span class="kw">|</span> "-" <span class="kw">|</span> "++" <span class="kw">|</span> "--"<span class="kw">;</span>
+UnOp.Rule <span class="kw">=</span> <span class="kw">ToTerm</span>("+") <span class="kw">|</span> "-" <span class="kw">|</span> "++" <span class="kw">|</span> "--"<span class="kw">;</span>
 BinExpr.Rule <span class="kw">=</span> Expr <span class="kw">+</span> BinOp <span class="kw">+</span> Expr<span class="kw">;</span>
-BinOp.Rule <span class="kw">=</span> ToTerm("+") <span class="kw">|</span> "-" <span class="kw">|</span> "*" <span class="kw">|</span> "/" <span class="kw">|</span> "**"<span class="kw">;</span>
+BinOp.Rule <span class="kw">=</span> <span class="kw">ToTerm</span>("+") <span class="kw">|</span> "-" <span class="kw">|</span> "*" <span class="kw">|</span> "/" <span class="kw">|</span> "**"<span class="kw">;</span>
 PostFixExpr.Rule <span class="kw">=</span> Term <span class="kw">+</span> PostFixOp<span class="kw">;</span>
-PostFixOp.Rule <span class="kw">=</span> ToTerm("++") <span class="kw">|</span> "--"<span class="kw">;</span>
+PostFixOp.Rule <span class="kw">=</span> <span class="kw">ToTerm</span>("++") <span class="kw">|</span> "--"<span class="kw">;</span>
 AssignmentStmt.Rule <span class="kw">=</span> identifier <span class="kw">+</span> AssignmentOp <span class="kw">+</span> Expr<span class="kw">;</span>
-AssignmentOp.Rule <span class="kw">=</span> ToTerm("=") <span class="kw">|</span> "<span class="kw">+</span>=" <span class="kw">|</span> "-=" <span class="kw">|</span> "*=" <span class="kw">|</span> "/="<span class="kw">;</span>
+AssignmentOp.Rule <span class="kw">=</span> <span class="kw">ToTerm</span>("=") <span class="kw">|</span> "<span class="kw">+</span>=" <span class="kw">|</span> "-=" <span class="kw">|</span> "*=" <span class="kw">|</span> "/="<span class="kw">;</span>
 Statement.Rule <span class="kw">=</span> AssignmentStmt <span class="kw">|</span> Expr <span class="kw">|</span> Empty<span class="kw">;</span>
 ProgramLine.Rule <span class="kw">=</span> Statement <span class="kw">+</span> NewLine<span class="kw">;</span>
-Program.Rule <span class="kw">=</span> MakeStarRule(Program<span class="kw">,</span> ProgramLine)<span class="kw">;</span>
+Program.Rule <span class="kw">=</span> <span class="kw">MakeStarRule</span>(Program<span class="kw">,</span> ProgramLine)<span class="kw">;</span>
 <span class="kw">this</span>.Root <span class="kw">=</span> Program<span class="kw">;</span>
 
-</pre></blockquote></li><li><a href="https://irony.codeplex.com/wikipage?title=Contributors">Irony contributors</a></li></ul>
+<span class="kw">RegisterOperators</span>(1<span class="kw">,</span> "+"<span class="kw">,</span> "-")<span class="kw">;</span>
+<span class="kw">RegisterOperators</span>(2<span class="kw">,</span> "*"<span class="kw">,</span> "/")<span class="kw">;</span>
+<span class="kw">RegisterOperators</span>(3<span class="kw">,</span> Associativity.Right<span class="kw">,</span> "**")<span class="kw">;</span></pre></blockquote></li><li><a href="https://github.com/IronyProject/Irony/graphs/contributors">Irony contributors</a></li></ul>
 			</div>
 			<div class="tabbertab">
 				<h2>JastAdd</h2>
 				<h3><a href="http://jastadd.org/"><img src="logo/jastadd.png" alt="JastAdd" width="150px"/></a></a></h3>
-				<ul><li>JastAdd version 2.2.2 (<a href="http://jastadd.org/web/download.php">download</a>)</li><li>Main website: <a href="http://jastadd.org/">jastadd.org</a></li><li>Parsing algorithm: <a href="https://pdfs.semanticscholar.org/89f1/857e15d270c5c1f8417381368e4781c871e4.pdf">RAG</a></li><li>Example from <a href="https://bitbucket.org/jastadd/examples/src/013a8f218469b994d221f3f5c24812be8fc3908c/PicoJava/spec/picojava.ast?at=master&fileviewer=file-view-default">@jastadd/examples</a>: <blockquote><pre>Program <span class="kw"><span class="kw">:</span><span class="kw">:</span>=</span> Block<span class="kw"> /</span>PredefinedType<span class="kw">:</span>TypeDecl<span class="kw"><span class="kw">*</span>/</span>;
+				<ul><li>JastAdd version 2.3.2 (<a href="http://jastadd.org/web/download.php">download</a>)</li><li>Main website: <a href="http://jastadd.org/">jastadd.org</a></li><li>Parsing algorithm: <a href="https://pdfs.semanticscholar.org/89f1/857e15d270c5c1f8417381368e4781c871e4.pdf">RAG</a></li><li>Example from <a href="https://bitbucket.org/jastadd/examples/src/013a8f218469b994d221f3f5c24812be8fc3908c/PicoJava/spec/picojava.ast?at=master&fileviewer=file-view-default">@jastadd/examples</a>: <blockquote><pre>Program <span class="kw"><span class="kw">:</span><span class="kw">:</span>=</span> Block<span class="kw"> /</span>PredefinedType<span class="kw">:</span>TypeDecl<span class="kw"><span class="kw">*</span>/</span>;
 Block <span class="kw"><span class="kw">:</span><span class="kw">:</span>=</span> BlockStmt<span class="kw">*</span>;
 <span class="kw">abstract</span> BlockStmt;
 <span class="kw">abstract</span> Stmt<span class="kw">:</span> BlockStmt;
@@ -625,26 +627,26 @@ BooleanLiteral <span class="kw">:</span> Exp <span class="kw"><span class="kw">:
 			</div>
 			<div class="tabbertab">
 				<h2>JavaCC</h2>
-				<h3><a href="https://javacc.java.net/"><img src="logo/java.png" alt="JavaCC" width="150px"/></a></a></h3>
-				<ul><li>JavaCC version 6.0.1 (<a href="https://java.net/projects/javacc/downloads">download</a>)</li><li>Main website: <a href="https://javacc.java.net/">javacc.java.net</a></li><li>Works with <a href="http://101companies.org/wiki/Language:Java">Java</a>, <a href="http://101companies.org/wiki/Language:C">C</a>, <a href="http://101companies.org/wiki/Language:CPlusPlus">C++</a></li><li>Wikipedia: (<a href="https://en.wikipedia.org/wiki/JavaCC">English</a>) (<a href="https://fr.wikipedia.org/wiki/JavaCC">French</a>) (<a href="https://de.wikipedia.org/wiki/JavaCC">German</a>) (<a href="https://ru.wikipedia.org/wiki/JavaCC">Russian</a>)</li><li>Parsing algorithm: <a href="https://en.wikipedia.org/wiki/LL_parser">LL(k)</a></li><li>Example from <a href="http://www.engr.mun.ca/~theo/JavaCC-Tutorial/">engr.mun.ca</a>: <blockquote><pre>double Primary() throws NumberFormatException :
+				<h3><a href="https://javacc.org/"><img src="logo/javacc.png" alt="JavaCC" width="150px"/></a></a></h3>
+				<ul><li>JavaCC version 6.0 (<a href="https://javacc.org/download">download</a>)</li><li>Main website: <a href="https://javacc.org/">javacc.org</a></li><li>Works with <a href="http://101companies.org/wiki/Language:Java">Java</a>, <a href="http://101companies.org/wiki/Language:C">C</a>, <a href="http://101companies.org/wiki/Language:CPlusPlus">C++</a></li><li>Wikipedia: (<a href="https://en.wikipedia.org/wiki/JavaCC">English</a>) (<a href="https://fr.wikipedia.org/wiki/JavaCC">French</a>) (<a href="https://de.wikipedia.org/wiki/JavaCC">German</a>) (<a href="https://ru.wikipedia.org/wiki/JavaCC">Russian</a>)</li><li>Parsing algorithm: <a href="https://en.wikipedia.org/wiki/LL_parser">LL(k)</a></li><li>Example from <a href="http://www.engr.mun.ca/~theo/JavaCC-Tutorial/">engr.mun.ca</a>: <blockquote><pre><span class="kw">double</span> Primary() <span class="kw">throws</span> NumberFormatException :
 <span class="kw">{</span>
 	Token t ;
-	double d ;
+	<span class="kw">double</span> d ;
 <span class="kw">}</span>
 <span class="kw">{</span>
 	t=<span class="kw">&lt;</span>NUMBER<span class="kw">&gt;</span>
-	<span class="kw">{</span> return Double.parseDouble( t.image ) ; <span class="kw">}</span>
+	<span class="kw">{</span> <span class="kw">return</span> Double.parseDouble( t.image ) ; <span class="kw">}</span>
 |
 	<span class="kw">&lt;</span>PREVIOUS<span class="kw">&gt;</span>
-	<span class="kw">{</span> return previousValue ; <span class="kw">}</span>
+	<span class="kw">{</span> <span class="kw">return</span> previousValue ; <span class="kw">}</span>
 |
 	<span class="kw">&lt;</span>OPEN_PAR<span class="kw">&gt;</span> d=Expression() <span class="kw">&lt;</span>CLOSE_PAR<span class="kw">&gt;</span>
-	<span class="kw">{</span> return d ; <span class="kw">}</span>
+	<span class="kw">{</span> <span class="kw">return</span> d ; <span class="kw">}</span>
 |
 	<span class="kw">&lt;</span>MINUS<span class="kw">&gt;</span> d=Primary()
-	<span class="kw">{</span> return -d ; <span class="kw">}</span>
+	<span class="kw">{</span> <span class="kw">return</span> -d ; <span class="kw">}</span>
 <span class="kw">}</span>
-</pre></blockquote></li><li>More examples: <a href="http://www.engr.mun.ca/~theo/JavaCC-FAQ/javacc-faq-moz.htm">engr.mun.ca</a>, <a href="http://javacc.org">javacc.org</a></li><li>Maintained by Glassfish Kenai, Paul Cager, Tom Copeland and sreeni. </li></ul>
+</pre></blockquote></li><li>More examples: <a href="http://www.engr.mun.ca/~theo/JavaCC-FAQ/javacc-faq-moz.htm">engr.mun.ca</a></li><li>Maintained by Glassfish Kenai, Paul Cager, Tom Copeland and sreeni. </li></ul>
 			</div>
 			<div class="tabbertab">
 				<h2>jparsec</h2>
@@ -661,7 +663,7 @@ assertEquals(Arrays.asList("1", "2", "3"), integers.parse("1, /*this is comment*
 			<div class="tabbertab">
 				<h2>Kiama</h2>
 				<h3><a href="https://bitbucket.org/inkytonik/kiama"><img src="logo/kiama.png" alt="Kiama" width="150px"/></a></a></h3>
-				<ul><li>Kiama version 2.0.0 (<a href="https://bitbucket.org/inkytonik/kiama/src">bitbucket</a>)</li><li>Main website: <a href="https://bitbucket.org/inkytonik/kiama">@inkytonik/kiama</a></li><li>Works with <a href="https://en.wikipedia.org/wiki/Scala_(programming_language)">Scala</a></li><li>Parsing algorithms: <a href="http://bford.info/packrat/">Packrat</a>, <a href="https://en.wikipedia.org/wiki/Attribute_grammar">AG</a></li><li>Example from <a href="https://bitbucket.org/inkytonik/kiama/src/21ee36be99e8d9c6c697b80aca0a56e2eb4d2db3/library/src/test/scala/org/bitbucket/inkytonik/kiama/example/imperative/SyntaxAnalyser.scala">@inkytonik/kiama</a>: <blockquote><pre><span class="kw">class</span> SyntaxAnalyser(positions : Positions) <span class="kw">extends</span> Parsers(positions)
+				<ul><li>Kiama version 2.2.0 (<a href="https://bitbucket.org/inkytonik/kiama/src">bitbucket</a>)</li><li>Main website: <a href="https://bitbucket.org/inkytonik/kiama">@inkytonik/kiama</a></li><li>Works with <a href="https://en.wikipedia.org/wiki/Scala_(programming_language)">Scala</a></li><li>Parsing algorithms: <a href="http://bford.info/packrat/">Packrat</a>, <a href="https://en.wikipedia.org/wiki/Attribute_grammar">AG</a></li><li>Example from <a href="https://bitbucket.org/inkytonik/kiama/src/21ee36be99e8d9c6c697b80aca0a56e2eb4d2db3/library/src/test/scala/org/bitbucket/inkytonik/kiama/example/imperative/SyntaxAnalyser.scala">@inkytonik/kiama</a>: <blockquote><pre><span class="kw">class</span> SyntaxAnalyser(positions : Positions) <span class="kw">extends</span> Parsers(positions)
 {
     <span class="kw">lazy</span> <span class="kw">val</span> stmt : Parser[Stmt] =
         ";" <span class="kw">^^</span> (_ =&gt; Null()) <span class="kw">|</span> sequence <span class="kw">|</span> asgnStmt <span class="kw">|</span> whileStmt
@@ -800,7 +802,7 @@ EXP : NUM             (NUM)
 			<div class="tabbertab">
 				<h2>Parsec</h2>
 				<h3><a href="https://wiki.haskell.org/Parsec"><img src="logo/parsec.gif" alt="Parsec" width="150px"/></a></a></h3>
-				<ul><li>Parsec version 3.1.11 (<a href="http://hackage.haskell.org/package/parsec">download</a>)</li><li>Main website: <a href="https://wiki.haskell.org/Parsec">wiki.haskell.org</a></li><li>Works with <a href="http://101companies.org/wiki/Language:Haskell">Haskell</a>, <a href="https://en.wikipedia.org/wiki/F_Sharp_(programming_language)">F#</a>, <a href="http://101companies.org/wiki/Language:Java">Java</a>, <a href="http://101companies.org/wiki/Language:JavaScript">JavaScript</a>, <a href="https://en.wikipedia.org/wiki/Erlang_(programming_language)">Erlang</a></li><li>Wikipedia: (<a href="https://en.wikipedia.org/wiki/Parsec (parser)">English</a>)</li><li>Parsing algorithms: <a href="http://www.cs.nott.ac.uk/~pszgmh/monparsing.pdf">monadic</a>, <a href="https://en.wikipedia.org/wiki/Recursive_descent_parser">recursive descent</a></li><li>Example from <a href="https://web.archive.org/web/20140529211116/http://legacy.cs.uu.nl/daan/download/parsec/parsec.html">legacy.cs.uu.nl</a>: <blockquote><pre><span class="kw">import</span> ParsecExpr
+				<ul><li>Parsec version 3.1.13.0 (<a href="http://hackage.haskell.org/package/parsec">download</a>)</li><li>Main website: <a href="https://wiki.haskell.org/Parsec">wiki.haskell.org</a></li><li>Works with <a href="http://101companies.org/wiki/Language:Haskell">Haskell</a>, <a href="https://en.wikipedia.org/wiki/F_Sharp_(programming_language)">F#</a>, <a href="http://101companies.org/wiki/Language:Java">Java</a>, <a href="http://101companies.org/wiki/Language:JavaScript">JavaScript</a>, <a href="https://en.wikipedia.org/wiki/Erlang_(programming_language)">Erlang</a></li><li>Wikipedia: (<a href="https://en.wikipedia.org/wiki/Parsec (parser)">English</a>)</li><li>Parsing algorithms: <a href="http://www.cs.nott.ac.uk/~pszgmh/monparsing.pdf">monadic</a>, <a href="https://en.wikipedia.org/wiki/Recursive_descent_parser">recursive descent</a></li><li>Example from <a href="https://web.archive.org/web/20140529211116/http://legacy.cs.uu.nl/daan/download/parsec/parsec.html">legacy.cs.uu.nl</a>: <blockquote><pre><span class="kw">import</span> ParsecExpr
 
 expr    <span class="kw">::</span> Parser Integer
 expr    = buildExpressionParser table factor
@@ -869,7 +871,7 @@ result = parse("3+4*2", ops);
 			<div class="tabbertab">
 				<h2>PetitParser</h2>
 				<h3><a href="http://scg.unibe.ch/research/helvetia/petitparser"><img src="logo/petitparser.png" alt="PetitParser" width="150px"/></a></a></h3>
-				<ul><li>Helvetia / Pharo version 5.0 (<a href="http://pharo.org/">download</a>) (<a href="http://source.lukas-renggli.ch/built/oneclick/Helvetia-OneClick.zip">download</a>)</li><li>Main website: <a href="http://scg.unibe.ch/research/helvetia/petitparser">scg.unibe.ch</a></li><li>Works with <a href="https://en.wikipedia.org/wiki/Smalltalk">Smalltalk</a></li><li>Parsing algorithms: <a href="https://en.wikipedia.org/wiki/Scannerless_parsing">scannerless</a>, <a href="http://www.cs.nott.ac.uk/~pszgmh/monparsing.pdf">monadic</a>, <a href="http://bford.info/packrat/">Packrat</a>, <a href="http://www.slideshare.net/esug/parsing-contexts-for-petitparser">contexts</a></li><li>Example from <a href="https://www.lukas-renggli.ch/blog/petitparser-1">lukas-renggli.ch</a>: <blockquote><pre>identifier <span class="kw">:=</span> (<span class="kw">#letter</span> <span class="kw">asParser</span> , (<span class="kw">#letter</span> <span class="kw">asParser</span> / <span class="kw">#digit</span> <span class="kw">asParser</span>) <span class="kw">star</span>) <span class="kw">flatten</span>.
+				<ul><li>Helvetia / Pharo version 6.1 (<a href="http://pharo.org/">download</a>) (<a href="http://source.lukas-renggli.ch/built/oneclick/Helvetia-OneClick.zip">download</a>)</li><li>Main website: <a href="http://scg.unibe.ch/research/helvetia/petitparser">scg.unibe.ch</a></li><li>Works with <a href="https://en.wikipedia.org/wiki/Smalltalk">Smalltalk</a></li><li>Parsing algorithms: <a href="https://en.wikipedia.org/wiki/Scannerless_parsing">scannerless</a>, <a href="http://www.cs.nott.ac.uk/~pszgmh/monparsing.pdf">monadic</a>, <a href="http://bford.info/packrat/">Packrat</a>, <a href="http://www.slideshare.net/esug/parsing-contexts-for-petitparser">contexts</a></li><li>Example from <a href="https://www.lukas-renggli.ch/blog/petitparser-1">lukas-renggli.ch</a>: <blockquote><pre>identifier <span class="kw">:=</span> (<span class="kw">#letter</span> <span class="kw">asParser</span> , (<span class="kw">#letter</span> <span class="kw">asParser</span> / <span class="kw">#digit</span> <span class="kw">asParser</span>) <span class="kw">star</span>) <span class="kw">flatten</span>.
 number <span class="kw">:=</span>  <span class="kw">#digit</span> <span class="kw">asParser</span> <span class="kw">plus</span> <span class="kw">token</span> <span class="kw">trim</span> <span class="kw">==&gt;</span> [ :<span class="kw">token</span> | <span class="kw">token</span> value <span class="kw">asNumber</span> ].
 
 term <span class="kw">:=</span> PPUnresolvedParser <span class="kw">new</span>.
@@ -888,7 +890,7 @@ prim <span class="kw">def</span>: (<span class="kw">$(</span> <span class="kw">a
 			<div class="tabbertab">
 				<h2>PLY</h2>
 				<h3>Python Lex-Yacc</h3>
-				<ul><li>PLY version 3.9 (<a href="http://www.dabeaz.com/ply/ply-3.9.tar.gz">download</a>)</li><li>Main website: <a href="http://www.dabeaz.com/ply/">dabeaz.com</a></li><li>Works with <a href="https://docs.python.org/2/">Python2</a>, <a href="https://docs.python.org/3/">Python3</a></li><li>Parsing algorithm: <a href="https://en.wikipedia.org/wiki/LR_parser">LR</a></li><li>Example from <a href="http://www.dabeaz.com/ply/example.html">dabeaz.com</a>: <blockquote><pre>names = { }
+				<ul><li>PLY version 3.11 (<a href="http://www.dabeaz.com/ply/ply-3.11.tar.gz">download</a>)</li><li>Main website: <a href="http://www.dabeaz.com/ply/">dabeaz.com</a></li><li>Works with <a href="https://docs.python.org/2/">Python2</a>, <a href="https://docs.python.org/3/">Python3</a></li><li>Parsing algorithm: <a href="https://en.wikipedia.org/wiki/LR_parser">LR</a></li><li>Example from <a href="http://www.dabeaz.com/ply/example.html">dabeaz.com</a>: <blockquote><pre>names = { }
 
 <span class="kw">def</span> p_statement_assign(t):
     'statement : NAME EQUALS expression'
@@ -940,7 +942,7 @@ unsigned_int = (isdigit)<span class="kw">+</span></pre></blockquote></li><li>Mai
 			<div class="tabbertab">
 				<h2>PyBison</h2>
 				<h3>PyBison</h3>
-				<ul><li>PyBison version 0.1.8 (<a href="http://www.freenet.org.nz/python/pybison/pybison-0.1.8.tar.gz">download</a>)</li><li>Main website: <a href="http://freenet.mcnabhosting.com/python/pybison/">freenet.mcnabhosting.com</a></li><li>Works with <a href="https://docs.python.org/2/">Python2</a></li><li>Parsing algorithm: <a href="https://en.wikipedia.org/wiki/LALR_parser">LALR(1)</a></li><li>Example from <a href="http://freenet.mcnabhosting.com/python/pybison/calc.py">freenet.mcnabhosting.com</a>: <blockquote><pre><span class="kw">def</span> on_exp(self, target, option, names, values):
+				<ul><li>PyBison version 0.1.8</li><li>Main website: <a href="http://freenet.mcnabhosting.com/python/pybison/">freenet.mcnabhosting.com</a></li><li>Works with <a href="https://docs.python.org/2/">Python2</a></li><li>Parsing algorithm: <a href="https://en.wikipedia.org/wiki/LALR_parser">LALR(1)</a></li><li>Example from <a href="http://freenet.mcnabhosting.com/python/pybison/calc.py">freenet.mcnabhosting.com</a>: <blockquote><pre><span class="kw">def</span> on_exp(self, target, option, names, values):
     """
     exp : NUMBER
         <span class="kw">|</span> exp PLUS exp
@@ -988,7 +990,7 @@ factor<span class="kw">:</span> LPAREN expression RPAREN (parenfunc)
 			<div class="tabbertab">
 				<h2>pyparsing</h2>
 				<h3>pyparsing</h3>
-				<ul><li>pyparsing version 2.1.10 (<a href="https://sourceforge.net/projects/pyparsing/">sourceforge</a>)</li><li>Main website: <a href="http://pyparsing.wikispaces.com/">pyparsing.wikispaces.com</a></li><li>Works with <a href="https://docs.python.org/2/">Python2</a>, <a href="https://docs.python.org/3/">Python3</a></li><li>Parsing algorithms: <a href="https://en.wikipedia.org/wiki/Scannerless_parsing">scannerless</a>, <a href="https://en.wikipedia.org/wiki/Recursive_descent_parser">recursive descent</a></li><li>Example from <a href="http://pyparsing.wikispaces.com/">pyparsing.wikispaces.com</a>: <blockquote><pre><span class="kw">from</span> pyparsing <span class="kw">import</span> Word, alphas
+				<ul><li>pyparsing version 2.2.0 (<a href="https://sourceforge.net/projects/pyparsing/">sourceforge</a>)</li><li>Main website: <a href="http://pyparsing.wikispaces.com/">pyparsing.wikispaces.com</a></li><li>Works with <a href="https://docs.python.org/2/">Python2</a>, <a href="https://docs.python.org/3/">Python3</a></li><li>Parsing algorithms: <a href="https://en.wikipedia.org/wiki/Scannerless_parsing">scannerless</a>, <a href="https://en.wikipedia.org/wiki/Recursive_descent_parser">recursive descent</a></li><li>Example from <a href="http://pyparsing.wikispaces.com/">pyparsing.wikispaces.com</a>: <blockquote><pre><span class="kw">from</span> pyparsing <span class="kw">import</span> Word, alphas
 greet = Word( alphas ) + "," + Word( alphas ) + "!"
 hello = "Hello, World!"
 <span class="kw">print</span> (hello, "-&gt;", greet.parseString( hello ))</pre></blockquote></li><li>More examples: <a href="http://pyparsing.wikispaces.com/Examples">pyparsing.wikispaces.com</a></li><li>Maintained by Paul McGuire</li></ul>
@@ -1013,7 +1015,7 @@ json_choices.extend([text, number, mapping, collection])
 			<div class="tabbertab">
 				<h2>Racket</h2>
 				<h3><a href="https://racket-lang.org/"><img src="logo/racket.png" alt="Racket" width="150px"/></a></a></h3>
-				<ul><li>Racket version 6.7 (<a href="https://download.racket-lang.org/">download</a>)</li><li>Main website: <a href="https://racket-lang.org/">racket-lang.org</a></li><li>Works with <a href="https://en.wikipedia.org/wiki/Racket_features">Racket</a></li><li>Wikipedia: (<a href="https://en.wikipedia.org/wiki/Racket (programming language)">English</a>) (<a href="https://fr.wikipedia.org/wiki/DrRacket">French</a>) (<a href="https://de.wikipedia.org/wiki/DrRacket">German</a>) (<a href="https://ru.wikipedia.org/wiki/Racket (язык программирования)">Russian</a>)</li><li>Parsing algorithm: <a href="https://en.wikipedia.org/wiki/LALR_parser">LALR(1)</a></li><li>Example from <a href="https://gist.github.com/danking/1068185">gist.github.com</a>: <blockquote><pre><span class="kw">(</span><span class="kw">define</span> simple-math-lexer
+				<ul><li>Racket version 7.1 (<a href="https://download.racket-lang.org/">download</a>)</li><li>Main website: <a href="https://racket-lang.org/">racket-lang.org</a></li><li>Works with <a href="https://en.wikipedia.org/wiki/Racket_features">Racket</a></li><li>Wikipedia: (<a href="https://en.wikipedia.org/wiki/Racket (programming language)">English</a>) (<a href="https://fr.wikipedia.org/wiki/DrRacket">French</a>) (<a href="https://de.wikipedia.org/wiki/DrRacket">German</a>) (<a href="https://ru.wikipedia.org/wiki/Racket (язык программирования)">Russian</a>)</li><li>Parsing algorithm: <a href="https://en.wikipedia.org/wiki/LALR_parser">LALR(1)</a></li><li>Example from <a href="https://gist.github.com/danking/1068185">gist.github.com</a>: <blockquote><pre><span class="kw">(</span><span class="kw">define</span> simple-math-lexer
   <span class="kw">(</span><span class="kw">lexer</span>
    <span class="kw">(</span>"-" <span class="kw">(</span>token--<span class="kw">)</span><span class="kw">)</span>
    <span class="kw">(</span>"+" <span class="kw">(</span>token-+<span class="kw">)</span><span class="kw">)</span>
@@ -1044,7 +1046,7 @@ json_choices.extend([text, number, mapping, collection])
 			<div class="tabbertab">
 				<h2>Ragel</h2>
 				<h3>Ragel</h3>
-				<ul><li>Ragel version 7.0.0.9 (<a href="http://www.colm.net/files/ragel/ragel-7.0.0.9.tar.gz">download</a>)</li><li>Main website: <a href="http://www.colm.net/open-source/ragel/">colm.net</a></li><li>Works with <a href="http://101companies.org/wiki/Language:C">C</a>, <a href="http://101companies.org/wiki/Language:CPlusPlus">C++</a>, <a href="https://en.wikipedia.org/wiki/x86_assembly_language">Intel Asm</a>, <a href="https://en.wikipedia.org/wiki/Objective-C">Obj-C</a>, <a href="https://en.wikipedia.org/wiki/D_(programming_language)">D</a>, <a href="https://en.wikipedia.org/wiki/Go_(programming_language)">Go</a>, <a href="https://en.wikipedia.org/wiki/Ruby_(programming_language)">Ruby</a>, <a href="http://101companies.org/wiki/Language:Java">Java</a></li><li>Wikipedia: (<a href="https://en.wikipedia.org/wiki/Ragel">English</a>) (<a href="https://fr.wikipedia.org/wiki/Ragel">French</a>) (<a href="https://de.wikipedia.org/wiki/Ragel">German</a>) (<a href="https://ru.wikipedia.org/wiki/Ragel">Russian</a>)</li><li>Parsing algorithm: <a href="https://en.wikipedia.org/wiki/Finite-state_machine">FSM</a></li><li>Example from <a href="http://www.colm.net/open-source/ragel/">colm.net</a>: <blockquote><pre><span class="kw">action</span> dgt      { printf("DGT: <span class="kw">%</span>c\n", fc); }
+				<ul><li>Ragel version 7.0.0.11 (<a href="http://www.colm.net/files/ragel/ragel-7.0.0.11.tar.gz">download</a>)</li><li>Main website: <a href="http://www.colm.net/open-source/ragel/">colm.net</a></li><li>Works with <a href="http://101companies.org/wiki/Language:C">C</a>, <a href="http://101companies.org/wiki/Language:CPlusPlus">C++</a>, <a href="https://en.wikipedia.org/wiki/x86_assembly_language">Intel Asm</a>, <a href="https://en.wikipedia.org/wiki/Objective-C">Obj-C</a>, <a href="https://en.wikipedia.org/wiki/D_(programming_language)">D</a>, <a href="https://en.wikipedia.org/wiki/Go_(programming_language)">Go</a>, <a href="https://en.wikipedia.org/wiki/Ruby_(programming_language)">Ruby</a>, <a href="http://101companies.org/wiki/Language:Java">Java</a></li><li>Wikipedia: (<a href="https://en.wikipedia.org/wiki/Ragel">English</a>) (<a href="https://fr.wikipedia.org/wiki/Ragel">French</a>) (<a href="https://de.wikipedia.org/wiki/Ragel">German</a>) (<a href="https://ru.wikipedia.org/wiki/Ragel">Russian</a>)</li><li>Parsing algorithm: <a href="https://en.wikipedia.org/wiki/Finite-state_machine">FSM</a></li><li>Example from <a href="http://www.colm.net/open-source/ragel/">colm.net</a>: <blockquote><pre><span class="kw">action</span> dgt      { printf("DGT: <span class="kw">%</span>c\n", fc); }
 <span class="kw">action</span> dec      { printf("DEC: .\n"); }
 <span class="kw">action</span> exp      { printf("EXP: <span class="kw">%</span>c\n", fc); }
 <span class="kw">action</span> exp_sign { printf("SGN: <span class="kw">%</span>c\n", fc); }
@@ -1060,7 +1062,7 @@ main := ( number '\n' )*;</pre></blockquote></li><li>Maintained by Adrian D. Thu
 			<div class="tabbertab">
 				<h2>Rascal</h2>
 				<h3><a href="http://www.rascal-mpl.org/"><img src="logo/rascal.png" alt="Rascal" width="150px"/></a></a></h3>
-				<ul><li>Rascal version 0.7.1 (<a href="http://www.rascal-mpl.org/start/">download</a>)</li><li>Main website: <a href="http://www.rascal-mpl.org/">rascal-mpl.org</a></li><li>Wikipedia: (<a href="https://en.wikipedia.org/wiki/RascalMPL">English</a>)</li><li>Parsing algorithm: <a href="http://dotat.at/tmp/gll.pdf">GLL</a></li><li>Example from <a href="https://github.com/usethesource/rascal/blob/master/src/org/rascalmpl/library/lang/pico/syntax/Main.rsc">@usethesource/rascal</a>: <blockquote><pre><span class="kw">start</span> <span class="kw">syntax</span> Program 
+				<ul><li>Rascal version 0.9.0 (<a href="http://www.rascal-mpl.org/start/">download</a>)</li><li>Main website: <a href="http://www.rascal-mpl.org/">rascal-mpl.org</a></li><li>Wikipedia: (<a href="https://en.wikipedia.org/wiki/RascalMPL">English</a>)</li><li>Parsing algorithm: <a href="http://dotat.at/tmp/gll.pdf">GLL</a></li><li>Example from <a href="https://github.com/usethesource/rascal/blob/master/src/org/rascalmpl/library/lang/pico/syntax/Main.rsc">@usethesource/rascal</a>: <blockquote><pre><span class="kw">start</span> <span class="kw">syntax</span> Program 
   = program: "begin" Declarations decls <span class="kw">{</span>Statement  ";"<span class="kw">}</span><span class="kw">*</span> body "end" ;
 
 <span class="kw">syntax</span> Declarations 
@@ -1117,7 +1119,7 @@ main := ( number '\n' )*;</pre></blockquote></li><li>Maintained by Adrian D. Thu
 			<div class="tabbertab">
 				<h2>RecDescent</h2>
 				<h3>Parse::RecDescent</h3>
-				<ul><li>RecDescent version 1.967013 (<a href="https://cpan.metacpan.org/authors/id/J/JT/JTBRAUN/Parse-RecDescent-1.967013.tar.gz">download</a>)</li><li>Main website: <a href="https://metacpan.org/pod/Parse::RecDescent">metacpan.org</a></li><li>Works with <a href="https://en.wikipedia.org/wiki/Perl">Perl</a></li><li>Parsing algorithm: <a href="https://en.wikipedia.org/wiki/Recursive_descent_parser">recursive descent</a></li><li>Example from <a href="https://metacpan.org/pod/Parse::RecDescent">metacpan.org</a>: <blockquote><pre>parser = Parse::RecDescent<span class="kw">-&gt;</span>new(<span class="kw">q<span class="kw">{</span></span>
+				<ul><li>RecDescent version 1.967015 (<a href="https://cpan.metacpan.org/authors/id/J/JT/JTBRAUN/Parse-RecDescent-1.967015.tar.gz">download</a>)</li><li>Main website: <a href="https://metacpan.org/pod/Parse::RecDescent">metacpan.org</a></li><li>Works with <a href="https://en.wikipedia.org/wiki/Perl">Perl</a></li><li>Parsing algorithm: <a href="https://en.wikipedia.org/wiki/Recursive_descent_parser">recursive descent</a></li><li>Example from <a href="https://metacpan.org/pod/Parse::RecDescent">metacpan.org</a>: <blockquote><pre>parser = Parse::RecDescent<span class="kw">-&gt;</span>new(<span class="kw">q<span class="kw">{</span></span>
 &lt;<span class="kw">autoaction</span>: <span class="kw">{</span> [<span class="kw">@item</span>] <span class="kw">}</span> &gt;
  
 expression: and_expr '||' expression <span class="kw">|</span> and_expr
@@ -1208,12 +1210,12 @@ t::Term_c <span class="kw">::=</span> f::Factor_c
 ic::Factor_c <span class="kw">::=</span> i::IntLit_t
 { ic.pp = i.lexeme ;
   ic.ast_Expr = integerConstant(i);
-}</pre></blockquote></li><li>More examples: <a href="http://melt.cs.umn.edu/silver/doc/tutorial">melt.cs.umn.edu</a></li><li>Maintained by Ted Kaminski and Eric Van Wyk</li></ul>
+}</pre></blockquote></li><li>More examples: <a href="http://melt.cs.umn.edu/silver/doc/tutorial">melt.cs.umn.edu</a></li><li>Maintained by Ted Kaminski, Lucas Kramer and Eric Van Wyk</li></ul>
 			</div>
 			<div class="tabbertab">
 				<h2>SimpleParse</h2>
 				<h3>SimpleParse</h3>
-				<ul><li>SimpleParse version 2.1.0a1 (<a href="https://sourceforge.net/projects/simpleparse/files/">sourceforge</a>)</li><li>Main website: <a href="http://simpleparse.sourceforge.net/">simpleparse.sourceforge.net</a></li><li>Works with <a href="https://docs.python.org/2/">Python2</a></li><li>Parsing algorithms: <a href="https://en.wikipedia.org/wiki/Top-down_parsing">top-down</a>, <a href="https://en.wikipedia.org/wiki/One-pass_compiler">one-pass</a></li><li>Example from <a href="http://simpleparse.sourceforge.net/simpleparse_grammars.html">simpleparse.sourceforge.net</a>: <blockquote><pre>declaration = r'''# note use of raw string when embedding in python code...
+				<ul><li>SimpleParse version 2.1.1a2 (<a href="https://sourceforge.net/projects/simpleparse/files/">sourceforge</a>)</li><li>Main website: <a href="http://simpleparse.sourceforge.net/">simpleparse.sourceforge.net</a></li><li>Works with <a href="https://docs.python.org/2/">Python2</a></li><li>Parsing algorithms: <a href="https://en.wikipedia.org/wiki/Top-down_parsing">top-down</a>, <a href="https://en.wikipedia.org/wiki/One-pass_compiler">one-pass</a></li><li>Example from <a href="http://simpleparse.sourceforge.net/simpleparse_grammars.html">simpleparse.sourceforge.net</a>: <blockquote><pre>declaration = r'''# note use of raw string when embedding in python code...
 file           <span class="kw">:=</span>  [ \t\n]<span class="kw">*</span><span class="kw">,</span> section<span class="kw">+</span>
 section        <span class="kw">:=</span>  '['<span class="kw">,</span> identifier<span class="kw">!</span><span class="kw">,</span> ']'<span class="kw">!</span><span class="kw">,</span> ts<span class="kw">,</span> '\n'<span class="kw">,</span> body
 body           <span class="kw">:=</span>  statement<span class="kw">*</span>
@@ -1281,18 +1283,18 @@ Number
 			<div class="tabbertab">
 				<h2>SPARK</h2>
 				<h3>Scanning, Parsing, and Rewriting Kit</h3>
-				<ul><li>SPARK version 0.6.1 (<a href="http://pages.cpsc.ucalgary.ca/~aycock/spark/spark-0.6.1.tar.gz">download</a>)</li><li>Main website: <a href="http://pages.cpsc.ucalgary.ca/~aycock/spark/">pages.cpsc.ucalgary.ca</a></li><li>Works with <a href="https://docs.python.org/2/">Python2</a></li><li>Parsing algorithm: ?</li><li>Example from <a href="http://pages.cpsc.ucalgary.ca/~aycock/spark/paper.pdf">pages.cpsc.ucalgary.ca</a>: <blockquote><pre><span class="kw">class</span> ExprParser(GenericParser):
+				<ul><li>SPARK version 0.7 pre-alpha-7 (<a href="http://pages.cpsc.ucalgary.ca/~aycock/spark/spark-0.7.pre-alpha-7.py">download</a>)</li><li>Main website: <a href="http://pages.cpsc.ucalgary.ca/~aycock/spark/">pages.cpsc.ucalgary.ca</a></li><li>Works with <a href="https://docs.python.org/2/">Python2</a></li><li>Parsing algorithm: ?</li><li>Example from <a href="http://pages.cpsc.ucalgary.ca/~aycock/spark/paper.pdf">pages.cpsc.ucalgary.ca</a>: <blockquote><pre>class ExprParser(GenericParser):
 	<span class="kw">def</span> __init__(<span class="kw">self</span>, start='expr'):
 		GenericParser.__init__(<span class="kw">self</span>, start)
 
 	<span class="kw">def</span> p_rules(<span class="kw">self</span> args):
 		'''
-			expr <span <span class="kw">class</span>="kw">::=</span> expr + term
-			expr <span <span class="kw">class</span>="kw">::=</span> term
-			term <span <span class="kw">class</span>="kw">::=</span> term * factor
-			term <span <span class="kw">class</span>="kw">::=</span> factor
-			factor <span <span class="kw">class</span>="kw">::=</span> number
-			factor <span <span class="kw">class</span>="kw">::=</span> float
+			expr <span class="kw">::=</span> expr + term
+			expr <span class="kw">::=</span> term
+			term <span class="kw">::=</span> term * factor
+			term <span class="kw">::=</span> factor
+			factor <span class="kw">::=</span> number
+			factor <span class="kw">::=</span> float
 		'''
 </pre></blockquote></li><li>Maintained by John Aycock</li></ul>
 			</div>
@@ -1324,13 +1326,68 @@ Number
 			</div>
 			<div class="tabbertab">
 				<h2>Spoofax</h2>
-				<h3><a href="http://metaborg.org/en/latest/"><img src="logo/spoofax.svg" alt="Spoofax" width="150px"/></a></a></h3>
-				<ul><li>Spoofax version 2.1.0 (<a href="http://www.metaborg.org/en/latest/source/download.html">download</a>)</li><li>Main website: <a href="http://metaborg.org/en/latest/">metaborg.org</a></li><li>Works with <a href="https://en.wikipedia.org/wiki/Syntax_Definition_Formalism">SDF3</a></li><li>Wikipedia: (<a href="https://en.wikipedia.org/wiki/Stratego/XT">English</a>)</li><li>Parsing algorithm: <a href="https://pdfs.semanticscholar.org/90f2/8a411455fb783da17ad4b4efdda4464606c4.pdf">SGLR</a></li><li>Example from <a href="http://www.metaborg.org/en/latest/source/langdev/meta/lang/sdf3.html">metaborg.org</a>: <blockquote><pre>Exp.If <span class="kw">=</span> &lt;
-   if(&lt;Exp&gt;)
-     &lt;Exp&gt;
-   else
-     &lt;Exp&gt;
-&gt; <span class="kw">{case-insensitive}</span></pre></blockquote></li><li>More examples: <a href="http://declare-your-language.metaborg.org/">declare-your-language.metaborg.org</a></li><li>Maintained by Eelco Visser et al</li><li>Used with: <ul><li><a href="http://www.metaborg.org/en/latest/source/langdev/meta/lang/nabl2/getting-started.html">NaBL</a></li><li><a href="http://www.metaborg.org/en/latest/source/langdev/meta/lang/stratego/index.html">Stratego</a></li><li><a href="http://www.metaborg.org/en/latest/source/langdev/meta/lang/dynsem/index.html">DynSem</a></li></ul></li></ul>
+				<h3><a href="https://www.metaborg.org/en/latest/"><img src="logo/spoofax.svg" alt="Spoofax" width="150px"/></a></a></h3>
+				<ul><li>Spoofax version 2.5.1 (<a href="https://www.metaborg.org/en/latest/source/install.html">download</a>)</li><li>Main website: <a href="https://www.metaborg.org/en/latest/">metaborg.org</a></li><li>Works with <a href="https://en.wikipedia.org/wiki/Syntax_Definition_Formalism">SDF3</a></li><li>Wikipedia: (<a href="https://en.wikipedia.org/wiki/Stratego/XT">English</a>)</li><li>Parsing algorithm: <a href="https://pdfs.semanticscholar.org/90f2/8a411455fb783da17ad4b4efdda4464606c4.pdf">SGLR</a></li><li>Example from <a href="https://github.com/MetaBorgCube/metaborg-pascal/blob/master/org.metaborg.lang.pascal/syntax/Pascal.sdf3">@MetaBorgCube/metaborg-pascal</a>: <blockquote><pre><span class="kw">module</span> Pascal
+
+<span class="kw">context-free</span> <span class="kw">start-symbols</span> Program
+
+<span class="kw">context-free</span> <span class="kw">syntax</span>
+  
+  Program.Program <span class="kw">=</span> &lt;
+    &lt;Programheading&gt; 
+    &lt;Block&gt;.
+  &gt;
+
+  Programheading.ProgramHeading <span class="kw">=</span> &lt;
+    program &lt;Identifier&gt; (&lt;{Identifier ", "}*&gt;);
+  &gt; <span class="kw">{case-insensitive}</span>
+
+  Block.Block <span class="kw">=</span> &lt;
+    &lt;LabelDeclarations?&gt;
+    &lt;ConstantDefinitions?&gt;
+    &lt;TypeDefinitions?&gt;
+    &lt;VariableDeclarations?&gt;
+    
+    &lt;{ProcedureOrFunctionDeclaration "\n\n"}*&gt;
+    
+    begin  
+      &lt;{Statement ";\n"}*&gt;     
+      &lt;Term?&gt;
+    end
+  &gt; <span class="kw">{case-insensitive}</span> 
+
+  LabelDeclarations.LabelDecls <span class="kw">=</span> &lt;
+    label 
+       &lt;{Label ", "}+&gt;;
+  &gt; <span class="kw">{case-insensitive}</span>
+  
+  ConstantDefinitions.ConstDefs <span class="kw">=</span> &lt;
+    const 
+       &lt;{ConstantDefinition "\n"}+&gt;
+  &gt; <span class="kw">{case-insensitive}</span>
+
+  ConstantDefinition.ConstDef <span class="kw">=</span>
+    &lt;&lt;Identifier&gt; <span class="kw">=</span> &lt;Constant&gt;;&gt;
+  
+  TypeDefinitions.TypeDefs <span class="kw">=</span> &lt;
+    type 
+      &lt;{TypeDefinition "\n"}+&gt;
+  &gt; <span class="kw">{case-insensitive}</span>
+
+  TypeDefinition.TypeDef <span class="kw">=</span>
+    &lt;&lt;Identifier&gt; <span class="kw">=</span> &lt;Type&gt;;&gt;
+  
+  VariableDeclarations.VarDecls <span class="kw">=</span> &lt;
+    var 
+       &lt;{VariableDeclaration "\n"}+&gt;
+  &gt; <span class="kw">{case-insensitive}</span>
+
+  VariableDeclaration.VarDecl <span class="kw">=</span>
+    &lt;&lt;{VariableIdentifier ", "}+&gt; : &lt;Type&gt;;&gt;
+    
+  VariableIdentifier.VarId <span class="kw">=</span> &lt;&lt;Identifier&gt;&gt;
+
+...</pre></blockquote></li><li>More examples: <a href="http://declare-your-language.metaborg.org/">declare-your-language.metaborg.org</a></li><li>Maintained by Eelco Visser et al</li><li>Used with: <ul><li><a href="https://www.metaborg.org/en/latest/source/langdev/meta/lang/stratego/index.html">Stratego</a></li><li><a href="https://www.metaborg.org/en/latest/source/langdev/meta/lang/dynsem/index.html">DynSem</a></li><li><a href="https://www.metaborg.org/en/latest/source/langdev/meta/lang/spt/index.html">SPT</a></li><li><a href="https://www.metaborg.org/en/latest/source/langdev/meta/lang/flowspec/index.html">FlowSpec</a></li><li><a href="https://www.metaborg.org/en/latest/source/langdev/meta/lang/nabl2/index.html">NaBL</a></li></ul></li></ul>
 			</div>
 			<!-- <div class="tabbertab">
 				<h2>SugarJ</h2>

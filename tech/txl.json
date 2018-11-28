@@ -1,8 +1,8 @@
 {
-	"version": "10.6d",
+	"version": "10.7",
 	"uri": "http://www.txl.ca",
 	"logo": "txl.png",
-	"download": "http://www.txl.ca/ndownload.html",
+	"download": "http://www.txl.ca/txl-download.html",
 	"parsing": ["top-down", "backtracking"],
 	"example": "http://www.txl.ca/examples/Standard/examples.zip",
 	"keywords": ["define", "end", "opt", "repeat", "NL", "[", "]", "|"],

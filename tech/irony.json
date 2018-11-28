@@ -1,13 +1,13 @@
 {
 	"version": "BETA",
-	"uri": "https://irony.codeplex.com/",
+	"uri": "https://github.com/IronyProject/Irony",
 	"logo": "dotnet.png",
-	"download": "http://download-codeplex.sec.s-msft.com/Download/Release?ProjectName=irony&amp;DownloadId=27478&amp;FileTime=130313476309630000&amp;Build=21031",
+	"download": "https://github.com/IronyProject/Irony/archive/master.zip",
 	"parsing": ["LALR(1)"],
-	"example": "https://irony.codeplex.com/wikipage?title=Expression%20Grammar%20sample",
-	"keywords": ["=", "|", "+", "this", ";", ","],
+	"example": "https://github.com/IronyProject/Irony/wiki/Expression-Grammar-sample",
+	"keywords": ["=", "|", "+", "this", ";", ",", "MakeStarRule", "ToTerm", "RegisterOperators"],
 	"notkeywords": ["\"+\"", "++", "=\"", "\"+=\""],
-	"maintained": "https://irony.codeplex.com/wikipage?title=Contributors",
+	"maintained": "https://github.com/IronyProject/Irony/graphs/contributors",
 	"lang": ["C#"],
 	"wikipedia": {"Irony (framework)": ["en"]}
 }

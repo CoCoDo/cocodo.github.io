@@ -1,5 +1,5 @@
 {
-	"version": "2.1",
+	"version": "3.0.1",
 	"parsing": ["monadic", "recursive descent"],
 	"uri": "https://github.com/davedufresne/SwiftParsec",
 	"download": "https://github.com/davedufresne/SwiftParsec/archive/master.zip",

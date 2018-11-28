@@ -1,5 +1,5 @@
 {
-	"version": "3.1.11",
+	"version": "3.1.13.0",
 	"uri": "https://wiki.haskell.org/Parsec",
 	"logo": "parsec.gif",
 	"download": "http://hackage.haskell.org/package/parsec",

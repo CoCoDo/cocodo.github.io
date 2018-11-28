@@ -1,8 +1,8 @@
 {
 	"fullname": "Parse::RecDescent",
-	"version": "1.967013",
+	"version": "1.967015",
 	"uri": "https://metacpan.org/pod/Parse::RecDescent",
-	"download": "https://cpan.metacpan.org/authors/id/J/JT/JTBRAUN/Parse-RecDescent-1.967013.tar.gz",
+	"download": "https://cpan.metacpan.org/authors/id/J/JT/JTBRAUN/Parse-RecDescent-1.967015.tar.gz",
 	"parsing": ["recursive descent"],
 	"example": "https://metacpan.org/pod/Parse::RecDescent",
 	"keywords": ["q{", "autoaction", "}", "{", "@item", "-&gt;", "|", " /", "+/"],

@@ -14,3 +14,6 @@ ProgramLine.Rule = Statement + NewLine;
 Program.Rule = MakeStarRule(Program, ProgramLine);
 this.Root = Program;
 
+RegisterOperators(1, "+", "-");
+RegisterOperators(2, "*", "/");
+RegisterOperators(3, Associativity.Right, "**");
