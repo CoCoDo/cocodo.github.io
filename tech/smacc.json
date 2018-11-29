@@ -6,6 +6,7 @@
 	"parsing": ["LR(1)", "LALR(1)", "GLR"],
 	"example": "http://www.refactoryworkers.com/SmaCC/Tutorial.html",
 	"keywords": ["%left", "%right", "{", "}"],
-	"maintained": "John Brant, Don Roberts",
+	"more": "https://github.com/SquareBracketAssociates/Booklet-Smacc",
+	"maintained": "John Brant and Thierry Goubier",
 	"lang": ["Smalltalk"]
 }
