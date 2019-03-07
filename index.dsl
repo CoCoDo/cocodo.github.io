@@ -34,13 +34,16 @@
 			<img src="logo/cocodo.png" alt="Compiler Coding Dojo" title="CoCoDo"/>
 			</div>
 			<h2 class="rl"><a href="https://cocodo.github.io/">CoCoDo</a> @ <a href="http://2019.programming-conference.org/">‹Programming›</a></h2>
-			<h2>April 2019, Genova, Italy</h2>
+			<h2>2 April 2019, Genova, Italy</h2>
 		</div>
 		<div class="tabber">
 			<div class="tabbertab">
 				<h2>2019</h2>
-				<strong>CoCoDo</strong> is a <em>coding dojo</em> where you can enjoy an entire day of
-				compiler programming under gentle guidance of field experts.
+				<p>
+					<strong>CoCoDo</strong> is a <em>coding dojo</em> where you can enjoy an entire day of
+					compiler programming under gentle guidance of field experts.
+				</p>
+				<strong>CoCoDo 2019</strong> will take place on 2 April 2018 in Genova, Italy as a part of the <a href="https://2019.programming-conference.org/track/cocodo-2019">‹Programming›</a> conference.
 				<br/>
 				<br/>
 				Compiler construction comprises, but is not limited to, lexical analysis,
@@ -50,8 +53,26 @@
 				design, linking and loading, assembling and disassembling, generics and
 				reflection, numerous paradigms and so much more.
 				<br/>
-				<br/>
-				Organised by <a href="http://grammarware.github.io">Vadim Zaytsev</a> and <a href="https://twitter.com/johanfabry">Johan Fabry</a> as a part of Raincode Labs academic activities. Get in touch if you are interested in participating!
+				<h3>Programme</h3>
+				<ul class="cool">
+					<li><strong>08:45–09:00</strong>: Opening and introductions (<a href="http://grammarware.github.io">Vadim Zaytsev</a>)</li>
+					<li><strong>09:00–10:30</strong>: Scrap your <abbr title="Domain-Specific Language">DSL</abbr> Boilerplate with a Universe of Syntaxes, their Programs and Proofs (<a href="http://gallais.github.io/">Guillaume Allais</a> with <a href="https://wiki.portal.chalmers.se/agda/pmwiki.php">Agda</a>)</li>
+					<li><strong>11:00–12:30</strong>: Language Engineering with Rascal (<a href="https://homepages.cwi.nl/~storm/">Tijs van der Storm</a> with <a href="https://www.rascal-mpl.org/">Rascal</a>)</li>
+					<li>
+						<strong>14:00–15:30</strong>: Tool Battle: 1 Infrastructure, 2 Parser Generators!
+						<ul>
+							<li><a href="https://github.com/ToshRaka">Jason Lecerf</a> with <a href="http://www.refactoryworkers.com/SmaCC.html">SmaCC</a></li>
+							<li><a href="https://twitter.com/Chis_Andrei">Andrei Chiş</a> with <a href="http://scg.unibe.ch/research/helvetia/petitparser">PetitParser</a></li>
+						</ul>
+					</li>
+					<li>
+						<strong>16:00–17:00</strong>: Discussion, presentations and pitches
+						<ul>
+							<li><a class="blue" href="mailto:vadim@grammarware.net">Get in touch</a> if you are interested in participating!</li>
+						</ul>
+					</li>
+				</ul>
+				Organised by <a href="http://grammarware.github.io">Vadim Zaytsev</a> and <a href="https://twitter.com/johanfabry">Johan Fabry</a> as a part of <a href="https://www.raincodelabs.com/">Raincode Labs</a> academic activities.
 			</div>
 			<div class="tabbertab">
 				<h2>2018</h2>

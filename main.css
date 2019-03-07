@@ -1,7 +1,7 @@
 body {background-color:#E0F2F1; color:#00695C; font-family: 'Fontin Sans',sans-serif}
 blockquote {border: 1px solid #004D40; padding: 10px}
 .red, .red a, .red a:visited, .cool a, .cool a:visited {color:red}
-a, a:visited {color:#0277BD}
+a, a:visited, a.blue, a.blue:visited {color:#0277BD}
 .red a:hover {font-weight:bold}
 p, table {max-width:1000px; margin:auto; padding-bottom:20px}
 .c {text-align:center; font-weight:bold}
