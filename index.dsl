@@ -33,17 +33,20 @@
 			<div class="rl">
 			<img src="logo/cocodo.png" alt="Compiler Coding Dojo" title="CoCoDo"/>
 			</div>
-			<h2 class="rl"><a href="https://cocodo.github.io/">CoCoDo</a> @ <a href="http://2019.programming-conference.org/">‹Programming›</a></h2>
-			<h2>2 April 2019, Genova, Italy</h2>
+			<h2 class="rl"><a href="https://cocodo.github.io/">CoCoDo</a> @ <a href="http://2020.programming-conference.org/">‹Programming›</a></h2>
+			<h2>March 2020, Porto, Portugal</h2>
 		</div>
 		<div class="tabber">
 			<div class="tabbertab">
-				<h2>2019</h2>
+				<h2>2020</h2>
 				<p>
 					<strong>CoCoDo</strong> is a <em>coding dojo</em> where you can enjoy an entire day of
 					compiler programming under gentle guidance of field experts.
 				</p>
-				<strong>CoCoDo 2019</strong> will take place on 2 April 2018 in Genova, Italy as a part of the <a href="https://2019.programming-conference.org/track/cocodo-2019">‹Programming›</a> conference.
+				<strong>CoCoDo 2020</strong> is planned to take place in March 2020 in Porto, Portugal as a part of the <a href="https://2020.programming-conference.org">‹Programming›</a> conference. (Pending approval of the <a href="https://2020.programming-conference.org/committee/programming-2020-organizing-committee">workshop chairs</a>).
+				<br/>
+				<br/>
+				In the meantime, feel free to browse the website (especially the “Technologies” tab above).
 				<br/>
 				<br/>
 				Compiler construction comprises, but is not limited to, lexical analysis,
@@ -53,6 +56,12 @@
 				design, linking and loading, assembling and disassembling, generics and
 				reflection, numerous paradigms and so much more.
 				<br/>
+				<br/>
+				Organised by <a href="https://twitter.com/johanfabry">Johan Fabry</a> and <a href="http://grammarware.github.io">Vadim Zaytsev</a> as a part of <a href="https://www.raincodelabs.com/">Raincode Labs</a> academic activities.
+			</div>
+			<div class="tabbertab">
+				<h2>2019</h2>
+				<strong>CoCoDo 2019</strong> took place on 2 April 2019 in Genova, Italy as a part of the <a href="https://2019.programming-conference.org/track/cocodo-2019">‹Programming›</a> conference.
 				<h3>Programme</h3>
 				<ul class="cool">
 					<li><strong>08:45–09:00</strong>: Opening and introductions (<a href="http://grammarware.github.io">Vadim Zaytsev</a>)</li>
@@ -67,10 +76,12 @@
 					</li>
 					<li>
 						<strong>16:00–17:00</strong>: Discussion, presentations and pitches
-						<ul>
-							<li><a class="blue" href="mailto:vadim@grammarware.net">Get in touch</a> if you are interested in participating!</li>
-						</ul>
+							<!-- <li><a class="blue" href="mailto:vadim@grammarware.net">Get in touch</a> if you are interested in participating!</li> -->
 					</li>
+				</ul>
+				<h3>Links</h3>
+				<ul>
+					<li><a href="https://twitter.com/search?q=cocodo&amp;src=spxr&amp;f=live">Browse #cocodo on Twitter</a></li>
 				</ul>
 				Organised by <a href="http://grammarware.github.io">Vadim Zaytsev</a> and <a href="https://twitter.com/johanfabry">Johan Fabry</a> as a part of <a href="https://www.raincodelabs.com/">Raincode Labs</a> academic activities.
 			</div>
@@ -95,6 +106,7 @@
 				<ul>
 					<li><a href="https://twitter.com/search?f=tweets&amp;vertical=default&amp;q=cocodo&amp;src=spxr">Browse #cocodo on Twitter</a></li>
 				</ul>
+				Organised by <a href="http://grammarware.github.io">Vadim Zaytsev</a> as a part of <a href="https://www.raincodelabs.com/">Raincode Labs</a> academic activities.
 			</div>
 			<div class="tabbertab">
 				<h2>2017</h2>
@@ -115,10 +127,12 @@
 				</ul>
 				<h3>Links</h3>
 				<ul>
-					<li><a href="https://goo.gl/forms/e8uj7zPN0xF0Y0Qx1">Register and get a t-shirt!</a></li>
+					<!-- https://goo.gl/forms/e8uj7zPN0xF0Y0Qx1 -->
+					<li><u>Register and get a t-shirt!</u> (offer expired)</li>
 					<li><a href="https://www.facebook.com/events/1769565396626015/">RVSP to a Facebook event</a></li>
 					<li><a href="https://twitter.com/search?f=tweets&amp;vertical=default&amp;q=cocodo&amp;src=spxr">Browse #cocodo on Twitter</a></li>
 				</ul>
+				Organised by <a href="http://grammarware.github.io">Vadim Zaytsev</a> as a part of <a href="https://www.raincodelabs.com/">Raincode Labs</a> academic activities.
 			</div>
 			<div class="tabbertab">
 				<h2>Technologies</h2>
