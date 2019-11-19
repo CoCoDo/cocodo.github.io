@@ -43,9 +43,10 @@
 					<strong>CoCoDo</strong> is a <em>coding dojo</em> where you can enjoy an entire day of
 					compiler programming under gentle guidance of field experts.
 				</p>
-				<strong>CoCoDo 2020</strong> is planned to take place in March 2020 in Porto, Portugal as a part of the <a href="https://2020.programming-conference.org">‹Programming›</a> conference. (Pending approval of the <a href="https://2020.programming-conference.org/committee/programming-2020-organizing-committee">workshop chairs</a>).
+				<strong>CoCoDo 2020</strong> will take place in March 2020 in Porto, Portugal as a part of the <a href="https://2020.programming-conference.org">‹Programming›</a> conference.
 				<br/>
 				<br/>
+				The programme is under construction.<br/>
 				In the meantime, feel free to browse the website (especially the “Technologies” tab above).
 				<br/>
 				<br/>
