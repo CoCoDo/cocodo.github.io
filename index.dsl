@@ -34,7 +34,7 @@
 			<img src="logo/cocodo.png" alt="Compiler Coding Dojo" title="CoCoDo"/>
 			</div>
 			<h2 class="rl"><a href="https://cocodo.github.io/">CoCoDo</a> @ <a href="https://2020.programming-conference.org/home/cocodo-2020">‹Programming›</a></h2>
-			<h2>23 March 2020, Porto, Portugal</h2>
+			<h2>2020, TBA</h2>
 		</div>
 		<div class="tabber">
 			<div class="tabbertab">
@@ -43,8 +43,10 @@
 					<strong>CoCoDo</strong> is a <em>coding dojo</em> where you can enjoy an entire day of
 					compiler programming under gentle guidance of field experts.
 				</p>
-				<strong>CoCoDo 2020</strong> will take place in March 2020 in Porto, Portugal as a part of the <a href="https://2020.programming-conference.org">‹Programming›</a> conference.
-				<h3>Programme</h3>
+				Due to the <a href="https://2020.programming-conference.org/attending/COVID-19">cancellation</a>
+				of the <a href="https://2020.programming-conference.org">‹Programming›</a> conference,
+				<strong>CoCoDo 2020</strong> will <strong class="red">NOT</strong> take place in March 2020. We are looking at alternatives and will announce them soon.
+				<h3>Tentative programme</h3>
 				<ul class="cool">
 					<li><strong>09:00–10:30</strong>: A Journey towards the <a href="http://neverlang.di.unimi.it/">Neverlang</a> Island (<a href="https://cazzola.di.unimi.it/">Walter Cazzola</a>)</li>
 					<li><strong>11:00–12:30</strong>: The <a href="http://www.metaborg.org/en/latest/">Spoofax</a> Language Workbench (<a href="https://www.jeffsmits.net/">Jeff Smits</a>)</li>
