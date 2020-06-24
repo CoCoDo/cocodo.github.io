@@ -33,19 +33,20 @@
 			<div class="rl">
 			<img src="logo/cocodo.png" alt="Compiler Coding Dojo" title="CoCoDo"/>
 			</div>
-			<h2 class="rl"><a href="https://cocodo.github.io/">CoCoDo</a> @ <a href="https://2020.programming-conference.org/home/cocodo-2020">‹Programming›</a></h2>
-			<h2>2020, TBA</h2>
+			<h2 class="rl"><a href="https://cocodo.github.io/">CoCoDo</a> @ <a href="https://2021.programming-conference.org/">‹Programming›</a></h2>
+			<h2>2021, TBA</h2>
 		</div>
 		<div class="tabber">
 			<div class="tabbertab">
-				<h2>2020</h2>
+				<h2>2021</h2>
 				<p>
 					<strong>CoCoDo</strong> is a <em>coding dojo</em> where you can enjoy an entire day of
 					compiler programming under gentle guidance of field experts.
 				</p>
 				Due to the <a href="https://2020.programming-conference.org/attending/COVID-19">cancellation</a>
-				of the <a href="https://2020.programming-conference.org">‹Programming›</a> conference,
-				<strong>CoCoDo 2020</strong> will <strong class="red">NOT</strong> take place in March 2020. We are looking at alternatives and will announce them soon.
+				of the <a href="https://2020.programming-conference.org">‹Programming› 2020</a> conference,
+				<strong>CoCoDo 2020</strong> will <strong class="red">NOT</strong> take place in March 2020.
+				We will try again in 2021.
 				<h3>Tentative programme</h3>
 				<ul class="cool">
 					<li><strong>09:00–10:30</strong>: A Journey towards the <a href="http://neverlang.di.unimi.it/">Neverlang</a> Island (<a href="https://cazzola.di.unimi.it/">Walter Cazzola</a>)</li>
