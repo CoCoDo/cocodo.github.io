@@ -34,7 +34,7 @@
 			<img src="logo/cocodo.png" alt="Compiler Coding Dojo" title="CoCoDo"/>
 			</div>
 			<h2 class="rl"><a href="https://cocodo.github.io/">CoCoDo</a> @ <a href="https://2021.programming-conference.org/">‹Programming›</a></h2>
-			<h2>2021, online</h2>
+			<h2>22 March 2021, online</h2>
 		</div>
 		<div class="tabber">
 			<div class="tabbertab">
