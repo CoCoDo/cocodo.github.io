@@ -34,7 +34,7 @@
 			<img src="logo/cocodo.png" alt="Compiler Coding Dojo" title="CoCoDo"/>
 			</div>
 			<h2 class="rl"><a href="https://cocodo.github.io/">CoCoDo</a> @ <a href="https://2021.programming-conference.org/">‹Programming›</a></h2>
-			<h2>2021, TBA</h2>
+			<h2>2021, online</h2>
 		</div>
 		<div class="tabber">
 			<div class="tabbertab">
@@ -45,14 +45,17 @@
 				</p>
 				Due to the <a href="https://2020.programming-conference.org/attending/COVID-19">cancellation</a>
 				of the <a href="https://2020.programming-conference.org">‹Programming› 2020</a> conference,
-				<strong>CoCoDo 2020</strong> will <strong class="red">NOT</strong> take place in March 2020.
-				We will try again in 2021.
+				<strong>CoCoDo 2020</strong> did <strong class="red">NOT</strong> take place in March 2020.
+				We try again in 2021.
 				<h3>Tentative programme</h3>
 				<ul class="cool">
+					TBA
+				<!--
 					<li><strong>09:00–10:30</strong>: A Journey towards the <a href="http://neverlang.di.unimi.it/">Neverlang</a> Island (<a href="https://cazzola.di.unimi.it/">Walter Cazzola</a>)</li>
 					<li><strong>11:00–12:30</strong>: The <a href="http://www.metaborg.org/en/latest/">Spoofax</a> Language Workbench (<a href="https://www.jeffsmits.net/">Jeff Smits</a>)</li>
 					<li><strong>14:00–15:30</strong>: From Abstract Syntax Trees to Machine Code with <a href="https://llvm.org/">LLVM</a> (<a href="https://ch.linkedin.com/in/dimitri-racordon-830972104">Dimitri Racordon</a>)</li>
 					<li><strong>16:00–17:30</strong>: An Interactive Exploration of a <a href="http://pharo.org/">Simple Compiler</a> (<a href="http://marcusdenker.de/">Marcus Denker</a>)</li>
+				-->
 				</ul>
 				<br/>
 				Feel free to browse the website (especially the “Technologies” tab above).
@@ -66,7 +69,7 @@
 				reflection, numerous paradigms and so much more.
 				<br/>
 				<br/>
-				Organised by <a href="https://twitter.com/johanfabry">Johan Fabry</a> and <a href="http://grammarware.github.io">Vadim Zaytsev</a> as a part of <a href="https://www.raincodelabs.com/">Raincode Labs</a> academic activities.
+				Organised by <a href="https://www.johanfabry.be/">Johan Fabry</a> (Senior Software Engineer, <a href="https://www.raincode.com/">Raincode</a>) and <a href="http://grammarware.github.io">Vadim Zaytsev</a> (Associate Professor, UTwente) as a part of <a href="https://www.raincodelabs.com/">Raincode Labs</a> academic activities.
 			</div>
 			<div class="tabbertab">
 				<h2>2019</h2>
@@ -222,7 +225,7 @@
 		<br/><hr/>
 		<div class="f">
 			<a href="http://www.raincodelabs.com/"><img src="logo/labs.png" alt="Raincode Labs"/></a>
-			The page is maintained by <a href="http://grammarware.github.io/">Dr. Vadim Zaytsev</a> a.k.a. @<a href="http://grammarware.net">grammarware</a>, <a href="https://en.wikipedia.org/wiki/Chief_scientific_officer" title="Chief Science Officer">CSO</a> of <a href="http://www.raincodelabs.com/">Raincode Labs</a>.<br/>
+			The page is maintained by <a href="http://grammarware.github.io/">Dr. Vadim Zaytsev</a> a.k.a. @<a href="http://grammarware.net">grammarware</a>, ex-<a href="https://en.wikipedia.org/wiki/Chief_scientific_officer" title="Chief Science Officer">CSO</a> of <a href="http://www.raincodelabs.com/">Raincode Labs</a>, Professor of Software Evolution at the University of Twente.<br/>
 			The picture used on this page is derivative from <a href="https://xkcd.com/303/">XKCD#303: Compiling</a> by Randall Munroe, <a href="http://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC</a>.<br/>
 			The tabber code used on this page, is derivative from <a href="http://www.kean.edu/~gkolodiy/5223/tabber.html">the one made by Patrick Fitzgerald</a> and distributed under <a href="https://opensource.org/licenses/mit-license.php">the MIT license</a>.<br/>
 			All other referenced works of art, science and engineering, are subject to their own individual copyrights.<br/>
