@@ -49,10 +49,11 @@
 				We try again in 2021.
 				<h3>Tentative programme</h3>
 				<ul class="cool">
-					TBA
+					<li>A Tutorial on the <a href="http://www.metaborg.org/en/latest/">Spoofax</a> Language Workbench (<a href="https://eelcovisser.org/">Eelco Visser</a>)</li>
+					<li>An Interactive Exploration of a <a href="http://pharo.org/">Simple Compiler</a> (<a href="http://marcusdenker.de/">Marcus Denker</a>)</li>
 				<!--
 					<li><strong>09:00–10:30</strong>: A Journey towards the <a href="http://neverlang.di.unimi.it/">Neverlang</a> Island (<a href="https://cazzola.di.unimi.it/">Walter Cazzola</a>)</li>
-					<li><strong>11:00–12:30</strong>: The <a href="http://www.metaborg.org/en/latest/">Spoofax</a> Language Workbench (<a href="https://www.jeffsmits.net/">Jeff Smits</a>)</li>
+					<li><strong>11:00–12:30</strong>: A Tutorial on the <a href="http://www.metaborg.org/en/latest/">Spoofax</a> Language Workbench (<a href="https://www.jeffsmits.net/">Jeff Smits</a>)</li>
 					<li><strong>14:00–15:30</strong>: From Abstract Syntax Trees to Machine Code with <a href="https://llvm.org/">LLVM</a> (<a href="https://ch.linkedin.com/in/dimitri-racordon-830972104">Dimitri Racordon</a>)</li>
 					<li><strong>16:00–17:30</strong>: An Interactive Exploration of a <a href="http://pharo.org/">Simple Compiler</a> (<a href="http://marcusdenker.de/">Marcus Denker</a>)</li>
 				-->
