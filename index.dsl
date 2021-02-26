@@ -51,7 +51,7 @@
 				<ul class="cool">
 					<li><strong>13:00–14:30</strong>: A Tutorial on the <a href="http://www.metaborg.org/en/latest/">Spoofax</a> Language Workbench (<a href="https://eelcovisser.org/">Eelco Visser</a>)</li>
 					<li><strong>15:00–16:30</strong>: An Interactive Exploration of a <a href="http://pharo.org/">Simple Compiler</a> (<a href="http://marcusdenker.de/">Marcus Denker</a>)</li>
-					<li><strong>17:00–18:30</strong>: From Abstract Syntax Trees to Machine Code with <a href="https://llvm.org/">LLVM</a> (<a href="https://ch.linkedin.com/in/dimitri-racordon-830972104">Dimitri Racordon</a>)</li>
+					<li><strong>17:00–18:30</strong>: From Abstract Syntax Trees to Machine Code with <a href="https://llvm.org/">LLVM</a> (<a href="https://kyouko-taiga.github.io/">Dimitri Racordon</a>)</li>
 				</ul>
 				<br/>
 				Feel free to browse the website (especially the “Technologies” tab above).
