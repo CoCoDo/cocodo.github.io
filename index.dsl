@@ -69,7 +69,9 @@
 
 				<h3>Program Committee</h3>
 				<ul>
-					TBA
+					<li><span class="red"><a href="https://pure.royalholloway.ac.uk/portal/en/persons/adrian-johnstone(7cc2e828-2b0f-4cb7-a169-337193b854b8).html">Adrian Johnstone</a></span> (<a href="https://pure.royalholloway.ac.uk/portal/en/organisations/centre-for-software-language-engineering(83d7223d-082f-4eec-875e-9ff38d30f886).html">Royal Holloway</a>, UK)</li>
+					<li><span class="red"><a href="https://www.stefan-marr.de/">Stefan Marr</a></span> (<a href="https://www.kent.ac.uk/computing/people/3167/marr-stefan">University of Kent</a>, UK)</li>
+					<li>... to be continued ...</li>
 				</ul>
 				Submission link for post-proceedings/companion volume:
 				<a href="https://easychair.org/conferences/?conf=cocodo2021"><code>https://easychair.org/conferences/?conf=cocodo2021</code></a>
