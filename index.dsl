@@ -66,6 +66,13 @@
 				<br/>
 				<br/>
 				Organised by <a href="https://www.johanfabry.be/">Johan Fabry</a> (Senior Software Engineer, <a href="https://www.raincode.com/">Raincode</a>) and <a href="http://grammarware.github.io">Vadim Zaytsev</a> (Associate Professor, UTwente) as a part of <a href="https://www.raincodelabs.com/">Raincode Labs</a> academic activities.
+
+				<h3>Program Committee</h3>
+				<ul>
+					TBA
+				</ul>
+				Submission link for post-proceedings/companion volume:
+				<a href="https://easychair.org/conferences/?conf=cocodo2021"><code>https://easychair.org/conferences/?conf=cocodo2021</code></a>
 			</div>
 			<div class="tabbertab">
 				<h2>2019</h2>
