@@ -75,8 +75,8 @@
 					<li><span class="red"><a href="https://www.stefan-marr.de/">Stefan Marr</a></span> (<a href="https://www.kent.ac.uk/computing/people/3167/marr-stefan">University of Kent</a>, UK)</li>
 					<li><span class="red"><a href="https://fniephaus.com/">Fabio Niephaus</a></span> (<a href="https://www.hpi.uni-potsdam.de/hirschfeld/people/niephaus/index.html">Hasso Platner Institut</a>, Germany)</li>
 					<li><span class="red"><a href="https://pure.royalholloway.ac.uk/portal/en/persons/elizabeth-scott_2b634c08-8249-413d-9654-031aed1f680b.html">Elizabeth Scott</a></span> (<a href="https://pure.royalholloway.ac.uk/portal/en/organisations/centre-for-software-language-engineering(83d7223d-082f-4eec-875e-9ff38d30f886).html">Royal Holloway</a>, UK)</li>
-					<li><span class="red"><a href="https://homepages.cwi.nl/~storm/">Tijs van der Storm</a></span> (<a href="http://www.cwi.nl/">CWI</a> &amp; <a href="http://www.rug.nl/">University of Groningen</a>, The Netherlands)</li>
 					<li><span class="red"><a href="https://inkytonik.github.io/">Anthony Sloane</a></span> (Australia)</li>
+					<li><span class="red"><a href="https://homepages.cwi.nl/~storm/">Tijs van der Storm</a></span> (<a href="http://www.cwi.nl/">CWI</a> &amp; <a href="http://www.rug.nl/">University of Groningen</a>, The Netherlands)</li>
 					<li><span class="red"><a href="http://grammarware.net">Vadim Zaytsev</a></span> (<a href="https://www.utwente.nl/en/eemcs/fmt/">University of Twente</a>, The Netherlands) — co-chair</li>
 					<li>... to be continued ...</li>
 				</ul>
