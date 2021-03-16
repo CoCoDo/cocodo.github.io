@@ -46,7 +46,7 @@
 				Due to the <a href="https://2020.programming-conference.org/attending/COVID-19">cancellation</a>
 				of the <a href="https://2020.programming-conference.org">‹Programming› 2020</a> conference,
 				<strong>CoCoDo 2020</strong> did <strong class="red">NOT</strong> take place in March 2020.
-				We try again in 2021.
+				We go again in 2021.
 				<h3>Tentative programme (times in <a href="https://time.is/UTC">UTC</a>)</h3>
 				<ul class="cool">
 					<li><strong>13:00–14:30</strong>: A Tutorial on the <a href="http://www.metaborg.org/en/latest/">Spoofax</a> Language Workbench (<a href="https://eelcovisser.org/">Eelco Visser</a>)</li>
@@ -78,10 +78,18 @@
 					<li><span class="red"><a href="https://inkytonik.github.io/">Anthony Sloane</a></span> (Australia)</li>
 					<li><span class="red"><a href="https://homepages.cwi.nl/~storm/">Tijs van der Storm</a></span> (<a href="http://www.cwi.nl/">CWI</a> &amp; <a href="http://www.rug.nl/">University of Groningen</a>, The Netherlands)</li>
 					<li><span class="red"><a href="http://grammarware.net">Vadim Zaytsev</a></span> (<a href="https://www.utwente.nl/en/eemcs/fmt/">University of Twente</a>, The Netherlands) — co-chair</li>
-					<li>... to be continued ...</li>
 				</ul>
-				Submission link for post-proceedings/companion volume:
-				<a href="https://easychair.org/conferences/?conf=cocodo2021"><code>https://easychair.org/conferences/?conf=cocodo2021</code></a>
+				After the conference, we will collect submissions for the ‹Programming› Companion volume,
+				for peer review by the members of the PC.<br/>
+				Submission link:
+				<a href="https://easychair.org/conferences/?conf=cocodo2021"><code>https://easychair.org/conferences/?conf=cocodo2021</code></a>. Please use the <a href="https://www.acm.org/publications/proceedings-template">acmart</a> template with the <code>sigplan</code> option.<br/>
+				Timeline:
+				<ul>
+					<li><strong>22 March 2021</strong> — the dojo day</li>
+					<li><strong>10 April 2021</strong> — submission deadline</li>
+					<li><strong>20 April 2021</strong> — notification deadline</li>
+					<li><strong>30 April 2021</strong> — camera ready deadline</li>
+				</ul>
 			</div>
 			<div class="tabbertab">
 				<h2>2019</h2>
