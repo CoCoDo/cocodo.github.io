@@ -33,7 +33,7 @@
 			<div class="rl">
 			<img src="logo/cocodo.png" alt="Compiler Coding Dojo" title="CoCoDo"/>
 			</div>
-			<h2 class="rl"><a href="https://cocodo.github.io/">CoCoDo</a> @ <a href="https://2021.programming-conference.org/">‹Programming›</a></h2>
+			<h2 class="rl"><a href="https://cocodo.github.io/">CoCoDo</a> @ <a href="https://2021.programming-conference.org/home/cocodo-2021">‹Programming›</a></h2>
 			<h2>22 March 2021, online</h2>
 		</div>
 		<div class="tabber">
@@ -47,7 +47,7 @@
 				of the <a href="https://2020.programming-conference.org">‹Programming› 2020</a> conference,
 				<strong>CoCoDo 2020</strong> did <strong class="red">NOT</strong> take place in March 2020.
 				We go again in 2021.
-				<h3>Tentative programme (times in <a href="https://time.is/UTC">UTC</a>)</h3>
+				<h3><a href="https://2021.programming-conference.org/home/cocodo-2021#program">Programme</a> (times in <a href="https://time.is/UTC">UTC</a>!)</h3>
 				<ul class="cool">
 					<li><strong>13:00–14:30</strong>: A Tutorial on the <a href="http://www.metaborg.org/en/latest/">Spoofax</a> Language Workbench (<a href="https://eelcovisser.org/">Eelco Visser</a>)</li>
 					<li><strong>15:00–16:30</strong>: An Interactive Exploration of a <a href="http://pharo.org/">Simple Compiler</a> (<a href="http://marcusdenker.de/">Marcus Denker</a>)</li>
