@@ -1,6 +1,6 @@
 {
 	"logo": "spoofax.svg",
-	"version": "2.5.1",
+	"version": "2.5.16",
 	"parsing": ["SGLR"],
 	"uri": "https://www.metaborg.org/en/latest/",
 	"download": "https://www.metaborg.org/en/latest/source/install.html",

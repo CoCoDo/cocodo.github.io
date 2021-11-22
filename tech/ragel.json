@@ -1,7 +1,7 @@
 {
-	"version": "7.0.0.11",
+	"version": "7.0.4",
 	"uri": "http://www.colm.net/open-source/ragel/",
-	"download": "http://www.colm.net/files/ragel/ragel-7.0.0.11.tar.gz",
+	"download": "http://www.colm.net/files/ragel/ragel-7.0.4.tar.gz",
 	"parsing": ["FSM"],
 	"example": "http://www.colm.net/open-source/ragel/",
 	"keywords": ["action", "$", "@", "%", "/*NUMBER*/"],

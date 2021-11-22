@@ -1,9 +1,10 @@
 {
 	"logo": "whimsy.png",
 	"toolname": "Autumn",
+	"version": "1.2.0",
 	"parsing": ["PEG", "monadic"],
 	"uri": "https://github.com/norswap/whimsy",
-	"download": "https://github.com/norswap/whimsy/archive/master.zip",
+	"download": "https://github.com/norswap/autumn/releases/tag/v1.2.0",
 	"example": "https://github.com/norswap/whimsy/blob/master/doc/autumn/guide/first-grammar.md",
 	"keywords": ["import", "class ", "fun", "override"],
 	"lang": ["Kotlin"],

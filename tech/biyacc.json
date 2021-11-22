@@ -1,7 +1,7 @@
 {
-	"uri": "http://biyacc.yozora.moe/",
+	"uri": "https://bitbucket.org/prl_tokyo/biyacc/src/master/",
 	"logo": "biyacc.png",
-	"download": "http://biyacc.yozora.moe/src/biyacc_src.zip",
+	"download": "https://bitbucket.org/prl_tokyo/biyacc/downloads/",
 	"parsing": ["BX"],
 	"example": "http://biyacc.yozora.moe/",
 	"keywords": ["Abstract", "Concrete", "Actions", "-&gt;", "+&gt;", "|", "data", "deriving"],

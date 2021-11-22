@@ -1,8 +1,8 @@
 {
-	"version": "BETA",
+	"version": "1.1.0",
 	"uri": "https://github.com/IronyProject/Irony",
 	"logo": "dotnet.png",
-	"download": "https://github.com/IronyProject/Irony/archive/master.zip",
+	"download": "https://github.com/IronyProject/Irony/releases/tag/v1.1.0",
 	"parsing": ["LALR(1)"],
 	"example": "https://github.com/IronyProject/Irony/wiki/Expression-Grammar-sample",
 	"keywords": ["=", "|", "+", "this", ";", ",", "MakeStarRule", "ToTerm", "RegisterOperators"],

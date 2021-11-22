@@ -1,7 +1,7 @@
 {
-	"version": "3.0",
+	"version": "3.1",
 	"uri": "https://github.com/jparsec/jparsec",
-	"download": "https://github.com/jparsec/jparsec/archive/master.zip",
+	"download": "https://github.com/jparsec/jparsec/releases/tag/jparsec-root-3.1",
 	"parsing": ["recursive descent"],
 	"example": "https://github.com/jparsec/jparsec/wiki/Overview#step-1-terminals",
 	"keywords": ["Terminals", "Parsers", "Parser", "Scanners"],

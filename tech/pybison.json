@@ -1,8 +1,8 @@
 {
-	"version": "0.1.8",
+	"version": "0.6.1",
 	"license": "GPL",
 	"parsing": ["LALR(1)"],
-	"uri": "http://freenet.mcnabhosting.com/python/pybison/",
+	"uri": "https://github.com/lukeparser/pybison",
 	"example": "http://freenet.mcnabhosting.com/python/pybison/calc.py",
 	"more": "http://freenet.mcnabhosting.com/python/pybison/walkthrough.html",
 	"keywords": ["def", "elif", "if", "return", "|"],

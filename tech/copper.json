@@ -1,5 +1,5 @@
 {
-	"version": "0.8.0",
+	"version": "1.0.0",
 	"uri": "http://melt.cs.umn.edu/copper/index.html",
 	"download": "https://github.com/melt-umn/copper",
 	"parsing": ["context-aware", "LALR(1)"],

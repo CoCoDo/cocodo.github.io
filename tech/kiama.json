@@ -1,9 +1,9 @@
 {
-	"version": "2.2.0",
-	"uri": "https://bitbucket.org/inkytonik/kiama",
+	"version": "2.5.0",
+	"uri": "https://github.com/inkytonik/kiama",
 	"logo": "kiama.png",
 	"license": "GNU LGPL",
-	"download": "https://bitbucket.org/inkytonik/kiama/src",
+	"download": "https://github.com/inkytonik/kiama/archive/refs/heads/master.zip",
 	"parsing": ["Packrat", "AG"],
 	"example": "https://bitbucket.org/inkytonik/kiama/src/21ee36be99e8d9c6c697b80aca0a56e2eb4d2db3/library/src/test/scala/org/bitbucket/inkytonik/kiama/example/imperative/SyntaxAnalyser.scala",
 	"keywords": ["class", "extends", "lazy", "val", "import", "~&gt;", "&lt;~", "^^", "~", "|"],
