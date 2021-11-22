@@ -4,7 +4,8 @@
 	"download": "https://github.com/jparsec/jparsec/archive/master.zip",
 	"parsing": ["recursive descent"],
 	"example": "https://github.com/jparsec/jparsec/wiki/Overview#step-1-terminals",
-	"keywords": ["Terminals", "Parser", "Scanners"],
+	"keywords": ["Terminals", "Parsers", "Parser", "Scanners"],
+	"notkeywords": ["integerSyntacticParser"],
 	"maintained": "Arnaud Bailly, Gregory Ssi-Yan-Kai, Ben Yu, Alex Michael Berry",
 	"lang": ["Java"]
 }

@@ -726,10 +726,10 @@ BooleanLiteral <span class="kw">:</span> Exp <span class="kw"><span class="kw">:
 				<h3>jparsec</h3>
 				<ul><li>jparsec version 3.0 (<a href="https://github.com/jparsec/jparsec/archive/master.zip">github</a>)</li><li>Main website: <a href="https://github.com/jparsec/jparsec">@jparsec/jparsec</a></li><li>Works with <a href="http://101companies.org/wiki/Language:Java">Java</a></li><li>Parsing algorithm: <a href="https://en.wikipedia.org/wiki/Recursive_descent_parser">recursive descent</a></li><li>Example from <a href="https://github.com/jparsec/jparsec/wiki/Overview#step-1-terminals">@jparsec/jparsec</a>: <blockquote><pre><span class="kw">Terminals</span> operators = <span class="kw">Terminals</span>.operators(","); // only one operator supported so far
 <span class="kw">Parser</span>&lt;?&gt; integerTokenizer = <span class="kw">Terminals</span>.IntegerLiteral.TOKENIZER;
-<span class="kw">Parser</span>&lt;String&gt; integerSyntactic<span class="kw">Parser</span> = <span class="kw">Terminals</span>.IntegerLiteral.PARSER;
-<span class="kw">Parser</span>&lt;?&gt; ignored = <span class="kw">Parser</span>s.or(<span class="kw">Scanners</span>.JAVA_BLOCK_COMMENT, <span class="kw">Scanners</span>.WHITESPACES);
-<span class="kw">Parser</span>&lt;?&gt; tokenizer = <span class="kw">Parser</span>s.or(operators.tokenizer(), integerTokenizer); // tokenizes the operators and integer
-<span class="kw">Parser</span>&lt;List&lt;String&gt;&gt; integers = integerSyntactic<span class="kw">Parser</span>.sepBy(operators.token(","))
+<span class="kw">Parser</span>&lt;String&gt; integerSyntacticParser = <span class="kw">Terminals</span>.IntegerLiteral.PARSER;
+<span class="kw">Parser</span>&lt;?&gt; ignored = <span class="kw"><span class="kw">Parser</span>s</span>.or(<span class="kw">Scanners</span>.JAVA_BLOCK_COMMENT, <span class="kw">Scanners</span>.WHITESPACES);
+<span class="kw">Parser</span>&lt;?&gt; tokenizer = <span class="kw"><span class="kw">Parser</span>s</span>.or(operators.tokenizer(), integerTokenizer); // tokenizes the operators and integer
+<span class="kw">Parser</span>&lt;List&lt;String&gt;&gt; integers = integerSyntacticParser.sepBy(operators.token(","))
     .from(tokenizer, ignored.skipMany());
 assertEquals(Arrays.asList("1", "2", "3"), integers.parse("1, /*this is comment*/2, 3");</pre></blockquote></li><li>Maintained by Arnaud Bailly, Gregory Ssi-Yan-Kai, Ben Yu, Alex Michael Berry</li></ul>
 			</div>
@@ -1807,7 +1807,7 @@ expr    <span class="kw">:</span>       expr  '+'  expr
 			The picture used on this page is derivative from <a href="https://xkcd.com/303/">XKCD#303: Compiling</a> by Randall Munroe, <a href="http://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC</a>.<br/>
 			The tabber code used on this page, is derivative from <a href="http://www.kean.edu/~gkolodiy/5223/tabber.html">the one made by Patrick Fitzgerald</a> and distributed under <a href="https://opensource.org/licenses/mit-license.php">the MIT license</a>.<br/>
 			All other referenced works of art, science and engineering, are subject to their own individual copyrights.<br/>
-			Last updated: March 2021.
+			Last updated: November 2021.
 		</div>
 	</body>
 </html>
